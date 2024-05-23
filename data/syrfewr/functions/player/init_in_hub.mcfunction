@@ -1,1 +1,0 @@
-function syrfewr:player/give_leave_door

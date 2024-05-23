@@ -38,3 +38,8 @@ execute as @a[scores={s.TalkedToVillager=1..}] at @s run function syrfewr:talked
 effect give @e[tag=s.npc] slowness infinite 255 true
 
 scoreboard players remove @a[scores={s.ActionCooldown=1..}] s.ActionCooldown 1
+
+
+
+#Joueur dans le lobby
+execute as @a[team=s.lobby] at @s run function syrfewr:player/in_lobby

@@ -46,3 +46,16 @@ gamerule doFireTick true
 gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule mobGriefing false
+
+
+
+## Teams
+#Lobby
+team add s.lobby ["",{"text":"[","color":"gray"},{"text":"S","color": "dark_red"},{"text":"] Lobby","color":"gray"}]
+team modify s.lobby collisionRule never
+team modify s.lobby color gray
+team modify s.lobby deathMessageVisibility never
+team modify s.lobby friendlyFire false
+team modify s.lobby nametagVisibility hideForOtherTeams
+team modify s.lobby seeFriendlyInvisibles true
+team modify s.lobby prefix ["",{"text":"[","color":"gray"},{"text":"S","color": "dark_red"},{"text":"] ","color":"gray"}]

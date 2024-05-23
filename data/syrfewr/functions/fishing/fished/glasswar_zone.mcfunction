@@ -22,7 +22,7 @@ execute if score @s s.temp matches 26..45 run data merge entity @e[type=item,sor
 #Tilapia
 execute if score @s s.temp matches 46..55 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1002,"minecraft:custom_data":{fished:1,fish_id:6}}}}
 #Carpe
-execute if score @s s.temp matches 54..59 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1003,"minecraft:custom_data":{fished:1,fish_id:7}}}}
+execute if score @s s.temp matches 56..59 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1003,"minecraft:custom_data":{fished:1,fish_id:7}}}}
 #Capitaine
 execute if score @s s.temp matches 60..61 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1004,"minecraft:custom_data":{fished:1,fish_id:8}}}}
 #Flétan du pacifique
