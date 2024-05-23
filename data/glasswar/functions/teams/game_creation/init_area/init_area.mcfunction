@@ -1,0 +1,1 @@
+function glasswar:teams/game_creation/init_area/teams/init

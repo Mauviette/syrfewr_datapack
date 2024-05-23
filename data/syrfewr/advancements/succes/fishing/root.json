@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cod",
+        "count": 1
+      },
+      "title": {
+        "text": "Encyclopédie de pêche",
+        "color": "#642802"
+      },
+      "description": "",
+      "background": "minecraft:textures/block/barrel_side.png",
+      "announce_to_chat": false
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

@@ -1,0 +1,194 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_beef",
+            "weight": 50
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_apple",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:clay_ball",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Gagnez une\",\"italic\":false,\"color\":\"dark_gray\"},{\"text\":\" immunité au recul\",\"italic\":false,\"color\":\"gray\"},{\"text\":\" et \",\"italic\":false,\"color\":\"dark_gray\"},{\"text\":\"Résistance I\",\"italic\":false,\"color\":\"gray\"},{\"text\":\" (8s)\",\"italic\":false,\"color\":\"white\"},{\"text\":\".\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Argile délicieuse\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 2,
+                    "saturation": 2,
+                    "can_always_eat": true,
+                    "eat_seconds": 0.3,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 3,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_mushroom",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : \",\"italic\":true,\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"+1 vie\",\"italic\":true,\"color\":\"green\",\"italic\":false}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Champignon succulent\",\"color\":\"#e94f44\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 2,
+                    "saturation": 2,
+                    "can_always_eat": true,
+                    "eat_seconds": 30,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 7,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:pink_dye",
+            "weight": 6,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Vous gagnez une quantité de verre rose infinie pendant 5s.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Verre infini\",\"color\":\"#e151fb\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 0.3,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 8,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:light_blue_dye",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Vous tue sans perdre de vie.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Retour\",\"color\":\"aqua\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 2,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 11,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:yellow_dye",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Réduit votre taille de 40% jusqu'à ce que vous mourrez.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Pilule de rétrecissement\",\"color\":\"yellow\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 2,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:bad_omen",
+                          "amplifier": 12,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

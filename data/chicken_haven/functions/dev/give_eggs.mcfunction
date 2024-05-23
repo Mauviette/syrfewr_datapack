@@ -1,0 +1,1 @@
+$give @s white_dye[max_stack_size=99,custom_name='{"italic":false,"text":"Oeuf"}',custom_model_data=1,custom_data={regular_egg:1}] $(count)

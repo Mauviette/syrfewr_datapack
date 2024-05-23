@@ -1,0 +1,1 @@
+execute if entity @e[tag=s.glasswar_fz,distance=..10] run function syrfewr:fishing/npc/glasswar_lobby

@@ -1,0 +1,22 @@
+{
+    "parent": "syrfewr:succes/fishing/fishes/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:salmon",
+        "components": {
+          "minecraft:custom_model_data": 1004
+        }
+      },
+      "title": {"text":"Capitaine","color":"#649694"},
+      "description": [{"text":"13 crédits\n","color":"gold"},{"text":"Vous êtes prêts les enfants?","color":"dark_gray"}],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

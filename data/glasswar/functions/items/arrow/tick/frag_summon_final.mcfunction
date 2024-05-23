@@ -1,0 +1,1 @@
+$summon arrow ~$(x) ~$(y) ~$(z) {Tags:["gw.arrow_plant_effect","gw.arrow_inited","gw.mini_explode"]}

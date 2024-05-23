@@ -1,0 +1,1 @@
+summon villager ~ ~ ~ {Invulnerable:1b,Tags:["s.jean_peche","s.npc"],CustomName:'{"text":"Jean-Pêche"}',VillagerData:{level:99,profession:"minecraft:fisherman"},Offers:{}}

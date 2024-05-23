@@ -1,0 +1,19 @@
+{
+    "parent": "syrfewr:succes/fishing/fishes/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:salmon"
+      },
+      "title": {"text":"Saumon","color":"#9e0002"},
+      "description": [{"text":"1 crédit\n","color":"gold"},{"text":"Youpi ! Saumon jour de chance !","color":"dark_gray"}],
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

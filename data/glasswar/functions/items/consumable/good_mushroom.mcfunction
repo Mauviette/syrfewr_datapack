@@ -1,0 +1,2 @@
+tellraw @a[distance=..250] ["",{"selector":"@s"},{"text":" a consommé un "},{"text":"champignon succulent","color":"red"},{"text":" et a gagné une "},{"text":"vie","color":"dark_green"},{"text":" !"}]
+scoreboard players add @s gw.Vies 1

@@ -1,0 +1,1 @@
+execute if score @s ch.isActive matches 1 unless score @s ch.cooldownItems matches 1.. run function chicken_haven:gui/player_terminate

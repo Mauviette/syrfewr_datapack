@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.13 with red_concrete[item_name='{"text":"Chargement...","color":"red"}',custom_data={gw_gui_item:1}]

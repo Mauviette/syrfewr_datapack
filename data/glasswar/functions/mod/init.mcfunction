@@ -1,0 +1,1 @@
+execute if score @s gw.ModificatorID matches 1 run tag @a[distance=..250,tag=gw.playing] add gw.playing_air_rush

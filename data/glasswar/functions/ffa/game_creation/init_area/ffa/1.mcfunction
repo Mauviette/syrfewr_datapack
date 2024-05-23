@@ -1,0 +1,1 @@
+execute positioned ~ ~ ~ run function glasswar:ffa/game_creation/init_area/place_platform_solo

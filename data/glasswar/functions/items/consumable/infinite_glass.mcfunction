@@ -1,0 +1,1 @@
+scoreboard players set @s gw.InfiniteGlassTimer 100

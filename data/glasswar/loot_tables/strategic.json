@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_pickaxe",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"Pioche de récupération\"}",
+                "minecraft:lore": [
+                  "{\"text\":\"Le verre cassé avec cet objet revient dans votre inventaire.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:max_damage": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.15 with elytra[item_name='{"color":"gray","text":"Ruée aérienne"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]

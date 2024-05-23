@@ -1,0 +1,3 @@
+item replace block ~ ~ ~ container.13 with lime_concrete[item_name='{"text":"Démarrer","color":"green"}',lore=['{"color":"gray","italic":false,"text":""}','{"color":"gray","italic":false,"text":""}'],custom_data={gw_gui_item:1,gw_start:1}]
+data modify block ~ ~ ~ Items[{Slot:13b}].components."minecraft:lore"[0] set from block ~ ~ ~ Items[{Slot:11b}].components."minecraft:item_name"
+data modify block ~ ~ ~ Items[{Slot:13b}].components."minecraft:lore"[1] set from block ~ ~ ~ Items[{Slot:15b}].components."minecraft:item_name"

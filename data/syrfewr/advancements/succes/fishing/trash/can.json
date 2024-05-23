@@ -1,0 +1,22 @@
+{
+    "parent": "syrfewr:succes/fishing/trash/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:salmon",
+        "components": {
+          "minecraft:custom_model_data": 1
+        }
+      },
+      "title": { "text":"Boîte de conserve","color":"gray" },
+      "description": [{"text":"-1 crédit\n","color":"red"},{ "text":"Ceci n'est pas une soupe.","color":"dark_gray" }],
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

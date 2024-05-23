@@ -1,0 +1,33 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "weight": 30,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:consumable",
+            "weight": 15
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:blocks",
+            "weight": 100
+          }
+        ]
+      }
+    ]
+  }

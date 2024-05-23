@@ -1,0 +1,19 @@
+{
+    "parent": "syrfewr:succes/fishing/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:salmon"
+      },
+      "title": {"text":"Poissons","color":"#9e0002"},
+      "description": {"text":"Riches en oméga 3.","color":"dark_gray"},
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

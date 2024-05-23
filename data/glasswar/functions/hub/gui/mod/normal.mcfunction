@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.15 with white_concrete[item_name='{"color":"gray","text":"Classique"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]

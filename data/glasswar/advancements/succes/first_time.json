@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:glass",
+        "count": 1
+      },
+      "title": {
+        "text": "Glasswar",
+        "color": "white"
+      },
+      "description": "",
+      "background": "minecraft:textures/block/cobblestone.png",
+      "announce_to_chat": false
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

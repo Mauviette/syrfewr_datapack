@@ -1,0 +1,1 @@
+give @s nether_star[custom_name='{"color":"#FFE180","italic":false,"text":"Boussole à œuf"}',lore=['{"color":"dark_gray","italic":false,"text":"Double-clic droit pour ouvrir l\'interface."}'],custom_data={egg_compass:1},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:10000},custom_model_data=1]

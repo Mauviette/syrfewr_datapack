@@ -1,0 +1,22 @@
+{
+    "parent": "syrfewr:succes/fishing/fishes/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:salmon",
+        "components": {
+          "minecraft:custom_model_data": 1003
+        }
+      },
+      "title": {"text":"Carpe  ","color":"#967464"},
+      "description": [{"text":"5 crédits\n","color":"gold"},{"text":"Carpe diem !","color":"dark_gray"}],
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

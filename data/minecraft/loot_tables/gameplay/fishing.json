@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:salmon",
+            "functions": [
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{fished:1}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

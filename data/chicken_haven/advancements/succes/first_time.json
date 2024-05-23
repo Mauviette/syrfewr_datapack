@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:egg",
+        "count": 1
+      },
+      "title": {
+        "text": "Chicken Haven",
+        "color": "gold"
+      },
+      "description": "",
+      "background": "minecraft:textures/block/hay_block_side.png"
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

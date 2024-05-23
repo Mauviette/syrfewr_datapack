@@ -1,0 +1,76 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 9230244
+                  },
+                  "minecraft:lore": [
+                    "{\"text\":\"Yee-haw ! (CROUCH) pour descendre.\",\"color\":\"dark_gray\",\"italic\":false}"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Flèche rodéo\",\"color\":\"#8CD7A4\",\"bold\":true}",
+                  "minecraft:hide_additional_tooltip": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 3830016
+                  },
+                  "minecraft:lore": [
+                    "{\"text\":\"Pose un arbre en atterissant.\",\"color\":\"dark_gray\",\"italic\":false}"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Flèche arboricole\",\"color\":\"#3A7100\",\"bold\":true}",
+                  "minecraft:hide_additional_tooltip": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 16746700,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:poison",
+                        "amplifier": 1,
+                        "duration": 9999999,
+                        "show_particles": false,
+                        "show_icon": true
+                      }
+                    ]
+                  },
+
+                  "minecraft:item_name": "{\"text\":\"Flèche roméo\",\"color\":\"#FF88CC\",\"bold\":true}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

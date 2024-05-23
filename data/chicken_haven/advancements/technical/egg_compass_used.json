@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+            "item": {
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 10000
+                }
+              }
+            }
+          }
+      }
+    },
+    "rewards": {
+      "function": "chicken_haven:gui/egg_compass/right_click"
+    }
+  }
