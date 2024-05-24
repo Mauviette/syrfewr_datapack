@@ -15,3 +15,6 @@ tellraw @s {"text":"\n"}
 tellraw @s {"text":"--------------"}
 tellraw @s ["",{"text":"Bonjour "},{"selector":"@s"},{"text":", "},{"text":"il te manque ","color":"green"},{"score":{"name":"@s","objective":"s.temp"},"color":"yellow"},{"text":" poissons dans cette zone","color":"green"},{"text":"."}]
 tellraw @s {"text":"--------------"}
+
+
+execute unless score @s s.temp matches 1.. run advancement grant @s until syrfewr:succes/fishing/zones/floating_glass

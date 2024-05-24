@@ -32,6 +32,17 @@ scoreboard objectives add s.TalkedToVillager minecraft.custom:minecraft.talked_t
 
 scoreboard objectives add s.ActionCooldown dummy
 
+#Personal GUI
+scoreboard objectives add s.GuiPageID dummy
+scoreboard objectives add s.GuiIndexID dummy
+scoreboard objectives add s.GuiILastInteraction dummy
+
+scoreboard objectives add s.CompletedFishingZones dummy
+
+#Skins
+scoreboard objectives add s.SelectedFishingRodSkinID dummy
+scoreboard objectives add s.SelectedBowSkinID dummy
+
 # Triggers
 scoreboard objectives add leave trigger
 scoreboard objectives add zEventTrigger trigger
