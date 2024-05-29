@@ -1,1 +1,1 @@
-item replace block ~ ~ ~ container.15 with redstone[item_name='{"text":"Grand bazar","color":"red"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]
+item replace block ~ ~ ~ container.15 with redstone[item_name='{"text":"Grand bazar","color":"red"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}','{"color":"dark_gray","italic":false,"text":"Une énorme sélection d\'objets peut apparaître."}','{"color":"red","italic":false,"text":"Parties longues"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]

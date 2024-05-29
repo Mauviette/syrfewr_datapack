@@ -1,1 +1,1 @@
-item replace block ~ ~ ~ container.15 with elytra[item_name='{"color":"gray","text":"Ruée aérienne"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]
+item replace block ~ ~ ~ container.15 with elytra[item_name='{"color":"gray","text":"Ruée aérienne"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}','{"color":"dark_gray","italic":false,"text":"Élytres et feux d\'artifices !"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]

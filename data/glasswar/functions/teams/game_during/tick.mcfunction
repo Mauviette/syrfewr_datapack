@@ -3,8 +3,8 @@ execute store result score @s gw.NumberOfPlayersRed run execute if entity @a[tag
 scoreboard players operation @s gw.NumberOfPlayers = @s gw.NumberOfPlayersBlue
 scoreboard players operation @s gw.NumberOfPlayers += @s gw.NumberOfPlayersRed
 
-execute if score @s gw.NumberOfPlayersRed matches ..0 as @a[tag=gw.playing_blue,tag=!gw.winner_blue,distance=..350] run function glasswar:teams/game_end/winner_blue
-execute if score @s gw.NumberOfPlayersBlue matches ..0 as @a[tag=gw.playing_red,tag=!gw.winner_red,distance=..350] run function glasswar:teams/game_end/winner_red
+execute if score @s gw.NumberOfPlayersRed matches ..0 as @a[tag=gw.playing_blue,tag=!gw.winner_blue,distance=..350] at @s run function glasswar:teams/game_end/winner_blue
+execute if score @s gw.NumberOfPlayersBlue matches ..0 as @a[tag=gw.playing_red,tag=!gw.winner_red,distance=..350] at @s run function glasswar:teams/game_end/winner_red
 execute if score @s gw.NumberOfPlayers matches ..0 unless entity @a[distance=..250] run function glasswar:teams/game_end/end_game
 
 
@@ -23,3 +23,6 @@ execute if score @s gw.NbItemsSpawned matches 121.. if score @s gw.TimerItemSpaw
 execute if score @s gw.NbItemsSpawned matches 10.. if score @s gw.BonusCrateTimer matches 80.. if predicate syrfewr:random/0.05 if predicate syrfewr:random/0.05 if predicate syrfewr:random/0.05 run function glasswar:teams/game_during/bonus_chest_init
 
 scoreboard players add @s gw.BonusCrateTimer 1
+scoreboard players add @s gw.GameTime 1
+
+execute if score @s gw.ModificatorID matches 1.. run function glasswar:mod/tick

@@ -15,10 +15,12 @@ scoreboard objectives add gw.GameTimer dummy
 scoreboard objectives add gw.TimerItemSpawn dummy
 scoreboard objectives add gw.NbItemsSpawned dummy
 scoreboard objectives add gw.BonusCrateTimer dummy
+scoreboard objectives add gw.GameTime dummy
 
 scoreboard objectives add gw.ModificatorID dummy
 scoreboard objectives add gw.CompID dummy
 scoreboard objectives add gw.LastInteraction dummy
+scoreboard objectives add gw.ModificatorTimer dummy
 
 # Joueurs
 scoreboard objectives add gw.Vies dummy
@@ -43,8 +45,8 @@ scoreboard objectives add gw.BrokenRedGlassPane mined:minecraft.red_stained_glas
 scoreboard objectives add gw.BrokenPinkGlass mined:minecraft.pink_stained_glass
 
 # Statistiques
-scoreboard objectives add gw.TotalKills playerKillCount
-scoreboard objectives add gw.TotalDeaths deathCount
+scoreboard objectives add gw.TotalKillsStats dummy
+scoreboard objectives add gw.TotalDeathsStats dummy
 scoreboard objectives add gw.FfaWins dummy
 scoreboard objectives add gw.TeamWins dummy
 scoreboard objectives add gw.FfaGames dummy
@@ -77,7 +79,7 @@ team modify gw.playing_ffa prefix ["",{"text":"[","color":"white"},{"text":"\uE1
 #Equipe
 #Jeu (équipe bleu)
 team add gw.playing_blue ["",{"text":"[","color":"blue"},{"text":"\uE102","color": "white"},{"text":"] Joue en équipe","color":"blue"}]
-team modify gw.playing_blue collisionRule pushOtherTeams
+team modify gw.playing_blue collisionRule never
 team modify gw.playing_blue color blue
 team modify gw.playing_blue deathMessageVisibility never
 team modify gw.playing_blue friendlyFire false
@@ -87,7 +89,7 @@ team modify gw.playing_blue prefix ["",{"text":"[","color":"blue"},{"text":"\uE1
 
 #Jeu (équipe rouge)
 team add gw.playing_red ["",{"text":"[","color":"red"},{"text":"\uE103","color": "white"},{"text":"] Joue en équipe","color":"red"}]
-team modify gw.playing_red collisionRule pushOtherTeams
+team modify gw.playing_red collisionRule never
 team modify gw.playing_red color red
 team modify gw.playing_red deathMessageVisibility never
 team modify gw.playing_red friendlyFire false

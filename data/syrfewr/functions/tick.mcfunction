@@ -1,6 +1,10 @@
 execute at @e[type=minecraft:marker] run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[tag=debug]
 
+execute as @a[scores={s.killedPlayer=1..}] at @s run function syrfewr:killed_player
 function glasswar:tick
+tag @a remove gw.just_killed_player
+
+
 
 execute as @a[scores={leave=1..}] at @s run function syrfewr:triggers/leave
 scoreboard players enable @a zEventTrigger
@@ -38,7 +42,6 @@ execute as @a[scores={s.TalkedToVillager=1..}] at @s run function syrfewr:talked
 effect give @e[tag=s.npc] slowness infinite 255 true
 
 scoreboard players remove @a[scores={s.ActionCooldown=1..}] s.ActionCooldown 1
-
 
 
 #Joueur dans le lobby

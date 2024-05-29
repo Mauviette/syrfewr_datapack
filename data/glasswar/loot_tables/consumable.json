@@ -78,6 +78,9 @@
                         }
                       }
                     ]
+                  },
+                  "minecraft:enchantments": {
+                    "minecraft:vanishing_curse": 1
                   }
                 }
               }
@@ -121,7 +124,7 @@
           {
             "type": "minecraft:item",
             "name": "minecraft:light_blue_dye",
-            "weight": 2,
+            "weight": 3,
             "functions": [
               {
                 "function": "minecraft:set_components",
@@ -135,7 +138,7 @@
                     "nutrition": 0,
                     "saturation": 0,
                     "can_always_eat": true,
-                    "eat_seconds": 2,
+                    "eat_seconds": 1,
                     "effects": [
                       {
                         "effect": {

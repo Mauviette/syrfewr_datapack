@@ -32,6 +32,7 @@ scoreboard objectives add s.TalkedToVillager minecraft.custom:minecraft.talked_t
 
 scoreboard objectives add s.ActionCooldown dummy
 
+scoreboard objectives add s.killedPlayer playerKillCount
 #Personal GUI
 scoreboard objectives add s.GuiPageID dummy
 scoreboard objectives add s.GuiIndexID dummy
@@ -42,6 +43,10 @@ scoreboard objectives add s.CompletedFishingZones dummy
 #Skins
 scoreboard objectives add s.SelectedFishingRodSkinID dummy
 scoreboard objectives add s.SelectedBowSkinID dummy
+scoreboard objectives add s.SelectedVictoryAnimationID dummy
+
+scoreboard objectives add s.SelectedObjectID dummy
+scoreboard objectives add s.TimeSinceLastObjectSelection dummy
 
 # Triggers
 scoreboard objectives add leave trigger
@@ -57,6 +62,7 @@ gamerule doFireTick true
 gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule mobGriefing false
+gamerule disableRaids true
 
 
 
@@ -70,3 +76,10 @@ team modify s.lobby friendlyFire false
 team modify s.lobby nametagVisibility hideForOtherTeams
 team modify s.lobby seeFriendlyInvisibles true
 team modify s.lobby prefix ["",{"text":"[","color":"gray"},{"text":"S","color": "dark_red"},{"text":"] ","color":"gray"}]
+
+team add noC
+team modify noC collisionRule never
+
+## Lobby
+execute in syrfewr:lobby run forceload add -10 -10 10 10
+execute in syrfewr:lobby run place template syrfewr:lobby/1 -2 79 -2

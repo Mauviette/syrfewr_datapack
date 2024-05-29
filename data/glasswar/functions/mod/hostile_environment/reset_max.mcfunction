@@ -1,0 +1,1 @@
+$execute store result bossbar gw.mobs_timer$(game_id) max run scoreboard players get @s gw.ModificatorTimer

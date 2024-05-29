@@ -35,6 +35,8 @@ execute if score @s s.temp matches 9 run advancement grant @s until syrfewr:succ
 execute if score @s s.temp matches 9 run tellraw @s ["",{"text":"Flétan du pacifique","color":"#968164"},{"text":" attrapé !","color":"gray"}]
 execute if score @s s.temp matches 9 run scoreboard players set @s s.creditsToAdd 4
 
+execute if score @s s.temp matches 10 run advancement grant @s until syrfewr:succes/fishing/treasures/box
+execute if score @s s.temp matches 10 run tellraw @s ["",{"text":"Boîte","color":"#90571d"},{"text":" obtenue !","color":"gray"}]
+execute if score @s s.temp matches 10 store result score @s s.creditsToAdd run random value 1..10
 
-
-clear @s salmon[minecraft:custom_data~{fished:1}]
+clear @s salmon[minecraft:custom_data~{fished:1}] 1

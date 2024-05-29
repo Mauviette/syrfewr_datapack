@@ -1,0 +1,1 @@
+$bossbar remove gw.mobs_timer$(game_id)

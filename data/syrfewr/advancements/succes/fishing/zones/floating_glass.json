@@ -5,7 +5,7 @@
         "id": "minecraft:glass"
       },
       "title": {"text":"Verre flottant","color":"gray"},
-      "description": {"text":"9 types de poissons pêchés.","color":"dark_gray"},
+      "description": {"text":"10 types de poissons pêchés.","color":"dark_gray"},
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

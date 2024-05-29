@@ -20,7 +20,7 @@
           {
             "type": "minecraft:loot_table",
             "value": "glasswar:consumable",
-            "weight": 30
+            "weight": 25
           },
           {
             "type": "minecraft:loot_table",

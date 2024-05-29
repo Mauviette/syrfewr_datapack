@@ -1,0 +1,1 @@
+$summon chicken ~ ~.6 ~ {Motion:[$(x),$(y),$(z)],Team:"noC"}

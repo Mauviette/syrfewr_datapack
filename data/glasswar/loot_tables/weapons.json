@@ -105,6 +105,11 @@
                 }
               }
             ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:spyglass",
+            "weight": 1
           }
         ]
       }

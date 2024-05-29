@@ -1,4 +1,4 @@
-execute store result score @s s.temp2 run random value 1..100
+execute store result score @s s.temp2 run random value 1..103
 scoreboard players set @s s.temp -1
 
 ## Déchets
@@ -12,7 +12,7 @@ execute if score @s s.temp matches 8.. run data merge entity @e[type=item,sort=n
 
 execute if score @s s.temp matches 1.. run return 0
 ## Poissons
-execute if score @s s.temp2 matches 21.. store result score @s s.temp run random value 1..66
+execute if score @s s.temp2 matches 21..100 store result score @s s.temp run random value 1..66
 #Perche (2)
 execute if score @s s.temp matches 1..15 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1000,"minecraft:custom_data":{fished:1,fish_id:4}}}}
 #Saumon (1)
@@ -27,3 +27,9 @@ execute if score @s s.temp matches 56..59 run data merge entity @e[type=item,sor
 execute if score @s s.temp matches 60..61 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1004,"minecraft:custom_data":{fished:1,fish_id:8}}}}
 #Flétan du pacifique (4)
 execute if score @s s.temp matches 62..66 run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":1005,"minecraft:custom_data":{fished:1,fish_id:9}}}}
+
+
+execute if score @s s.temp matches 1.. run return 0
+## Trésors
+execute if score @s s.temp2 matches 101.. store result score @s s.temp run random value 1..5
+execute if score @s s.temp matches 1.. run data merge entity @e[type=item,sort=nearest,limit=1] {Item:{components:{"minecraft:custom_model_data":2000,"minecraft:custom_data":{fished:1,fish_id:10}}}}
