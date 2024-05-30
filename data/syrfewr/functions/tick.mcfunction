@@ -1,7 +1,12 @@
+function glasswar:tick
+function carlos_party:tick
+
+## tick
+
+
 execute at @e[type=minecraft:marker] run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[tag=debug]
 
 execute as @a[scores={s.killedPlayer=1..}] at @s run function syrfewr:killed_player
-function glasswar:tick
 tag @a remove gw.just_killed_player
 
 

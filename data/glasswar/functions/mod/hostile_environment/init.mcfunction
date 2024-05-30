@@ -7,3 +7,11 @@ $bossbar set gw.mobs_timer$(game_id) visible true
 $bossbar set gw.mobs_timer$(game_id) players @a[distance=..250]
 
 scoreboard players set @s gw.ModificatorTimer 1200
+
+#fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 glass
+#setblock ~-2 ~-1 ~-2 air
+#setblock ~2 ~-1 ~-2 air
+#setblock ~-2 ~-1 ~2 air
+#setblock ~2 ~-1 ~2 air
+fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 glass
+setblock ~ ~-1 ~ minecraft:obsidian

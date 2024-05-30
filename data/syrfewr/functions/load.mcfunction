@@ -1,5 +1,6 @@
 ## Fonctions des modes
 function glasswar:load
+function carlos_party:load
 
 
 ## Numbers
