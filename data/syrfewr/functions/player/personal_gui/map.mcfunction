@@ -7,4 +7,6 @@ execute if score @s s.GuiPageID matches 2 if score @s s.GuiIndexID matches 1 run
 execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 run function syrfewr:player/personal_gui/my_cosmetics/bow/tick
 execute if score @s s.GuiPageID matches 4 if score @s s.GuiIndexID matches 1 run function syrfewr:player/personal_gui/my_cosmetics/victory_animation/tick
 
+execute if score @s s.GuiPageID matches 10 run function syrfewr:player/personal_gui/gamemodes/tick
+
 scoreboard players add @s s.TimeSinceLastObjectSelection 1

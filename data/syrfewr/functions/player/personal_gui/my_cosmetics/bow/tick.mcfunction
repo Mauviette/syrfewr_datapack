@@ -15,3 +15,6 @@ execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unl
 
 #Flingue (gun)
 execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:13b,components:{"minecraft:custom_data":{select_gun:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/gun
+
+#Arc angélique (angelicbow)
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:14b,components:{"minecraft:custom_data":{select_angelbow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/angelbow

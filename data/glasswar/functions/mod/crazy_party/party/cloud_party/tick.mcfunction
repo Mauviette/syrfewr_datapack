@@ -1,0 +1,2 @@
+execute if predicate syrfewr:random/0.05 run effect give @e[distance=..250] minecraft:levitation 1 1 true
+execute if predicate syrfewr:random/0.05 run effect give @e[distance=..250] slow_falling 1 0 true

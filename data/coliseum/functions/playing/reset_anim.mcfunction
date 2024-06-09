@@ -1,0 +1,1 @@
+attribute @s generic.attack_speed modifier remove eb5d3472-00a3-4170-907f-0a7eff10bbf4

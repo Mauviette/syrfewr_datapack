@@ -1,0 +1,30 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.attack_speed",
+          "name": "push cd",
+          "amount": -2,
+          "operation": "add_value",
+          "id": "94db4e01-2a8f-4eb8-a8be-95aeb44a2224",
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "minecraft:generic.attack_knockback",
+          "name": "push kb",
+          "amount": 12,
+          "operation": "add_value",
+          "id": "5352b36c-8f3c-4543-9186-2aefb5b1b364",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments": {
+        "minecraft:sharpness": 2
+      }
+    }
+  ]
+  

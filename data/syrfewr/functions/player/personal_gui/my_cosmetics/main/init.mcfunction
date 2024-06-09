@@ -1,4 +1,5 @@
-clear @s
+function syrfewr:player/personal_gui/clear_gui
+
 item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={item_from_mc_main:1,to_kill:1,back:1},item_name='{"color":"white","text":"Retour"}']
 item replace entity @s inventory.1 with bow[custom_data={item_from_mc_main:1,to_kill:1,my_cosmetics_bows:1},lore=['{"color":"gray","text":"Glasswar","italic":false}']]
 item replace entity @s inventory.2 with fishing_rod[custom_data={item_from_mc_main:1,to_kill:1,my_cosmetics_fishing_rods:1},lore=['{"color":"gray","text":"Zones de pêche","italic":false}']]

@@ -1,0 +1,1 @@
+$bossbar remove gw.party_timer$(game_id)

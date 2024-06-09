@@ -21,6 +21,7 @@ scoreboard objectives add gw.ModificatorID dummy
 scoreboard objectives add gw.CompID dummy
 scoreboard objectives add gw.LastInteraction dummy
 scoreboard objectives add gw.ModificatorTimer dummy
+scoreboard objectives add gw.ModificatorIndex dummy
 
 # Joueurs
 scoreboard objectives add gw.Vies dummy
@@ -103,7 +104,7 @@ team modify gw.playing_red prefix ["",{"text":"[","color":"red"},{"text":"\uE103
 ## Lobby
 execute in syrfewr:glasswar run forceload add -7 -13 40 34
 execute in syrfewr:glasswar unless block -7 -4 -13 minecraft:gold_block positioned -7 -5 -13 run kill @e[distance=..100,type=!player]
-execute in syrfewr:glasswar unless block -7 -4 -13 minecraft:gold_block run place template glasswar:lobby/1 -7 -5 -13
+execute in syrfewr:glasswar unless block -7 -4 -13 minecraft:gold_block run place template glasswar:lobby/3 -7 -5 -13
 
 ## Temporaire
 execute in syrfewr:glasswar run setworldspawn 3 2 9 -450

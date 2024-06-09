@@ -1,13 +1,16 @@
+
+execute as @a[scores={s.killedPlayer=1..}] at @s run function syrfewr:killed_player
+
 function glasswar:tick
 function carlos_party:tick
+function coliseum:tick
 
 ## tick
 
+tag @a remove gw.just_killed_player
 
 execute at @e[type=minecraft:marker] run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[tag=debug]
 
-execute as @a[scores={s.killedPlayer=1..}] at @s run function syrfewr:killed_player
-tag @a remove gw.just_killed_player
 
 
 
@@ -51,3 +54,12 @@ scoreboard players remove @a[scores={s.ActionCooldown=1..}] s.ActionCooldown 1
 
 #Joueur dans le lobby
 execute as @a[team=s.lobby] at @s run function syrfewr:player/in_lobby
+
+
+#Rotaters
+execute positioned 0 0 0 unless entity @e[tag=s.rotater] run summon marker ~ ~ ~ {Tags:["s.rotater"]}
+execute as @e[tag=s.rotater] at @s run tp @s ~ ~ ~ ~12 ~
+
+
+execute as @e[tag=s.jump_reward] at @s run function syrfewr:player/hubs/jump_rewards
+#summon marker 1.93 12.00 10.04 {Tags:["s.jump_reward","s.basic_glass_jump"]}

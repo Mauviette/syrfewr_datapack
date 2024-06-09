@@ -1,4 +1,5 @@
-clear @s
+function syrfewr:player/personal_gui/clear_gui
+
 item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={item_from_mc_va:1,to_kill:1,back_cosmetic:1},item_name='{"color":"white","text":"Retour"}']
 
 execute store result storage syrfewr.temp credits int 1 run scoreboard players get @s s.credits

@@ -1,0 +1,22 @@
+{
+    "parent": "syrfewr:succes/lobby/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:red_stained_glass"
+      },
+      "title": {"text":"Verre expert","color":"dark_red"},
+      "description":  [{"text":"Débloque Skin d'arc :","color":"dark_gray"},{"text":" (WIP)","color":"gray"}],
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "syrfewr:player/advancement/jumps_secrets/hard_glass"
+    }
+  }
+  

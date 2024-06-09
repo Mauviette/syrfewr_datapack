@@ -1,0 +1,22 @@
+{
+    "parent": "syrfewr:succes/lobby/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:glass"
+      },
+      "title": {"text":"Verre basique","color":"gray"},
+      "description": {"text":"+30 crédits","color":"gold"},
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "syrfewr:player/advancement/jumps_secrets/basic_glass"
+    }
+  }
+  

@@ -1,0 +1,1 @@
+execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{earth_push:1}}}} run function coliseum:playing/classes/earth/push/hit

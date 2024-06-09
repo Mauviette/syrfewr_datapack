@@ -7,7 +7,7 @@ execute if score @s gw.PosY matches ..-65 run kill @s
 execute store result score @s gw.temp run clear @s bow[minecraft:custom_data~{starting_bow:1}] 0
 execute unless score @s gw.temp matches 1.. run function glasswar:playing/give_bow
 
-execute if block ~ ~-1 ~ crying_obsidian run effect give @s blindness 2 0 true
+execute if block ~ ~-.15 ~ crying_obsidian run effect give @s blindness 2 0 true
 execute unless entity @s[nbt={active_effects:[{id:"minecraft:wither"}]}] if block ~ ~-.15 ~ crying_obsidian run effect give @s wither 1 2 true
 
 

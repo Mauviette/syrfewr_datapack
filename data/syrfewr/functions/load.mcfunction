@@ -1,6 +1,7 @@
 ## Fonctions des modes
 function glasswar:load
 function carlos_party:load
+function coliseum:load
 
 
 ## Numbers
@@ -16,6 +17,7 @@ scoreboard players set 8 s.number 8
 scoreboard players set 9 s.number 9
 scoreboard players set 10 s.number 10
 scoreboard players set 500 s.number 500
+scoreboard players set 1000 s.number 1000
 
 
 
@@ -52,6 +54,9 @@ scoreboard objectives add s.TimeSinceLastObjectSelection dummy
 # Triggers
 scoreboard objectives add leave trigger
 scoreboard objectives add zEventTrigger trigger
+
+#Attributs
+scoreboard objectives add s.food food
 
 ## Gamerules
 gamerule doImmediateRespawn true

@@ -1,0 +1,2 @@
+execute if predicate syrfewr:random/0.005 run loot give @a[distance=..250,gamemode=!spectator] loot glasswar:special_arrows
+execute if predicate syrfewr:random/0.01 run give @a[distance=..250,gamemode=!spectator] arrow

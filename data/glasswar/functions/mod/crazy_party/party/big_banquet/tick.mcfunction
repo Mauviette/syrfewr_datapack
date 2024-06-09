@@ -1,0 +1,1 @@
+execute if predicate syrfewr:random/0.01 run execute as @a[distance=..250,gamemode=!spectator] at @s run loot give @s loot glasswar:consumable

@@ -1,0 +1,1 @@
+execute as @a[distance=..250,gamemode=!spectator] at @s if predicate syrfewr:random/0.005 run function glasswar:mod/crazy_party/party/swingers_club/swing

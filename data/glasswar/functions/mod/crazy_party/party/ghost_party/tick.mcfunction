@@ -1,0 +1,1 @@
+effect give @a[distance=..250,gamemode=!spectator] invisibility 1 0 true

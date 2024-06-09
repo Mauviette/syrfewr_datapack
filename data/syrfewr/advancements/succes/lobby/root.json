@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:golden_boots"
+      },
+      "title": {"text":"Jumps & secrets","color":"gold"},
+      "description": {"text":"Liste des jumps que vous avez réussi.","color":"dark_gray"},
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true,
+      "background": "minecraft:textures/block/snow.png"
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  
