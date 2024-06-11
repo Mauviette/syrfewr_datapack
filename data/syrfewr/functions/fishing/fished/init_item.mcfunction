@@ -1,1 +1,2 @@
 execute if entity @e[distance=..20,tag=s.glasswar_fz] run function syrfewr:fishing/fished/glasswar_zone
+execute if entity @e[distance=..20,tag=s.lobby_main_fz] run function syrfewr:fishing/fished/second_zone

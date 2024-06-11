@@ -1,14 +1,14 @@
 {
-    "parent": "syrfewr:succes/fishing/fishes/root",
+    "parent": "syrfewr:succes/fishing/trash/root",
     "display": {
       "icon": {
         "id": "minecraft:salmon",
         "components": {
-          "minecraft:custom_model_data": 1005
+          "minecraft:custom_model_data": 3
         }
       },
-      "title": {"text":"Flétan du pacifique","color":"#968164"},
-      "description": [{"text":"4 crédits\n","color":"gold"},{"text":"Et pas de l'agressif !!! 😂😂😂","color":"dark_gray"}],
+      "title": { "text":"Poisson mort","color":"gray" },
+      "description": [{"text":"-3 crédits\n","color":"red"},{ "text":"Miam !","color":"dark_gray" }],
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

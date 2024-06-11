@@ -18,3 +18,6 @@ execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unl
 
 #Arc angélique (angelicbow)
 execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:14b,components:{"minecraft:custom_data":{select_angelbow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/angelbow
+
+#Appel du vent (windcaller)
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:15b,components:{"minecraft:custom_data":{select_windcaller:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/windcaller

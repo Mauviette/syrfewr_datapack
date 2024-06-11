@@ -39,4 +39,38 @@ execute if score @s s.temp matches 10 run advancement grant @s until syrfewr:suc
 execute if score @s s.temp matches 10 run tellraw @s ["",{"text":"Boîte","color":"#90571d"},{"text":" obtenue !","color":"gray"}]
 execute if score @s s.temp matches 10 store result score @s s.creditsToAdd run random value 1..10
 
+
+execute if score @s s.temp matches 11 run advancement grant @s until syrfewr:succes/fishing/fishes/bluegill
+execute if score @s s.temp matches 11 run tellraw @s ["",{"text":"Crapet arlequin","color":"#355ded"},{"text":" obtenu !","color":"gray"}]
+execute if score @s s.temp matches 11 run scoreboard players set @s s.creditsToAdd 1
+
+execute if score @s s.temp matches 12 run advancement grant @s until syrfewr:succes/fishing/fishes/atlantic_herring
+execute if score @s s.temp matches 12 run tellraw @s ["",{"text":"Hareng","color":"#98acf6"},{"text":" obtenu !","color":"gray"}]
+execute if score @s s.temp matches 12 run scoreboard players set @s s.creditsToAdd 2
+
+execute if score @s s.temp matches 13 run advancement grant @s until syrfewr:succes/fishing/fishes/arrau_turtle
+execute if score @s s.temp matches 13 run tellraw @s ["",{"text":"Tortue arran","color":"#d0fbf9"},{"text":" obtenue !","color":"gray"}]
+execute if score @s s.temp matches 13 run scoreboard players set @s s.creditsToAdd 8
+
+execute if score @s s.temp matches 14 run advancement grant @s until syrfewr:succes/fishing/fishes/brown_trout
+execute if score @s s.temp matches 14 run tellraw @s ["",{"text":"Truite commune","color":"#9b410d"},{"text":" obtenue !","color":"gray"}]
+execute if score @s s.temp matches 14 run scoreboard players set @s s.creditsToAdd 3
+
+execute if score @s s.temp matches 15 run advancement grant @s until syrfewr:succes/fishing/fishes/tuna
+execute if score @s s.temp matches 15 run tellraw @s ["",{"text":"Thon","color":"#355ded"},{"text":" obtenu !","color":"gray"}]
+execute if score @s s.temp matches 15 run scoreboard players set @s s.creditsToAdd 4
+
+execute if score @s s.temp matches 16 run advancement grant @s until syrfewr:succes/fishing/trash/dead_fish
+execute if score @s s.temp matches 16 run tellraw @s ["",{"text":"Poisson mort","color":"dark_gray"},{"text":" obtenu !","color":"gray"}]
+execute if score @s s.temp matches 16 run scoreboard players set @s s.creditsToAdd -3
+
+execute if score @s s.temp matches 17 run advancement grant @s until syrfewr:succes/fishing/trash/message_in_a_bottle
+execute if score @s s.temp matches 17 run tellraw @s ["",{"text":"Message dans une bouteille","color":"white"},{"text":" obtenue !","color":"gray"}]
+execute if score @s s.temp matches 17 run function syrfewr:fishing/fished/message_in_a_bottle_fished
+
+execute if score @s s.temp matches 18 run advancement grant @s until syrfewr:succes/fishing/fishes/cod
+execute if score @s s.temp matches 18 run tellraw @s ["",{"text":"Morue","color":"#ac6e11"},{"text":" obtenue !","color":"gray"}]
+execute if score @s s.temp matches 18 run scoreboard players set @s s.creditsToAdd 1
+
+
 clear @s salmon[minecraft:custom_data~{fished:1}] 1

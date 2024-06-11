@@ -15,6 +15,8 @@ scoreboard players set @s s.temp 0
 execute if entity @s[advancements={syrfewr:succes/skins/bows/bonebow=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/bows/shortbow=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/bows/gun=true}] run scoreboard players add @s s.temp 1
+execute if entity @s[advancements={syrfewr:succes/skins/bows/angelbow=true}] run scoreboard players add @s s.temp 1
+execute if entity @s[advancements={syrfewr:succes/skins/bows/windcaller=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/fishing_rod/diamond=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/fishing_rod/iron=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/fishing_rod/golden=true}] run scoreboard players add @s s.temp 1

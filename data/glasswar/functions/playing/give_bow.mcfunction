@@ -11,3 +11,6 @@ execute if score @s s.SelectedBowSkinID matches 3 run give @s bow[item_name='{"c
 
 #Arc angélique (angelbow)
 execute if score @s s.SelectedBowSkinID matches 4 run give @s bow[item_name='{"color":"white","text":"Arc angélique"}',lore=['{"color":"dark_gray","italic":false,"text":"Céleste !"}'],custom_model_data=4,minecraft:custom_data={starting_bow:1,to_kill:1},minecraft:unbreakable={show_in_tooltip:false}]
+
+#Appel du vent (windcaller)
+execute if score @s s.SelectedBowSkinID matches 5 run give @s bow[item_name='{"color":"#30b05f","text":"Appel du vent"}',lore=['{"color":"dark_gray","italic":false,"text":"Wooosh !"}'],custom_model_data=5,minecraft:custom_data={starting_bow:1,to_kill:1},minecraft:unbreakable={show_in_tooltip:false}]

@@ -9,6 +9,7 @@ execute if entity @s[advancements={syrfewr:succes/fishing/fishes/perch=false}] r
 execute if entity @s[advancements={syrfewr:succes/fishing/fishes/salmon=false}] run scoreboard players add @s s.temp 1
 
 execute if entity @s[advancements={syrfewr:succes/fishing/trash/algae=false}] run scoreboard players add @s s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/trash/can=false}] run scoreboard players add @s s.temp 1
 
 execute if entity @s[advancements={syrfewr:succes/fishing/treasures/box=false}] run scoreboard players add @s s.temp 1
 

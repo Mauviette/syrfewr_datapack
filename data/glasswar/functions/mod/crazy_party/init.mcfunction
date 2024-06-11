@@ -6,4 +6,6 @@ $bossbar set gw.party_timer$(game_id) value 300
 $bossbar set gw.party_timer$(game_id) visible true
 $bossbar set gw.party_timer$(game_id) players @a[distance=..250]
 
+scoreboard players set @a[distance=..250] gw.Vies 5
+
 scoreboard players set @s gw.ModificatorTimer 300

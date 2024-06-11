@@ -1,0 +1,21 @@
+{
+    "parent": "syrfewr:succes/fishing/trash/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:salmon",
+        "components": {
+          "minecraft:custom_model_data": 4
+        }
+      },
+      "title": { "text":"Message dans une bouteille","color":"white" },
+      "description": [{ "text":"BOUTEILLE À LA MER !","color":"dark_gray" }],
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+}
