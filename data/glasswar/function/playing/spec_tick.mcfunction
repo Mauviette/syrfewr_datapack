@@ -1,0 +1,2 @@
+execute if entity @a[team=gw.hub,distance=..5] run tellraw @s {"text":"Vous êtes retourné au lobby.","color":"blue"}
+execute if entity @a[team=gw.hub,distance=..5] run function glasswar:playing/spec_leave

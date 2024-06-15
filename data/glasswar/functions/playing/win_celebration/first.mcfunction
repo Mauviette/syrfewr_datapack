@@ -1,1 +1,0 @@
-execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~ ~ ~ {Tags:["dragon_flex"],DeathLootTable:"minecraft:empty"}

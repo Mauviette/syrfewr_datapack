@@ -1,0 +1,1 @@
+summon creeper ~ ~.6 ~ {ExplosionRadius:1b,Fuse:0,ignited:1b,CustomName:'{"color":"#d13100","text":"Flèche explosive"}'}

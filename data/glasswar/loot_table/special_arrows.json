@@ -1,0 +1,309 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 6381921,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 2,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Fait apparaître un silverfish là où elle atterit.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche à silverfish\",\"color\":\"#616161\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 10417663,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 4,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Détruit le verre en 3x3 là où elle atterit.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche de dématérialisation\",\"color\":\"#9EF5FF\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 8323225,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 5,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Pose un piège là où elle atterit.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche piegée\",\"color\":\"#7F0099\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 13709568,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 6,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Provoque une explosion ne cassant pas les blocs en atterissant.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche explosive\",\"color\":\"#d13100\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 2769
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Provoque une pluie de mini-flèches explosives en volant.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche à pluie\",\"color\":\"#000ad1\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 11895324
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Explose un court instant après avoir été tiré, projettant des mini-flèches explosives dans toutes les directions.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche à fragmentation\",\"color\":\"#b5821c\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16710447,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 9,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Peu de temps après avoir atteri, invoque la foudre.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche foudroyante\",\"color\":\"#fefb2f\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 1513239,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 10,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Crée une zone de fumée aveuglante.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche fumigène\",\"color\":\"#171717\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 8454924
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Explose longtemps après avoir atteri, provoquant une grosse explosion cassant les blocs.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche à détonation\",\"color\":\"#81030c\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 22,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 13750737,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 14,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Crée une zone de vent qui repousse toutes les entités autour.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche tempête\",\"color\":\"#d1d1d1\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 14286781,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 15,
+                      "duration": 10,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Une fois plantée, prend 3s à s'amorcer.\",\"color\":\"dark_gray\",\"italic\":false}", "{\"text\":\"Vous pouvez vous accroupir pour déclencher une explosion au niveau de la flèche.\",\"color\":\"dark_gray\",\"italic\":false}", "{\"text\":\"Les autres joueurs voient cette flèche comme une flèche normale.\",\"color\":\"dark_gray\",\"italic\":false}"
+                ],
+                "minecraft:item_name": "{\"text\":\"Flèche minée\",\"color\":\"#d9ffbd\"}",
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

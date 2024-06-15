@@ -1,0 +1,3 @@
+execute if score @s gw.ModificatorID matches 1 run tellraw @a[distance=..250] ["",{"text":"Modificateur : "},{"text":"Ruée aérienne","color":"gray"}]
+execute if score @s gw.ModificatorID matches 2 run tellraw @a[distance=..250] ["",{"text":"Modificateur : "},{"text":"Grand bazar","color":"red"}]
+execute if score @s gw.ModificatorID matches 4 run tellraw @a[distance=..250] ["",{"text":"Modificateur : "},{"text":"Fête de fou","color":"#df2e90"}]

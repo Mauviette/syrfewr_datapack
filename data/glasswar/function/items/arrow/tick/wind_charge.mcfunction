@@ -1,0 +1,1 @@
+$summon breeze_wind_charge ~ ~ ~ {acceleration_power:1d,Motion:[$(x),$(y),$(z)]}

@@ -1,0 +1,1 @@
+give @p oak_hanging_sign[block_entity_data={id:"minecraft:oak_hanging_sign",front_text:{has_glowing_text:1b,messages:['{"text":""}','{"text":"Mode","clickEvent":{"action":"run_command","value":"/trigger zEventTrigger set 2"}}','{"text":"spectateur"}','{"text":""}']}}] 1

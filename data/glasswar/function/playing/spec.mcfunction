@@ -1,0 +1,3 @@
+tp @s @p[tag=gw.playing,gamemode=!spectator]
+tellraw @s ["",{"text":"Vous entrez en mode spectateur.","color":"green"},{"text":"\n"},{"text":"Naviguez entre les joueurs à l'aide de la barre d'outils.\nEntrez la commande ","color":"gray"},{"text":"/trigger leave","underlined":true,"color":"gray","clickEvent":{"action":"suggest_command","value":"/trigger leave"}},{"text":" ou cliquez ","color":"gray"},{"text":"ici","underlined":true,"color":"gray","clickEvent":{"action":"run_command","value":"/trigger leave"}},{"text":" pour quitter le mode spectateur.","color":"gray"}]
+function glasswar:playing/set_spec
