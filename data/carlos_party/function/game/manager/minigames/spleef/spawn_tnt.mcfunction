@@ -1,0 +1,1 @@
+$summon tnt ~$(x) ~$(y) ~$(z) {fuse:$(fuse),Tags:["cp.spleef_tnt"]}

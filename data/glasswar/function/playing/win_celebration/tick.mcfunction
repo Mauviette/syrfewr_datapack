@@ -15,3 +15,5 @@ execute if score @s s.SelectedVictoryAnimationID matches 4 unless entity @s[game
 execute if score @s s.SelectedVictoryAnimationID matches 4 unless entity @s[gamemode=adventure] run setblock ~ ~-2 ~ tnt
 execute if score @s s.SelectedVictoryAnimationID matches 4 run item replace entity @s weapon.mainhand with flint_and_steel
 execute if score @s s.SelectedVictoryAnimationID matches 4 run particle smoke ~ ~1.2 ~ 0.2 0.4 0.2 .2 1 force
+
+execute if score @s s.SelectedVictoryAnimationID matches 5 run particle minecraft:trial_spawner_detection_ominous ~ ~1.2 ~ .2 .6 .2 .1 3

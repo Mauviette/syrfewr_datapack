@@ -24,6 +24,7 @@ execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/chicke
 execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/dragon_flex=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/explosive_festival=true}] run scoreboard players add @s s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/rich=true}] run scoreboard players add @s s.temp 1
+execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/vengeance=true}] run scoreboard players add @s s.temp 1
 
 execute store result storage syrfewr.temp completed int 1 run scoreboard players get @s s.temp
 

@@ -1,0 +1,1 @@
+execute if predicate syrfewr:random/0.01 run function carlos_party:game/manager/minigames/spleef/spawn_tnt_init

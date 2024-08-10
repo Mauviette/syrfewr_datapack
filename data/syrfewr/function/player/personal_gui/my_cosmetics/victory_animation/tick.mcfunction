@@ -14,3 +14,5 @@ execute if score @s s.GuiPageID matches 4 if score @s s.GuiIndexID matches 1 unl
 execute if score @s s.GuiPageID matches 4 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:13b,components:{"minecraft:custom_data":{select_dragon_flex:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/victory_animation/clicked/select/dragon_flex
 
 execute if score @s s.GuiPageID matches 4 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:14b,components:{"minecraft:custom_data":{select_explosive_festival:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/victory_animation/clicked/select/explosive_festival
+
+execute if score @s s.GuiPageID matches 4 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:15b,components:{"minecraft:custom_data":{select_vengeance:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/victory_animation/clicked/select/vengeance

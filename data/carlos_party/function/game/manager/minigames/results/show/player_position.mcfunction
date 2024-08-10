@@ -1,0 +1,2 @@
+tellraw @a[distance=..200] ["",{"score":{"name":"@n[tag=cp.game_manager]","objective":"s.temp"},"color":"#7a7a7a"},{"text":". ","color":"#7a7a7a"},{"selector":"@s","color":"#7a7a7a"},{"text":" | +","color":"#7a7a7a"},{"score":{"name":"@n[tag=cp.game_manager]","objective":"s.temp2"},"color":"#7a7a7a"},{"text":" pt ","color":"#7a7a7a"}]
+scoreboard players operation @s cp.points += @n[tag=cp.game_manager] s.temp2

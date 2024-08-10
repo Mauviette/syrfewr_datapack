@@ -1,0 +1,1 @@
+execute if score @s cp.MiniGameTimer matches 60.. run function carlos_party:game/manager/minigames/interlude/reset

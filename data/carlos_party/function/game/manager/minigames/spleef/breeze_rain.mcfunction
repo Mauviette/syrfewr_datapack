@@ -1,0 +1,1 @@
+execute if predicate syrfewr:random/0.025 run function carlos_party:game/manager/minigames/spleef/spawn_breeze_init
