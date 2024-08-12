@@ -8,8 +8,8 @@ execute if score @s cp.MiniGameTimer matches 127 run function carlos_party:game/
 execute if score @s cp.MiniGameTimer matches 127 run gamemode adventure @a[distance=..250,tag=cp.playing]
 execute if score @s cp.MiniGameTimer matches 127 run clear @a[distance=..250,tag=cp.playing]
 execute if score @s cp.MiniGameTimer matches 127 run effect clear @a[distance=..250,tag=cp.playing]
-execute if score @s cp.MiniGameTimer matches 127 run item replace entity @a[distance=..250,tag=cp.playing] weapon.mainhand with iron_shovel[can_break={predicates:[{blocks:"snow_block"}]},unbreakable={},custom_data={SpleefShovel:1},enchantments={levels:{"minecraft:efficiency":5}}]
-execute if score @s cp.MiniGameTimer matches 127 run item replace entity @a[distance=..250,tag=cp.playing] weapon.offhand with wind_charge[max_stack_size=99] 99
+execute if score @s cp.MiniGameTimer matches 127 run item replace entity @a[distance=..250,tag=cp.playing] weapon.mainhand with iron_shovel[can_break={predicates:[{blocks:"snow_block"}]},unbreakable={},custom_data={SpleefShovel:1,CantBeDropped:1},enchantments={levels:{"minecraft:efficiency":5}}]
+#execute if score @s cp.MiniGameTimer matches 127 run item replace entity @a[distance=..250,tag=cp.playing] weapon.offhand with wind_charge[max_stack_size=99] 99
 execute if score @s cp.MiniGameTimer matches 127 run effect give @a[distance=..250,tag=cp.playing] slowness 5 15 true
 execute if score @s cp.MiniGameTimer matches 127 run effect give @a[distance=..250,tag=cp.playing] mining_fatigue 5 15 true
 execute if score @s cp.MiniGameTimer matches 127 as @a[distance=..250,tag=cp.playing] run attribute @s minecraft:generic.jump_strength modifier add mode_init -50 add_value

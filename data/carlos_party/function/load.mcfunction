@@ -17,7 +17,7 @@ team modify cp.hub prefix ["",{"text":"[","color":"gray"},{"text":"\uE200","colo
 #team modify cp.playing friendlyFire false
 #team modify cp.playing nametagVisibility hideForOtherTeams
 #team modify cp.playing seeFriendlyInvisibles true
-##team modify cp.playing prefix ["",{"text":"[","color":"#cb5dac"},{"text":"\uE200","color": "white"},{"text":"] ","color":"#cb5dac"}]
+#team modify cp.playing prefix ["",{"text":"[","color":"#cb5dac"},{"text":"\uE200","color": "white"},{"text":"] ","color":"#cb5dac"}]
 #team modify cp.playing prefix {"text":""}
 
 
@@ -40,9 +40,15 @@ scoreboard objectives add cp.MiniGameTimer dummy
 scoreboard objectives add cp.MiniGameID dummy
 scoreboard objectives add cp.MiniGameCount dummy
 scoreboard objectives add cp.DeadPlayers dummy
+scoreboard objectives add cp.PlayingTurn dummy
+scoreboard objectives add cp.TurnTimer dummy
+scoreboard objectives add cp.MiniGameTemp dummy
 
 #Joueurs
 scoreboard objectives add cp.points dummy
 scoreboard objectives add cp.position dummy
 scoreboard objectives add cp.MiniGamePosition dummy
 scoreboard objectives add cp.isDead deathCount
+
+
+scoreboard players set $max cp.MiniGameCount 3

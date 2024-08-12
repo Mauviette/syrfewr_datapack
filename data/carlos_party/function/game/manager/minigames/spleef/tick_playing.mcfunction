@@ -7,3 +7,6 @@ execute if score @s cp.MiniGameTimer matches 1128.. run function carlos_party:ga
 execute if score @s cp.MiniGameTimer matches 1628.. run function carlos_party:game/manager/minigames/spleef/very_long_game
 
 execute as @a[tag=cp.spleef,distance=..200] at @s if block ~ ~ ~ lava run kill @s
+
+execute as @a[tag=cp.spleef,distance=..200] store result score @s s.temp run clear @s minecraft:snowball 0
+execute as @a[tag=cp.spleef,distance=..200] if score @s s.temp matches 16.. run function carlos_party:game/manager/minigames/spleef/give_wind_charge

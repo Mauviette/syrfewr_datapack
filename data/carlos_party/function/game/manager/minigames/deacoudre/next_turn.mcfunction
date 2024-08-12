@@ -1,0 +1,2 @@
+scoreboard players remove @a[distance=..250,tag=cp.deacoudre] cp.PlayingTurn 1
+execute as @a[distance=..250,tag=cp.deacoudre,scores={cp.PlayingTurn=0}] run function carlos_party:game/manager/minigames/deacoudre/my_turn
