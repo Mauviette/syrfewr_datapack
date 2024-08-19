@@ -43,6 +43,9 @@ scoreboard objectives add cp.DeadPlayers dummy
 scoreboard objectives add cp.PlayingTurn dummy
 scoreboard objectives add cp.TurnTimer dummy
 scoreboard objectives add cp.MiniGameTemp dummy
+scoreboard objectives add cp.MiniGameTemp2 dummy
+scoreboard objectives add cp.MiniGameAltTimer dummy
+scoreboard objectives add cp.MiniGameAltTimer2 dummy
 
 #Joueurs
 scoreboard objectives add cp.points dummy
@@ -51,4 +54,4 @@ scoreboard objectives add cp.MiniGamePosition dummy
 scoreboard objectives add cp.isDead deathCount
 
 
-scoreboard players set $max cp.MiniGameCount 3
+scoreboard players set $max cp.MiniGameCount 4

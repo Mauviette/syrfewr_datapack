@@ -1,0 +1,1 @@
+$team modify cp.playing$(game_id) friendlyFire true

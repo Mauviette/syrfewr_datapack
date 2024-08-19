@@ -1,5 +1,6 @@
 scoreboard players add @s cp.MiniGameCount 1
 tag @a[tag=cp.spleef,distance=..200] add cp.winner
+clear @a[tag=cp.spleef,distance=..200]
 tag @a[tag=cp.spleef,distance=..200] remove cp.spleef
 title @a[distance=..200] times 5t 40t 5t
 title @a[distance=..200] title {"selector": "@a[tag=cp.winner]","color":"green","bold":true}

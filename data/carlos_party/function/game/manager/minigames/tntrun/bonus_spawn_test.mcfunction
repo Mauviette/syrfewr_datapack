@@ -1,0 +1,1 @@
+execute as @r[tag=cp.tntrun,distance=..250,predicate=syrfewr:on_ground] run function carlos_party:game/manager/minigames/tntrun/bonus_spawn

@@ -1,3 +1,4 @@
+kill @e[distance=..200,type=!marker,type=!player]
 
 place template carlos_party:minigame/deacoudre1 ~ ~ ~
 scoreboard players set @s cp.PlayingTurn 0
