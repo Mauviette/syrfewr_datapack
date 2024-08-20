@@ -33,6 +33,8 @@ kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{to_kill:1}}}}]
 #Pêche
 execute as @a at @s if entity @e[tag=s.fishing_zone,distance=..8] run function syrfewr:fishing/near_fishing_zone
 execute as @a at @s unless entity @e[tag=s.fishing_zone,distance=..12] run clear @s fishing_rod[minecraft:custom_data~{fishing_rod:1}]
+
+#execute positioned 36.5 163.00 -6.50 run summon marker ~ ~ ~ {Tags:["s.fishing_zone","s.lobby_main_fz"]}
  
 execute as @a at @s store result score @s s.temp run clear @s salmon[minecraft:custom_data~{fished:1}] 0
 execute as @a at @s if score @s s.temp matches 1.. run function syrfewr:fishing/fished/as_player

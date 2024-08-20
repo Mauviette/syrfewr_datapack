@@ -1,0 +1,6 @@
+
+execute unless data entity @s {Inventory:[{Slot:10b,components:{"minecraft:custom_data":{favorite_color:1}}}]} run function syrfewr:player/personal_gui/more/settings/clicked/switch_color
+
+execute unless data entity @s {Inventory:[{Slot:35b,components:{"minecraft:custom_data":{settings:1}}}]} run function syrfewr:player/personal_gui/more/settings/clicked/box
+execute unless data entity @s {Inventory:[{Slot:27b,components:{"minecraft:custom_data":{back_to_more:1}}}]} run function syrfewr:player/personal_gui/more/settings/clicked/back
+

@@ -6,3 +6,5 @@ execute if score @s s.GuiPageID matches 1 unless data entity @s {Inventory:[{Slo
 
 execute if score @s s.GuiPageID matches 1 unless data entity @s {Inventory:[{Slot:35b,components:{"minecraft:custom_data":{my_cosmetics:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/main/clicked/box
 execute if score @s s.GuiPageID matches 1 unless data entity @s {Inventory:[{Slot:9b,components:{"minecraft:custom_data":{my_cosmetics_display:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/main/clicked/my_cosmetics_display
+
+execute if score @s s.GuiPageID matches 1 unless data entity @s {Inventory:[{Slot:18b,components:{"minecraft:custom_data":{my_cosmetics_info:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/main/clicked/info

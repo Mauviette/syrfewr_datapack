@@ -9,4 +9,8 @@ execute if score @s s.GuiPageID matches 4 if score @s s.GuiIndexID matches 1 run
 
 execute if score @s s.GuiPageID matches 10 run function syrfewr:player/personal_gui/gamemodes/tick
 
+execute if score @s s.GuiPageID matches 20 run function syrfewr:player/personal_gui/more/main/tick
+execute if score @s s.GuiPageID matches 21 run function syrfewr:player/personal_gui/more/my_quests/tick
+execute if score @s s.GuiPageID matches 22 run function syrfewr:player/personal_gui/more/settings/tick
+
 scoreboard players add @s s.TimeSinceLastObjectSelection 1

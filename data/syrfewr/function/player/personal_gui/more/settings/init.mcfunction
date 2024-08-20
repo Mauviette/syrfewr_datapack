@@ -1,0 +1,19 @@
+function syrfewr:player/personal_gui/clear_gui
+
+execute unless score @s s.favoriteColor matches 1.. run scoreboard players set @s s.favoriteColor 1
+#1: rouge, 2: vert, 3: bleu, 4: jaune, 5: rose, 6: violet, 7: cyan, 8: gris, 9: noir, 10: blanc
+execute if score @s s.favoriteColor matches 1 run item replace entity @s inventory.1 with red_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Rouge","color":"red"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 2 run item replace entity @s inventory.1 with lime_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Vert","color":"green"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 3 run item replace entity @s inventory.1 with blue_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Bleu","color":"blue"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 4 run item replace entity @s inventory.1 with yellow_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Jaune","color":"yellow"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 5 run item replace entity @s inventory.1 with pink_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Rose","color":"light_purple"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 6 run item replace entity @s inventory.1 with purple_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Violet","color":"dark_purple"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 7 run item replace entity @s inventory.1 with cyan_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Cyan","color":"aqua"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 8 run item replace entity @s inventory.1 with gray_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Gris","color":"dark_gray"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 9 run item replace entity @s inventory.1 with black_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Noir","color":"black"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.favoriteColor matches 10 run item replace entity @s inventory.1 with white_dye[custom_data={item_from_settings:1,to_kill:1,favorite_color:1},item_name='{"text":"Blanc","color":"white"}',lore=['{"text":"Couleur preférée","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+
+
+item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={item_from_settings:1,to_kill:1,back_to_more:1},item_name='{"color":"white","text":"Retour"}']
+
+item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=103,custom_data={item_from_settings:1,to_kill:1,settings:1},item_name='{"text":""}']

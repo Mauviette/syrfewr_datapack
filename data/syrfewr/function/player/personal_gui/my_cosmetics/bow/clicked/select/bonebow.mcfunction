@@ -7,7 +7,7 @@ execute if entity @s[advancements={syrfewr:succes/skins/bows/bonebow=true}] run 
 clear @s bow[custom_data~{select_bonebow:1}]
 function syrfewr:player/personal_gui/my_cosmetics/bow/init
 
-execute if entity @s[advancements={syrfewr:succes/skins/bows/bonebow=false}] if score @s s.TimeSinceLastObjectSelection matches ..30 if score @s s.SelectedObjectID matches 2 if score @s s.credits matches 40.. run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/buy/bonebow
+execute if entity @s[advancements={syrfewr:succes/skins/bows/bonebow=false}] if score @s s.TimeSinceLastObjectSelection matches ..30 if score @s s.SelectedObjectID matches 2 if score @s s.credits >= #bow_unusual price run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/buy/bonebow
 
 scoreboard players set @s s.TimeSinceLastObjectSelection 0
 scoreboard players set @s s.SelectedObjectID 2

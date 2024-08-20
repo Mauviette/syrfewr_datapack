@@ -1,2 +1,3 @@
-scoreboard players remove @s s.credits 40
+scoreboard players operation @s s.credits -= #bow_unusual price
+
 advancement grant @s only syrfewr:succes/skins/bows/bonebow

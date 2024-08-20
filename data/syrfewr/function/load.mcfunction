@@ -62,6 +62,8 @@ scoreboard objectives add s.food food
 
 #Infos joueurs
 scoreboard objectives add s.playerGender dummy
+scoreboard objectives add s.favoriteColor dummy
+#1: rouge, 2: vert, 3: bleu, 4: jaune, 5: rose, 6: violet, 7: cyan, 8: gris, 9: noir, 10: blanc
 
 ## Gamerules
 gamerule doImmediateRespawn true
@@ -92,10 +94,27 @@ team add noC
 team modify noC collisionRule never
 
 ## Lobby
-execute in syrfewr:lobby run forceload add -10 -10 10 10
-execute in syrfewr:lobby run place template syrfewr:lobby/1 -2 79 -2
+#execute in syrfewr:lobby run forceload add -10 -10 10 10
+#execute in syrfewr:lobby run place template syrfewr:lobby/1 -2 79 -2
+
+execute in syrfewr:lobby run forceload add -100 -100 100 100
+execute in syrfewr:lobby positioned 0 0 0 unless block ~ ~1 ~ gold_block run function syrfewr:lobby/load
 
 
 # display pv
 scoreboard objectives add s.health health {"text":"❤","color":"red"}
 scoreboard objectives setdisplay below_name s.health
+
+
+
+
+#Prix cosmétiques
+scoreboard objectives add price dummy
+
+scoreboard players set #victory_animation_unusual price 40
+scoreboard players set #victory_animation_rare price 60
+scoreboard players set #victory_animation_epic price 90
+
+scoreboard players set #bow_unusual price 40
+scoreboard players set #bow_rare price 60
+scoreboard players set #bow_epic price 90

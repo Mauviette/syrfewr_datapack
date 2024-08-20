@@ -1,2 +1,2 @@
-scoreboard players remove @s s.credits 90
+scoreboard players operation @s s.credits -= #bow_epic price
 advancement grant @s only syrfewr:succes/skins/bows/gun
