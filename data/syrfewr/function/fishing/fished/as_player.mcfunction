@@ -74,3 +74,6 @@ execute if score @s s.temp matches 18 run scoreboard players set @s s.creditsToA
 
 
 clear @s salmon[minecraft:custom_data~{fished:1}] 1
+
+
+function syrfewr:player/quests/check_fishes

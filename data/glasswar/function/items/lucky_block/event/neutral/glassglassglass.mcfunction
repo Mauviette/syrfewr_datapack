@@ -1,0 +1,1 @@
+fill ~ ~-32 ~ ~ ~32 ~ gray_stained_glass destroy

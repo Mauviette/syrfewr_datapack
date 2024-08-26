@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'"Grobaton"',Item:{id:"minecraft:stick",count:1,components:{"minecraft:custom_model_data":1,"minecraft:item_name":'"Grobaton"',"minecraft:enchantments":{levels:{"minecraft:knockback":2}},"max_damage":16,"max_stack_size":1}}}

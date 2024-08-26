@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {"id": "item_display", "required": false},
+        {"id": "item", "required": false},
+        {"id": "marker", "required": false},
+        {"id": "area_effect_cloud", "required": false}
+    ]
+}

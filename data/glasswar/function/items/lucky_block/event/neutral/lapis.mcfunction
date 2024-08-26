@@ -1,0 +1,1 @@
+summon falling_block ~ ~3 ~ {Motion:[0.0,0.5,0.0],BlockState:{Name:"minecraft:lapis_block"},Time:1}

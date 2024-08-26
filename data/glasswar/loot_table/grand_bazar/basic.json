@@ -4,6 +4,11 @@
         "rolls": 1,
         "entries": [
           {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:random",
+            "weight": 1000
+          },
+          {
             "type": "minecraft:item",
             "name": "minecraft:oak_sapling",
             "weight": 3,

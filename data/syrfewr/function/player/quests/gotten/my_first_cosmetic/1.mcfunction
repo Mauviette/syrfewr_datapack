@@ -1,2 +1,2 @@
-tellraw @s ["",{"text":"Quête : ","color":"dark_green"},{"text":"Mon premier cosmétique ","color":"white"},{"text":"terminée!","color":"dark_green"}]
-scoreboard players add @s s.creditsToAdd 20
+tellraw @s ["",{"text":"[QUÊTE] ","color":"gray"},{"text":"Mon premier cosmétique :","color":"dark_green"},{"text":" Étape 1 terminée!","color":"green"}]
+playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 1 2

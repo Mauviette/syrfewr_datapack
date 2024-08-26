@@ -1,0 +1,22 @@
+execute store result score @s s.temp2 run random value 1..20
+
+execute if score @s s.temp2 matches 1 run function glasswar:items/lucky_block/event/neutral/bread
+execute if score @s s.temp2 matches 2 run function glasswar:items/lucky_block/event/neutral/buckets
+execute if score @s s.temp2 matches 3 run function glasswar:items/lucky_block/event/neutral/dungeonchest
+execute if score @s s.temp2 matches 4 run function glasswar:items/lucky_block/event/neutral/fallingcake
+execute if score @s s.temp2 matches 5 run function glasswar:items/lucky_block/event/neutral/fireball
+execute if score @s s.temp2 matches 6 run function glasswar:items/lucky_block/event/neutral/froglights
+execute if score @s s.temp2 matches 7 run function glasswar:items/lucky_block/event/neutral/glassglassglass
+execute if score @s s.temp2 matches 8 run function glasswar:items/lucky_block/event/neutral/knockbackstick
+execute if score @s s.temp2 matches 9 run function glasswar:items/lucky_block/event/neutral/lapis
+execute if score @s s.temp2 matches 10 run function glasswar:items/lucky_block/event/neutral/leather
+execute if score @s s.temp2 matches 11 run function glasswar:items/lucky_block/event/neutral/light_snack
+execute if score @s s.temp2 matches 12 run function glasswar:items/lucky_block/event/neutral/luckynotlucky
+execute if score @s s.temp2 matches 13 run function glasswar:items/lucky_block/event/neutral/onlyhope
+execute if score @s s.temp2 matches 14 run function glasswar:items/lucky_block/event/neutral/pigstack
+execute if score @s s.temp2 matches 15 run function glasswar:items/lucky_block/event/neutral/primedtnt
+execute if score @s s.temp2 matches 16 run function glasswar:items/lucky_block/event/neutral/problembedrock
+execute if score @s s.temp2 matches 17 run function glasswar:items/lucky_block/event/neutral/quartz
+execute if score @s s.temp2 matches 18 run function glasswar:items/lucky_block/event/neutral/thowingsheep
+execute if score @s s.temp2 matches 19 run function glasswar:items/lucky_block/event/neutral/timeshift
+execute if score @s s.temp2 matches 20 run function glasswar:items/lucky_block/event/neutral/wool

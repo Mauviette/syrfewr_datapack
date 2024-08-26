@@ -1,0 +1,1 @@
+execute if entity @s[advancements={syrfewr:succes/lobby/hard_glass=true}] run advancement grant @s only syrfewr:quests/pro_du_saut/1

@@ -28,7 +28,7 @@ execute in syrfewr:glasswar as @e[distance=0..,nbt={active_effects:[{id:"minecra
 
 
 #Objets
-execute as @a[scores={gw.DeliciousClayTimerc=1..}] at @s run function glasswar:items/consumable/duration/delicious_clay
+execute as @a[scores={gw.DeliciousClayTimer=1..}] at @s run function glasswar:items/consumable/duration/delicious_clay
 scoreboard players remove @a[scores={gw.CooldownFireballThrow=1..}] gw.CooldownFireballThrow 1
 execute as @a[scores={gw.BrokenGlass=1..}] at @s if data entity @s {SelectedItem:{components:{"minecraft:item_name":'"Pioche de récupération"'}}} run give @s minecraft:glass
 execute as @a[scores={gw.BrokenGlassPane=1..}] at @s if data entity @s {SelectedItem:{components:{"minecraft:item_name":'"Pioche de récupération"'}}} run give @s minecraft:glass_pane
@@ -56,7 +56,7 @@ execute as @e[scores={gw.WindZoneTimer=1..}] at @s run function glasswar:items/a
 execute as @a[team=gw.hub] at @s run function syrfewr:player/in_lobby
 
 #Test
-execute as @e[tag=gw.player_spawner] at @s run fill ~ ~ ~ ~ ~1 ~ air destroy
+execute as @e[tag=gw.player_spawner] at @s run fill ~ ~60 ~ ~ ~61 ~ air destroy
 execute as @e[tag=gw.player_spawner] at @s run setblock ~ ~-1 ~ bedrock
 
 #GUI
@@ -74,3 +74,6 @@ execute as @a[team=gw.hub] at @s if score @s gw.temp matches 1.. run function gl
 execute as @e[tag=gw.to_name] at @s run function glasswar:mobs/name_init
 
 execute as @a[tag=gw.spec] at @s run function glasswar:playing/spec_tick
+
+
+execute as @e[tag=gw.lucky_block] at @s run function glasswar:items/lucky_block/tick

@@ -1,0 +1,1 @@
+advancement grant @s only syrfewr:succes/skins/fishing_rod/diamond

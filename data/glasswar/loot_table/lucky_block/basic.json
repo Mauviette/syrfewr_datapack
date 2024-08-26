@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:lucky_block/normal",
+            "weight": 100
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:lucky_block/lucky",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:lucky_block/unlucky",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:lucky_block/loot",
+            "weight": 100
+          }
+        ]
+      }
+    ]
+  }

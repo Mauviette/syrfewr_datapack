@@ -1,0 +1,1 @@
+item replace entity @s inventory.3 with gray_shulker_box[custom_data={ui:1,item_from_lootboxes:1,to_kill:1,common_lootbox:1},item_name='{"color":"gray","text":"Lootbox commune"}',lore=['{"color":"gray","text":"Quantité : $(nb_common)","italic":true}']]

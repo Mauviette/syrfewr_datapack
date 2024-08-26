@@ -1,0 +1,1 @@
+execute if score @s s.GuiPageID matches 21 run function syrfewr:player/personal_gui/more/my_quests/init

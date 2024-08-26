@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ lime_stained_glass run function glasswar:items/lucky_block/lucky/broken

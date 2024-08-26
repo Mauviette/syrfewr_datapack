@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_helmet",count:1,components:{"minecraft:item_name":'{"color":"aqua","text":"Chapeau bleu brillant"}',"minecraft:rarity":"epic","minecraft:enchantments":{levels:{"minecraft:protection":2,"minecraft:mending":1,"minecraft:unbreaking":3}},"minecraft:enchantment_glint_override":true}}}

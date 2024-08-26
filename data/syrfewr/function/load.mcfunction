@@ -30,14 +30,13 @@ scoreboard objectives setdisplay list s.displayList
 scoreboard objectives add s.temp dummy
 scoreboard objectives add s.temp2 dummy
 
-scoreboard objectives add s.credits dummy
-scoreboard objectives add s.creditsToAdd dummy
 
 scoreboard objectives add s.TalkedToVillager minecraft.custom:minecraft.talked_to_villager
 
 scoreboard objectives add s.ActionCooldown dummy
 
 scoreboard objectives add s.killedPlayer playerKillCount
+
 #Personal GUI
 scoreboard objectives add s.GuiPageID dummy
 scoreboard objectives add s.GuiIndexID dummy
@@ -62,8 +61,22 @@ scoreboard objectives add s.food food
 
 #Infos joueurs
 scoreboard objectives add s.playerGender dummy
+#1: masculin, 2: féminin, 3: neutre
 scoreboard objectives add s.favoriteColor dummy
 #1: rouge, 2: vert, 3: bleu, 4: jaune, 5: rose, 6: violet, 7: cyan, 8: gris, 9: noir, 10: blanc
+scoreboard objectives add s.computerPower dummy
+#1: patate, 2: medium, 3: ultra
+
+scoreboard objectives add s.credits dummy
+scoreboard objectives add s.creditsToAdd dummy
+
+scoreboard objectives add s.common_lootboxes dummy
+scoreboard objectives add s.unusual_lootboxes dummy
+scoreboard objectives add s.rare_lootboxes dummy
+scoreboard objectives add s.epic_lootboxes dummy
+scoreboard objectives add s.legendary_lootboxes dummy
+scoreboard objectives add s.mythic_lootboxes dummy
+
 
 ## Gamerules
 gamerule doImmediateRespawn true
@@ -118,3 +131,20 @@ scoreboard players set #victory_animation_epic price 90
 scoreboard players set #bow_unusual price 40
 scoreboard players set #bow_rare price 60
 scoreboard players set #bow_epic price 90
+
+
+
+scoreboard players set #common_lootbox price 20
+scoreboard players set #unusual_lootbox price 40
+scoreboard players set #rare_lootbox price 60
+scoreboard players set #epic_lootbox price 90
+scoreboard players set #legendary_lootbox price 160
+scoreboard players set #mythic_lootbox price 300
+
+
+execute store result storage s.lootboxes common_price int 1 run scoreboard players get #common_lootbox price
+execute store result storage s.lootboxes unusual_price int 1 run scoreboard players get #unusual_lootbox price
+execute store result storage s.lootboxes rare_price int 1 run scoreboard players get #rare_lootbox price
+execute store result storage s.lootboxes epic_price int 1 run scoreboard players get #epic_lootbox price
+execute store result storage s.lootboxes legendary_price int 1 run scoreboard players get #legendary_lootbox price
+execute store result storage s.lootboxes mythic_price int 1 run scoreboard players get #mythic_lootbox price

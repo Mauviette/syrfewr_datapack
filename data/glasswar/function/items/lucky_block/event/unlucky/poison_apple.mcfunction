@@ -1,0 +1,1 @@
+summon potion ~ ~ ~ {Glowing:0b,CustomNameVisible:1b,Motion:[0.0,.5,0.0],CustomName:'{"color":"gold","text":"Pomme chanceuse"}',Item:{id:"minecraft:enchanted_golden_apple",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}}

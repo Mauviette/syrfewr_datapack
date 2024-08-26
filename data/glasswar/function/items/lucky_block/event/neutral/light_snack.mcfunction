@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:flint",count:1,components:{"minecraft:item_name":'{"text":"Repas copieux","italic":false}',"minecraft:lore":['{"text":"Miam!"}'],"minecraft:attribute_modifiers":{modifiers:[],show_in_tooltip:false},"minecraft:food":{nutrition:5,saturation:5,can_always_eat:false,eat_seconds:2}}}}

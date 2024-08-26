@@ -1,0 +1,1 @@
+setblock ~ ~ ~ chest{LootTable:"chests/simple_dungeon"} replace

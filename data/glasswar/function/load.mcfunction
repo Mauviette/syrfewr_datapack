@@ -55,6 +55,7 @@ scoreboard objectives add gw.FfaGames dummy
 scoreboard objectives add gw.TeamGames dummy
 scoreboard objectives add gw.TotalGames dummy
 scoreboard objectives add gw.TotalWins dummy
+scoreboard objectives add gw.timeSinceDeath dummy
 
 
 ## Teams

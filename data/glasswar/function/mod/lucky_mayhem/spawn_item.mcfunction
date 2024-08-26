@@ -1,0 +1,1 @@
+execute at @e[tag=gw.item_spawner,distance=..350] run loot spawn ~ ~.3 ~ loot glasswar:lucky_block/basic

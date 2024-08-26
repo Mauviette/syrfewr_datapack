@@ -21,3 +21,7 @@ execute if data entity @s {Inventory:[{id:"minecraft:red_mushroom",Slot:-106b}]}
 #Mods
 execute if entity @s[tag=gw.playing_air_rush] unless data entity @s {Inventory:[{id:"minecraft:elytra",Slot:102b}]} run function glasswar:mod/air_rush/no_elytra
 
+
+execute if score @s gw.timeSinceDeath matches 2 run function syrfewr:method/go_to_ground
+execute if score @s gw.timeSinceDeath matches 2 at @s run tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager]
+scoreboard players add @s gw.timeSinceDeath 1

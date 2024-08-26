@@ -5,7 +5,7 @@ summon marker ~1 ~ ~ {Tags:["gw.player_spawner"]}
 tag @a[tag=gw.starting_blue_end,distance=..200] add gw.starting_blue_being_treated
 
 tp @a[tag=gw.starting_blue_being_treated] ~1 ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager_init]
-spawnpoint @a[tag=gw.starting_blue_being_treated] ~1 ~ ~ 180
+spawnpoint @a[tag=gw.starting_blue_being_treated] ~1 ~60 ~ 180
 kill @a[tag=gw.starting_blue_being_treated]
 scoreboard players reset @a[tag=gw.starting_blue_being_treated] gw.estMort
 
