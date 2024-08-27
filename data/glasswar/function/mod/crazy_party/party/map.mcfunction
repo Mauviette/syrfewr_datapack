@@ -16,3 +16,5 @@ execute if score @s gw.ModificatorIndex matches 14 run function glasswar:mod/cra
 execute if score @s gw.ModificatorIndex matches 15 run function glasswar:mod/crazy_party/party/size_change/tick
 execute if score @s gw.ModificatorIndex matches 16 run function glasswar:mod/crazy_party/party/bounty/tick
 execute if score @s gw.ModificatorIndex matches 17 run function glasswar:mod/crazy_party/party/infestation/tick
+execute if score @s gw.ModificatorIndex matches 18 run function glasswar:mod/crazy_party/party/lucky_rain/tick
+execute if score @s gw.ModificatorIndex matches 19 run function glasswar:mod/crazy_party/party/why_so_serious/tick

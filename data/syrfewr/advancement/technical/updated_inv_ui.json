@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "update_inv": {
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "rewards": {
+      "function": "syrfewr:player/personal_gui/check/check_inv"
+    }
+  }
+  

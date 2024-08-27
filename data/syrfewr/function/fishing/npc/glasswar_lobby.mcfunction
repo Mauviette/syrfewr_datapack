@@ -1,4 +1,4 @@
-
+function syrfewr:player/quests/fish_check/floating_glass
 
 tellraw @s {"text":"\n"}
 tellraw @s {"text":"--------------"}

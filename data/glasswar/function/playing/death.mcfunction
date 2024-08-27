@@ -1,4 +1,5 @@
 scoreboard players remove @s gw.Vies 1
+execute if entity @e[scores={gw.ModificatorIndex=19},distance=..250] run scoreboard players add @s gw.Vies 1
 scoreboard players reset @s gw.estMort
 
 #> Afficher la mort et le nombre de vies aux joueurs proches

@@ -1,3 +1,4 @@
+function syrfewr:player/quests/fish_check/lobby
 
 
 tellraw @s {"text":"\n"}
