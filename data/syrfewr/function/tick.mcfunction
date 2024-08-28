@@ -45,6 +45,12 @@ execute as @e[tag=!s.inited_item] at @s run function syrfewr:item_init
 
 execute as @a[scores={s.creditsToAdd=1..}] at @s run function syrfewr:add_credits
 execute as @a[scores={s.creditsToAdd=..-1}] at @s run function syrfewr:add_credits
+execute as @a[scores={s.add_common_lootboxes=1..}] at @s run function syrfewr:player/add/common_lootbox
+execute as @a[scores={s.add_unusual_lootboxes=1..}] at @s run function syrfewr:player/add/unusual_lootbox
+execute as @a[scores={s.add_rare_lootboxes=1..}] at @s run function syrfewr:player/add/rare_lootbox
+execute as @a[scores={s.add_epic_lootboxes=1..}] at @s run function syrfewr:player/add/epic_lootbox
+execute as @a[scores={s.add_legendary_lootboxes=1..}] at @s run function syrfewr:player/add/legendary_lootbox
+execute as @a[scores={s.add_mythic_lootboxes=1..}] at @s run function syrfewr:player/add/mythic_lootbox
 
 
 execute as @a[scores={s.TalkedToVillager=1..}] at @s run function syrfewr:talked_to_npc

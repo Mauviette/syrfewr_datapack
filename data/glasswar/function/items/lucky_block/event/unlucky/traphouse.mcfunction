@@ -11,5 +11,5 @@ fill ~1 ~3 ~1 ~-1 ~3 ~-1 oak_planks replace
 fill ~-2 ~4 ~-2 ~2 ~4 ~2 oak_fence replace
 fill ~1 ~4 ~1 ~-1 ~4 ~-1 air replace
 setblock ~ ~ ~1 oak_pressure_plate replace
-setblock ~ ~2 ~1 torch replace
 fill ~1 ~-2 ~1 ~-1 ~-2 ~-1 tnt replace
+fill ~1 ~-3 ~1 ~-1 ~-3 ~-1 sandstone replace

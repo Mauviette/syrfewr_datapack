@@ -17,7 +17,6 @@ execute if entity @a[tag=gw.just_killed_player] if score @s gw.Vies matches ..0 
 
 
 
-
 execute if score @s gw.Vies matches ..0 run function glasswar:playing/disqualify
 
 tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager]

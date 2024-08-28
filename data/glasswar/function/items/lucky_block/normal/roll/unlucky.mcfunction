@@ -2,7 +2,7 @@ execute store result score @s s.temp2 run random value 1..19
 
 execute if score @s s.temp2 matches 1 run summon husk ~ ~ ~
 execute if score @s s.temp2 matches 2 run summon ghast ~ ~ ~
-execute if score @s s.temp2 matches 3 run function glasswar:items/lucky_block/event/unlucky/anvilcage
+execute if score @s s.temp2 matches 3 at @p[gamemode=!spectator] run function glasswar:items/lucky_block/event/unlucky/anvilcage
 execute if score @s s.temp2 matches 4 at @p[gamemode=!spectator] run function glasswar:items/lucky_block/event/unlucky/lavacage
 execute if score @s s.temp2 matches 5 at @p[gamemode=!spectator] run function glasswar:items/lucky_block/event/unlucky/watertrap
 execute if score @s s.temp2 matches 6 run summon tnt ~ ~ ~ {fuse:80}

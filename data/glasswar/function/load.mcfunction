@@ -77,7 +77,8 @@ team modify gw.playing_ffa deathMessageVisibility never
 team modify gw.playing_ffa friendlyFire true
 team modify gw.playing_ffa nametagVisibility always
 team modify gw.playing_ffa seeFriendlyInvisibles false
-team modify gw.playing_ffa prefix ["",{"text":"[","color":"white"},{"text":"\uE101","color": "white"},{"text":"] ","color":"white"}]
+#team modify gw.playing_ffa prefix ["",{"text":"[","color":"white"},{"text":"\uE101","color": "white"},{"text":"] ","color":"white"}]
+team modify gw.playing_ffa prefix {"text":""}
 
 #Equipe
 #Jeu (équipe bleu)

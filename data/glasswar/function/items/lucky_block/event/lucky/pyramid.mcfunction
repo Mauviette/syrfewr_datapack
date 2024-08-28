@@ -5,11 +5,7 @@ setblock ~1 ~1 ~1 sandstone
 fill ~2 ~1 ~1 ~4 ~1 ~1 sandstone_stairs[facing=south,half=bottom,shape=straight]
 setblock ~5 ~1 ~1 sandstone
 fill ~1 ~1 ~2 ~1 ~1 ~4 sandstone_stairs[facing=east,half=bottom,shape=straight]
-setblock ~2 ~1 ~2 white_stained_glass
-setblock ~4 ~1 ~2 white_stained_glass
 fill ~5 ~1 ~2 ~5 ~1 ~4 sandstone_stairs[facing=west,half=bottom,shape=straight]
-setblock ~2 ~1 ~4 white_stained_glass
-setblock ~4 ~1 ~4 white_stained_glass
 setblock ~1 ~1 ~5 sandstone
 fill ~2 ~1 ~5 ~4 ~1 ~5 sandstone_stairs[facing=north,half=bottom,shape=straight]
 setblock ~5 ~1 ~5 sandstone

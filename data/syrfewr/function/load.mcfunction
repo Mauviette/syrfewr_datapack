@@ -78,6 +78,13 @@ scoreboard objectives add s.legendary_lootboxes dummy
 scoreboard objectives add s.mythic_lootboxes dummy
 
 
+scoreboard objectives add s.add_common_lootboxes dummy
+scoreboard objectives add s.add_unusual_lootboxes dummy
+scoreboard objectives add s.add_rare_lootboxes dummy
+scoreboard objectives add s.add_epic_lootboxes dummy
+scoreboard objectives add s.add_legendary_lootboxes dummy
+scoreboard objectives add s.add_mythic_lootboxes dummy
+
 ## Gamerules
 gamerule doImmediateRespawn true
 gamerule commandModificationBlockLimit 100000

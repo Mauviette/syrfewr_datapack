@@ -1,1 +1,1 @@
-summon sheep ~ ~ ~ {Motion:[0.0,6.0,0.0]}
+summon sheep ~ ~ ~ {Motion:[0.0,4.0,0.0]}
