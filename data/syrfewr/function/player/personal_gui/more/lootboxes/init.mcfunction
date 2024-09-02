@@ -18,4 +18,4 @@ execute store result storage s.lootboxes nb_epic int 1 run scoreboard players ge
 execute store result storage s.lootboxes nb_legendary int 1 run scoreboard players get @s s.legendary_lootboxes
 execute store result storage s.lootboxes nb_mythic int 1 run scoreboard players get @s s.mythic_lootboxes
 
-function syrfewr:player/personal_gui/more/lootboxes/init/common with storage s.lootboxes
+function syrfewr:player/personal_gui/more/lootboxes/finish_init with storage s.lootboxes

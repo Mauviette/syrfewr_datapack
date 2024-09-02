@@ -13,6 +13,7 @@ execute if score @s s.GuiPageID matches 20 run function syrfewr:player/personal_
 execute if score @s s.GuiPageID matches 21 run function syrfewr:player/personal_gui/more/my_quests/tick
 execute if score @s s.GuiPageID matches 22 run function syrfewr:player/personal_gui/more/settings/tick
 execute if score @s s.GuiPageID matches 23 run function syrfewr:player/personal_gui/more/lootboxes/tick
+execute if score @s s.GuiPageID matches 24 run function syrfewr:player/personal_gui/more/lootboxes/trouvailles/tick
 
 scoreboard players add @s s.TimeSinceLastObjectSelection 1
 
