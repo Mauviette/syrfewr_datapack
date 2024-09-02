@@ -69,6 +69,7 @@ scoreboard objectives add s.computerPower dummy
 
 scoreboard objectives add s.credits dummy
 scoreboard objectives add s.creditsToAdd dummy
+scoreboard objectives add s.creditsToAddBonus dummy
 
 scoreboard objectives add s.common_lootboxes dummy
 scoreboard objectives add s.unusual_lootboxes dummy
@@ -139,6 +140,13 @@ scoreboard players set #bow_unusual price 40
 scoreboard players set #bow_rare price 60
 scoreboard players set #bow_epic price 90
 
+scoreboard players set #common_refund price 10
+scoreboard players set #unusual_refund price 20
+scoreboard players set #rare_refund price 30
+scoreboard players set #epic_refund price 45
+scoreboard players set #legendary_refund price 60
+scoreboard players set #mythic_refund price 80
+
 
 
 scoreboard players set #common_lootbox price 20
@@ -155,4 +163,5 @@ execute store result storage s.lootboxes rare_price int 1 run scoreboard players
 execute store result storage s.lootboxes epic_price int 1 run scoreboard players get #epic_lootbox price
 execute store result storage s.lootboxes legendary_price int 1 run scoreboard players get #legendary_lootbox price
 execute store result storage s.lootboxes mythic_price int 1 run scoreboard players get #mythic_lootbox price
+
 

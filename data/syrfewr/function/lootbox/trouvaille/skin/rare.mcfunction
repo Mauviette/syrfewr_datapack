@@ -1,3 +1,9 @@
+execute store result score #has_all_skins s.temp run function syrfewr:lootbox/trouvaille/skin/test/rare
+
+execute if score #has_all_skins s.temp matches 1 run tellraw @s ["Vous avez trouvé un skin ",{"text":"rare","color":"blue"},", mais vous les aviez déjà tous."]
+execute if score #has_all_skins s.temp matches 1 run scoreboard players operation @s s.creditsToAddBonus += #rare_refund price
+execute if score #has_all_skins s.temp matches 1 run return fail
+
 execute store result score #id_skin s.temp run random value 1..2
 scoreboard players set #id_skin s.temp 1
 
