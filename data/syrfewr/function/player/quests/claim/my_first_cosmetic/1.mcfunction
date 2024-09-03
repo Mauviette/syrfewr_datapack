@@ -1,1 +1,1 @@
-scoreboard players add @s s.creditsToAdd 20
+scoreboard players add @s s.creditsToAddBonus 20

@@ -5,6 +5,7 @@ item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data
 item replace entity @s inventory.1 with bow[custom_data={ui:1,item_from_mc_main:1,to_kill:1,my_cosmetics_bows:1},lore=['{"color":"gray","text":"Glasswar","italic":false}']]
 item replace entity @s inventory.2 with fishing_rod[custom_data={ui:1,item_from_mc_main:1,to_kill:1,my_cosmetics_fishing_rods:1},lore=['{"color":"gray","text":"Zones de pêche","italic":false}']]
 item replace entity @s inventory.3 with nether_star[custom_data={ui:1,item_from_mc_main:1,to_kill:1,my_cosmetics_va:1},lore=['{"color":"gray","text":"Tous les modes de jeu","italic":false}'],item_name='{"text":"Animations de victoire"}']
+item replace entity @s inventory.4 with leather_helmet[custom_data={ui:1,item_from_mc_main:1,to_kill:1,my_cosmetics_hats:1},lore=['{"color":"gray","text":"Lobby","italic":false}'],item_name='{"text":"Chapeaux"}',attribute_modifiers={modifiers:[{type:"generic.luck",id:"generic.luck",amount:0,operation:"add_value"}],show_in_tooltip:false}]
 item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=104,custom_data={ui:1,item_from_mc_main:1,to_kill:1,my_cosmetics:1},item_name='{"text":""}']
 
 
@@ -13,19 +14,10 @@ execute store result storage syrfewr.temp credits int 1 run scoreboard players g
 
 
 scoreboard players set @s s.temp 0
-execute if entity @s[advancements={syrfewr:succes/skins/bows/bonebow=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/bows/shortbow=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/bows/gun=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/bows/angelbow=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/bows/windcaller=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/fishing_rod/diamond=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/fishing_rod/iron=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/fishing_rod/golden=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/chicken_rain=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/dragon_flex=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/explosive_festival=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/rich=true}] run scoreboard players add @s s.temp 1
-execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/vengeance=true}] run scoreboard players add @s s.temp 1
+function syrfewr:player/personal_gui/my_cosmetics/bow/gotten
+function syrfewr:player/personal_gui/my_cosmetics/fishing_rod/gotten
+function syrfewr:player/personal_gui/my_cosmetics/victory_animation/gotten
+function syrfewr:player/personal_gui/my_cosmetics/hats/gotten
 
 execute store result storage syrfewr.temp completed int 1 run scoreboard players get @s s.temp
 

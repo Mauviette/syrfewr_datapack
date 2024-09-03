@@ -30,5 +30,6 @@ execute if score @s gw.GameTimer matches 3 run function glasswar:mod/init
 
 execute if score @s gw.GameTimer matches 1 if score @s gw.ModificatorID matches 1.. run function glasswar:mod/start_message
 execute if score @s gw.GameTimer matches 1 run scoreboard players set @a[tag=gw.playing,distance=..250] gw.timeSinceDeath 0
+execute if score @s gw.GameTimer matches 1 as @a[tag=gw.playing,distance=..250] at @s run function syrfewr:method/go_to_ground
 
 execute if score @s gw.GameTimer matches 0..4 as @a[distance=..250] at @s run tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager]

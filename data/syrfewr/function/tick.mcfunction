@@ -79,3 +79,7 @@ execute as @a unless score @s s.playerGender matches 1.. run scoreboard players 
 #1 : masculin
 #2 : féminin
 #3 : neutre
+
+
+execute as @a[scores={s.opening_lootbox_time=1..}] at @s run function syrfewr:lootbox/opening/box/map
+execute as @a[scores={s.opening_trouvaille_time=1..}] at @s run function syrfewr:lootbox/opening/trouvaille/map
