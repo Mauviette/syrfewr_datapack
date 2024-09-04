@@ -50,6 +50,8 @@ scoreboard objectives add s.CompletedFishingZones dummy
 scoreboard objectives add s.opening_lootbox_time dummy
 scoreboard objectives add s.opening_lootbox_id dummy
 
+scoreboard objectives add s.opened_lootboxes dummy
+
 scoreboard objectives add s.opening_trouvaille_time dummy
 scoreboard objectives add s.opening_trouvaille_id dummy
 

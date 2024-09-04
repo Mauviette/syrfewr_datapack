@@ -6,3 +6,6 @@ scoreboard players set @s s.opening_lootbox_time 60
 scoreboard players set @s s.opening_lootbox_id 2
 
 tellraw @s ["Ouverture d'une \uE003 ",{"text":"Lootbox inhabituelle","color": "green"},"..."]
+
+scoreboard players add @s s.opened_lootboxes 1
+function syrfewr:player/quests/check_lootboxes

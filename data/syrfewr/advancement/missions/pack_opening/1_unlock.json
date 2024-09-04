@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "syrfewr:player/quests/missions/unlock/pack_opening/1"
+    }
+}

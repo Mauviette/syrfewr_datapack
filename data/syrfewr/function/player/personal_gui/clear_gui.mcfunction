@@ -1,1 +1,1 @@
-clear @s #syrfewr:all[custom_data~{ui:1}]
+clear @s *[custom_data~{ui:1}]

@@ -7,7 +7,7 @@ execute if entity @s[advancements={syrfewr:succes/skins/hats/aquarium=true}] run
 function syrfewr:player/personal_gui/my_cosmetics/hats/init
 clear @s *[custom_data~{hat:1}]
 
-execute if entity @s[advancements={syrfewr:succes/skins/hats/aquarium=false}] if score @s s.TimeSinceLastObjectSelection matches ..30 if score @s s.SelectedObjectID matches 1 if score @s s.credits >= #hat_epic price run function syrfewr:player/personal_gui/my_cosmetics/hats/clicked/select/buy/aquarium
+execute if entity @s[advancements={syrfewr:succes/skins/hats/aquarium=false}] if score @s s.TimeSinceLastObjectSelection matches ..30 if score @s s.SelectedObjectID matches 3 if score @s s.credits >= #hat_epic price run function syrfewr:player/personal_gui/my_cosmetics/hats/clicked/select/buy/aquarium
 
 scoreboard players set @s s.TimeSinceLastObjectSelection 0
-scoreboard players set @s s.SelectedObjectID 1
+scoreboard players set @s s.SelectedObjectID 3
