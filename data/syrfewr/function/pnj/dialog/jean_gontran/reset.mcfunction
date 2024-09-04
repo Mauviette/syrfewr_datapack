@@ -1,0 +1,1 @@
+execute if score @s s.jean_gontran_step matches ..2 run scoreboard players set @s s.jean_gontran_step 0

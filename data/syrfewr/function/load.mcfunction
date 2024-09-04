@@ -2,6 +2,8 @@
 function glasswar:load
 function carlos_party:load
 function coliseum:load
+function syrfewr:pnj/load
+function speechtools:zzz/load
 
 
 ## Numbers
@@ -119,7 +121,8 @@ team modify s.lobby deathMessageVisibility never
 team modify s.lobby friendlyFire false
 team modify s.lobby nametagVisibility hideForOtherTeams
 team modify s.lobby seeFriendlyInvisibles true
-team modify s.lobby prefix ["",{"text":"[","color":"gray"},{"text":"S","color": "dark_red"},{"text":"] ","color":"gray"}]
+#team modify s.lobby prefix ["",{"text":"[","color":"gray"},{"text":"S","color": "dark_red"},{"text":"] ","color":"gray"}]
+team modify s.lobby prefix ""
 
 team add noC
 team modify noC collisionRule never
@@ -139,6 +142,13 @@ scoreboard objectives add s.health health {"text":"❤","color":"red"}
 scoreboard objectives setdisplay below_name s.health
 
 
+#Dialogues et PNJ
+scoreboard objectives add s.dialog_id dummy
+scoreboard objectives add s.current_dialog_step dummy
+scoreboard objectives add s.max_dialog dummy
+scoreboard objectives add s.reset_dialog dummy
+
+scoreboard objectives add s.last_fast_dialog dummy
 
 
 #Prix cosmétiques

@@ -1,0 +1,1 @@
+execute as @e[tag=s.can_fast_dialog,tag=pnj] at @s run function syrfewr:pnj/fast_dialog/tick

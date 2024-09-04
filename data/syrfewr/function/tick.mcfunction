@@ -4,6 +4,7 @@ execute as @a[scores={s.killedPlayer=1..}] at @s run function syrfewr:killed_pla
 function glasswar:tick
 function carlos_party:tick
 function coliseum:tick
+function syrfewr:pnj/tick
 
 ## tick
 
@@ -57,6 +58,8 @@ execute as @a[scores={s.add_mythic_lootboxes=1..}] at @s run function syrfewr:pl
 execute as @a[scores={s.TalkedToVillager=1..}] at @s run function syrfewr:talked_to_npc
 
 effect give @e[tag=s.npc] slowness infinite 255 true
+
+effect give @e[tag=pnj] slowness infinite 255 true
 
 scoreboard players remove @a[scores={s.ActionCooldown=1..}] s.ActionCooldown 1
 
