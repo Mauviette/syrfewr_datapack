@@ -1,1 +1,0 @@
-tellraw @s [{"text":"Version 0.2"}]

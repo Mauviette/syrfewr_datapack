@@ -9,3 +9,5 @@ tellraw @s ["Ouverture d'une \uE005 ",{"text":"Lootbox épique","color": "#8B00D
 
 scoreboard players add @s s.opened_lootboxes 1
 function syrfewr:player/quests/check_lootboxes
+
+function syrfewr:lootbox/opening/box/anim/summon

@@ -10,4 +10,4 @@ tellraw @s ["Ouverture d'une \uE002 ",{"text":"Lootbox commune","color": "gray"}
 scoreboard players add @s s.opened_lootboxes 1
 function syrfewr:player/quests/check_lootboxes
 
-execute rotated ~ 0 run summon block_display ^ ^ ^2 {block_state:{Name:"light_gray_shulker_box"},Tags:["s.opening_lootbox","s.common_opening_lootbox"]}
+function syrfewr:lootbox/opening/box/anim/summon

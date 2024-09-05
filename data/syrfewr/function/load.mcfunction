@@ -192,4 +192,6 @@ execute store result storage s.lootboxes epic_price int 1 run scoreboard players
 execute store result storage s.lootboxes legendary_price int 1 run scoreboard players get #legendary_lootbox price
 execute store result storage s.lootboxes mythic_price int 1 run scoreboard players get #mythic_lootbox price
 
-
+scoreboard objectives add s.player_id dummy
+scoreboard objectives add s.version dummy
+function syrfewr:version/load

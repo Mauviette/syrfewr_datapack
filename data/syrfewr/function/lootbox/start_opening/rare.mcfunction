@@ -9,3 +9,5 @@ tellraw @s ["Ouverture d'une \uE004 ",{"text":"Lootbox rare","color": "blue"},".
 
 scoreboard players add @s s.opened_lootboxes 1
 function syrfewr:player/quests/check_lootboxes
+
+function syrfewr:lootbox/opening/box/anim/summon

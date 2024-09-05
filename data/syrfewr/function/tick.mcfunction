@@ -43,10 +43,10 @@ execute as @a at @s if score @s s.temp matches 1.. run function syrfewr:fishing/
 #Gestion des items
 execute as @e[tag=!s.inited_item] at @s run function syrfewr:item_init
 
-execute as @a[scores={s.creditsToAddBonus=1..}] at @s run function syrfewr:add_credits_bonus
-execute as @a[scores={s.creditsToAddBonus=..-1}] at @s run function syrfewr:add_credits_bonus
-execute as @a[scores={s.creditsToAdd=1..}] at @s run function syrfewr:add_credits
-execute as @a[scores={s.creditsToAdd=..-1}] at @s run function syrfewr:add_credits
+execute as @a[scores={s.creditsToAddBonus=1..}] at @s run function syrfewr:player/add/add_credits_bonus
+execute as @a[scores={s.creditsToAddBonus=..-1}] at @s run function syrfewr:player/add/add_credits_bonus
+execute as @a[scores={s.creditsToAdd=1..}] at @s run function syrfewr:player/add/add_credits
+execute as @a[scores={s.creditsToAdd=..-1}] at @s run function syrfewr:player/add/add_credits
 execute as @a[scores={s.add_common_lootboxes=1..}] at @s run function syrfewr:player/add/common_lootbox
 execute as @a[scores={s.add_unusual_lootboxes=1..}] at @s run function syrfewr:player/add/unusual_lootbox
 execute as @a[scores={s.add_rare_lootboxes=1..}] at @s run function syrfewr:player/add/rare_lootbox
@@ -86,3 +86,5 @@ execute as @a unless score @s s.playerGender matches 1.. run scoreboard players 
 
 execute as @a[scores={s.opening_lootbox_time=1..}] at @s run function syrfewr:lootbox/opening/box/map
 execute as @a[scores={s.opening_trouvaille_time=1..}] at @s run function syrfewr:lootbox/opening/trouvaille/map
+
+execute as @e[tag=s.opening_lootbox] at @s run function syrfewr:lootbox/opening/box/anim/tick

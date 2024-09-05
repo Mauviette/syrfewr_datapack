@@ -7,3 +7,5 @@ execute if entity @s[tag=cp.playing] run function carlos_party:game/manager/game
 
 scoreboard players reset @s s.disconnected
 scoreboard players set @s s.dialog_id 0
+
+execute unless score @s s.version >= #version s.version run function syrfewr:version/join
