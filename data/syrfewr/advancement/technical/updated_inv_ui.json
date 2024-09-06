@@ -6,6 +6,7 @@
     },
     "rewards": {
       "function": "syrfewr:player/personal_gui/check/check_inv"
+      
     }
   }
   

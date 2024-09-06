@@ -4,6 +4,7 @@ clear @s
 gamemode survival
 effect give @s instant_health 1 5 true
 effect give @s saturation 10 0 true
+effect give @s resistance 5 5 true
 xp set @s 0
 xp set @s 0 levels
 scoreboard players set @s gw.Vies 3
