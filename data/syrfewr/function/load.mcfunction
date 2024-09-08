@@ -1,4 +1,7 @@
+function syrfewr:unload
+
 ## Fonctions des modes
+function rpg:load
 function glasswar:load
 function carlos_party:load
 function coliseum:load
@@ -140,9 +143,10 @@ execute in syrfewr:lobby run forceload add -100 -100 100 100
 
 
 # display pv
-scoreboard objectives add s.health health {"text":"❤","color":"red"}
+scoreboard objectives add s.health dummy {"text":"❤","color":"red"}
 scoreboard objectives setdisplay below_name s.health
 
+scoreboard objectives add health dummy
 
 #Dialogues et PNJ
 scoreboard objectives add s.dialog_id dummy

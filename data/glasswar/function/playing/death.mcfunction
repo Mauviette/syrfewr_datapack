@@ -33,3 +33,4 @@ scoreboard players add @s gw.TotalDeathsStats 1
 execute as @a[tag=gw.just_killed_player] at @s if entity @e[tag=gw.game_manager,scores={gw.ModificatorIndex=16},distance=..250] store result score @s s.creditsToAdd run random value 3..6
 
 scoreboard players set @s gw.timeSinceDeath 0
+effect give @s resistance 5 255 true

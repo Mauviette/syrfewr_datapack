@@ -190,3 +190,5 @@ setblock ~144 ~ ~144 air
 setblock ~144 ~48 ~144 air
 setblock ~144 ~96 ~144 air
 setblock ~144 ~144 ~144 air
+
+execute positioned 58.5 123.00 56.5 run function syrfewr:dev/pnj/jean_gontran
