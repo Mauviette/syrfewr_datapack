@@ -1,5 +1,6 @@
 scoreboard players set @s s.temp 0
 $execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=3}] run function glasswar:playing/death_message/killer/custom/gun/1_or_more {"color":"$(color)"}
+$execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=5}] run function glasswar:playing/death_message/killer/custom/angelbow/1_or_more {"color":"$(color)"}
 
 execute if score @s s.temp matches 1.. run return fail
 

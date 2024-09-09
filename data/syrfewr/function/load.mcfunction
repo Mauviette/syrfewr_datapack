@@ -168,6 +168,7 @@ scoreboard players set #victory_animation_epic price 90
 scoreboard players set #bow_unusual price 40
 scoreboard players set #bow_rare price 60
 scoreboard players set #bow_epic price 90
+scoreboard players set #bow_legendary price 160
 
 scoreboard players set #common_refund price 10
 scoreboard players set #unusual_refund price 20
