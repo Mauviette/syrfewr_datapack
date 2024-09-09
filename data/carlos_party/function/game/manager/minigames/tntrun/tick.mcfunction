@@ -26,6 +26,7 @@ execute if score @s cp.MiniGameTimer matches 227 run title @a[distance=..250,tag
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250,tag=cp.playing] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ .7 1
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] saturation infinite 0 true
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] resistance infinite 255 true
+execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] slow_falling 2 0 true
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] speed infinite 1 true
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250] at @s run playsound syrfewr:music_tntrun record @s ~ ~ ~ 1 1
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] fire_resistance infinite 0 true

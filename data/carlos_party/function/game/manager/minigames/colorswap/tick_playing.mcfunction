@@ -3,7 +3,7 @@ scoreboard players operation @s s.temp -= @s cp.DeadPlayers
 execute as @a[tag=cp.colorswap,distance=..200] run function carlos_party:game/manager/minigames/position/by_deaths
 execute if score @s s.temp matches ..1 run function carlos_party:game/manager/minigames/colorswap/end
 
-execute if score @s cp.MiniGameTimer matches 260 run function carlos_party:game/manager/minigames/colorswap/enable_pvp
+execute if score @s cp.MiniGameTimer matches 540 if predicate syrfewr:random/0.4 run function carlos_party:game/manager/minigames/colorswap/enable_pvp
 execute if score @s cp.MiniGameTimer matches 1128.. run function carlos_party:game/manager/minigames/colorswap/long_game
 execute if score @s cp.MiniGameTimer matches 1928.. run function carlos_party:game/manager/minigames/colorswap/very_long_game
 

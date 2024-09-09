@@ -1,7 +1,9 @@
 gamemode spectator @s
 tag @s add gw.dead
 
-execute at @e[limit=1,sort=nearest,tag=gw.game_manager] run tellraw @a[distance=..350] [{"selector":"@s"},{"text":" est éliminé !","color":"red"}]
+execute if score @s s.playerGender matches 1 at @e[limit=1,sort=nearest,tag=gw.game_manager] run tellraw @a[distance=..350] [{"selector":"@s"},{"text":" est éliminé !","color":"red"}]
+execute if score @s s.playerGender matches 2 at @e[limit=1,sort=nearest,tag=gw.game_manager] run tellraw @a[distance=..350] [{"selector":"@s"},{"text":" est éliminée !","color":"red"}]
+execute if score @s s.playerGender matches 3.. at @e[limit=1,sort=nearest,tag=gw.game_manager] run tellraw @a[distance=..350] [{"selector":"@s"},{"text":" est éliminé !","color":"red"}]
 
 execute if score @e[limit=1,sort=nearest,tag=gw.game_manager] gw.GameTime matches 1000..5000 run scoreboard players add @s s.creditsToAdd 1
 execute if score @e[limit=1,sort=nearest,tag=gw.game_manager] gw.GameTime matches 5001..10000 run scoreboard players add @s s.creditsToAdd 2

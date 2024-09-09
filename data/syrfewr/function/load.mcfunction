@@ -73,8 +73,9 @@ scoreboard objectives add s.TimeSinceLastObjectSelection dummy
 scoreboard objectives add leave trigger
 scoreboard objectives add zEventTrigger trigger
 
-#Attributs
+#Attributs & actions
 scoreboard objectives add s.food food
+scoreboard objectives add s.hasJumped minecraft.custom:minecraft.jump
 
 #Infos joueurs
 scoreboard objectives add s.playerGender dummy
@@ -143,10 +144,10 @@ execute in syrfewr:lobby run forceload add -100 -100 100 100
 
 
 # display pv
-scoreboard objectives add s.health dummy {"text":"❤","color":"red"}
-scoreboard objectives setdisplay below_name s.health
+scoreboard objectives add s.below_name dummy {"text":"❤","color":"red"}
+scoreboard objectives setdisplay below_name s.below_name
 
-scoreboard objectives add health dummy
+scoreboard objectives add health health
 
 #Dialogues et PNJ
 scoreboard objectives add s.dialog_id dummy

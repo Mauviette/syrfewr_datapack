@@ -30,6 +30,7 @@ execute if score @s cp.MiniGameTimer matches 227 run title @a[distance=..250,tag
 execute if score @s cp.MiniGameTimer matches 227 run title @a[distance=..250,tag=cp.playing] title [{"text":"GO!","color":"green"}]
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250,tag=cp.playing] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ .7 1
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] saturation infinite 0 true
+execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] mining_fatigue 1 5 true
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250,tag=cp.playing] run attribute @s minecraft:generic.jump_strength modifier remove mode_init
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250] at @s run playsound syrfewr:music_spleef record @s ~ ~ ~ 1 1
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] fire_resistance infinite 0 true
@@ -41,5 +42,6 @@ execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..2
 execute if score @s cp.MiniGameTimer matches 228.. run function carlos_party:game/manager/minigames/spleef/tick_playing
 
 execute if score @s cp.MiniGameTimer matches 1628 as @a[distance=..250] at @s run playsound syrfewr:music_spleef record @s ~ ~ ~ 1 1
+execute if score @s cp.MiniGameTimer matches 3029 as @a[distance=..250] at @s run playsound syrfewr:music_spleef record @s ~ ~ ~ 1 1
 
 scoreboard players reset $carlos.dialog

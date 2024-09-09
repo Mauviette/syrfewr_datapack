@@ -1,1 +1,1 @@
-execute as @a run scoreboard players operation @s s.health = @s health
+execute as @a run scoreboard players operation @s s.below_name = @s health

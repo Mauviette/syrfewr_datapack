@@ -6,6 +6,7 @@ function carlos_party:tick
 function coliseum:tick
 function syrfewr:pnj/tick
 function rpg:tick
+function syrfewr:below_name
 
 ## tick
 
@@ -15,7 +16,7 @@ execute at @e[type=minecraft:marker] run particle minecraft:end_rod ~ ~ ~ 0.1 0.
 
 
 
-
+#Triggers
 execute as @a[scores={leave=1..}] at @s run function syrfewr:triggers/leave
 scoreboard players enable @a zEventTrigger
 execute as @a[scores={zEventTrigger=1..}] at @s run function syrfewr:triggers/z_event_trigger
@@ -23,9 +24,10 @@ execute as @a[scores={zEventTrigger=1..}] at @s run function syrfewr:triggers/z_
 execute as @a[scores={s.disconnected=1..}] at @s run function syrfewr:disconnected
 
 
+#1ère fois
 execute as @a[tag=!s.inited] run function syrfewr:player_first_time
 
-
+#Toclear et items
 clear @a #syrfewr:to_clear[minecraft:custom_data~{to_clear:1}]
 
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{gw_gui_item:1}}}}] run data modify entity @s PickupDelay set value 0
@@ -85,7 +87,12 @@ execute as @a unless score @s s.playerGender matches 1.. run scoreboard players 
 #3 : neutre
 
 
+#Lootboxes
 execute as @a[scores={s.opening_lootbox_time=1..}] at @s run function syrfewr:lootbox/opening/box/map
 execute as @a[scores={s.opening_trouvaille_time=1..}] at @s run function syrfewr:lootbox/opening/trouvaille/map
 
 execute as @e[tag=s.opening_lootbox] at @s run function syrfewr:lootbox/opening/box/anim/tick
+
+
+#Check
+execute as @a[scores={s.hasJumped=1..}] at @s run function syrfewr:check/jump

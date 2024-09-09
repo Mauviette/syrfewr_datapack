@@ -3,6 +3,8 @@ gamemode spectator
 tag @s add cp.dead
 scoreboard players add @n[tag=cp.game_manager] cp.DeadPlayers 1
 tag @s add cp.just_dead
+particle explosion_emitter ~ ~ ~ 0 0 0 0 1 force
+playsound entity.generic.explode player @a[distance=..200] ~ ~ ~ .7 1
 execute as @a[distance=..200] at @s run function carlos_party:game/manager/minigames/carlos/dialog/deacoudre_death
 tag @s remove cp.just_dead
 scoreboard players remove @n[tag=cp.game_manager] cp.PlayingTurn 1
