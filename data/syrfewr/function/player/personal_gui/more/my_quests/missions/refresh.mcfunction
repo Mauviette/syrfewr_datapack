@@ -1,1 +1,2 @@
 execute if score @s s.GuiPageID matches 25 run function syrfewr:player/personal_gui/more/my_quests/missions/init
+execute if entity @s[tag=rpg] if score @s s.GuiPageID matches 1 run function syrfewr:player/personal_gui/more/my_quests/missions/init

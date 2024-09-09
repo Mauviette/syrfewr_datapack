@@ -5,6 +5,7 @@ function glasswar:tick
 function carlos_party:tick
 function coliseum:tick
 function syrfewr:pnj/tick
+function rpg:tick
 
 ## tick
 

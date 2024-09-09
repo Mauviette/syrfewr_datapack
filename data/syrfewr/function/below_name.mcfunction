@@ -1,0 +1,1 @@
+execute as @a run scoreboard players operation @s s.health = @s health
