@@ -12,4 +12,4 @@ scoreboard players set @e[limit=1,sort=nearest,tag=cp.game_manager] cp.GameTimer
 scoreboard players add @s cp.Wins 1
 
 
-execute if score @s s.SelectedVictoryAnimationID matches 1.. at @s run function carlos_party:game/player/win_celebration/first
+execute if score @s s.SelectedVictoryAnimationID matches 1.. at @s run function syrfewr:cosmetic/victory_animation/first

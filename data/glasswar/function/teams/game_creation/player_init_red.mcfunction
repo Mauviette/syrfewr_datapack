@@ -17,3 +17,4 @@ tag @s add gw.playing_red
 tag @s add gw.playing_teams
 tag @s remove gw.starting_teams
 tag @s add gw.change_glass
+tag @s add s.playing

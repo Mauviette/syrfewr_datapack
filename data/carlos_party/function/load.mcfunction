@@ -53,5 +53,6 @@ scoreboard objectives add cp.position dummy
 scoreboard objectives add cp.MiniGamePosition dummy
 scoreboard objectives add cp.isDead deathCount
 
+scoreboard objectives add cp.Wins dummy
 
 scoreboard players set $max cp.MiniGameCount 4

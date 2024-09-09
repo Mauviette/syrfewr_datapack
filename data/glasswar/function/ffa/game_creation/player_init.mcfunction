@@ -11,6 +11,7 @@ scoreboard players set @s gw.Vies 3
 scoreboard players reset @s gw.estMort
 tag @s add gw.playing
 tag @s add gw.playing_ffa
+tag @s add s.playing
 tellraw @s [{"text":"La partie a demarré !","color":"green"}]
 tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager_init]
 scoreboard players enable @s leave

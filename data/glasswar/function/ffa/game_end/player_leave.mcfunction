@@ -9,3 +9,4 @@ clear @s
 scoreboard players reset @s leave
 function glasswar:playing/reset_player
 tag @s remove gw.playing_air_rush
+tag @s remove s.playing

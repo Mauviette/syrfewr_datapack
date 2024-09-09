@@ -3,6 +3,13 @@
     "values": [
         {"id": "chest", "required": false},
         {"id": "trapped_chest", "required": false},
-        {"id": "#shulker_boxes", "required": false}
+        {"id": "#shulker_boxes", "required": false},
+        {"id": "barrel", "required": false},
+        {"id": "furnace", "required": false},
+        {"id": "dispenser", "required": false},
+        {"id": "dropper", "required": false},
+        {"id": "smoker", "required": false},
+        {"id": "hopper", "required": false},
+        {"id": "brewing_stand", "required": false}
     ]
 }
