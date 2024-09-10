@@ -8,7 +8,7 @@ execute if score #random s.temp matches 1 if score @s s.playerGender matches 1 r
 execute if score #random s.temp matches 1 if score @s s.playerGender matches 2 run tellraw @a[distance=..350] [{"selector":"@s","color":"#c40000"},{"text":" s'est fait zigouiller ♥ par ","color":"light_purple"},{"selector":"@p[tag=gw.just_killed_player]"},{"text":"! Elle n'a plus de vie !","color":"white"}]
 
 #Neutre
-execute if score #random s.temp matches 1 if score @s s.playerGender matches 3 run tellraw @a[distance=..350] [{"selector":"@s","color":"#c40000"},{"text":" s'est fait zigouiller ♥ par","color":"light_purple"},{"selector":"@p[tag=gw.just_killed_player]"},{"text":"! Iel n'a plus de vie !","color":"white"}]
+execute if score #random s.temp matches 1 if score @s s.playerGender matches 3 run tellraw @a[distance=..350] [{"selector":"@s","color":"#c40000"},{"text":" s'est fait zigouiller ♥ par ","color":"light_purple"},{"selector":"@p[tag=gw.just_killed_player]"},{"text":"! Iel n'a plus de vie !","color":"white"}]
 
 
 
