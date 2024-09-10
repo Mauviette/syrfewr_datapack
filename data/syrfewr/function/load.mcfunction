@@ -201,3 +201,18 @@ execute store result storage s.lootboxes mythic_price int 1 run scoreboard playe
 scoreboard objectives add s.player_id dummy
 scoreboard objectives add s.version dummy
 function syrfewr:version/load
+
+
+scoreboard objectives add s.hasInteractedAnvil minecraft.custom:minecraft.interact_with_anvil
+scoreboard objectives add s.hasInteractedBeacon minecraft.custom:minecraft.interact_with_beacon
+scoreboard objectives add s.hasInteractedBlastFurnace minecraft.custom:minecraft.interact_with_blast_furnace
+scoreboard objectives add s.hasInteractedBrewingStand minecraft.custom:minecraft.interact_with_brewingstand
+scoreboard objectives add s.hasInteractedCraftingTable minecraft.custom:minecraft.interact_with_crafting_table
+scoreboard objectives add s.hasInteractedFurnace minecraft.custom:minecraft.interact_with_furnace
+scoreboard objectives add s.hasInteractedGrindstone minecraft.custom:minecraft.interact_with_grindstone
+scoreboard objectives add s.hasInteractedLoom minecraft.custom:minecraft.interact_with_loom
+scoreboard objectives add s.hasInteractedSmithingTable minecraft.custom:minecraft.interact_with_smithing_table
+scoreboard objectives add s.hasInteractedSmoker minecraft.custom:minecraft.interact_with_smoker
+scoreboard objectives add s.hasInteractedStonecutter minecraft.custom:minecraft.interact_with_stonecutter
+
+scoreboard objectives add s.lastBlockInteraction dummy

@@ -34,3 +34,4 @@ execute as @a[tag=gw.just_killed_player] at @s if entity @e[tag=gw.game_manager,
 
 scoreboard players set @s gw.timeSinceDeath 0
 effect give @s resistance 5 255 true
+function syrfewr:method/go_to_ground

@@ -96,3 +96,19 @@ execute as @e[tag=s.opening_lootbox] at @s run function syrfewr:lootbox/opening/
 
 #Check
 execute as @a[scores={s.hasJumped=1..}] at @s run function syrfewr:check/jump
+
+
+execute as @a[scores={s.hasInteractedAnvil=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedBeacon=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedBlastFurnace=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedBrewingStand=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedCraftingTable=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedFurnace=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedGrindstone=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedLoom=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedSmithingTable=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedSmoker=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedStonecutter=1..}] at @s run function syrfewr:check/interacted
+
+execute as @a[scores={s.lastBlockInteraction=0..}] at @s run scoreboard players add @s s.lastBlockInteraction 1
+execute as @a[scores={s.lastBlockInteraction=2}] at @s run function syrfewr:check/last_block_interaction

@@ -34,4 +34,4 @@ execute if score @s gw.GameTimer matches 1 as @a[tag=gw.playing,distance=..250] 
 execute if score @s gw.GameTimer matches 1 run effect give @a[tag=gw.playing,distance=..250] resistance 5 255 true
 
 
-execute if score @s gw.GameTimer matches 0..4 as @a[distance=..250] at @s run tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager]
+execute if score @s gw.GameTimer matches 0 as @a[distance=..250] at @s run tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=gw.game_manager]
