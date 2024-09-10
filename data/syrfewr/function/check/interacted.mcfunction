@@ -1,3 +1,7 @@
+execute if entity @s[tag=s.playing] run return fail
+execute if entity @s[tag=gw.playing] run return fail
+execute if entity @s[tag=cp.playing] run return fail
+
 scoreboard players set @s s.lastBlockInteraction 0
 tp @s ~ ~200 ~
 #attribute @s player.block_interaction_range modifier add s.prevent_interaction -1 add_multiplied_total
