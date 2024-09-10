@@ -1,0 +1,1 @@
+scoreboard players add @s s.add_legendary_lootboxes 1

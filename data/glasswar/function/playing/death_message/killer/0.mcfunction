@@ -1,6 +1,9 @@
 scoreboard players set @s s.temp 0
 execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=3}] run function glasswar:playing/death_message/killer/custom/gun/0
 execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=5}] run function glasswar:playing/death_message/killer/custom/angelbow/0
+execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=8}] run function glasswar:playing/death_message/killer/custom/thirdwing/0
+execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=9}] run function glasswar:playing/death_message/killer/custom/lavenderlight/0
+execute unless score @s s.temp matches 1.. if entity @p[tag=gw.just_killed_player,scores={s.SelectedBowSkinID=11}] run function glasswar:playing/death_message/killer/custom/snowblaster/0
 
 execute if score @s s.temp matches 1.. run return fail
 #Masculin

@@ -8,6 +8,8 @@ execute if entity @s[advancements={syrfewr:succes/skins/victory_animation/vengea
 execute if entity @s[advancements={syrfewr:succes/skins/bows/gun=true}] run scoreboard players add #test_has_skins s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/hats/aquarium=true}] run scoreboard players add #test_has_skins s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/hats/garden=true}] run scoreboard players add #test_has_skins s.temp 1
+execute if entity @s[advancements={syrfewr:succes/skins/bows/lavenderlight=true}] run scoreboard players add #test_has_skins s.temp 1
+execute if entity @s[advancements={syrfewr:succes/skins/bows/snowblaster=true}] run scoreboard players add #test_has_skins s.temp 1
 
-execute if score #test_has_skins s.temp matches 8.. run return 1
-execute unless score #test_has_skins s.temp matches 8.. run return 0
+execute if score #test_has_skins s.temp matches 10.. run return 1
+execute unless score #test_has_skins s.temp matches 10.. run return 0

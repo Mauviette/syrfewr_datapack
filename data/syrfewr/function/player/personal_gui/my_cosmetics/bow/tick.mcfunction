@@ -21,3 +21,21 @@ execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unl
 
 #Appel du vent (windcaller)
 execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:15b,components:{"minecraft:custom_data":{select_windcaller:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/windcaller
+
+#floriculture
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:16b,components:{"minecraft:custom_data":{select_floriculture:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/floriculture
+
+#lavenderlight 
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:19b,components:{"minecraft:custom_data":{select_lavenderlight:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/lavenderlight
+
+#webbedbow 
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:20b,components:{"minecraft:custom_data":{select_webbedbow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/webbedbow
+
+#swowblaster 
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:21b,components:{"minecraft:custom_data":{select_snowblaster:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/snowblaster
+
+#bubblebow 
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:22b,components:{"minecraft:custom_data":{select_bubblebow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/bubblebow
+
+#thirdwing 
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:23b,components:{"minecraft:custom_data":{select_thirdwing:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/thirdwing
