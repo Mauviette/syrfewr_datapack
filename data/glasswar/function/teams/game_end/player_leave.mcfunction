@@ -3,9 +3,13 @@ tag @s remove gw.playing
 tag @s remove gw.dead
 tag @s remove gw.playing_red
 tag @s remove gw.playing_blue
+tag @s remove gw.playing_yellow
+tag @s remove gw.playing_green
 tag @s remove gw.playing_teams
 tag @s remove gw.winner_blue
 tag @s remove gw.winner_red
+tag @s remove gw.winner_yellow
+tag @s remove gw.winner_green
 tag @s remove gw.change_glass
 gamemode adventure @s
 tag @s remove gw.teams_winner

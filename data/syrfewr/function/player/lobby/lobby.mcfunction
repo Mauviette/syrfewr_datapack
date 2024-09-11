@@ -7,3 +7,4 @@ team join s.lobby
 clear @s[gamemode=!creative]
 function syrfewr:player/personal_gui/main_menu/set
 tag @s remove rpg
+function glasswar:playing/switch_team/no_team

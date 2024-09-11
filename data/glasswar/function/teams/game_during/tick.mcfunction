@@ -1,10 +1,25 @@
 execute store result score @s gw.NumberOfPlayersBlue run execute if entity @a[tag=gw.playing_blue,tag=!gw.dead,distance=..350]
 execute store result score @s gw.NumberOfPlayersRed run execute if entity @a[tag=gw.playing_red,tag=!gw.dead,distance=..350]
+execute store result score @s gw.NumberOfPlayersYellow run execute if entity @a[tag=gw.playing_yellow,tag=!gw.dead,distance=..350]
+execute store result score @s gw.NumberOfPlayersGreen run execute if entity @a[tag=gw.playing_green,tag=!gw.dead,distance=..350]
 scoreboard players operation @s gw.NumberOfPlayers = @s gw.NumberOfPlayersBlue
 scoreboard players operation @s gw.NumberOfPlayers += @s gw.NumberOfPlayersRed
+execute if score @s gw.NumberOfTeams matches 3.. run scoreboard players operation @s gw.NumberOfPlayers += @s gw.NumberOfPlayersYellow
+execute if score @s gw.NumberOfTeams matches 4.. run scoreboard players operation @s gw.NumberOfPlayers += @s gw.NumberOfPlayersGreen
 
-execute if score @s gw.NumberOfPlayersRed matches ..0 as @a[tag=gw.playing_blue,tag=!gw.winner_blue,distance=..350] at @s run function glasswar:teams/game_end/winner_blue
-execute if score @s gw.NumberOfPlayersBlue matches ..0 as @a[tag=gw.playing_red,tag=!gw.winner_red,distance=..350] at @s run function glasswar:teams/game_end/winner_red
+
+execute if score @s gw.NumberOfTeams matches ..2 if score @s gw.NumberOfPlayersRed matches ..0 as @a[tag=gw.playing_blue,tag=!gw.winner_blue,distance=..350] at @s run function glasswar:teams/game_end/winner_blue
+execute if score @s gw.NumberOfTeams matches ..2 if score @s gw.NumberOfPlayersBlue matches ..0 as @a[tag=gw.playing_red,tag=!gw.winner_red,distance=..350] at @s run function glasswar:teams/game_end/winner_red
+
+execute if score @s gw.NumberOfTeams matches 3 if score @s gw.NumberOfPlayersRed matches ..0 if score @s gw.NumberOfPlayersYellow matches ..0 as @a[tag=gw.playing_blue,tag=!gw.winner_blue,distance=..350] at @s run function glasswar:teams/game_end/winner_blue
+execute if score @s gw.NumberOfTeams matches 3 if score @s gw.NumberOfPlayersBlue matches ..0 if score @s gw.NumberOfPlayersYellow matches ..0 as @a[tag=gw.playing_red,tag=!gw.winner_red,distance=..350] at @s run function glasswar:teams/game_end/winner_red
+execute if score @s gw.NumberOfTeams matches 3 if score @s gw.NumberOfPlayersBlue matches ..0 if score @s gw.NumberOfPlayersRed matches ..0 as @a[tag=gw.playing_yellow,tag=!gw.winner_yellow,distance=..350] at @s run function glasswar:teams/game_end/winner_yellow
+
+execute if score @s gw.NumberOfTeams matches 4.. if score @s gw.NumberOfPlayersRed matches ..0 if score @s gw.NumberOfPlayersYellow matches ..0 if score @s gw.NumberOfPlayersGreen matches ..0 as @a[tag=gw.playing_blue,tag=!gw.winner_blue,distance=..350] at @s run function glasswar:teams/game_end/winner_blue
+execute if score @s gw.NumberOfTeams matches 4.. if score @s gw.NumberOfPlayersBlue matches ..0 if score @s gw.NumberOfPlayersYellow matches ..0 if score @s gw.NumberOfPlayersGreen matches ..0 as @a[tag=gw.playing_red,tag=!gw.winner_red,distance=..350] at @s run function glasswar:teams/game_end/winner_red
+execute if score @s gw.NumberOfTeams matches 4.. if score @s gw.NumberOfPlayersBlue matches ..0 if score @s gw.NumberOfPlayersRed matches ..0 if score @s gw.NumberOfPlayersGreen matches ..0 as @a[tag=gw.playing_yellow,tag=!gw.winner_yellow,distance=..350] at @s run function glasswar:teams/game_end/winner_yellow
+execute if score @s gw.NumberOfTeams matches 4.. if score @s gw.NumberOfPlayersBlue matches ..0 if score @s gw.NumberOfPlayersRed matches ..0 if score @s gw.NumberOfPlayersYellow matches ..0 as @a[tag=gw.playing_green,tag=!gw.winner_green,distance=..350] at @s run function glasswar:teams/game_end/winner_green
+
 execute if score @s gw.NumberOfPlayers matches ..0 unless entity @a[distance=..250] run function glasswar:teams/game_end/end_game
 
 

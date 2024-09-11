@@ -15,7 +15,7 @@
                   "custom_color": 6381921,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 2,
                       "duration": 10,
                       "ambient": false,
@@ -45,7 +45,7 @@
                   "custom_color": 10417663,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 4,
                       "duration": 10,
                       "ambient": false,
@@ -75,7 +75,7 @@
                   "custom_color": 8323225,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 5,
                       "duration": 10,
                       "ambient": false,
@@ -105,7 +105,7 @@
                   "custom_color": 13709568,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 6,
                       "duration": 10,
                       "ambient": false,
@@ -175,7 +175,7 @@
                   "custom_color": 16710447,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 9,
                       "duration": 10,
                       "ambient": false,
@@ -205,7 +205,7 @@
                   "custom_color": 1513239,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 10,
                       "duration": 10,
                       "ambient": false,
@@ -255,7 +255,7 @@
                   "custom_color": 13750737,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 14,
                       "duration": 10,
                       "ambient": false,
@@ -285,7 +285,7 @@
                   "custom_color": 14286781,
                   "custom_effects": [
                     {
-                      "id": "minecraft:bad_omen",
+                      "id": "minecraft:unluck",
                       "amplifier": 15,
                       "duration": 10,
                       "ambient": false,

@@ -16,13 +16,7 @@
                     "modifiers": [
                       {
                         "type": "minecraft:generic.knockback_resistance",
-                        "uuid": [
-                          5000,
-                          0,
-                          7,
-                          1
-                        ],
-                        "name": "Plastron mastoc",
+                        "id": "gw.item.plastron_mastoc",
                         "amount": 0.02,
                         "operation": "add_value",
                         "slot": "any"
@@ -63,17 +57,11 @@
                   "minecraft:attribute_modifiers": {
                     "modifiers": [
                       {
-                        "type": "minecraft:generic.luck",
-                        "uuid": [
-                          5000,
-                          0,
-                          7,
-                          2
-                        ],
-                        "name": "Rien",
+                        "id" : "gw.item.jambieres_furtives",
                         "amount": 0,
                         "operation": "add_value",
-                        "slot": "any"
+                        "slot": "any",
+                        "type" : "minecraft:generic.movement_speed"
                       }
                     ],
                     "show_in_tooltip": false
@@ -94,17 +82,11 @@
                   "minecraft:attribute_modifiers": {
                     "modifiers": [
                       {
-                        "type": "minecraft:generic.gravity",
-                        "uuid": [
-                          5000,
-                          0,
-                          7,
-                          3
-                        ],
-                        "name": "Bottes anti-gravité",
+                        "id": "gw.item.bottes_anti_gravite",
                         "amount": -0.04,
                         "operation": "add_value",
-                        "slot": "feet"
+                        "slot": "feet",
+                        "type" : "generic.gravity"
                       }
                     ],
                     "show_in_tooltip": false

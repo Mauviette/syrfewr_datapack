@@ -1,5 +1,5 @@
-execute store result score @s gw.temp run data get entity @s active_effects[{id:"minecraft:bad_omen"}].amplifier
-effect clear @s bad_omen
+execute store result score @s gw.temp run data get entity @s active_effects[{id:"minecraft:unluck"}].amplifier
+effect clear @s unluck
 
 execute if score @s gw.temp matches 2 run function glasswar:items/arrow/effect/silverfish
 execute if score @s gw.temp matches 3 run function glasswar:items/consumable/delicious_clay
@@ -15,3 +15,6 @@ execute if score @s gw.temp matches 12 run function glasswar:items/consumable/sm
 execute if score @s gw.temp matches 13 run function glasswar:items/consumable/purple_platform
 execute if score @s gw.temp matches 14 run scoreboard players set @s gw.WindZoneTimer 320
 execute if score @s gw.temp matches 15 run function glasswar:items/consumable/mini_milk
+execute if score @s gw.temp matches 16 run function glasswar:items/consumable/teleportation
+execute if score @s gw.temp matches 17 run function glasswar:items/consumable/revive
+execute if score @s gw.temp matches 18 run function glasswar:items/consumable/support

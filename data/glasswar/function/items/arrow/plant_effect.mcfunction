@@ -5,7 +5,7 @@ execute if score @s gw.ArrowColor matches 8323225 run function glasswar:items/ar
 execute if score @s gw.ArrowColor matches 13709568 run function glasswar:items/arrow/effect/explosion
 execute if entity @s[tag=gw.mini_explode] run function glasswar:items/arrow/effect/mini_explosion
 execute if score @s gw.ArrowColor matches 2769 run particle rain ~ ~ ~ 0 0 0 0.1 10
-execute if score @s gw.ArrowColor matches 3830016 run place feature oak
+execute if score @s gw.ArrowColor matches 3830016 run function glasswar:items/arrow/effect/arboricole
 execute if score @s gw.ArrowColor matches 16710447 run function glasswar:items/arrow/effect/lightning
 execute if score @s gw.ArrowColor matches 1513239 run function glasswar:items/arrow/effect/smoke_zone
 execute if score @s gw.ArrowColor matches 8454924 run function glasswar:items/arrow/effect/detonation

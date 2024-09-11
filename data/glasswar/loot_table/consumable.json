@@ -34,7 +34,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 3,
                           "duration": 10,
                           "ambient": false,
@@ -69,7 +69,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 7,
                           "duration": 10,
                           "ambient": false,
@@ -107,7 +107,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 8,
                           "duration": 10,
                           "ambient": false,
@@ -142,7 +142,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 11,
                           "duration": 10,
                           "ambient": false,
@@ -177,7 +177,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 12,
                           "duration": 10,
                           "ambient": false,
@@ -212,7 +212,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 13,
                           "duration": 10,
                           "ambient": false,
@@ -229,7 +229,7 @@
           {
             "type": "minecraft:item",
             "name": "minecraft:honey_bottle",
-            "weight": 3,
+            "weight": 4,
             "functions": [
               {
                 "function": "minecraft:set_components",
@@ -242,7 +242,7 @@
                     "effects": [
                       {
                         "effect": {
-                          "id": "minecraft:bad_omen",
+                          "id": "minecraft:unluck",
                           "amplifier": 15,
                           "duration": 10,
                           "ambient": false,

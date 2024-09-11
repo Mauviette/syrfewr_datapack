@@ -8,6 +8,10 @@ scoreboard objectives add gw.NumberOfPlayers dummy
 
 scoreboard objectives add gw.NumberOfPlayersBlue dummy
 scoreboard objectives add gw.NumberOfPlayersRed dummy
+scoreboard objectives add gw.NumberOfPlayersYellow dummy
+scoreboard objectives add gw.NumberOfPlayersGreen dummy
+
+scoreboard objectives add gw.NumberOfTeams dummy
 
 # Autre
 scoreboard objectives add gw.temp dummy
@@ -45,6 +49,14 @@ scoreboard objectives add gw.BrokenBlueGlassPane mined:minecraft.blue_stained_gl
 scoreboard objectives add gw.BrokenRedGlass mined:minecraft.red_stained_glass
 scoreboard objectives add gw.BrokenRedGlassPane mined:minecraft.red_stained_glass_pane
 scoreboard objectives add gw.BrokenPinkGlass mined:minecraft.pink_stained_glass
+scoreboard objectives add gw.BrokenPinkGlassPane mined:minecraft.pink_stained_glass_pane
+scoreboard objectives add gw.BrokenMagentaGlass mined:minecraft.magenta_stained_glass
+scoreboard objectives add gw.BrokenMagentaGlassPane mined:minecraft.magenta_stained_glass_pane
+scoreboard objectives add gw.BrokenYellowGlass mined:minecraft.yellow_stained_glass
+scoreboard objectives add gw.BrokenYellowGlassPane mined:minecraft.yellow_stained_glass_pane
+scoreboard objectives add gw.BrokenGreenGlass mined:minecraft.green_stained_glass
+scoreboard objectives add gw.BrokenGreenGlassPane mined:minecraft.green_stained_glass_pane
+
 
 # Statistiques
 scoreboard objectives add gw.TotalKillsStats dummy
@@ -58,7 +70,6 @@ scoreboard objectives add gw.TotalWins dummy
 scoreboard objectives add gw.timeSinceDeath dummy
 
 
-## Teams
 #Hub
 team add gw.hub ["",{"text":"[","color":"gray"},{"text":"\uE100","color": "white"},{"text":"] Lobby","color":"gray"}]
 team modify gw.hub collisionRule never
@@ -80,6 +91,8 @@ team modify gw.playing_ffa seeFriendlyInvisibles false
 #team modify gw.playing_ffa prefix ["",{"text":"[","color":"white"},{"text":"\uE101","color": "white"},{"text":"] ","color":"white"}]
 team modify gw.playing_ffa prefix {"text":""}
 
+
+##Teams
 #Equipe
 #Jeu (équipe bleu)
 team add gw.playing_blue ["",{"text":"[","color":"blue"},{"text":"\uE102","color": "white"},{"text":"] Joue en équipe","color":"blue"}]
@@ -89,7 +102,8 @@ team modify gw.playing_blue deathMessageVisibility never
 team modify gw.playing_blue friendlyFire false
 team modify gw.playing_blue nametagVisibility always
 team modify gw.playing_blue seeFriendlyInvisibles true
-team modify gw.playing_blue prefix ["",{"text":"[","color":"blue"},{"text":"\uE102","color": "white"},{"text":"] ","color":"blue"}]
+#team modify gw.playing_blue prefix ["",{"text":"[","color":"blue"},{"text":"\uE102","color": "white"},{"text":"] ","color":"blue"}]
+team modify gw.playing_blue prefix ""
 
 #Jeu (équipe rouge)
 team add gw.playing_red ["",{"text":"[","color":"red"},{"text":"\uE103","color": "white"},{"text":"] Joue en équipe","color":"red"}]
@@ -99,7 +113,32 @@ team modify gw.playing_red deathMessageVisibility never
 team modify gw.playing_red friendlyFire false
 team modify gw.playing_red nametagVisibility always
 team modify gw.playing_red seeFriendlyInvisibles true
-team modify gw.playing_red prefix ["",{"text":"[","color":"red"},{"text":"\uE103","color": "white"},{"text":"] ","color":"red"}]
+#team modify gw.playing_red prefix ["",{"text":"[","color":"red"},{"text":"\uE103","color": "white"},{"text":"] ","color":"red"}]
+team modify gw.playing_red prefix ""
+
+#Jeu (équipe jaune)
+team add gw.playing_yellow ["",{"text":"[","color":"yellow"},{"text":"\uE103","color": "white"},{"text":"] Joue en équipe","color":"yellow"}]
+team modify gw.playing_yellow collisionRule never
+team modify gw.playing_yellow color yellow
+team modify gw.playing_yellow deathMessageVisibility never
+team modify gw.playing_yellow friendlyFire false
+team modify gw.playing_yellow nametagVisibility always
+team modify gw.playing_yellow seeFriendlyInvisibles true
+#team modify gw.playing_red prefix ["",{"text":"[","color":"red"},{"text":"\uE103","color": "white"},{"text":"] ","color":"red"}]
+team modify gw.playing_yellow prefix ""
+
+#Jeu (équipe verte)
+team add gw.playing_green ["",{"text":"[","color":"green"},{"text":"\uE103","color": "white"},{"text":"] Joue en équipe","color":"green"}]
+team modify gw.playing_green collisionRule never
+team modify gw.playing_green color green
+team modify gw.playing_green deathMessageVisibility never
+team modify gw.playing_green friendlyFire false
+team modify gw.playing_green nametagVisibility always
+team modify gw.playing_green seeFriendlyInvisibles true
+#team modify gw.playing_red prefix ["",{"text":"[","color":"red"},{"text":"\uE103","color": "white"},{"text":"] ","color":"red"}]
+team modify gw.playing_green prefix ""
+
+
 
 #Spec
 team add gw.spec ["",{"text":"[","color":"dark_gray"},{"text":"\uE100","color": "white"},{"text":"] Spectateur","color":"dark_gray"}]

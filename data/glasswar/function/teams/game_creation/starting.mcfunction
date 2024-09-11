@@ -27,9 +27,16 @@ execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_blue] rem
 execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_red] add gw.starting_red_end
 execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_red] remove gw.starting_red
 
+execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_yellow] add gw.starting_yellow_end
+execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_yellow] remove gw.starting_yellow
+
+execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_green] add gw.starting_green_end
+execute if score @s gw.GameTimer matches 10 run tag @a[tag=gw.starting_green] remove gw.starting_green
 
 execute if score @s gw.GameTimer matches 5 run function glasswar:teams/game_creation/init_area/init_area
 
 execute if score @s gw.GameTimer matches 3 run function glasswar:mod/init
 
 execute if score @s gw.GameTimer matches 3 run scoreboard players set @s gw.TimerItemSpawn 20
+
+execute if score @s gw.GameTimer matches 1 run scoreboard players set @a[tag=gw.playing,distance=..250] gw.timeSinceDeath 0

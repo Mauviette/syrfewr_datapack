@@ -1,0 +1,114 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:white_dye",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Vous téléporte à l'allié le plus loin.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Téléportation\",\"color\":\"white\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 0.5,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:unluck",
+                          "amplifier": 16,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lime_dye",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Réanime un allié mort aléatoire.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Ranimation\",\"color\":\"white\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 4,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:unluck",
+                          "amplifier": 17,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:green_dye",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lore": [
+                    "[\"\",{\"text\":\"Mangé : Donne régenération.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Ranimation\",\"color\":\"white\"}",
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 4,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:unluck",
+                          "amplifier": 17,
+                          "duration": 10,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
