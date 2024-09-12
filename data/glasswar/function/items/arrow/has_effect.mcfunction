@@ -18,3 +18,4 @@ execute if score @s gw.temp matches 15 run function glasswar:items/consumable/mi
 execute if score @s gw.temp matches 16 run function glasswar:items/consumable/teleportation
 execute if score @s gw.temp matches 17 run function glasswar:items/consumable/revive
 execute if score @s gw.temp matches 18 run function glasswar:items/consumable/support
+execute if score @s gw.temp matches 19 run function glasswar:items/arrow/effect/vex

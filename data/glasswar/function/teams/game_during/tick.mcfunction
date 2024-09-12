@@ -35,7 +35,7 @@ execute if score @s gw.NbItemsSpawned matches 101..130 if score @s gw.TimerItemS
 execute if score @s gw.NbItemsSpawned matches 102..120 if score @s gw.TimerItemSpawn matches 100.. run function glasswar:ffa/game_during/item_spawn
 execute if score @s gw.NbItemsSpawned matches 121.. if score @s gw.TimerItemSpawn matches 80.. run function glasswar:ffa/game_during/item_spawn
 
-execute if score @s gw.NbItemsSpawned matches 10.. if score @s gw.BonusCrateTimer matches 80.. if predicate syrfewr:random/0.05 if predicate syrfewr:random/0.05 if predicate syrfewr:random/0.05 run function glasswar:teams/game_during/bonus_chest_init
+execute if score @s gw.NbItemsSpawned matches 10.. if score @s gw.BonusCrateTimer matches 80.. if predicate syrfewr:random/0.05 if predicate syrfewr:random/0.05 if predicate syrfewr:random/0.08 run function glasswar:items/bonus_chest/init
 
 scoreboard players add @s gw.BonusCrateTimer 1
 scoreboard players add @s gw.GameTime 1

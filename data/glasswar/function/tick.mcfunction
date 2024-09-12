@@ -99,3 +99,8 @@ execute as @a[tag=gw.spec] at @s run function glasswar:playing/spec_tick
 
 
 execute as @e[tag=gw.lucky_block] at @s run function glasswar:items/lucky_block/tick
+
+execute as @e[tag=gw.init_trade] at @s run function glasswar:items/other/trader_init
+effect clear @e[tag=gw.trader] invisibility
+
+execute as @e[tag=gw.bonus_chest] at @s run function glasswar:items/bonus_chest/tick

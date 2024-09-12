@@ -5,25 +5,19 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "value": "glasswar:blocks"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+            "value": "glasswar:armor"
+          },
           {
             "type": "minecraft:loot_table",
             "value": "glasswar:super_special_arrows"
-          }
-        ]
-      },
-      {
-        "rolls": 2,
-        "entries": [
+          },
           {
             "type": "minecraft:loot_table",
-            "value": "glasswar:rare"
+            "value": "glasswar:strategic"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "glasswar:consumable"
           }
         ]
       }

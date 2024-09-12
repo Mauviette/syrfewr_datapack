@@ -89,27 +89,6 @@
                 }
               }
             ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:tipped_arrow",
-            "weight": 5000,
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:potion_contents": {
-                    "custom_color": 13565769
-                  },
-                  "minecraft:lore": [
-                    "{\"text\":\"Royer.\",\"color\":\"dark_gray\",\"italic\":false}"
-                  ],
-                  "minecraft:item_name": "{\"text\":\"Flèche nathan\",\"color\":\"#ceff48\",\"bold\":true}",
-                  "minecraft:hide_additional_tooltip": {}
-
-                }
-              }
-            ]
           }
         ]
       }

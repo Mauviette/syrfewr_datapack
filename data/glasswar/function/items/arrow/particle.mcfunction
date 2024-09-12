@@ -14,3 +14,7 @@ execute if score @s gw.ArrowColor matches 13750737 run particle minecraft:small_
 execute if score @s gw.ArrowColor matches 13565768 run particle white_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 1
 execute if score @s gw.ArrowColor matches 13565768 if predicate syrfewr:random/0.15 run particle campfire_signal_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 1
 
+#Vexée
+execute if score @s gw.ArrowColor matches 12442879 if predicate syrfewr:random/0.15 run particle trial_omen ~ ~ ~ 0.1 0.1 0.1 0 1
+
+

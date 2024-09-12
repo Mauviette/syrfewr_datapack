@@ -12,4 +12,7 @@ execute if score @s gw.ArrowColor matches 8454924 run function glasswar:items/ar
 execute if score @s gw.ArrowColor matches 13750737 run function glasswar:items/arrow/effect/wind_zone
 execute if score @s gw.ArrowColor matches 14286781 run function glasswar:items/arrow/effect/mine
 
+#Vexée
+execute if score @s gw.ArrowColor matches 12442879 run function glasswar:items/arrow/effect/vex_in_ground
+
 kill @s[tag=!gw.arrow_after_plant]

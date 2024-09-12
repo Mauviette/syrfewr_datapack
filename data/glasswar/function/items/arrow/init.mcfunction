@@ -44,6 +44,10 @@ execute if score @s gw.ArrowColor matches 13565768 run tag @s add gw.arrow_tick_
 execute if score @s gw.ArrowColor matches 13565768 run data merge entity @s {PierceLevel:99b}
 execute if score @s gw.ArrowColor matches 13565768 run data merge entity @s {pickup:0b}
 
+#vexée
+execute if score @s gw.ArrowColor matches 12442879 run tag @s add gw.arrow_plant_effect
+execute if score @s gw.ArrowColor matches 12442879 run tag @s add gw.arrow_after_plant
+execute if score @s gw.ArrowColor matches 12442879 run data merge entity @s {pickup:0b}
 
 
 tag @s add gw.arrow_inited

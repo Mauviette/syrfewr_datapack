@@ -19,6 +19,39 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wandering_trader_spawn_egg",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"Marchand offrant\"}",
+                "minecraft:entity_data": {
+                  "id": "minecraft:wandering_trader",
+                  "Tags" : ["gw.init_trade","gw.trader","gw.to_name"],
+                  "Silent": true,
+                  "attributes": [
+                    {
+                      "base": 0,
+                      "id": "generic.movement_speed"
+                    },
+                    {
+                      "base": 0,
+                      "id": "generic.jump_strength"
+                    },
+                    {
+                      "base": 10,
+                      "id": "generic.max_health"
+                    }
+                  ],
+                  "HandDropChances": [0.0,0.0]
+                }
+              }
+            }
+          ]
         }
       ]
     }
