@@ -6,3 +6,5 @@ execute if score @s s.add_mythic_lootboxes matches 2.. run tellraw @s ["Vous ave
 scoreboard players reset @s s.add_mythic_lootboxes
 
 playsound block.note_block.banjo player @s ~ ~ ~ 1 1.7
+
+function syrfewr:player/personal_gui/more/lootboxes/refresh

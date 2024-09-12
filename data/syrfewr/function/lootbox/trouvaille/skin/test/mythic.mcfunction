@@ -1,4 +1,4 @@
-scoreboard players set #test_has_skins s.temp 0
+scoreboard players set #test_has_skins s.temp 1
 
 #execute if entity @s[advancements={syrfewr:succes/skins/bows/=true}] run scoreboard players add #test_has_skins s.temp 1
 

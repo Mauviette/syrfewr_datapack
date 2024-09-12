@@ -2,7 +2,7 @@ function syrfewr:player/personal_gui/clear_gui
 
 item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_trouvailles:1,to_kill:1,back_to_lootboxes:1},item_name='{"color":"white","text":"Retour"}']
 
-item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=106,custom_data={ui:1,item_from_trouvailles:1,to_kill:1,trouvailles:1},item_name='{"text":""}']
+item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=106,custom_data={ui:1,item_from_trouvailles:1,to_kill:1,trouvailles:1},item_name='{"text":""}',hide_tooltip={}]
 
 item replace entity @s inventory.2 with barrier[custom_model_data=4,custom_data={ui:1,item_from_trouvailles:1,to_kill:1,common_trouvailles:1,trouvailles_info:1},item_name='{"color":"gray","text":"Trouvaille commune"}',lore=['{"color":"dark_gray","text":"Chances de trouver :","italic":true}','[{"color":"gold","text":"5 crédits","italic":false},{"color":"dark_gray","text":" (33%)","italic":false}]','[{"color":"gold","text":"10 crédits","italic":false},{"color":"dark_gray","text":" (33%)","italic":false}]','[{"color":"gold","text":"15 crédits","italic":false},{"color":"dark_gray","text":" (23%)","italic":false}]','[{"color":"white","text":"\\uE003 ","italic":false},{"color":"green","text":"Lootbox inhabituelle","italic":false},{"color":"dark_gray","text":" (10%)","italic":false}]']]
 

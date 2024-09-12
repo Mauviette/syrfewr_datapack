@@ -6,8 +6,8 @@ tag @a[tag=gw.starting_yellow] add gw.starting_teams
 tag @a[tag=gw.starting_green] add gw.starting_teams
 
 execute store result score @s gw.NumberOfPlayers if entity @a[tag=gw.starting_teams]
-execute unless score @s gw.NumberOfPlayers matches 3..12 run function glasswar:teams/game_creation/error/players_number
-execute unless score @s gw.NumberOfPlayers matches 3..12 run return fail
+execute unless score @s gw.NumberOfPlayers matches 2..12 run function glasswar:teams/game_creation/error/players_number
+execute unless score @s gw.NumberOfPlayers matches 2..12 run return fail
 
 execute store result score @s gw.NumberOfPlayersBlue if entity @a[tag=gw.starting_blue]
 execute unless score @s gw.NumberOfPlayersBlue matches 1.. run function glasswar:teams/game_creation/error/team_number

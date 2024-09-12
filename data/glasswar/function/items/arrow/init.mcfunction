@@ -10,6 +10,7 @@ execute if score @s gw.ArrowColor matches 2769 run tag @s add gw.arrow_plant_eff
 execute if score @s gw.ArrowColor matches 2769 run tag @s add gw.arrow_tick_effect
 execute if score @s gw.ArrowColor matches 2769 run data merge entity @s {PierceLevel:99b}
 
+#frag
 execute if score @s gw.ArrowColor matches 11895324 run tag @s add gw.arrow_tick_effect
 execute if score @s gw.ArrowColor matches 11895324 run data merge entity @s {PierceLevel:99b}
 execute if score @s gw.ArrowColor matches 11895324 run data merge entity @s {pickup:0b}
@@ -37,6 +38,12 @@ execute if score @s gw.ArrowColor matches 14286781 run tag @s add gw.arrow_plant
 execute if score @s gw.ArrowColor matches 14286781 run tag @s add gw.arrow_after_plant
 execute if score @s gw.ArrowColor matches 14286781 run data merge entity @s {pickup:0b}
 execute if score @s gw.ArrowColor matches 14286781 run data merge entity @s {PierceLevel:99b}
+
+#supra-frag
+execute if score @s gw.ArrowColor matches 13565768 run tag @s add gw.arrow_tick_effect
+execute if score @s gw.ArrowColor matches 13565768 run data merge entity @s {PierceLevel:99b}
+execute if score @s gw.ArrowColor matches 13565768 run data merge entity @s {pickup:0b}
+
 
 
 tag @s add gw.arrow_inited

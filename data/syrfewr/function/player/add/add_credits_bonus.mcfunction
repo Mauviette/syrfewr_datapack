@@ -9,3 +9,5 @@ execute if score @s s.creditsToAddBonus matches ..-2 run tellraw @s ["",{"score"
 
 scoreboard players reset @s s.creditsToAddBonus
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ .8 1.2
+
+function syrfewr:player/personal_gui/my_cosmetics/main/refresh

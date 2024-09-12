@@ -13,4 +13,8 @@ execute if score @s gw.ModificatorID matches 4 run function glasswar:mod/crazy_p
 
 execute if score @s gw.ModificatorID matches 4 if score @s gw.ModificatorIndex matches 1.. run function glasswar:mod/crazy_party/party/map
 
+execute if score @s gw.ModificatorID matches 6 run scoreboard players add @s gw.BonusCrateTimer 1
+execute if score @s gw.ModificatorID matches 6 run scoreboard players add @s gw.TimerItemSpawn 1
+
+
 data remove storage glasswar.temp game_id

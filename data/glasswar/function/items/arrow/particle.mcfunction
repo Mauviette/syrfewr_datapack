@@ -9,3 +9,8 @@ execute if score @s gw.ArrowColor matches 16746700 run particle heart ~ ~ ~ 0.1 
 execute if score @s gw.ArrowColor matches 16710447 run particle electric_spark ~ ~ ~ 0 0 0 0.1 1
 execute if score @s gw.ArrowColor matches 8454924 run particle dust{color:[0.731,0.171,0.033],scale:1.5} ~ ~ ~ 0 0 0 0 1 normal
 execute if score @s gw.ArrowColor matches 13750737 run particle minecraft:small_gust ~ ~ ~ 0 0 0 1 0 normal
+
+#Supra frag
+execute if score @s gw.ArrowColor matches 13565768 run particle white_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 1
+execute if score @s gw.ArrowColor matches 13565768 if predicate syrfewr:random/0.15 run particle campfire_signal_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 1
+

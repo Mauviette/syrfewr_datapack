@@ -68,6 +68,48 @@
                 }
               }
             ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 13565768
+                  },
+                  "minecraft:lore": [
+                    "{\"text\":\"Explose en plusieurs flèches à fragmentation, qui explosent à leur tour. Prend du temps pour s'amorcer.\",\"color\":\"dark_gray\",\"italic\":false}"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Flèche à supra-fragmentation\",\"color\":\"#ceff48\",\"bold\":true}",
+                  "minecraft:hide_additional_tooltip": {}
+
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "weight": 5000,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 13565769
+                  },
+                  "minecraft:lore": [
+                    "{\"text\":\"Royer.\",\"color\":\"dark_gray\",\"italic\":false}"
+                  ],
+                  "minecraft:item_name": "{\"text\":\"Flèche nathan\",\"color\":\"#ceff48\",\"bold\":true}",
+                  "minecraft:hide_additional_tooltip": {}
+
+                }
+              }
+            ]
           }
         ]
       }

@@ -12,3 +12,5 @@ execute if score @s s.temp <= @s s.creditsToAdd run function syrfewr:player/add/
 
 scoreboard players reset @s s.creditsToAdd
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ .8 1.2
+
+function syrfewr:player/personal_gui/my_cosmetics/main/refresh

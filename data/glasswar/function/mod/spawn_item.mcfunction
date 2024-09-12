@@ -3,3 +3,4 @@ execute if score @s gw.ModificatorID matches 2 run function glasswar:mod/grand_b
 execute if score @s gw.ModificatorID matches 3 run function glasswar:mod/hostile_environment/spawn_item
 execute if score @s gw.ModificatorID matches 4 run function glasswar:mod/crazy_party/spawn_item
 execute if score @s gw.ModificatorID matches 5 run function glasswar:mod/lucky_mayhem/spawn_item
+execute if score @s gw.ModificatorID matches 6 run function glasswar:mod/rush/spawn_item

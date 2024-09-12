@@ -55,7 +55,7 @@
                     "nutrition": 0,
                     "saturation": 0,
                     "can_always_eat": true,
-                    "eat_seconds": 4,
+                    "eat_seconds": 6,
                     "effects": [
                       {
                         "effect": {
@@ -82,15 +82,15 @@
                 "function": "minecraft:set_components",
                 "components": {
                   "minecraft:lore": [
-                    "[\"\",{\"text\":\"Mangé : Donne régenération.\",\"italic\":false,\"color\":\"dark_gray\"}]"
+                    "[\"\",{\"text\":\"Mangé : Tous vos alliés gagnent Résistance II, immunité au recul et Régenération III pendant 4s.\",\"italic\":false,\"color\":\"dark_gray\"}]"
                   ],
-                  "minecraft:item_name": "{\"text\":\"Ranimation\",\"color\":\"white\"}",
+                  "minecraft:item_name": "{\"text\":\"Soutien\",\"color\":\"green\"}",
                   "minecraft:hide_additional_tooltip": {},
                   "minecraft:food": {
                     "nutrition": 0,
                     "saturation": 0,
                     "can_always_eat": true,
-                    "eat_seconds": 4,
+                    "eat_seconds": 0.5,
                     "effects": [
                       {
                         "effect": {

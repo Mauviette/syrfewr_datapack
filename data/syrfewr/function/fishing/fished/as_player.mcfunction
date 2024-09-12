@@ -77,3 +77,6 @@ clear @s salmon[minecraft:custom_data~{fished:1}] 1
 
 
 function syrfewr:player/quests/check_fishes
+
+xp set @s 0
+xp set @s 0 levels

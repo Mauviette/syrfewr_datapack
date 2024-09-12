@@ -27,6 +27,6 @@ item replace block ~ ~ ~ container.25 with barrier[custom_model_data=3,minecraft
 item replace block ~ ~ ~ container.26 with minecraft:barrier[minecraft:item_name='{"text":""}',custom_data={to_clear:1},custom_model_data=501]
 data merge block ~ ~ ~ {CustomName:'{"text":"Sélection du modificateur"}'}
 
-execute if score @s gw.ModificatorID matches 6.. run scoreboard players set @s gw.ModificatorID 0
+execute if score @s gw.ModificatorID matches 7.. run scoreboard players set @s gw.ModificatorID 0
 execute if score @s gw.ModificatorID matches 3 run scoreboard players set @s gw.ModificatorID 4
 scoreboard players add @s gw.LastInteraction 1

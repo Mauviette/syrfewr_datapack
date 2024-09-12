@@ -30,6 +30,11 @@ execute if score @s s.computerPower matches 1 run item replace entity @s invento
 execute if score @s s.computerPower matches 2 run item replace entity @s inventory.3 with iron_ingot[custom_data={ui:1,item_from_settings:1,to_kill:1,computer_power:1},item_name='{"text":"Medium","color":"gray"}',lore=['{"text":"Puissance de l\'ordinateur","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
 execute if score @s s.computerPower matches 3 run item replace entity @s inventory.3 with diamond[custom_data={ui:1,item_from_settings:1,to_kill:1,computer_power:1},item_name='{"text":"Ultra","color":"aqua"}',lore=['{"text":"Puissance de l\'ordinateur","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
 
+execute unless score @s s.seeSpecialOpening matches 0.. run scoreboard players set @s s.seeSpecialOpening 1
+#1: patate, 2: medium, 3: ultra
+execute if score @s s.seeSpecialOpening matches 0 run item replace entity @s inventory.4 with red_shulker_box[custom_data={ui:1,item_from_settings:1,to_kill:1,see_special_opening:1},item_name='{"text":"Désctivé","color":"red"}',lore=['{"text":"Voir les ouvertures de lootbox des autres joueurs (légendaire et mythique)","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+execute if score @s s.seeSpecialOpening matches 1 run item replace entity @s inventory.4 with green_shulker_box[custom_data={ui:1,item_from_settings:1,to_kill:1,see_special_opening:1},item_name='{"text":"Activé","color":"green"}',lore=['{"text":"Voir les ouvertures de lootbox des autres joueurs (légendaire et mythique)","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
+
 
 item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_settings:1,to_kill:1,back_to_more:1},item_name='{"color":"white","text":"Retour"}']
 

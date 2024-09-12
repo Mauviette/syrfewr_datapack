@@ -11,3 +11,5 @@ scoreboard players add @s s.opened_lootboxes 1
 function syrfewr:player/quests/check_lootboxes
 
 function syrfewr:lootbox/opening/box/anim/summon
+
+tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] [{"selector": "@s"},{"text":" ouvre une "},"\uE006 ",{"text":"lootbox légendaire","color":"yellow"},"!"]

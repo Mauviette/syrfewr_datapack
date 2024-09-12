@@ -1,10 +1,10 @@
-execute store result score @s gw.NumberOfPlayers if entity @a[tag=gw.starting]
+execute store result score @s gw.NumberOfPlayers if entity @a[tag=gw.starting_temp]
 #tellraw @a [{"score":{"objective": "gw.NumberOfPlayers","name": "@s"}}]
 execute unless score @s gw.NumberOfPlayers matches 2..7 run function glasswar:ffa/game_creation/error/players_number
 execute unless score @s gw.NumberOfPlayers matches 2..7 run return fail
 
 
-
+tag @a[tag=gw.starting_temp] add gw.starting_confirmed
 
 function glasswar:ffa/game_creation/determine_pos_loop
 

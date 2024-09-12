@@ -8,4 +8,6 @@ execute if score @s gw.ArrowColor matches 8454924 run function glasswar:items/ar
 
 execute if score @s gw.ArrowColor matches 14286781 run function glasswar:items/arrow/tick/armed_mine
 
+execute if score @s gw.ArrowColor matches 13565768 if score @s gw.ArrowTimer matches 50.. run function glasswar:items/arrow/tick/supra_frag
+
 scoreboard players add @s gw.ArrowTimer 1

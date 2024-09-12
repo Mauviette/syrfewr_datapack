@@ -84,6 +84,9 @@ scoreboard objectives add s.favoriteColor dummy
 #1: rouge, 2: vert, 3: bleu, 4: jaune, 5: rose, 6: violet, 7: cyan, 8: gris, 9: noir, 10: blanc
 scoreboard objectives add s.computerPower dummy
 #1: patate, 2: medium, 3: ultra
+scoreboard objectives add s.seeSpecialOpening dummy
+
+
 
 scoreboard objectives add s.credits dummy
 scoreboard objectives add s.creditsToAdd dummy
@@ -161,27 +164,36 @@ scoreboard objectives add s.last_fast_dialog dummy
 #Prix cosmétiques
 scoreboard objectives add price dummy
 
-scoreboard players set #victory_animation_unusual price 40
-scoreboard players set #victory_animation_rare price 60
-scoreboard players set #victory_animation_epic price 90
+scoreboard players set #unusual price 80
+scoreboard players set #rare price 120
+scoreboard players set #epic price 180
+scoreboard players set #legendary price 320
+scoreboard players set #mythic price 640
 
-scoreboard players set #bow_unusual price 40
-scoreboard players set #bow_rare price 60
-scoreboard players set #bow_epic price 90
-scoreboard players set #bow_legendary price 160
+scoreboard players set #common_refund price 20
+scoreboard players set #unusual_refund price 40
+scoreboard players set #rare_refund price 60
+scoreboard players set #epic_refund price 90
+scoreboard players set #legendary_refund price 120
+scoreboard players set #mythic_refund price 160
 
-scoreboard players set #common_refund price 10
-scoreboard players set #unusual_refund price 20
-scoreboard players set #rare_refund price 30
-scoreboard players set #epic_refund price 45
-scoreboard players set #legendary_refund price 60
-scoreboard players set #mythic_refund price 80
+scoreboard players operation #bow_unusual price = #unusual price
+scoreboard players operation #bow_rare price = #rare price
+scoreboard players operation #bow_epic price = #epic price
+scoreboard players operation #bow_legendary price = #legendary price
+scoreboard players operation #bow_mythic price = #mythic price
 
-scoreboard players set #hat_unusual price 40
-scoreboard players set #hat_rare price 60
-scoreboard players set #hat_epic price 90
-scoreboard players set #hat_legendary price 160
-scoreboard players set #hat_mythic price 320
+scoreboard players operation #victory_animation_unusual price = #unusual price
+scoreboard players operation #victory_animation_rare price = #rare price
+scoreboard players operation #victory_animation_epic price = #epic price
+scoreboard players operation #victory_animation_legendary price = #legendary price
+scoreboard players operation #victory_animation_mythic price = #mythic price
+
+scoreboard players operation #hat_unusual price = #unusual price
+scoreboard players operation #hat_rare price = #rare price
+scoreboard players operation #hat_epic price = #epic price
+scoreboard players operation #hat_legendary price = #legendary price
+scoreboard players operation #hat_mythic price = #mythic price
 
 scoreboard players set #common_lootbox price 20
 scoreboard players set #unusual_lootbox price 40
@@ -197,6 +209,14 @@ execute store result storage s.lootboxes rare_price int 1 run scoreboard players
 execute store result storage s.lootboxes epic_price int 1 run scoreboard players get #epic_lootbox price
 execute store result storage s.lootboxes legendary_price int 1 run scoreboard players get #legendary_lootbox price
 execute store result storage s.lootboxes mythic_price int 1 run scoreboard players get #mythic_lootbox price
+
+execute store result storage s.prices common int 1 run scoreboard players get #common price
+execute store result storage s.prices unusual int 1 run scoreboard players get #unusual price
+execute store result storage s.prices rare int 1 run scoreboard players get #rare price
+execute store result storage s.prices epic int 1 run scoreboard players get #epic price
+execute store result storage s.prices legendary int 1 run scoreboard players get #legendary price
+execute store result storage s.prices mythic int 1 run scoreboard players get #mythic price
+
 
 scoreboard objectives add s.player_id dummy
 scoreboard objectives add s.version dummy

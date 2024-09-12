@@ -1,0 +1,1 @@
+execute if score @s s.GuiPageID matches 1 run function syrfewr:player/personal_gui/my_cosmetics/main/init

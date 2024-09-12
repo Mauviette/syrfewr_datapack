@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.15 with blaze_powder[item_name='{"color":"gold","text":"Rush"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}','{"color":"dark_gray","italic":false,"text":"Spawn d\'items 2x plus rapide!"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]

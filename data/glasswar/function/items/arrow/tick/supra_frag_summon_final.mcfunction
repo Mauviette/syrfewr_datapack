@@ -1,0 +1,1 @@
+$summon arrow ~$(x) ~$(y) ~$(z) {item:{id:tipped_arrow,components:{potion_contents:{custom_color:11895324}}}}

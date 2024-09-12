@@ -1,8 +1,8 @@
 scoreboard players remove @s gw.GameTimer 1
 execute if score @s gw.GameTimer matches ..0 run tag @s remove gw.gm_starting_teams
 
-tp @a[tag=gw.starting] ~ ~ ~
-execute if score @s gw.GameTimer matches 15 run scoreboard players add @a[tag=gw.starting] gw.TeamGames 1
+tp @a[tag=gw.starting_confirmed] ~ ~ ~
+execute if score @s gw.GameTimer matches 15 run scoreboard players add @a[tag=gw.starting_confirmed] gw.TeamGames 1
 execute if score @s gw.GameTimer matches 15 run title @a[tag=gw.starting_teams] times 0 45 0
 execute if score @s gw.GameTimer matches 15 run title @a[tag=gw.starting_teams] actionbar [{"text":"Chargement de la partie...","color":"white"}]
 execute if score @s gw.GameTimer matches 15 run forceload add ~-51 ~-51 ~51 ~51

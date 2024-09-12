@@ -1,0 +1,1 @@
+execute if score @s s.GuiPageID matches 23 run function syrfewr:player/personal_gui/more/lootboxes/init
