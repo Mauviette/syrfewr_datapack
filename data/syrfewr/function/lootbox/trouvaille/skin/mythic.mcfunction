@@ -5,6 +5,8 @@ execute if score #has_all_skins s.temp matches 1 run scoreboard players operatio
 execute if score #has_all_skins s.temp matches 1 run return fail
 
 execute store result score #id_skin s.temp run random value 1..2
+scoreboard players set #id_skin s.temp 1
 
-#execute if score #id_skin s.temp matches 1 run function syrfewr:lootbox/trouvaille/skin/test_give {"type":"bows","skin":"shortbow",rarity:"mythic"}
+execute if score #id_skin s.temp matches 1 run function syrfewr:lootbox/trouvaille/skin/test_give {"type":"hats","skin":"douglas",rarity:"mythic"}
+
 scoreboard players reset #id_skin s.temp

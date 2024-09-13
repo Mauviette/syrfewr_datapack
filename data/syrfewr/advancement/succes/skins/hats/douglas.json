@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+    "rewards": {
+      "function": "syrfewr:player/got_skin/hats/douglas"
+    }
+  }

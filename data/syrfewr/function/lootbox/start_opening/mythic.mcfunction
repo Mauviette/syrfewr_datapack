@@ -13,4 +13,4 @@ function syrfewr:player/quests/check_lootboxes
 function syrfewr:lootbox/opening/box/anim/summon
 
 
-tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] [{"selector": "@s"},{"text":" ouvre une "},"\uE007 ",{"text":"lootbox mythique","color":"#FF04FF"},"!"]
+tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] ["",{"selector": "@s"},{"text":" ouvre une "},"\uE007 ",{"text":"lootbox mythique","color":"#FF04FF"},"!"]

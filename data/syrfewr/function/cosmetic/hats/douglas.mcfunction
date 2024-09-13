@@ -1,0 +1,5 @@
+execute store result score #random s.temp run random value 1..1000
+
+execute if score #random s.temp matches 1..944 run item replace entity @s armor.head with stick[custom_data={to_kill:1,hat:1},custom_model_data=2,item_name='{"text":"Douglas","color":"#2ed48f"}',lore=['{"text":"♪","color":"dark_gray","italic":false}']]
+execute if score #random s.temp matches 945..996 run item replace entity @s armor.head with stick[custom_data={to_kill:1,hat:1},custom_model_data=4,item_name='{"text":"Douglas rare","color":"gold"}',lore=['{"text":"♪♪","color":"dark_gray","italic":false}']]
+execute if score #random s.temp matches 997.. run item replace entity @s armor.head with stick[custom_data={to_kill:1,hat:1},custom_model_data=3,item_name='{"text":"Douglas épique","color":"dark_purple"}',lore=['{"text":"♪♪♪","color":"dark_gray","italic":false}']]

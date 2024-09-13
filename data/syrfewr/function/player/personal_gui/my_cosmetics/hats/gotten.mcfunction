@@ -5,3 +5,4 @@ execute if entity @s[advancements={syrfewr:succes/skins/hats/aquarium=true}] run
 execute if entity @s[advancements={syrfewr:succes/skins/hats/garden=true}] run scoreboard players add #completed s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/hats/rainbow=true}] run scoreboard players add #completed s.temp 1
 execute if entity @s[advancements={syrfewr:succes/skins/hats/lootbox=true}] run scoreboard players add #completed s.temp 1
+execute if entity @s[advancements={syrfewr:succes/skins/hats/douglas=true}] run scoreboard players add #completed s.temp 1
