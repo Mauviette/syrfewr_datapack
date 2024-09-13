@@ -8,34 +8,34 @@ execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unl
 execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:10b,components:{"minecraft:custom_data":{select_default:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/default
 
 #Petit arc
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:11b,components:{"minecraft:custom_data":{select_shortbow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/shortbow
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:11b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/shortbow
 
 #Arc désossé (bonebow)
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:12b,components:{"minecraft:custom_data":{select_bonebow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/bonebow
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:12b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/bonebow
 
 #Flingue (gun)
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:13b,components:{"minecraft:custom_data":{select_gun:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/gun
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:13b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/webbedbow
 
 #Arc angélique (angelicbow)
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:14b,components:{"minecraft:custom_data":{select_angelbow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/angelbow
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:14b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/windcaller
 
 #Appel du vent (windcaller)
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:15b,components:{"minecraft:custom_data":{select_windcaller:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/windcaller
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:15b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/floriculture
 
 #floriculture
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:16b,components:{"minecraft:custom_data":{select_floriculture:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/floriculture
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:16b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/bubblebow
 
 #lavenderlight 
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:19b,components:{"minecraft:custom_data":{select_lavenderlight:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/lavenderlight
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:19b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/lavenderlight
 
 #webbedbow 
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:20b,components:{"minecraft:custom_data":{select_webbedbow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/webbedbow
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:20b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/gun
 
 #swowblaster 
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:21b,components:{"minecraft:custom_data":{select_snowblaster:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/snowblaster
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:21b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/snowblaster
 
 #bubblebow 
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:22b,components:{"minecraft:custom_data":{select_bubblebow:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/bubblebow
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:22b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/thirdwing
 
 #thirdwing 
-execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:23b,components:{"minecraft:custom_data":{select_thirdwing:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/thirdwing
+execute if score @s s.GuiPageID matches 3 if score @s s.GuiIndexID matches 1 unless data entity @s {Inventory:[{Slot:23b,components:{"minecraft:custom_data":{select_skin:1}}}]} run function syrfewr:player/personal_gui/my_cosmetics/bow/clicked/select/angelbow

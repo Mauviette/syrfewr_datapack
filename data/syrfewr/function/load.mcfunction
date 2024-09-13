@@ -236,3 +236,31 @@ scoreboard objectives add s.hasInteractedSmoker minecraft.custom:minecraft.inter
 scoreboard objectives add s.hasInteractedStonecutter minecraft.custom:minecraft.interact_with_stonecutter
 
 scoreboard objectives add s.lastBlockInteraction dummy
+
+
+
+#Données GUI
+#data remove storage s.ui fishing_rod
+#data modify storage s.ui fishing_rod append value {item:"fishing_rod[item_name='{\"text\":\"Une super canne à pêche!\"}']"}
+#
+#data remove storage s.ui fishes
+#data modify storage s.ui fishes append value {item:"salmon",data:"custom_model_data=5",name:"{\"text\":\"Cabillaud\"}",caught:"{\"text\":\"Attrapé 6 fois\"}"}
+
+#rarity
+#1 : common, 2 : unusual, 3 : rare, 4 : epic, 5 : legendary, 6 : mythic
+data remove storage s.ui bows
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=1",name:'{"color":"white","text":"Petit arc"}',rarity:2,id:"shortbow",nb:1}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=2",name:'{"color":"white","text":"Arc osseux"}',rarity:2,id:"bonebow",nb:2}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=10",name:'{"color":"dark_gray","text":"Arc à toile"}',rarity:2,id:"webbedbow",nb:10}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=5",name:'{"color":"#30b05f","text":"Appel du vent"}',rarity:3,id:"windcaller",nb:5}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=6",name:'{"color":"dark_green","text":"Floriculture"}',rarity:3,id:"floriculture",nb:6}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=7",name:'{"color":"aqua","text":"Arc à bulles"}',rarity:4,id:"bubblebow",nb:7}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=9",name:'{"color":"light_purple","text":"Lumière de lavande"}',rarity:4,id:"lavenderlight",nb:9}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=3",name:'{"color":"white","text":"Flingue"}',rarity:4,id:"gun",nb:3}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=11",name:'{"color":"yellow","text":"Blaster"}',rarity:3,id:"snowblaster",nb:11}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=8",name:'{"color":"#3adf63","text":"Troisième aile"}',rarity:5,id:"thirdwing",nb:8}
+data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=4",name:'{"color":"#FF02FF","text":"Arc angélique"}',rarity:6,id:"angelbow",nb:4,not_buyable:1,desc:'\'{"text":"Obtenu en finissant le jump impossible du glasswar.","color":"dark_gray","italic":false}\','}
+
+
+
+
