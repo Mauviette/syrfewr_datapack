@@ -14,7 +14,8 @@
                   "minecraft:max_damage": 12,
                   "minecraft:enchantments": {
                     "minecraft:knockback": 1
-                  }
+                  },
+                  "custom_model_data": 1
                 }
               }
             ]

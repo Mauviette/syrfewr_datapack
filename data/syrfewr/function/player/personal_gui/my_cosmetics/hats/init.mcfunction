@@ -18,4 +18,6 @@ execute unless score @s s.SelectedHatID matches 0 run item replace entity @s inv
 execute if score @s s.SelectedHatID matches 0 run item replace entity @s inventory.1 with barrier[custom_data={ui:1,item_from_mc_hats:1,to_kill:1,select_default:1},item_name='{"color":"white","text":"Aucun"}',lore=['{"color":"dark_green","text":"Sélectionné","italic":false}','{"color":"dark_gray","text":"Aucun chapeau","italic":false}'],enchantments={levels:{"minecraft:protection":1},show_in_tooltip:false}]
 
 
-function syrfewr:player/personal_gui/my_cosmetics/hats/init_buyable with storage s.prices
+#function syrfewr:player/personal_gui/my_cosmetics/hats/init_buyable with storage s.prices
+
+function syrfewr:player/personal_gui/my_cosmetics/hats/init_items

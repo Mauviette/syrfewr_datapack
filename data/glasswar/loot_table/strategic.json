@@ -15,7 +15,8 @@
                 "minecraft:lore": [
                   "{\"text\":\"Le verre cassé avec cet objet revient dans votre inventaire.\",\"color\":\"dark_gray\",\"italic\":false}"
                 ],
-                "minecraft:max_damage": 16
+                "minecraft:max_damage": 16,
+                "custom_model_data": 1
               }
             }
           ]
