@@ -107,6 +107,14 @@ scoreboard objectives add s.add_epic_lootboxes dummy
 scoreboard objectives add s.add_legendary_lootboxes dummy
 scoreboard objectives add s.add_mythic_lootboxes dummy
 
+##Fishing
+scoreboard objectives add s.bouchons dummy
+
+scoreboard objectives add s.total dummy
+scoreboard players set #fishes s.total 10
+scoreboard players set #fishing_zones s.total 2
+
+
 ## Gamerules
 gamerule doImmediateRespawn true
 gamerule commandModificationBlockLimit 100000
@@ -161,6 +169,9 @@ scoreboard objectives add s.reset_dialog dummy
 
 scoreboard objectives add s.last_fast_dialog dummy
 
+#Heure
+scoreboard objectives add time dummy
+execute in syrfewr:lobby positioned 0 -64 0 run setblock ~ ~ ~ repeating_command_block{Command:"help help",auto:1b,TrackOutput:1b}
 
 #Prix cosmétiques
 scoreboard objectives add price dummy
@@ -273,3 +284,7 @@ data modify storage s.ui hats append value {item:"grass_block",name:'{"color":"d
 data modify storage s.ui hats append value {item:"purple_stained_glass",name:'{"color":"#FF00FF","text":"Arc-en-ciel"}',rarity:5,id:"rainbow",nb:5}
 data modify storage s.ui hats append value {item:"purple_shulker_box",name:'{"color":"#FF00FF","text":"Arc-en-ciel de lootboxes"}',rarity:5,id:"lootbox",nb:6,data:"custom_model_data=1,",not_buyable:1,desc:'\'{"text":"Donné par Jean-Gontran.","color":"dark_gray","italic":false}\','}
 data modify storage s.ui hats append value {item:"stick",name:'{"color":"#2ed48f","text":"Douglas"}',rarity:6,id:"douglas",nb:10,desc:'\'{"text":"Le grand Douglas.","color":"dark_gray","italic":false}\',',data:"custom_model_data=5,"}
+
+
+schedule clear syrfewr:time/schelude
+function syrfewr:time/schelude

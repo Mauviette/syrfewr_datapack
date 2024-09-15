@@ -25,7 +25,7 @@
           {
             "type": "minecraft:loot_table",
             "value": "glasswar:teams/consumable_teams",
-            "weight": 6
+            "weight": 15
           },
           {
             "type": "minecraft:loot_table",

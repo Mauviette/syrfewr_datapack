@@ -14,3 +14,8 @@ execute if score @s s.GuiPageID matches 22 run function syrfewr:player/personal_
 execute if score @s s.GuiPageID matches 23 run function syrfewr:player/personal_gui/more/lootboxes/tick
 execute if score @s s.GuiPageID matches 24 run function syrfewr:player/personal_gui/more/lootboxes/trouvailles/tick
 execute if score @s s.GuiPageID matches 25 run function syrfewr:player/personal_gui/more/my_quests/missions/tick
+execute if score @s s.GuiPageID matches 26 run function syrfewr:player/personal_gui/more/fishing/tick
+execute if score @s s.GuiPageID matches 27 run function syrfewr:player/personal_gui/more/fishing/zones/tick
+execute if score @s s.GuiPageID matches 28 run function syrfewr:player/personal_gui/more/fishing/stuff/tick
+execute if score @s s.GuiPageID matches 29 run function syrfewr:player/personal_gui/more/fishing/fishes/tick
+execute if score @s s.GuiPageID matches 30 run function syrfewr:player/personal_gui/more/fishing/boxes/tick
