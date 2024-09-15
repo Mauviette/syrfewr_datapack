@@ -1,0 +1,33 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:ghast_spawn_egg",
+                "weight": 12,
+                "functions": [
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:item_name": "{\"text\":\"Génerateur d'objets\"}",
+                      "minecraft:entity_data": {
+                        "id": "minecraft:item_display",
+                        "Tags" : ["gw.item_generator"]
+                      },
+                      "custom_model_data": 5,
+                      "minecraft:lore": [
+                        "{\"text\":\"Après être posé, génère peu à peu des objets.\",\"color\":\"dark_gray\",\"italic\":false}",
+                        "{\"text\":\"S'oxyde avec le temps, ralentissant l'apparition d'objets.\",\"color\":\"dark_gray\",\"italic\":false}",
+                        "{\"text\":\"Explose lorsque cassé!\",\"color\":\"red\",\"italic\":false}",
+                        "{\"text\":\"Peut être détruit par une flèche à dématérialisation.\",\"color\":\"dark_gray\",\"italic\":false}"
+                      ]
+                    }
+                  }
+                ]
+              }
+        ]
+      }
+    ]
+  }

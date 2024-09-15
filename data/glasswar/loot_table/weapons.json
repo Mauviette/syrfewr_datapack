@@ -15,7 +15,8 @@
                   "minecraft:enchantments": {
                     "minecraft:knockback": 1
                   },
-                  "custom_model_data": 1
+                  "custom_model_data": 1,
+                  "minecraft:item_name": "{\"text\":\"Batte en bois\",\"color\":\"white\"}"
                 }
               }
             ]

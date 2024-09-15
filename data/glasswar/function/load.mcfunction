@@ -40,6 +40,8 @@ scoreboard objectives add gw.CooldownFireballThrow dummy
 scoreboard objectives add gw.InfiniteGlassTimer dummy
 scoreboard objectives add gw.SmokeZoneTimer dummy
 scoreboard objectives add gw.WindZoneTimer dummy
+scoreboard objectives add gw.Personal dummy
+scoreboard objectives add gw.Personal2 dummy
 
 # Verre cassé
 scoreboard objectives add gw.BrokenGlass mined:minecraft.glass

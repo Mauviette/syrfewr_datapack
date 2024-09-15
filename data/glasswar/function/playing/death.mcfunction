@@ -28,6 +28,8 @@ execute if score @s s.temp matches 2.. run tellraw @a[distance=..350] [{"selecto
 
 scoreboard players add @s gw.TotalDeathsStats 1
 
+scoreboard players set @s gw.WindZoneTimer 0
+scoreboard players set @s gw.SmokeZoneTimer 0
 
 #Autres
 execute as @a[tag=gw.just_killed_player] at @s if entity @e[tag=gw.game_manager,scores={gw.ModificatorIndex=16},distance=..250] store result score @s s.creditsToAdd run random value 3..6

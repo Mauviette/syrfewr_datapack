@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wooden_pickaxe",
-          "weight": 50,
+          "weight": 45,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -53,6 +53,11 @@
               }
             }
           ]
+        },
+        {
+          "type": "loot_table",
+          "value": "glasswar:items/item_generator",
+          "weight": 20
         }
       ]
     }

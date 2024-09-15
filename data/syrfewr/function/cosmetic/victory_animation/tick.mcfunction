@@ -17,3 +17,4 @@ execute if score @s s.SelectedVictoryAnimationID matches 4 run item replace enti
 execute if score @s s.SelectedVictoryAnimationID matches 4 run particle smoke ~ ~1.2 ~ 0.2 0.4 0.2 .2 1 force
 
 execute if score @s s.SelectedVictoryAnimationID matches 5 run particle minecraft:trial_spawner_detection_ominous ~ ~1.2 ~ .2 .6 .2 .1 3
+execute if score @s s.SelectedVictoryAnimationID matches 5 unless entity @s[gamemode=adventure] if score @s gw.PosY matches ..-1 run setblock ~ ~-1 ~ iron_block

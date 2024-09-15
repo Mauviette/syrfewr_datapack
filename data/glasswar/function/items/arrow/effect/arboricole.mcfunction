@@ -8,4 +8,4 @@ setblock ~ ~-1 ~ dirt
 particle item{item: "minecraft:oak_sapling"} ~ ~ ~ 2 2 2 .1 50 force
 particle item{item: "minecraft:oak_sapling"} ~ ~ ~ 2 2 2 .1 50 force @a[scores={s.computerPower=2..}]
 
-execute if predicate syrfewr:random/0.1 run summon creeper ~ ~6 ~ {CustomName:'{"text":"Juste du feuillage","color":"green"}'}
+execute if predicate syrfewr:random/0.4 run summon creeper ~ ~6 ~ {CustomName:'{"text":"Juste du feuillage","color":"green"}'}

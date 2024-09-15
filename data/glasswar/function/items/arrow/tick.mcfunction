@@ -8,7 +8,7 @@ execute if score @s gw.ArrowColor matches 8454924 run function glasswar:items/ar
 
 execute if score @s gw.ArrowColor matches 14286781 run function glasswar:items/arrow/tick/armed_mine
 
-execute if score @s gw.ArrowColor matches 13565768 if score @s gw.ArrowTimer matches 50.. run function glasswar:items/arrow/tick/supra_frag
+execute if score @s gw.ArrowColor matches 13565768 if score @s gw.ArrowTimer matches 40.. run function glasswar:items/arrow/tick/supra_frag
 
 execute if score @s gw.ArrowColor matches 12442879 if score @s gw.ArrowTimer matches 30 run particle raid_omen ~ ~ ~ 0 0 0 0 3 force
 execute if score @s gw.ArrowColor matches 12442879 if score @s gw.ArrowTimer matches 50 run function glasswar:items/arrow/effect/summon_vex

@@ -16,7 +16,14 @@ execute if score #rarity s.temp matches 6 store result storage s.temp bows[0].pr
 
 execute store result storage s.temp bows[0].slot int 1 run scoreboard players get #slot s.temp
 
+
+execute if score #rarity s.temp matches 4.. run data modify storage s.temp bows[0].bonus_desc set value '\'{"italic":false,"color":"dark_gray","text":"Messages de kill"}\''
+
+
 execute unless data storage s.temp bows[0].desc run data modify storage s.temp bows[0].desc set value ""
+execute unless data storage s.temp bows[0].data run data modify storage s.temp bows[0].data set value ""
+
+execute unless data storage s.temp bows[0].bonus_desc run data modify storage s.temp bows[0].bonus_desc set value ""
 
 execute unless data storage s.temp bows[0].not_buyable run function syrfewr:player/personal_gui/my_cosmetics/bow/item with storage s.temp bows[0]
 execute if data storage s.temp bows[0].not_buyable run function syrfewr:player/personal_gui/my_cosmetics/bow/item_not_buyable with storage s.temp bows[0]

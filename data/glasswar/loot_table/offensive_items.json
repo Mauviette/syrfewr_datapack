@@ -27,6 +27,32 @@
                     }
                 }
             ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "item_name": "{\"text\":\"Potion d'invisibilité\",\"color\":\"#6C6C6C\"}",
+                  "minecraft:potion_contents": {
+                    "custom_color": 11263720,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:invisibility",
+                        "amplifier": 0,
+                        "duration": 300,
+                        "ambient": false,
+                        "show_particles": false,
+                        "show_icon": true
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
           }
         ]
       }
