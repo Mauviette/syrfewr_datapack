@@ -2,9 +2,14 @@ function syrfewr:player/personal_gui/clear_gui
 
 #item replace entity @s inventory.11 with book[custom_data={ui:1,item_from_more:1,to_kill:1,my_quests:1},item_name='{"color":"#834600","text":"Mes quêtes"}',lore=['{"text":"et missions","color":"dark_gray","italic": false}']]
 
-scoreboard players enable @s s.common_lootboxes
 
-execute store result storage s.lootboxes common int 1 run scoreboard players get @s s.common_lootboxes
+function syrfewr:fishing/check/fishes/zone/lobby
+execute store result storage s.temp lobby_1 int 1 run scoreboard players get #discovered s.temp
+execute store result storage s.temp lobby_1_total int 1 run scoreboard players get #lobby_1_fishes s.total
+
+function syrfewr:fishing/check/fishes/zone/floating_glass
+execute store result storage s.temp floating_glass int 1 run scoreboard players get #discovered s.temp
+execute store result storage s.temp floating_glass_total int 1 run scoreboard players get #floating_glass_fishes s.total
 
 function syrfewr:player/personal_gui/more/fishing/zones/finish_init with storage s.temp
 

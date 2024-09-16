@@ -77,6 +77,7 @@ execute as @e[tag=s.rotater] at @s run tp @s ~ ~ ~ ~12 ~
 
 
 execute as @e[tag=s.jump_reward] at @s run function syrfewr:player/hubs/jump_rewards
+execute as @e[tag=s.fishing_zone] at @s run function syrfewr:player/hubs/fishing_zones
 #summon marker 1.93 12.00 10.04 {Tags:["s.jump_reward","s.basic_glass_jump"]}
 
 

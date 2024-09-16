@@ -1,0 +1,1 @@
+tellraw @s [{"text":"Zone de pêche découverte : ","color":"white"},{"text":"Verre flottant","color":"aqua"},{"text":"!","color":"white"}]

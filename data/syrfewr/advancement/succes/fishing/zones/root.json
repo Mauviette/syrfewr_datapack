@@ -1,19 +1,8 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:fishing_rod"
-      },
-      "title": {"text":"Zones de pêche","color":"gold"},
-      "description": {"text":"Liste des zones de pêches que vous avez complétées.","color":"dark_gray"},
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": true,
-      "background": "minecraft:textures/block/barrel_top.png"
-    },
     "criteria": {
       "impossible": {
         "trigger": "minecraft:impossible"
       }
     }
-  }
+}
   

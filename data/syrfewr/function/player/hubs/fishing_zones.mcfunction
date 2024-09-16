@@ -1,0 +1,2 @@
+execute if entity @s[tag=s.lobby_main_fz] run advancement grant @a[distance=..8,predicate=syrfewr:on_ground] until syrfewr:succes/fishing/zones/discovered/lobby
+execute if entity @s[tag=s.glasswar_fz] run advancement grant @a[distance=..8,predicate=syrfewr:on_ground] until syrfewr:succes/fishing/zones/discovered/floating_glass

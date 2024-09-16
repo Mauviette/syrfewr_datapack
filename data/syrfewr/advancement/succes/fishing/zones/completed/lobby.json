@@ -1,0 +1,11 @@
+{
+  "parent": "syrfewr:succes/fishing/zones/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "syrfewr:fishing/zones/completed/lobby"
+  }
+}

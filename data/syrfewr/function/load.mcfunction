@@ -111,8 +111,11 @@ scoreboard objectives add s.add_mythic_lootboxes dummy
 scoreboard objectives add s.bouchons dummy
 
 scoreboard objectives add s.total dummy
-scoreboard players set #fishes s.total 10
+scoreboard players set #fishes s.total 12
 scoreboard players set #fishing_zones s.total 2
+
+scoreboard players set #lobby_1_fishes s.total 8
+scoreboard players set #floating_glass_fishes s.total 8
 
 
 ## Gamerules
