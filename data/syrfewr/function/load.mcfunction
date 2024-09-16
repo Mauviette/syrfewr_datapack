@@ -47,6 +47,7 @@ scoreboard objectives add s.killedPlayer playerKillCount
 scoreboard objectives add s.GuiPageID dummy
 scoreboard objectives add s.GuiIndexID dummy
 scoreboard objectives add s.GuiILastInteraction dummy
+scoreboard objectives add s.GuiElementsCount dummy
 
 scoreboard objectives add s.CompletedFishingZones dummy
 
@@ -122,6 +123,10 @@ scoreboard players set #trouble_fishes s.total 5
 scoreboard players set #clear_fishes s.total 5
 scoreboard players set #green_fishes s.total 5
 scoreboard players set #coral_fishes s.total 5
+
+data remove storage s.fish category
+data modify storage s.fish category[0] append value {name:'{"text":"Morue","#ac6e11"}',custom_model_data:"1011",id:"cod"}
+data modify storage s.fish category[0] append value {name:'{"text":"Perche","#5aab4f"}',custom_model_data:"1000",id:"perch"}
 
 
 ## Gamerules

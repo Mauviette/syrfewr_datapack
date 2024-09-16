@@ -1,0 +1,2 @@
+tellraw @s [{"text":"La ","color":"gray"},{"text":"Perche","color":"#5aab4f","italic":false},{"text":" a été ajoutée à votre collection.","color":"gray","italic":false}]
+playsound entity.player.levelup master @s ~ ~ ~ .6 1.65
