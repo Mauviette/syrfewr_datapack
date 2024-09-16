@@ -1,0 +1,1 @@
+execute if score @s s.GuiPageID matches 27 run function syrfewr:player/personal_gui/more/fishing/zones/init

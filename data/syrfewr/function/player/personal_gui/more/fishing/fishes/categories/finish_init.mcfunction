@@ -1,0 +1,7 @@
+
+$execute if entity @s[advancements={syrfewr:succes/fishing/category/discovered/clean=true}] run item replace entity @s inventory.1 with light_blue_stained_glass[custom_data={ui:1,to_kill:1,select:1},item_name='{"color":"aqua","text":"Propre"}',lore=['{"text":"Poissons trouvés : $(clean)/$(clean_total)","color":"dark_gray","italic":false}','{"text":""}','{"text":"Zones :","color":"gray","italic":false}',$(clean_zones)]]
+execute unless entity @s[advancements={syrfewr:succes/fishing/category/discovered/clean=true}] run item replace entity @s inventory.1 with gray_concrete[custom_data={ui:1,to_kill:1,select:1},item_name='{"color":"gray","text":"???"}',lore=['{"text":"Catégorie à découvrir","color":"dark_gray","italic":false}']]
+
+#Végetal
+$execute if entity @s[advancements={syrfewr:succes/fishing/category/discovered/green=true}] run item replace entity @s inventory.2 with moss_block[custom_data={ui:1,to_kill:1,select:1},item_name='{"color":"dark_green","text":"Végétal"}',lore=['{"text":"Poissons trouvés : $(green)/$(green_total)","color":"dark_gray","italic":false}','{"text":""}','{"text":"Zones :","color":"gray","italic":false}',$(green_zones)]]
+execute unless entity @s[advancements={syrfewr:succes/fishing/category/discovered/green=true}] run item replace entity @s inventory.2 with gray_concrete[custom_data={ui:1,to_kill:1,select:1},item_name='{"color":"gray","text":"???"}',lore=['{"text":"Catégorie à découvrir","color":"dark_gray","italic":false}']]

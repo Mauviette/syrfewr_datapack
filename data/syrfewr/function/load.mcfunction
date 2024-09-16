@@ -117,6 +117,12 @@ scoreboard players set #fishing_zones s.total 2
 scoreboard players set #lobby_1_fishes s.total 8
 scoreboard players set #floating_glass_fishes s.total 8
 
+scoreboard players set #clean_fishes s.total 5
+scoreboard players set #trouble_fishes s.total 5
+scoreboard players set #clear_fishes s.total 5
+scoreboard players set #green_fishes s.total 5
+scoreboard players set #coral_fishes s.total 5
+
 
 ## Gamerules
 gamerule doImmediateRespawn true
