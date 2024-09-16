@@ -125,8 +125,8 @@ scoreboard players set #green_fishes s.total 5
 scoreboard players set #coral_fishes s.total 5
 
 data remove storage s.fish category
-data modify storage s.fish category[0] append value {name:'{"text":"Morue","#ac6e11"}',custom_model_data:"1011",id:"cod"}
-data modify storage s.fish category[0] append value {name:'{"text":"Perche","#5aab4f"}',custom_model_data:"1000",id:"perch"}
+data modify storage s.fish category.clean append value {name:'{"text":"Morue","color":"#ac6e11"}',custom_model_data:"1011",id:"cod"}
+data modify storage s.fish category.clean append value {name:'{"text":"Perche","color":"#5aab4f"}',custom_model_data:"1000",id:"perch"}
 
 
 ## Gamerules

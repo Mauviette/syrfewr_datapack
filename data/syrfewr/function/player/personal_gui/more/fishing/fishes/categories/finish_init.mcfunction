@@ -17,3 +17,4 @@ execute unless entity @s[advancements={syrfewr:succes/fishing/category/discovere
 #Eaux troubles (trouble) (dark_blue)
 $execute if entity @s[advancements={syrfewr:succes/fishing/category/discovered/trouble=true}] run item replace entity @s inventory.5 with brown_concrete[custom_data={ui:1,to_kill:1,select:1},item_name='{"color":"#661C0D","text":"Eaux troubles"}',lore=['{"text":"Poissons trouvés : $(trouble)/$(trouble_total)","color":"dark_gray","italic":false}','{"text":""}','{"text":"Zones :","color":"gray","italic":false}',$(trouble_zones)]]
 execute unless entity @s[advancements={syrfewr:succes/fishing/category/discovered/trouble=true}] run item replace entity @s inventory.5 with gray_concrete[custom_data={ui:1,to_kill:1,select:1},item_name='{"color":"gray","text":"???"}',lore=['{"text":"Catégorie à découvrir","color":"dark_gray","italic":false}']]
+

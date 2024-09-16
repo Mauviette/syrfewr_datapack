@@ -1,0 +1,1 @@
+execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 0 run function syrfewr:player/personal_gui/more/fishing/fishes/categories/init
