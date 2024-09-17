@@ -20,6 +20,9 @@ execute store result storage s.temp total_zones int 1 run scoreboard players get
 function syrfewr:fishing/check/zones/finished
 execute store result storage s.temp finished_zones int 1 run scoreboard players get #finished s.temp
 
+execute store result storage s.temp hour int 1 run scoreboard players get $hour time
+execute store result storage s.temp minute int 1 run scoreboard players get $minute time
+
 function syrfewr:player/personal_gui/more/fishing/finish_init with storage s.temp
 
 item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_more:1,to_kill:1,back:1},item_name='{"color":"white","text":"Retour"}']

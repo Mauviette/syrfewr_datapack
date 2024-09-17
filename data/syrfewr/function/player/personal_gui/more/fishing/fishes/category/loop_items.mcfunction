@@ -5,9 +5,25 @@ execute store result storage s.temp fish[0].slot int 1 run scoreboard players ge
 
 execute unless data storage s.temp fish[0].desc run data modify storage s.temp fish[0].desc set value ""
 
-function syrfewr:player/personal_gui/more/fishing/fishes/category/item with storage s.temp fish[0]
+execute unless data storage s.temp fish[0].hour run data modify storage s.temp fish[0].hour set value 0
 
-say LOOP
+#hour | 0:any 1:day 2:night
+execute store result score #hour s.temp run data get storage s.temp fish[0].hour
+execute if score #hour s.temp matches 0 run data modify storage s.temp fish[0].hour set value '{"text":"Tout le temps","color":"yellow"}'
+execute if score #hour s.temp matches 1 run data modify storage s.temp fish[0].hour set value '{"text":"Jour","color":"aqua"}'
+execute if score #hour s.temp matches 2 run data modify storage s.temp fish[0].hour set value '{"text":"Nuit","color":"dark_blue"}'
+
+execute store result score #type s.temp run data get storage s.temp fish[0].type
+execute if score #type s.temp matches 0 run data modify storage s.temp fish[0].type set value '{"text":"Poisson","color":"#5aab4f","italic":false}'
+execute if score #type s.temp matches 1 run data modify storage s.temp fish[0].type set value '{"text":"Déchet","color":"red","italic":false}'
+execute if score #type s.temp matches 2 run data modify storage s.temp fish[0].type set value '{"text":"Trésor","color":"#FF04FF","italic":false}'
+
+execute if data storage s.temp fish[0].credits run function syrfewr:player/personal_gui/more/fishing/fishes/category/loop_items_credits_message with storage s.temp fish[0]
+execute unless data storage s.temp fish[0].credits run data modify storage s.temp fish[0].credits set value ""
+
+
+
+function syrfewr:player/personal_gui/more/fishing/fishes/category/item with storage s.temp fish[0]
 
 data remove storage s.temp fish[0]
 scoreboard players add #slot s.temp 1

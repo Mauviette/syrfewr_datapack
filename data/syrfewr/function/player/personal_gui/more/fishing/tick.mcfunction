@@ -1,3 +1,4 @@
+execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:9b,components:{"minecraft:custom_data":{time:1}}}]} run function syrfewr:player/personal_gui/more/fishing/init
 
 execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:20b,components:{"minecraft:custom_data":{zones:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/zones
 execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:21b,components:{"minecraft:custom_data":{stuff:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/stuff
