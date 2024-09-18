@@ -22,8 +22,11 @@ execute store result storage s.temp finished_zones int 1 run scoreboard players 
 
 execute store result storage s.temp hour int 1 run scoreboard players get $hour time
 execute store result storage s.temp minute int 1 run scoreboard players get $minute time
+data modify storage s.temp bonus_0 set value ""
+execute if score $minute time matches ..9 run data modify storage s.temp bonus_0 set value "0"
+
 
 function syrfewr:player/personal_gui/more/fishing/finish_init with storage s.temp
 
-item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_more:1,to_kill:1,back:1},item_name='{"color":"white","text":"Retour"}']
+item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_more:1,to_kill:1,back:1},item_name='{"color":"white","text":"Retour (plus)"}']
 item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=109,custom_data={ui:1,item_from_more:1,to_kill:1,box:1},item_name='{"text":""}',hide_tooltip={}]

@@ -1,6 +1,8 @@
 $data modify storage s.temp fish[0].category_id set value $(category_id)
 $data modify storage s.temp fish[0].category set value $(category)
 
+#$say $(category)
+
 execute store result storage s.temp fish[0].slot int 1 run scoreboard players get #slot s.temp
 
 execute unless data storage s.temp fish[0].desc run data modify storage s.temp fish[0].desc set value ""
@@ -18,10 +20,14 @@ execute if score #type s.temp matches 0 run data modify storage s.temp fish[0].t
 execute if score #type s.temp matches 1 run data modify storage s.temp fish[0].type set value '{"text":"Déchet","color":"red","italic":false}'
 execute if score #type s.temp matches 2 run data modify storage s.temp fish[0].type set value '{"text":"Trésor","color":"#FF04FF","italic":false}'
 
+execute store result score #credits s.temp run data get storage s.temp fish[0].credits
+execute unless score #credits s.temp matches -1..1 run data modify storage s.temp fish[0].credits_plurial set value "s"
+execute unless data storage s.temp fish[0].credits_plurial run data modify storage s.temp fish[0].credits_plurial set value ""
 execute if data storage s.temp fish[0].credits run function syrfewr:player/personal_gui/more/fishing/fishes/category/loop_items_credits_message with storage s.temp fish[0]
 execute unless data storage s.temp fish[0].credits run data modify storage s.temp fish[0].credits set value ""
 
 
+data modify storage s.temp2 fish[0] set from storage s.temp fish[0]
 
 function syrfewr:player/personal_gui/more/fishing/fishes/category/item with storage s.temp fish[0]
 

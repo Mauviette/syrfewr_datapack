@@ -57,6 +57,10 @@ execute as @a[scores={s.add_epic_lootboxes=1..}] at @s run function syrfewr:play
 execute as @a[scores={s.add_legendary_lootboxes=1..}] at @s run function syrfewr:player/add/legendary_lootbox
 execute as @a[scores={s.add_mythic_lootboxes=1..}] at @s run function syrfewr:player/add/mythic_lootbox
 
+execute as @a[scores={s.add_bouchons=1..}] at @s run function syrfewr:player/add/bouchons
+execute as @a[scores={s.add_fishing_points=1..}] at @s run function syrfewr:player/add/fishing_points
+
+
 
 execute as @a[scores={s.TalkedToVillager=1..}] at @s run function syrfewr:talked_to_npc
 

@@ -1,1 +1,1 @@
-$data modify storage s.temp fish[0].credits set value ',\'{"text":"$(credits) crédits","italic":false,"color":"gold"}\''
+$data modify storage s.temp fish[0].credits set value ',\'{"text":"$(credits) crédit$(credits_plurial)","italic":false,"color":"gold"}\''

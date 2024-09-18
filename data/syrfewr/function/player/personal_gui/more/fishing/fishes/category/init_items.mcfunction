@@ -1,4 +1,5 @@
 $data modify storage s.temp fish set from storage s.fish category.$(category)
+
 scoreboard players set #slot s.temp 1
 scoreboard players set @s s.GuiElementsCount 0
 
