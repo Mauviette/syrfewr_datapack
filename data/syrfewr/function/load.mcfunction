@@ -112,6 +112,11 @@ scoreboard objectives add s.add_mythic_lootboxes dummy
 scoreboard objectives add s.bouchons dummy
 scoreboard objectives add s.add_bouchons dummy
 
+scoreboard objectives add s.bait_effect dummy
+scoreboard objectives add s.bait_duration dummy
+
+scoreboard objectives add s.SelectedHook dummy
+
 scoreboard objectives add s.total dummy
 scoreboard players set #fishing_zones s.total 2
 
@@ -135,13 +140,30 @@ scoreboard players operation #fishes s.total += #clear_fishes s.total
 scoreboard players operation #fishes s.total += #coral_fishes s.total
 scoreboard players operation #fishes s.total += #trouble_fishes s.total
 
+#Stuff
+scoreboard players set #fishing_rods s.total 3
+scoreboard players set #hooks s.total 3
+scoreboard players set #baits s.total 2
+scoreboard players operation #fishing_stuff s.total = #fishing_rods s.total
+scoreboard players operation #fishing_stuff s.total += #hooks s.total
+scoreboard players operation #fishing_stuff s.total += #baits s.total
+
+
 scoreboard objectives add s.fishing_points dummy
 scoreboard objectives add s.add_fishing_points dummy
+
+scoreboard objectives add s.opened_fish_boxes dummy
+
+scoreboard objectives add s.baits_worm dummy
+scoreboard objectives add s.baits_algae dummy
+
+scoreboard objectives add s.hasFished minecraft.custom:minecraft.fish_caught
 #hour | 0:any 1:day 2:night
 #type | 0:fish 1:trash 2:treasure
 
 data remove storage s.fish category
 data modify storage s.fish category.clean append value {name:'{"text":"Morue","color":"#ac6e11"}',custom_model_data:1011,id:"cod",hint:'{"text":"Le poisson de base. Tu peux le faire!","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"e"}
+
 data modify storage s.fish category.clean append value {name:'{"text":"Perche","color":"#5aab4f"}',custom_model_data:1000,id:"perch",hint:'{"text":"Pêché en journée.","color":"gray","italic":false}',hour:1,type:0,credits:2,suffix:"e"}
 
 data modify storage s.fish category.clear append value {name:'{"text":"Saumon","color":"#9e0002"}',custom_model_data:0,id:"salmon",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
@@ -149,10 +171,10 @@ data modify storage s.fish category.clear append value {name:'{"text":"Saumon","
 data modify storage s.fish category.green append value {name:'{"text":"Fretin","color":"#ded5b2"}',custom_model_data:1001,id:"minnow",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
 
 data remove storage s.fish list
-data modify storage s.fish list append value {id:"cod"}
-data modify storage s.fish list append value {id:"perch"}
-data modify storage s.fish list append value {id:"salmon"}
-data modify storage s.fish list append value {id:"minnow"}
+data modify storage s.fish list append value {id:"cod",category:"clean"}
+data modify storage s.fish list append value {id:"perch",category:"clean"}
+data modify storage s.fish list append value {id:"minnow",category:"green"}
+data modify storage s.fish list append value {id:"salmon",category:"clear"}
 
 ## Gamerules
 gamerule doImmediateRespawn true

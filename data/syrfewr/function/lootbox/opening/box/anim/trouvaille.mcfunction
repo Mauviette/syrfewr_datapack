@@ -14,4 +14,4 @@ execute if score @s s.opening_trouvaille_id matches 4 run data merge entity @s {
 execute if score @s s.opening_trouvaille_id matches 5 run data merge entity @s {block_state:{Name:"yellow_shulker_box"}}
 execute if score @s s.opening_trouvaille_id matches 6 run data merge entity @s {block_state:{Name:"red_shulker_box"}}
 
-function syrfewr:lootbox/opening/box/anim/upgrade
+execute if score @s s.opening_trouvaille_id matches ..99 run function syrfewr:lootbox/opening/box/anim/upgrade

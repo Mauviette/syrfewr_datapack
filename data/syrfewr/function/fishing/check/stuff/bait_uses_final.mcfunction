@@ -1,0 +1,1 @@
+$data modify storage s.temp bait_uses set value '[{"text":"Encore ","color":"dark_gray","italic":false},{"text":"$(bait_uses_nb)","color":"green","italic":false},{"text":" utilisations","color":"dark_gray","italic":false}]'

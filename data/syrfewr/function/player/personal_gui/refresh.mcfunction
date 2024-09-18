@@ -17,7 +17,10 @@ execute if score @s s.GuiPageID matches 25 run function syrfewr:player/personal_
 execute if score @s s.GuiPageID matches 26 run function syrfewr:player/personal_gui/more/fishing/init
 execute if score @s s.GuiPageID matches 27 run function syrfewr:player/personal_gui/more/fishing/zones/init
 
-execute if score @s s.GuiPageID matches 28 run function syrfewr:player/personal_gui/more/fishing/stuff/init
+execute if score @s s.GuiPageID matches 28 if score @s s.GuiIndexID matches 0 run function syrfewr:player/personal_gui/more/fishing/stuff/init
+execute if score @s s.GuiPageID matches 28 if score @s s.GuiIndexID matches 1 run function syrfewr:player/personal_gui/more/fishing/stuff/fishing_rods/init
+execute if score @s s.GuiPageID matches 28 if score @s s.GuiIndexID matches 2 run function syrfewr:player/personal_gui/more/fishing/stuff/hooks/init
+execute if score @s s.GuiPageID matches 28 if score @s s.GuiIndexID matches 3 run function syrfewr:player/personal_gui/more/fishing/stuff/baits/init
 
 execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 0 run function syrfewr:player/personal_gui/more/fishing/fishes/categories/init
 
