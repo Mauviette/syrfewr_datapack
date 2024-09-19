@@ -118,5 +118,4 @@ execute as @a[scores={s.hasInteractedStonecutter=1..}] at @s run function syrfew
 execute as @a[scores={s.lastBlockInteraction=0..}] at @s run scoreboard players add @s s.lastBlockInteraction 1
 execute as @a[scores={s.lastBlockInteraction=2}] at @s run function syrfewr:check/last_block_interaction
 
-execute as @a[scores={s.hasFished=1..}] at @s run say j'ai pêché
 execute as @a[scores={s.hasFished=1..}] at @s run scoreboard players reset @s s.hasFished

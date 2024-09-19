@@ -10,7 +10,7 @@ execute if score #random_2 s.temp matches ..70 run data modify storage s.fished 
 
 #Perche
 execute if score #random_2 s.temp matches 71..100 run data modify storage s.fished id set value 1
-execute if score #random_2 s.temp matches 71..100 run data modify storage s.fished fish set from storage s.fish category.perch[1].id
+execute if score #random_2 s.temp matches 71..100 run data modify storage s.fished fish set from storage s.fish category.clean[1].id
 
 
 execute if score #random_2 s.temp matches 1.. run return fail

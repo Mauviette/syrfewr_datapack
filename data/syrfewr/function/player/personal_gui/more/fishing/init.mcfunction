@@ -25,15 +25,18 @@ data modify storage s.temp bonus_0 set value ""
 execute if score $minute time matches ..9 run data modify storage s.temp bonus_0 set value "0"
 
 
+scoreboard players set #gotten s.temp 0
 function syrfewr:fishing/check/stuff/fishing_rods
 execute store result storage s.temp discovered_rods int 1 run scoreboard players get #gotten s.temp
 execute store result storage s.temp total_rods int 1 run scoreboard players get #fishing_rods s.total
 
 
+scoreboard players set #gotten s.temp 0
 function syrfewr:fishing/check/stuff/hooks
 execute store result storage s.temp discovered_hooks int 1 run scoreboard players get #gotten s.temp
 execute store result storage s.temp total_hooks int 1 run scoreboard players get #hooks s.total
 
+scoreboard players set #gotten s.temp 0
 function syrfewr:fishing/check/stuff/baits
 execute store result storage s.temp discovered_baits int 1 run scoreboard players get #gotten s.temp
 execute store result storage s.temp total_baits int 1 run scoreboard players get #baits s.total

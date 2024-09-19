@@ -14,6 +14,11 @@ function syrfewr:fishing/check/stuff/hooks
 execute store result storage s.temp discovered_hooks int 1 run scoreboard players get #gotten s.temp
 execute store result storage s.temp total_hooks int 1 run scoreboard players get #hooks s.total
 
+scoreboard players set #gotten s.temp 0
+function syrfewr:fishing/check/stuff/baits
+execute store result storage s.temp discovered_baits int 1 run scoreboard players get #gotten s.temp
+execute store result storage s.temp total_baits int 1 run scoreboard players get #baits s.total
+
 function syrfewr:fishing/check/stuff/bait_uses
 function syrfewr:fishing/check/stuff/active_bait
 

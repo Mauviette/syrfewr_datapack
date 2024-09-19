@@ -1,1 +1,2 @@
 execute if entity @n[tag=s.im_talking,distance=..15,tag=pnj.jean_gontran] run function syrfewr:pnj/dialog/jean_gontran/talk
+execute if entity @n[tag=s.im_talking,distance=..15,tag=pnj.jean_peche] run function syrfewr:pnj/dialog/jean_peche/talk
