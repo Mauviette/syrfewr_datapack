@@ -1,0 +1,12 @@
+{
+  "criteria": 
+  {
+    "impossible": 
+    {
+      "trigger": "minecraft:impossible"
+    }
+  },
+    "rewards": {
+      "function": "syrfewr:fishing/fish/discover/green/herring"
+    }
+}
