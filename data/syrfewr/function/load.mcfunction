@@ -171,18 +171,18 @@ scoreboard objectives add s.hasFished minecraft.custom:minecraft.fish_caught
 
 data remove storage s.fish category
 data modify storage s.fish category.clean append value {name:'{"text":"Morue","color":"#ac6e11"}',custom_model_data:1011,id:"cod",hint:'{"text":"Le poisson de base. Tu peux le faire!","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"e"}
-
 data modify storage s.fish category.clean append value {name:'{"text":"Perche","color":"#5aab4f"}',custom_model_data:1000,id:"perch",hint:'{"text":"Pêché en journée.","color":"gray","italic":false}',hour:1,type:0,credits:2,suffix:"e"}
+
 
 data modify storage s.fish category.clear append value {name:'{"text":"Saumon","color":"#9e0002"}',custom_model_data:0,id:"salmon",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
 
 data modify storage s.fish category.green append value {name:'{"text":"Fretin","color":"#ded5b2"}',custom_model_data:1001,id:"minnow",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
 
 data remove storage s.fish list
-data modify storage s.fish list append value {id:"cod",category:"clean"}
-data modify storage s.fish list append value {id:"perch",category:"clean"}
-data modify storage s.fish list append value {id:"minnow",category:"green"}
-data modify storage s.fish list append value {id:"salmon",category:"clear"}
+data modify storage s.fish list append value {id:"cod",category:"clean",type:0}
+data modify storage s.fish list append value {id:"perch",category:"clean",type:0}
+data modify storage s.fish list append value {id:"minnow",category:"green",type:0}
+data modify storage s.fish list append value {id:"salmon",category:"clear",type:0}
 
 ## Gamerules
 gamerule doImmediateRespawn true

@@ -47,6 +47,7 @@ execute if score #trouvaille_id s.temp matches 103 positioned ~ ~-.2 ~ run funct
 execute if score #trouvaille_id s.temp matches 104 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"2 lombrics",typed:false,extra:'"color":"#fadbd8"'},events:[]}
 execute if score #trouvaille_id s.temp matches 105 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"3 lombrics",typed:false,extra:'"color":"#fadbd8"'},events:[]}
 execute if score #trouvaille_id s.temp matches 106 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"Canne à pêche",typed:false,extra:'"color":"white"'},events:[]}
+execute if score #trouvaille_id s.temp matches 107 positioned ~ ~-.2 ~ run function speechtools:create {duration:100,args:{"text":"Lootbox",typed:false,extra:'"color":"white"'},events:[]}
 
 #tellraw @a[tag=debug] {"score": {"name": "#trouvaille_id", "objective": "s.temp"}}
 playsound entity.generic.explode player @a[distance=..20] ~ ~ ~ .7 1.3

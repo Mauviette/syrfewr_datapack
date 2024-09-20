@@ -1,6 +1,7 @@
 function syrfewr:player/personal_gui/clear_gui
 
 
+function syrfewr:fishing/mission/check
 
 
 
@@ -44,6 +45,9 @@ execute store result storage s.temp total_baits int 1 run scoreboard players get
 function syrfewr:fishing/check/stuff/active_bait
 function syrfewr:fishing/check/stuff/bait_uses
 
+function syrfewr:fishing/mission/get_current
+execute store result storage s.temp mission_progression int 1 run scoreboard players get @s s.mission_progression
+execute store result storage s.temp mission_progression_max int 1 run scoreboard players get @s s.mission_max_progression
 
 function syrfewr:player/personal_gui/more/fishing/finish_init with storage s.temp
 

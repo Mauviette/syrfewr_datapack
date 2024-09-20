@@ -1,1 +1,1 @@
-execute if score @s s.mission_progression >= @s s.mission_max_progression
+execute if entity @s[advancements={syrfewr:succes/fishing/mission/unlocked=true}] if entity @s[advancements={syrfewr:succes/fishing/mission/done=false}] if score @s s.mission_progression >= @s s.mission_max_progression run function syrfewr:fishing/mission/finish

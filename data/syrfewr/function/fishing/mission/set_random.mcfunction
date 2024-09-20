@@ -8,3 +8,7 @@ execute if score @s s.mission_id matches 5 run scoreboard players set @s s.missi
 
 function syrfewr:fishing/mission/get_current
 function syrfewr:fishing/mission/say_mission with storage s.temp
+
+advancement grant @s only syrfewr:succes/fishing/mission/unlocked
+
+function syrfewr:player/personal_gui/refresh

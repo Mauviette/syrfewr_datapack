@@ -6,4 +6,5 @@ execute if score @s zEventTrigger matches 1001 if score @s s.jean_gontran_step m
 
 execute if score @s zEventTrigger matches 1100 if score @s s.dialog_id matches 2 run function syrfewr:pnj/dialog/jean_peche/dialog/hint
 execute if score @s zEventTrigger matches 1101 if score @s s.dialog_id matches 2 run function syrfewr:pnj/dialog/jean_peche/dialog/mystery
+execute if score @s zEventTrigger matches 1102 if score @s s.dialog_id matches 2 run function syrfewr:pnj/dialog/jean_peche/dialog/mission
 

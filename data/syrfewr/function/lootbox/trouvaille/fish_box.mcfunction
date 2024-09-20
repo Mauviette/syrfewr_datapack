@@ -1,4 +1,4 @@
-execute store result score #trouvaille s.temp run random value 1..93
+execute store result score #trouvaille s.temp run random value 1..100
 
 execute if score #trouvaille s.temp matches 1..10 run scoreboard players add @s s.add_bouchons 15
 execute if score #trouvaille s.temp matches 1..10 run scoreboard players set #trouvaille_id s.temp 100
@@ -29,3 +29,6 @@ execute if score #trouvaille s.temp matches 81..85 run scoreboard players set #t
 
 execute if score #trouvaille s.temp matches 86..93 run function syrfewr:lootbox/trouvaille/other/fishing_rods
 execute if score #trouvaille s.temp matches 86..93 run scoreboard players set #trouvaille_id s.temp 106
+
+execute if score #trouvaille s.temp matches 94.. run function syrfewr:player/add/find_random_box
+execute if score #trouvaille s.temp matches 94.. run scoreboard players set #trouvaille_id s.temp 107

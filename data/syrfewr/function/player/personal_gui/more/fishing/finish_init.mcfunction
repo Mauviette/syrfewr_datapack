@@ -8,7 +8,8 @@ $item replace entity @s inventory.11 with tadpole_bucket[custom_data={ui:1,item_
 
 $item replace entity @s inventory.12 with salmon[custom_data={ui:1,item_from_more:1,to_kill:1,fishes:1},item_name='{"color":"white","text":"Poissons trouvés"}',lore=['{"text":"$(discovered_fishes)/$(total_fishes)","color":"dark_gray","italic":false}']]
 
-item replace entity @s inventory.14 with book[custom_data={ui:1,item_from_more:1,to_kill:1,mission:1},item_name='{"color":"white","text":"Mission actuelle"}',lore=['{"text":"Aucune","color":"dark_red","italic":false}']]
+$execute if score @s s.mission_max_progression matches 1.. run item replace entity @s inventory.14 with book[custom_data={ui:1,item_from_more:1,to_kill:1,mission:1},item_name='{"color":"white","text":"Mission journalière"}',lore=['$(mission)','{"text":"Progrès : $(mission_progression)/$(mission_progression_max)","color":"dark_gray","italic":false}']]
+$execute unless score @s s.mission_max_progression matches 1.. run item replace entity @s inventory.14 with book[custom_data={ui:1,item_from_more:1,to_kill:1,mission:1},item_name='{"color":"white","text":"Mission journalière"}',lore=['$(mission)']]
 
 #id_time | 0 : nuit, 1 : matin, 2 : après-midi, 3 : soir
 $execute if score #id_time time matches 0 run item replace entity @s inventory.0 with barrier[custom_data={ui:1,to_kill:1,time:1},custom_model_data=10,item_name='{"text":"Nuit","color":"dark_blue"}',lore=['{"text":"Il est $(hour)h$(bonus_0)$(minute)","color":"gray","italic":false}']]

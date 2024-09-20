@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "syrfewr:fishing/fish/hint/trouble/driftwood"
+    }
+}
