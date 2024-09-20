@@ -6,3 +6,5 @@ effect give @s saturation 1 0 true
 
 clear @s cake[minecraft:custom_data~{carlos_party_tp:1}]
 clear @s glass[minecraft:custom_data~{glasswar_tp:1}]
+
+function syrfewr:player/quests/missions/test_to_claim

@@ -12,4 +12,9 @@ execute if score $hour time matches 12..18 run scoreboard players set #id_time t
 execute if score $hour time matches 19..22 run scoreboard players set #id_time time 3
 execute if score $hour time matches 23.. run scoreboard players set #id_time time 0
 
-execute as @a[tag=!s.playing] at @s run function syrfewr:player/personal_gui/more/fishing/refresh
+execute if score $hour time matches 3.. run scoreboard players set #day_passing time 1
+
+execute if score $hour time matches ..2 if score #day_passing time matches 1 run function syrfewr:time/next_day
+
+
+execute as @a[tag=!s.playing,tag=!s.block_ui] at @s run function syrfewr:player/personal_gui/more/fishing/refresh

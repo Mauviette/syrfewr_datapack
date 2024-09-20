@@ -211,6 +211,7 @@ scoreboard objectives add s.last_fast_dialog dummy
 #Heure
 scoreboard objectives add time dummy
 execute in syrfewr:lobby positioned 0 -64 0 run setblock ~ ~ ~ repeating_command_block{Command:"help help",auto:1b,TrackOutput:1b}
+scoreboard objectives add day dummy
 
 #Prix cosmétiques
 scoreboard objectives add price dummy

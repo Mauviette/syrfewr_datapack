@@ -5,3 +5,5 @@
 execute if entity @s[gamemode=!creative] run function syrfewr:player/personal_gui/map
 effect give @s saturation 1 0 true
 execute if score @s s.SelectedHatID matches 1.. run function syrfewr:cosmetic/hats/map
+
+function syrfewr:player/quests/missions/test_to_claim

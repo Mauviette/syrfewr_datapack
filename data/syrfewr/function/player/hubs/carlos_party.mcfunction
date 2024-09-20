@@ -5,4 +5,6 @@ advancement revoke @s only syrfewr:technical/carlos_party_tp
 clear @s
 team join cp.hub
 clear @s[gamemode=!creative]
+tag @s remove s.block_ui
 function syrfewr:player/personal_gui/main_menu/set
+
