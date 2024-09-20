@@ -1,8 +1,8 @@
 execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:9b,components:{"minecraft:custom_data":{time:1}}}]} run function syrfewr:player/personal_gui/more/fishing/init
 
 execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:20b,components:{"minecraft:custom_data":{zones:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/zones
-execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:21b,components:{"minecraft:custom_data":{stuff:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/stuff
-execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:22b,components:{"minecraft:custom_data":{fishes:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/fishes
+execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:22b,components:{"minecraft:custom_data":{stuff:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/stuff
+execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:21b,components:{"minecraft:custom_data":{fishes:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/fishes
 execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:23b,components:{"minecraft:custom_data":{mission:1}}}]} run function syrfewr:player/personal_gui/more/fishing/init
 execute if score @s s.GuiPageID matches 26 unless data entity @s {Inventory:[{Slot:24b,components:{"minecraft:custom_data":{boxes:1}}}]} run function syrfewr:player/personal_gui/more/fishing/clicked/boxes
 

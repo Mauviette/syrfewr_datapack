@@ -1,0 +1,1 @@
+$title @s actionbar ["",{"score":{"name":"@s","objective":"s.credits"},"color":"gold"},{"text":" crédits | "},$(active_bait),{"text":" ("},{"score":{"name":"@s","objective":"s.bait_duration"},"color":"green"},{"text":")"}]

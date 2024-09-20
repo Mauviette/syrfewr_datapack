@@ -1,0 +1,6 @@
+execute unless score @s s.mission_id matches 1.. run data modify storage s.temp mission set value '{"text":"Aucune","color":"dark_red","italic":false}'
+execute if score @s s.mission_id matches 1 run data modify storage s.temp mission set value '{"text":"Pêcher 8 poissons","color":"gray","italic":false}'
+execute if score @s s.mission_id matches 2 run data modify storage s.temp mission set value '{"text":"Pêcher 3 déchets","color":"gray","italic":false}'
+execute if score @s s.mission_id matches 3 run data modify storage s.temp mission set value '{"text":"Pêcher 1 trésor","color":"gray","italic":false}'
+execute if score @s s.mission_id matches 4 run data modify storage s.temp mission set value '{"text":"Pêcher 10 fois","color":"gray","italic":false}'
+execute if score @s s.mission_id matches 5 run data modify storage s.temp mission set value '{"text":"Pêcher 6 fois à l\'aide d\'un appât","color":"gray","italic":false}'

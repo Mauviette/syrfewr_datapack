@@ -40,6 +40,14 @@ execute if score #trouvaille_id s.temp matches 21 positioned ~ ~-.2 ~ run functi
 execute if score #trouvaille_id s.temp matches 22 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"\\\\uE001",typed:false,extra:'"color":"#FF04FF"',transformation:{scale:[3f,3f,3f]}},events:[]}
 
 
+execute if score #trouvaille_id s.temp matches 100 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"15 bouchons",typed:false,extra:'"color":"dark_green"'},events:[]}
+execute if score #trouvaille_id s.temp matches 101 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"15 crédits",typed:false,extra:'"color":"gold"'},events:[]}
+execute if score #trouvaille_id s.temp matches 102 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"Hameçon",typed:false,extra:'"color":"gray"'},events:[]}
+execute if score #trouvaille_id s.temp matches 103 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"Lombric",typed:false,extra:'"color":"#fadbd8"'},events:[]}
+execute if score #trouvaille_id s.temp matches 104 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"2 lombrics",typed:false,extra:'"color":"#fadbd8"'},events:[]}
+execute if score #trouvaille_id s.temp matches 105 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"3 lombrics",typed:false,extra:'"color":"#fadbd8"'},events:[]}
+execute if score #trouvaille_id s.temp matches 106 positioned ~ ~-.2 ~ run function speechtools:create {duration:80,args:{"text":"Canne à pêche",typed:false,extra:'"color":"white"'},events:[]}
 
-playsound entity.generic.explode player @a[distance=..20] ~ ~ ~ .9 1.3
+#tellraw @a[tag=debug] {"score": {"name": "#trouvaille_id", "objective": "s.temp"}}
+playsound entity.generic.explode player @a[distance=..20] ~ ~ ~ .7 1.3
 kill @s

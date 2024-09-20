@@ -1,4 +1,4 @@
-scoreboard players enable @s s.jean_peche_step
+execute unless score @s s.jean_peche_step matches 0.. run scoreboard players set @s s.jean_peche_step 0
 execute if score @s s.jean_peche_step matches 0 run scoreboard players set @s s.jean_peche_step 1
 scoreboard players set @s s.dialog_id 2
 

@@ -141,7 +141,9 @@ scoreboard players operation #fishes s.total += #coral_fishes s.total
 scoreboard players operation #fishes s.total += #trouble_fishes s.total
 
 #Stuff
-scoreboard players set #fishing_rods s.total 3
+scoreboard players set #fishing_rods s.total 5
+scoreboard players set #findable_fishing_rods s.total 2
+
 scoreboard players set #hooks s.total 3
 scoreboard players set #baits s.total 2
 scoreboard players operation #fishing_stuff s.total = #fishing_rods s.total
@@ -156,6 +158,12 @@ scoreboard objectives add s.opened_fish_boxes dummy
 
 scoreboard objectives add s.baits_worm dummy
 scoreboard objectives add s.baits_algae dummy
+
+scoreboard objectives add s.mission_id dummy
+scoreboard objectives add s.mission_progression dummy
+scoreboard objectives add s.mission_max_progression dummy
+scoreboard objectives add s.mission_streak dummy
+
 
 scoreboard objectives add s.hasFished minecraft.custom:minecraft.fish_caught
 #hour | 0:any 1:day 2:night
