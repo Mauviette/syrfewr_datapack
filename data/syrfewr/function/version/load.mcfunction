@@ -1,1 +1,1 @@
-scoreboard players set #version s.version 2
+scoreboard players set #version s.version 3

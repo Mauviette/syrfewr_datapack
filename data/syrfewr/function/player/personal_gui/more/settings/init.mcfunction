@@ -36,6 +36,6 @@ execute if score @s s.seeSpecialOpening matches 0 run item replace entity @s inv
 execute if score @s s.seeSpecialOpening matches 1 run item replace entity @s inventory.4 with green_shulker_box[custom_data={ui:1,item_from_settings:1,to_kill:1,see_special_opening:1},item_name='{"text":"Activé","color":"green"}',lore=['{"text":"Voir les ouvertures de lootbox des autres joueurs (légendaire et mythique)","color":"gray","italic":false}','{"text":"Clic pour changer","color":"dark_gray"}']]
 
 
-item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_settings:1,to_kill:1,back_to_more:1},item_name='{"color":"white","text":"Retour"}']
+item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_settings:1,to_kill:1,back_to_more:1},item_name='{"color":"white","text":"Retour (plus)"}']
 
 item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=103,custom_data={ui:1,item_from_settings:1,to_kill:1,settings:1},item_name='{"text":""}']

@@ -5,12 +5,15 @@ execute if score @s s.opening_trouvaille_id matches 4 run particle dust{color:[0
 execute if score @s s.opening_trouvaille_id matches 5 run particle dust{color:[0.9,0.9,0.3],scale:1} ~ ~ ~ 0.6 0.6 0.6 0.5 25
 execute if score @s s.opening_trouvaille_id matches 6 run particle dust{color:[1.0,0.2,0.2],scale:1} ~ ~ ~ 0.6 0.6 0.6 0.5 25
 
-execute if score @s s.opening_trouvaille_id matches 1.. run particle firework ~ ~ ~ 0 0 0 0.1 5
-execute if score @s s.opening_trouvaille_id matches 2.. run particle firework ~ ~ ~ 0 0 0 0.1 5
-execute if score @s s.opening_trouvaille_id matches 3.. run particle firework ~ ~ ~ 0 0 0 0.1 5
-execute if score @s s.opening_trouvaille_id matches 4.. run particle firework ~ ~ ~ 0 0 0 0.1 5
-execute if score @s s.opening_trouvaille_id matches 5.. run particle firework ~ ~ ~ 0 0 0 0.1 5
-execute if score @s s.opening_trouvaille_id matches 6.. run particle firework ~ ~ ~ 0 0 0 0.1 5
+execute if score @s s.opening_trouvaille_id matches 100 run particle block{block_state:barrel} ~ ~ ~ 0 0 0 0.5 25
+execute if score @s s.opening_trouvaille_id matches 100 run particle firework ~ ~ ~ 0 0 0 0.1 5
+
+execute if score @s s.opening_trouvaille_id matches 1..99 run particle firework ~ ~ ~ 0 0 0 0.1 5
+execute if score @s s.opening_trouvaille_id matches 2..99 run particle firework ~ ~ ~ 0 0 0 0.1 5
+execute if score @s s.opening_trouvaille_id matches 3..99 run particle firework ~ ~ ~ 0 0 0 0.1 5
+execute if score @s s.opening_trouvaille_id matches 4..99 run particle firework ~ ~ ~ 0 0 0 0.1 5
+execute if score @s s.opening_trouvaille_id matches 5..99 run particle firework ~ ~ ~ 0 0 0 0.1 5
+execute if score @s s.opening_trouvaille_id matches 6..99 run particle firework ~ ~ ~ 0 0 0 0.1 5
 
 
 execute if score #trouvaille_id s.temp matches 1 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"5 crédits",typed:false,extra:'"color":"gold"'},events:[]}

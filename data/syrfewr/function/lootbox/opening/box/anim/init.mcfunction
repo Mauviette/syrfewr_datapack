@@ -12,3 +12,5 @@ execute if score @s s.opening_lootbox_id matches 3 run data merge entity @s {blo
 execute if score @s s.opening_lootbox_id matches 4 run data merge entity @s {block_state:{Name:"purple_shulker_box"}}
 execute if score @s s.opening_lootbox_id matches 5 run data merge entity @s {block_state:{Name:"yellow_shulker_box"}}
 execute if score @s s.opening_lootbox_id matches 6 run data merge entity @s {block_state:{Name:"red_shulker_box"}}
+
+execute if score @s s.opening_lootbox_id matches 100 run data merge entity @s {block_state:{Name:"barrel"}}

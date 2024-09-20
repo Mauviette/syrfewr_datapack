@@ -7,4 +7,7 @@ execute if score @s s.opening_lootbox_id matches 4 run function syrfewr:lootbox/
 execute if score @s s.opening_lootbox_id matches 5 run function syrfewr:lootbox/opening/box/legendary
 execute if score @s s.opening_lootbox_id matches 6 run function syrfewr:lootbox/opening/box/mythic
 
+execute if score @s s.opening_lootbox_id matches 100 run function syrfewr:lootbox/opening/box/fish_box
+
+
 execute if score @s s.opening_lootbox_time matches ..0 run scoreboard players reset @s s.opening_lootbox_time

@@ -1,0 +1,1 @@
+summon villager ~ ~ ~ {Invulnerable:1b,Tags:["pnj","pnj.jean_peche","s.can_fast_dialog"],CustomName:'{"text":"Jean-Pêche"}',CustomNameVisible:0b,VillagerData:{level:99,profession:"minecraft:fisherman"},Offers:{}}

@@ -1,6 +1,5 @@
 function syrfewr:player/personal_gui/clear_gui
 
-item replace entity @s inventory.12 with fishing_rod[custom_data={ui:1,item_from_more:1,to_kill:1,stuff:1},item_name='{"color":"white","text":"Équipement de pêche"}',lore=['{"text":"Cannes à pêche","color":"dark_gray","italic":false}']]
 
 
 
@@ -24,6 +23,26 @@ execute store result storage s.temp hour int 1 run scoreboard players get $hour 
 execute store result storage s.temp minute int 1 run scoreboard players get $minute time
 data modify storage s.temp bonus_0 set value ""
 execute if score $minute time matches ..9 run data modify storage s.temp bonus_0 set value "0"
+
+
+scoreboard players set #gotten s.temp 0
+function syrfewr:fishing/check/stuff/fishing_rods
+execute store result storage s.temp discovered_rods int 1 run scoreboard players get #gotten s.temp
+execute store result storage s.temp total_rods int 1 run scoreboard players get #fishing_rods s.total
+
+
+scoreboard players set #gotten s.temp 0
+function syrfewr:fishing/check/stuff/hooks
+execute store result storage s.temp discovered_hooks int 1 run scoreboard players get #gotten s.temp
+execute store result storage s.temp total_hooks int 1 run scoreboard players get #hooks s.total
+
+scoreboard players set #gotten s.temp 0
+function syrfewr:fishing/check/stuff/baits
+execute store result storage s.temp discovered_baits int 1 run scoreboard players get #gotten s.temp
+execute store result storage s.temp total_baits int 1 run scoreboard players get #baits s.total
+
+function syrfewr:fishing/check/stuff/active_bait
+function syrfewr:fishing/check/stuff/bait_uses
 
 
 function syrfewr:player/personal_gui/more/fishing/finish_init with storage s.temp

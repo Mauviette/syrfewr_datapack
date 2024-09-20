@@ -24,7 +24,7 @@ execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 3 un
 execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 4 unless data entity @s {Inventory:[{Slot:35b,components:{"minecraft:custom_data":{box:1}}}]} run function syrfewr:player/personal_gui/more/fishing/fishes/category/init {category_id:3,category:"coral"}
 execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 5 unless data entity @s {Inventory:[{Slot:35b,components:{"minecraft:custom_data":{box:1}}}]} run function syrfewr:player/personal_gui/more/fishing/fishes/category/init {category_id:4,category:"trouble"}
 
-execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 1.. unless data entity @s {Inventory:[{Slot:27b,components:{"minecraft:custom_data":{back:1}}}]} run function syrfewr:player/personal_gui/more/fishing/fishes/set
+execute if score @s s.GuiPageID matches 29 if score @s s.GuiIndexID matches 1.. unless data entity @s {Inventory:[{Slot:27b,components:{"minecraft:custom_data":{back:1}}}]} run function syrfewr:player/personal_gui/more/fishing/fishes/category/clicked/back
 
 
 
