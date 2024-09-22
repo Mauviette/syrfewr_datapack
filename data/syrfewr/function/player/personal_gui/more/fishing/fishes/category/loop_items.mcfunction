@@ -14,6 +14,9 @@ execute store result score #hour s.temp run data get storage s.temp fish[0].hour
 execute if score #hour s.temp matches 0 run data modify storage s.temp fish[0].hour set value '{"text":"Tout le temps","color":"yellow"}'
 execute if score #hour s.temp matches 1 run data modify storage s.temp fish[0].hour set value '{"text":"Jour","color":"aqua"}'
 execute if score #hour s.temp matches 2 run data modify storage s.temp fish[0].hour set value '{"text":"Nuit","color":"dark_blue"}'
+execute if score #hour s.temp matches 3 run data modify storage s.temp fish[0].hour set value '{"text":"Matin","color":"gold"}'
+execute if score #hour s.temp matches 4 run data modify storage s.temp fish[0].hour set value '{"text":"Après-Midi","color":"dark_aqua"}'
+execute if score #hour s.temp matches 5 run data modify storage s.temp fish[0].hour set value '{"text":"Soir","color":"light_purple"}'
 
 execute store result score #type s.temp run data get storage s.temp fish[0].type
 execute if score #type s.temp matches 0 run data modify storage s.temp fish[0].type set value '{"text":"Poisson","color":"#5aab4f","italic":false}'

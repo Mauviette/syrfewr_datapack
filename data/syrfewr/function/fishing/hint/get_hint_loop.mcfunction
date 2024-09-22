@@ -1,4 +1,4 @@
-execute store result storage s.temp random int 1 run random value 0..3
+execute store result storage s.temp random int 1 run random value 0..26
 
 function syrfewr:fishing/hint/test_hint with storage s.temp
 
