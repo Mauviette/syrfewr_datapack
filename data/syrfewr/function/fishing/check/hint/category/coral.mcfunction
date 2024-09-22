@@ -1,6 +1,6 @@
-execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/coral_bubble=true}] run scoreboard players add #discovered s.temp 1
-execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/coral_fire=true}] run scoreboard players add #discovered s.temp 1
-execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/coral_horn=true}] run scoreboard players add #discovered s.temp 1
-execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/coral_tube=true}] run scoreboard players add #discovered s.temp 1
-execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/dead_coral_fire=true}] run scoreboard players add #discovered s.temp 1
-execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/nemo=true}] run scoreboard players add #discovered s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/hint/coral_bubble=true}] run scoreboard players add #hints s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/hint/coral_fire=true}] run scoreboard players add #hints s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/hint/coral_horn=true}] run scoreboard players add #hints s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/hint/coral_tube=true}] run scoreboard players add #hints s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/hint/dead_coral_fire=true}] run scoreboard players add #hints s.temp 1
+execute if entity @s[advancements={syrfewr:succes/fishing/fishes/coral/hint/nemo=true}] run scoreboard players add #hints s.temp 1

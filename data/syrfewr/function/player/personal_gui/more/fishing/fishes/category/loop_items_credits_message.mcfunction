@@ -1,1 +1,2 @@
-$data modify storage s.temp fish[0].credits set value ',\'{"text":"$(credits) crédit$(credits_plurial)","italic":false,"color":"gold"}\''
+$execute if score #credits s.temp matches 1.. run data modify storage s.temp fish[0].credits set value ',\'{"text":"$(credits) crédit$(credits_plurial)","italic":false,"color":"gold"}\''
+$execute if score #credits s.temp matches ..1 run data modify storage s.temp fish[0].credits set value ',\'{"text":"$(credits) crédit$(credits_plurial)","italic":false,"color":"dark_red"}\''

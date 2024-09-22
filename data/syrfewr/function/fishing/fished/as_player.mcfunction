@@ -1,9 +1,11 @@
 execute store result score #credits s.temp run data get entity @s Inventory[].components."minecraft:custom_data".fish_credits
 data modify storage s.fished category set from entity @s Inventory[].components."minecraft:custom_data".fish_category
 execute store result score #type s.temp run data get entity @s Inventory[].components."minecraft:custom_data".fish_type
+execute store result score #reward_id s.temp run data get entity @s Inventory[].components."minecraft:custom_data".fish_reward_id
 data modify storage s.fished id set from entity @s Inventory[].components."minecraft:custom_data".fish_id
 data modify storage s.fished name set from entity @s Inventory[].components."minecraft:custom_data".fish_name
 data modify storage s.fished suffix set from entity @s Inventory[].components."minecraft:custom_data".fish_suffix
+
 
 scoreboard players operation @s s.creditsToAddBonus += #credits s.temp
 scoreboard players operation @s s.add_fishing_points += #credits s.temp
@@ -20,6 +22,14 @@ execute if score @s s.bait_effect matches 1.. if score @s s.mission_id matches 5
 execute if score @s s.SelectedHook matches 1 if predicate syrfewr:random/0.25 run function syrfewr:fishing/stuff/effect/hooks/double
 execute if score @s s.SelectedHook matches 2 if predicate syrfewr:random/0.075 run function syrfewr:player/add/find_random_box
 execute if score @s s.SelectedHook matches 3 if predicate syrfewr:random/0.5 run scoreboard players operation @s s.add_fishing_points += #credits s.temp
+
+
+execute if score #reward_id s.temp matches 1 run function syrfewr:fishing/fished/zone/reward/goldfish
+execute if score #reward_id s.temp matches 2 run function syrfewr:fishing/fished/zone/reward/message
+execute if score #reward_id s.temp matches 3 run function syrfewr:fishing/fished/zone/reward/golden_box
+execute if score #reward_id s.temp matches 4 run function syrfewr:fishing/fished/zone/reward/lockbox
+execute if score #reward_id s.temp matches 5 run function syrfewr:fishing/fished/zone/reward/algae
+execute if score #reward_id s.temp matches 6 run function syrfewr:fishing/fished/zone/reward/leech
 
 
 clear @s salmon[minecraft:custom_data~{fished:1}] 1

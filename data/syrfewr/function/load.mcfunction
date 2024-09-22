@@ -169,72 +169,38 @@ scoreboard objectives add s.hasFished minecraft.custom:minecraft.fish_caught
 #hour | 0:any 1:day 2:night 3: morning 4:afternoon 5:evening
 #type | 0:fish 1:trash 2:treasure
 
-#Pour Copilot
-#CLEAN
-#goldfish 1012 #ff9900 (Poisson rouge)
-#message 4 #cecece (Message dans une bouteille)
-#tilapia 1003 #332d24 (Tilapia)
-#golden_box 2001 #FF04FF (Boite dorée)
-#
-#CLEAR
-#can 1 #a3a3a3 (Vieille canette)
-#carp 1002 #833000  (Carpe)
-#grouper 1013 #ff4848 (Mérou)
-#lockbox 2000 #58280c (Boite)
-#
-#CORAL
-#coral_bubble 1014 blue (Corail bulle)
-#coral_fire 1015 red (Corail de feu)
-#coral_horn 1016 yellow (Corail corné)
-#coral_tube 1017 dark_purple (Corail tube)
-#dead_coral_fire 1018 #707070 (Corail de feu mort)
-#nemo 1019 gold (Poisson clown)
-#
-#GREEN
-#algae 2 dark_green (Tas d'algues)
-#catfish 1020 #7fb1a8 (Poisson-chat)
-#herring 1009 #6d918a (Hareng)
-#leech 1021 #1b1b1b (Sangsue)
-#
-#TROUBLE
-#driftwood 1022 #683f01 (Bois flottant)
-#fish_bones 1023 #b48e55 (Poisson mort)
-#gar 1024 #b5f07e (Brochet)
-#piranha 1025 #a2c4c7 (Piranha)
-#saithe 1026 #1d2020 (Lieu noir)
-
 data remove storage s.fish category
-data modify storage s.fish category.clean append value {name:'{"text":"Morue","color":"#ac6e11"}',custom_model_data:1011,id:"cod",hint:'{"text":"Le poisson de base. Tu peux le faire!","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"e"}
-data modify storage s.fish category.clean append value {name:'{"text":"Perche","color":"#5aab4f"}',custom_model_data:1000,id:"perch",hint:'{"text":"","color":"gray","italic":false}',hour:1,type:0,credits:2,suffix:"e"}
-data modify storage s.fish category.clean append value {name:'{"text":"Poisson rouge","color":"#ff9900"}',custom_model_data:1012,id:"goldfish",hint:'{"text":"","color":"gray","italic":false}',hour:0,type:0,credits:0,suffix:"",reward_id:1}
-data modify storage s.fish category.clean append value {name:'{"text":"Message dans une bouteille","color":"#cecece"}',custom_model_data:4,id:"message",hint:'{"text":"","color":"gray","italic":false}',hour:0,type:1,credits:0,suffix:"",reward_id:2}
-data modify storage s.fish category.clean append value {name:'{"text":"Tilapia","color":"#332d24"}',custom_model_data:1003,id:"tilapia",hint:'{"text":"","color":"gray","italic":false}',hour:0,type:0,credits:2,suffix:""}
-data modify storage s.fish category.clean append value {name:'{"text":"Boite dorée","color":"#FF04FF"}',custom_model_data:2001,id:"golden_box",hint:'{"text":"Pêché n\\\'importe quand","color":"gray","italic":false}',hour:0,type:2,credits:3,suffix:"e",reward_id:3}
+data modify storage s.fish category.clean append value {name:'{"text":"Morue","color":"#ac6e11"}',custom_model_data:1011,id:"cod",hint:'{"text":"Le poisson de base. Tu peux le faire!","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"e",rod_required:0}
+data modify storage s.fish category.clean append value {name:'{"text":"Perche","color":"#5aab4f"}',custom_model_data:1000,id:"perch",hint:'{"text":"Pêché le matin et l\\\'après-midi","color":"gray","italic":false}',hour:1,type:0,credits:2,suffix:"e",rod_required:0}
+data modify storage s.fish category.clean append value {name:'{"text":"Poisson rouge","color":"#ff9900"}',custom_model_data:1012,id:"goldfish",hint:'{"text":"Pêché avec une canne brilliante, n\\\'importe quand","color":"gray","italic":false}',hour:0,type:0,credits:0,suffix:"",reward_id:1,rod_required:2}
+data modify storage s.fish category.clean append value {name:'{"text":"Message dans une bouteille","color":"#cecece"}',custom_model_data:4,id:"message",hint:'{"text":"Pêché n\\\'importe quand","color":"gray","italic":false}',hour:0,type:1,credits:0,suffix:"",reward_id:2,rod_required:0}
+data modify storage s.fish category.clean append value {name:'{"text":"Tilapia","color":"#332d24"}',custom_model_data:1003,id:"tilapia",hint:'{"text":"Pêché le soir.","color":"gray","italic":false}',hour:5,type:0,credits:3,suffix:"",rod_required:0}
+data modify storage s.fish category.clean append value {name:'{"text":"Boite dorée","color":"#FF04FF"}',custom_model_data:2001,id:"golden_box",hint:'{"text":"Pêché n\\\'importe quand","color":"gray","italic":false}',hour:0,type:2,credits:0,suffix:"e",reward_id:3,rod_required:0}
 
-data modify storage s.fish category.clear append value {name:'{"text":"Saumon","color":"#9e0002"}',custom_model_data:0,id:"salmon",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.clear append value {name:'{"text":"Vieille canette","color":"#a3a3a3"}',custom_model_data:1,id:"can",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:-1,suffix:"e"}
-data modify storage s.fish category.clear append value {name:'{"text":"Carpe","color":"#833000"}',custom_model_data:1002,id:"carp",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.clear append value {name:'{"text":"Mérou","color":"#ff4848"}',custom_model_data:1013,id:"grouper",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.clear append value {name:'{"text":"Boite","color":"#58280c"}',custom_model_data:2000,id:"lockbox",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:2,credits:3,suffix:"",reward_id:4}
+data modify storage s.fish category.clear append value {name:'{"text":"Saumon","color":"#9e0002"}',custom_model_data:0,id:"salmon",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"",rod_required:0}
+data modify storage s.fish category.clear append value {name:'{"text":"Vieille canette","color":"#a3a3a3"}',custom_model_data:1,id:"can",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:-1,suffix:"e",rod_required:0}
+data modify storage s.fish category.clear append value {name:'{"text":"Carpe","color":"#833000"}',custom_model_data:1002,id:"carp",hint:'{"text":"Pêché avec une canne lourde, n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:8,suffix:"",rod_required:1}
+data modify storage s.fish category.clear append value {name:'{"text":"Mérou","color":"#ff4848"}',custom_model_data:1013,id:"grouper",hint:'{"text":"Pêché la nuit.","color":"gray","italic":false}',hour:2,type:0,credits:16,suffix:"",rod_required:0}
+data modify storage s.fish category.clear append value {name:'{"text":"Boite","color":"#58280c"}',custom_model_data:2000,id:"lockbox",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:2,credits:0,suffix:"",reward_id:4,rod_required:0}
 
-data modify storage s.fish category.green append value {name:'{"text":"Fretin","color":"#ded5b2"}',custom_model_data:1001,id:"minnow",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.green append value {name:'{"text":"Tas d\\\'algues","color":"dark_green"}',custom_model_data:2,id:"algae",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:1,suffix:"",reward_id:5}
-data modify storage s.fish category.green append value {name:'{"text":"Poisson-chat","color":"#7fb1a8"}',custom_model_data:1020,id:"catfish",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.green append value {name:'{"text":"Hareng","color":"#6d918a"}',custom_model_data:1009,id:"herring",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.green append value {name:'{"text":"Sangsue","color":"#1b1b1b"}',custom_model_data:1021,id:"leech",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"e",reward_id:6}
+data modify storage s.fish category.green append value {name:'{"text":"Fretin","color":"#ded5b2"}',custom_model_data:1001,id:"minnow",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"",rod_required:0}
+data modify storage s.fish category.green append value {name:'{"text":"Tas d\\\'algues","color":"dark_green"}',custom_model_data:2,id:"algae",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:0,suffix:"",reward_id:5,rod_required:0}
+data modify storage s.fish category.green append value {name:'{"text":"Poisson-chat","color":"#7fb1a8"}',custom_model_data:1020,id:"catfish",hint:'{"text":"Pêché le matin, avec une canne solide.","color":"gray","italic":false}',hour:0,type:0,credits:12,suffix:"",rod_required:3}
+data modify storage s.fish category.green append value {name:'{"text":"Hareng","color":"#6d918a"}',custom_model_data:1009,id:"herring",hint:'{"text":"Pêché l\\\'après-midi.","color":"gray","italic":false}',hour:4,type:0,credits:3,suffix:"",rod_required:0}
+data modify storage s.fish category.green append value {name:'{"text":"Sangsue","color":"#1b1b1b"}',custom_model_data:1021,id:"leech",hint:'{"text":"Pêché le soir, avec une canne fragile.","color":"gray","italic":false}',hour:5,type:0,credits:0,suffix:"e",reward_id:6,rod_required:4}
 
-data modify storage s.fish category.trouble append value {name:'{"text":"Bois flottant","color":"#683f01"}',custom_model_data:1022,id:"driftwood",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:1,suffix:""}
-data modify storage s.fish category.trouble append value {name:'{"text":"Poisson mort","color":"#b48e55"}',custom_model_data:1023,id:"fish_bones",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:1,suffix:""}
-data modify storage s.fish category.trouble append value {name:'{"text":"Brochet","color":"#b5f07e"}',custom_model_data:1024,id:"gar",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.trouble append value {name:'{"text":"Piranha","color":"#a2c4c7"}',custom_model_data:1025,id:"piranha",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.trouble append value {name:'{"text":"Lieu noir","color":"#1d2020"}',custom_model_data:1026,id:"saithe",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
+data modify storage s.fish category.trouble append value {name:'{"text":"Bois flottant","color":"#683f01"}',custom_model_data:1022,id:"driftwood",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:-1,suffix:"",rod_required:0}
+data modify storage s.fish category.trouble append value {name:'{"text":"Poisson mort","color":"#b48e55"}',custom_model_data:1023,id:"fish_bones",hint:'{"text":"Pêché avec une canne fragile, n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:-3,suffix:"",rod_required:4}
+data modify storage s.fish category.trouble append value {name:'{"text":"Brochet","color":"#b5f07e"}',custom_model_data:1024,id:"gar",hint:'{"text":"Pêché le soir, avec une canne lourde","color":"gray","italic":false}',hour:5,type:0,credits:14,suffix:"",rod_required:3}
+data modify storage s.fish category.trouble append value {name:'{"text":"Piranha","color":"#a2c4c7"}',custom_model_data:1025,id:"piranha",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:4,suffix:"",rod_required:0}
+data modify storage s.fish category.trouble append value {name:'{"text":"Lieu noir","color":"#1d2020"}',custom_model_data:1026,id:"saithe",hint:'{"text":"Pêché la nuit.","color":"gray","italic":false}',hour:2,type:0,credits:5,suffix:"",rod_required:0}
 
-data modify storage s.fish category.coral append value {name:'{"text":"Corail bulle","color":"blue"}',custom_model_data:1014,id:"coral_bubble",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.coral append value {name:'{"text":"Corail de feu","color":"red"}',custom_model_data:1015,id:"coral_fire",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.coral append value {name:'{"text":"Corail corné","color":"yellow"}',custom_model_data:1016,id:"coral_horn",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.coral append value {name:'{"text":"Corail tube","color":"dark_purple"}',custom_model_data:1017,id:"coral_tube",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.coral append value {name:'{"text":"Corail de feu mort","color":"#707070"}',custom_model_data:1018,id:"dead_coral_fire",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
-data modify storage s.fish category.coral append value {name:'{"text":"Poisson clown","color":"gold"}',custom_model_data:1019,id:"nemo",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:""}
+data modify storage s.fish category.coral append value {name:'{"text":"Corail bulle","color":"blue"}',custom_model_data:1014,id:"coral_bubble",hint:'{"text":"Pêché l\\\'après-midi.","color":"gray","italic":false}',hour:4,type:0,credits:2,suffix:"",rod_required:0}
+data modify storage s.fish category.coral append value {name:'{"text":"Corail de feu","color":"red"}',custom_model_data:1015,id:"coral_fire",hint:'{"text":"Pêché le matin, avec une canne fragile.","color":"gray","italic":false}',hour:3,type:0,credits:7,suffix:"",rod_required:4}
+data modify storage s.fish category.coral append value {name:'{"text":"Corail corné","color":"yellow"}',custom_model_data:1016,id:"coral_horn",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"",rod_required:0}
+data modify storage s.fish category.coral append value {name:'{"text":"Corail tube","color":"dark_purple"}',custom_model_data:1017,id:"coral_tube",hint:'{"text":"Pêché le soir.","color":"gray","italic":false}',hour:5,type:0,credits:3,suffix:"",rod_required:0}
+data modify storage s.fish category.coral append value {name:'{"text":"Corail de feu mort","color":"#707070"}',custom_model_data:1018,id:"dead_coral_fire",hint:'{"text":"Pêché le matin, avec une canne fragile.","color":"gray","italic":false}',hour:3,type:0,credits:-3,suffix:"",rod_required:4}
+data modify storage s.fish category.coral append value {name:'{"text":"Poisson clown","color":"gold"}',custom_model_data:1019,id:"nemo",hint:'{"text":"Pêché le matin et l\\\'après-midi, avec une canne brilliante.","color":"gray","italic":false}',hour:1,type:0,credits:6,suffix:"",rod_required:2}
 
 data remove storage s.fish list
 data modify storage s.fish list append value {id:"cod",category:"clean"}
