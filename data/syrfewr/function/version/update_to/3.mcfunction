@@ -12,6 +12,7 @@ execute if entity @s[advancements={syrfewr:succes/fishing/fishes/pacific_halibut
 execute if entity @s[advancements={syrfewr:succes/fishing/fishes/perch=true}] run scoreboard players add @s s.temp 4
 execute if entity @s[advancements={syrfewr:succes/fishing/fishes/salmon=true}] run scoreboard players add @s s.temp 2
 execute if entity @s[advancements={syrfewr:succes/fishing/fishes/tuna=true}] run scoreboard players add @s s.temp 8
+execute if entity @s[advancements={syrfewr:succes/fishing/treasures/box=true}] run scoreboard players add @s s.temp 12
 
 execute if score @s s.temp matches 1.. run tellraw @s {"text":"Le système de pêche a entièrement été mis à jour, votre progression a été réinitialisée.","color":"gray"}
 execute if score @s s.temp matches 1.. run tellraw @s {"text":"Voici une compensation pour votre progression :","color":"gray"}
@@ -27,6 +28,7 @@ execute if score @s s.temp matches 60.. run scoreboard players add @s s.add_bouc
 execute if score @s s.temp matches 70.. run scoreboard players add @s s.add_rare_lootboxes 1
 execute if score @s s.temp matches 80.. run scoreboard players add @s s.add_bouchons 20
 execute if score @s s.temp matches 90.. run scoreboard players add @s s.add_legendary_lootboxes 1
+execute if score @s s.temp matches 100.. run function syrfewr:player/add/find_random_box
 
 
 
@@ -36,3 +38,10 @@ advancement revoke @s from syrfewr:succes/fishing/root
 advancement revoke @s only syrfewr:succes/skins/fishing_rod/diamond
 advancement revoke @s only syrfewr:succes/skins/fishing_rod/golden
 advancement revoke @s only syrfewr:succes/skins/fishing_rod/iron
+
+advancement revoke @s only syrfewr:quests/la_peche/1
+advancement revoke @s only syrfewr:quests/la_peche/1_claim
+advancement revoke @s only syrfewr:quests/la_peche/2
+advancement revoke @s only syrfewr:quests/la_peche/2_claim
+advancement revoke @s only syrfewr:quests/la_peche/3
+advancement revoke @s only syrfewr:quests/la_peche/3_claim

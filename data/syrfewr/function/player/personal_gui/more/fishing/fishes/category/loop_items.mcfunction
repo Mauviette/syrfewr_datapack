@@ -21,7 +21,7 @@ execute if score #hour s.temp matches 5 run data modify storage s.temp fish[0].h
 execute store result score #type s.temp run data get storage s.temp fish[0].type
 execute if score #type s.temp matches 0 run data modify storage s.temp fish[0].type set value '{"text":"Poisson","color":"#5aab4f","italic":false}'
 execute if score #type s.temp matches 1 run data modify storage s.temp fish[0].type set value '{"text":"Déchet","color":"red","italic":false}'
-execute if score #type s.temp matches 2 run data modify storage s.temp fish[0].type set value '{"text":"Trésor","color":"#FF04FF","italic":false}'
+execute if score #type s.temp matches 2 run data modify storage s.temp fish[0].type set value '{"text":"Trésor","color":"#FF03FF","italic":false}'
 
 execute store result score #credits s.temp run data get storage s.temp fish[0].credits
 execute unless score #credits s.temp matches -1..1 run data modify storage s.temp fish[0].credits_plurial set value "s"
@@ -36,7 +36,7 @@ execute if score #rewards s.temp matches 2 run data modify storage s.temp fish[0
 execute if score #rewards s.temp matches 3 run data modify storage s.temp fish[0].credits set value ',\'{"text":"Donne des crédits, bouchons ou une lootbox.","italic":false,"color":"gray"}\''
 execute if score #rewards s.temp matches 4 run data modify storage s.temp fish[0].credits set value ',\'{"text":"Donne quelques crédits, bouchons ou une lootbox.","italic":false,"color":"gray"}\''
 execute if score #rewards s.temp matches 5 run data modify storage s.temp fish[0].credits set value ',\'{"text":"+1 tas d\\\'algues (appât)","italic":false,"color":"dark_green"}\''
-execute if score #rewards s.temp matches 6 run data modify storage s.temp fish[0].credits set value ',\'[{"text":"-5","italic":false,"color":"dark_red"},{"text":" à 10 crédits","italic":false,"color":"gold"}]\''
+execute if score #rewards s.temp matches 6 run data modify storage s.temp fish[0].credits set value ',\'[{"text":"-5","italic":false,"color":"dark_red"},{"text":"à","italic":false,"color":"dark_gray"},{"text":" 10 crédits","italic":false,"color":"gold"}]\''
 
 execute store result score #required_rod s.temp run data get storage s.temp fish[0].rod_required
 execute if score #required_rod s.temp matches 0 run data modify storage s.temp fish[0].rod_required set value ""

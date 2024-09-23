@@ -11,11 +11,12 @@ function syrfewr:player/personal_gui/my_cosmetics/main/gotten
 execute store result storage s.quests progres int 1 run scoreboard players get #completed s.temp
 function syrfewr:player/personal_gui/more/my_quests/init/my_first_cosmetic with storage s.quests
 
-scoreboard players set @s s.temp 0
-execute store result storage s.quests progres int 1 run scoreboard players get @s s.CompletedFishingZones
+function syrfewr:fishing/check/fishes/all
+execute store result storage s.quests progres int 1 run scoreboard players get #discovered s.temp
 function syrfewr:player/personal_gui/more/my_quests/init/la_peche with storage s.quests
 
 scoreboard players set @s s.temp 0
 execute if entity @s[advancements={syrfewr:succes/lobby/hard_glass=true}] run scoreboard players set @s s.temp 1
 execute store result storage s.quests progres int 1 run scoreboard players get @s s.temp
 function syrfewr:player/personal_gui/more/my_quests/init/pro_du_saut with storage s.quests
+
