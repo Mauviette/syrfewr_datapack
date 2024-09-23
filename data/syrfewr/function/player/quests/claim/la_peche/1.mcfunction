@@ -1,1 +1,1 @@
-advancement grant @s only syrfewr:succes/skins/fishing_rod/iron
+advancement grant @s only syrfewr:succes/fishing/stuff/fishing_rods/iron
