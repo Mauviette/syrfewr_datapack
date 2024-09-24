@@ -185,7 +185,7 @@ data modify storage s.fish category.clear append value {name:'{"text":"Boite","c
 
 data modify storage s.fish category.green append value {name:'{"text":"Fretin","color":"#ded5b2"}',custom_model_data:1001,id:"minnow",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:1,suffix:"",rod_required:0}
 data modify storage s.fish category.green append value {name:'{"text":"Tas d\\\'algues","color":"dark_green"}',custom_model_data:2,id:"algae",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:0,suffix:"",reward_id:5,rod_required:0}
-data modify storage s.fish category.green append value {name:'{"text":"Poisson-chat","color":"#7fb1a8"}',custom_model_data:1020,id:"catfish",hint:'{"text":"Pêché le matin, avec une canne solide.","color":"gray","italic":false}',hour:0,type:0,credits:12,suffix:"",rod_required:3}
+data modify storage s.fish category.green append value {name:'{"text":"Poisson-chat","color":"#7fb1a8"}',custom_model_data:1020,id:"catfish",hint:'{"text":"Pêché le matin, avec une canne solide.","color":"gray","italic":false}',hour:3,type:0,credits:12,suffix:"",rod_required:3}
 data modify storage s.fish category.green append value {name:'{"text":"Hareng","color":"#6d918a"}',custom_model_data:1009,id:"herring",hint:'{"text":"Pêché l\\\'après-midi.","color":"gray","italic":false}',hour:4,type:0,credits:3,suffix:"",rod_required:0}
 data modify storage s.fish category.green append value {name:'{"text":"Sangsue","color":"#1b1b1b"}',custom_model_data:1021,id:"leech",hint:'{"text":"Pêché le soir, avec une canne fragile.","color":"gray","italic":false}',hour:5,type:0,credits:0,suffix:"e",reward_id:6,rod_required:4}
 
@@ -209,7 +209,6 @@ data modify storage s.fish list append value {id:"minnow",category:"green"}
 data modify storage s.fish list append value {id:"salmon",category:"clear"}
 data modify storage s.fish list append value {id:"goldfish",category:"clean"}
 data modify storage s.fish list append value {id:"message",category:"clean"}
-data modify storage s.fish list append value {id:"tilapia",category:"clean"}
 data modify storage s.fish list append value {id:"golden_box",category:"clean"}
 data modify storage s.fish list append value {id:"can",category:"clear"}
 data modify storage s.fish list append value {id:"carp",category:"clear"}
@@ -243,6 +242,7 @@ gamerule doFireTick true
 gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule mobGriefing false
+data modify storage s.fish list append value {id:"tilapia",category:"clean"}
 gamerule disableRaids true
 gamerule doDaylightCycle false
 

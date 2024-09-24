@@ -1,3 +1,5 @@
+data modify storage s.fished category set value "clear"
+
 #Nuit
 execute if score #id_time time matches 0 run function syrfewr:fishing/fished/category/clear/night
 
