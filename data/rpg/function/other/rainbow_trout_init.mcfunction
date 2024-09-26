@@ -1,0 +1,2 @@
+data merge entity @s[type=item] {Item:{components:{"minecraft:custom_model_data":1027,custom_data:{fish_reward_id:7,fished:1,fish_name:'{"text":"Truite arc-en-ciel","color":"#FF00FF"}',fish_suffix:"e"}}}}
+tag @s add s.dont_set_data

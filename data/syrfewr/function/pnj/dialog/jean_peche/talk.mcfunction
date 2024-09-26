@@ -11,10 +11,11 @@ execute if score @s s.jean_peche_step matches 4 run data modify storage s.temp_d
 execute if score @s s.jean_peche_step matches 5 run data modify storage s.temp_dialog text set value '[{"text":"Je ne sais pas si tu es assez valeureux pour connaitre cette histoire... Reviens me voir quand tu auras attrapé tous les poissons de la zone "},{"text":"Lobby 1","color":"dark_aqua"},"!"]'
 execute if score @s s.jean_peche_step matches 6 run data modify storage s.temp_dialog text set value '[{"text":"Moi et mes collègues avons trouvé un papier. Nous avons pû lire une inscription dessus, mais il semble manquer une partie... Voici ce qui est inscrit :\\n"},{"text":"Dans un palace de sable fondu,\\nUn pêcheur orné par les couleurs de la lumière\\nS\'aidera de la clarté crépusculaire...","italic":true,"color":"gray"}]'
 
-execute if score @s s.jean_peche_step matches 2.. run scoreboard players set @s s.jean_peche_step 1
 
 #Dialogue
 function syrfewr:pnj/dialog/jean_peche/standart with storage s.temp_dialog
 
+execute if score @s s.jean_peche_step matches 6 run advancement grant @s only syrfewr:missions/rainbow_fish/1_unlock
+execute if score @s s.jean_peche_step matches 2.. run scoreboard players set @s s.jean_peche_step 1
 
 tag @s remove answered

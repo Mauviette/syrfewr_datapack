@@ -8,3 +8,6 @@ team modify rpg friendlyFire false
 team modify rpg nametagVisibility hideForOtherTeams
 team modify rpg seeFriendlyInvisibles true
 team modify rpg prefix ""
+
+
+execute in syrfewr:cloudland positioned 0.0 0.0 0.0 run function rpg:worlds/cloudland/first_challenge/load

@@ -2,9 +2,14 @@ execute store result score #random_type s.temp run random value 1..100
 #Morue, -, Poisson rouge (rr2), Message, -, Boite dorée
 
 
+#---Algues
+execute if score @p[scores={s.hasFished=1..}] s.bait_effect matches 2 if score #random_type s.temp matches 70..92 store result score #random_type s.temp run random value 1..100
+
+
 ##Poissons
 execute if score #random_type s.temp matches 1..69 unless score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 2 store result score #random_2 s.temp run random value 1..70
 execute if score #random_type s.temp matches 1..69 if score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 2 store result score #random_2 s.temp run random value 1..95
+
 
 #Morue
 execute if score #random_2 s.temp matches ..70 run data modify storage s.fished id set value 0

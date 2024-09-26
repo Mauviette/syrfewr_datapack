@@ -1,0 +1,2 @@
+execute as @e[tag=pnj.first_golem_messenger] at @s run tp @n[tag=rpg.first_golem_messenger_i] @s
+execute as @e[tag=pnj.first_golem_messenger] positioned 11.53 5.00 12.50 if entity @s[distance=10..] run tp @s 11.53 5.00 12.50

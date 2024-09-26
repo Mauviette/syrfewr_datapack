@@ -87,7 +87,7 @@ scoreboard objectives add s.computerPower dummy
 #1: patate, 2: medium, 3: ultra
 scoreboard objectives add s.seeSpecialOpening dummy
 
-
+scoreboard objectives add s.posY dummy
 
 scoreboard objectives add s.credits dummy
 scoreboard objectives add s.creditsToAdd dummy
@@ -209,6 +209,7 @@ data modify storage s.fish list append value {id:"minnow",category:"green"}
 data modify storage s.fish list append value {id:"salmon",category:"clear"}
 data modify storage s.fish list append value {id:"goldfish",category:"clean"}
 data modify storage s.fish list append value {id:"message",category:"clean"}
+data modify storage s.fish list append value {id:"tilapia",category:"clean"}
 data modify storage s.fish list append value {id:"golden_box",category:"clean"}
 data modify storage s.fish list append value {id:"can",category:"clear"}
 data modify storage s.fish list append value {id:"carp",category:"clear"}
@@ -242,7 +243,6 @@ gamerule doFireTick true
 gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule mobGriefing false
-data modify storage s.fish list append value {id:"tilapia",category:"clean"}
 gamerule disableRaids true
 gamerule doDaylightCycle false
 

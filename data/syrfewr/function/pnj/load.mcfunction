@@ -18,3 +18,20 @@ data modify storage s.fast_dialog jean_peche append value {text:"Tu veux voir mo
 data modify storage s.fast_dialog jean_peche append value {text:"Une légende raconte qu\\'un parchemin perdu renfermait le secret de l\\'arc-en-ciel...",duration:300,extra:'"color":"yellow"'}
 
 scoreboard objectives add s.jean_peche_step dummy
+
+
+
+
+
+#Golem Messager 1
+data remove storage s.fast_dialog golem_messager_1
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Tralalala... ♩",duration:100}
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Hm Hm... ♩ ",duration:100}
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Bienvenue...",duration:100}
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Tralala... ♪",duration:100}
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Hm Hm... ♪",duration:100}
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Tralala... ♫",duration:100}
+data modify storage s.fast_dialog golem_messager_1 append value {text:"Hm Hm... ♫",duration:100}
+
+
+scoreboard objectives add s.golem_messager_1_step dummy

@@ -2,6 +2,9 @@ execute store result score #random_type s.temp run random value 1..100
 
 #Fretin, tas d'algues, catfish (rr3), -, -
 
+#---Algues
+execute if score @p[scores={s.hasFished=1..}] s.bait_effect matches 2 if score #random_type s.temp matches 70.. store result score #random_type s.temp run random value 1..69
+
 ##Poissons
 execute if score #random_type s.temp matches 1..69 unless score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 3 store result score #random_2 s.temp run random value 1..70
 execute if score #random_type s.temp matches 1..69 if score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 3 store result score #random_2 s.temp run random value 1..80

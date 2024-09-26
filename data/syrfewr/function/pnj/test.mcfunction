@@ -1,3 +1,5 @@
+
+advancement revoke @s only rpg:test/interaction
 tag @s add s.talked
 scoreboard players set #loops s.temp 10
 function syrfewr:pnj/test_loop

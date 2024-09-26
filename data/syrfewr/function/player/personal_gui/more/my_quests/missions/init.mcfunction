@@ -10,4 +10,6 @@ item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=102
 execute store result storage s.missions progres int 1 run scoreboard players get @s s.opened_lootboxes
 function syrfewr:player/personal_gui/more/my_quests/missions/init/pack_opening with storage s.missions
 
+function syrfewr:player/personal_gui/more/my_quests/missions/init/rainbow_fish
+
 function syrfewr:player/quests/check_all

@@ -66,7 +66,7 @@ execute as @a[scores={s.TalkedToVillager=1..}] at @s run function syrfewr:talked
 
 effect give @e[tag=s.npc] slowness infinite 255 true
 
-effect give @e[tag=pnj] slowness infinite 255 true
+effect give @e[tag=pnj,tag=!pnj.can_move] slowness infinite 255 true
 
 scoreboard players remove @a[scores={s.ActionCooldown=1..}] s.ActionCooldown 1
 
@@ -119,3 +119,15 @@ execute as @a[scores={s.lastBlockInteraction=0..}] at @s run scoreboard players 
 execute as @a[scores={s.lastBlockInteraction=2}] at @s run function syrfewr:check/last_block_interaction
 
 execute as @a[scores={s.hasFished=1..}] at @s run function syrfewr:fishing/fished/player_fished
+
+
+execute as @e[type=fishing_bobber] at @s run function syrfewr:fishing/bobber/tick
+
+
+
+
+
+
+
+
+execute as @a at @s store result score @s s.posY run data get entity @s Pos[1]

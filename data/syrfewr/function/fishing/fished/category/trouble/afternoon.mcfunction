@@ -1,5 +1,8 @@
-execute store result score #random_type s.temp run random value 1..100
+execute store result score #random_type s.temp run random value 1..105
 #Bois flottant, Poisson mort (rr4), -, Piranha, -
+
+#---Algues
+execute if score @p[scores={s.hasFished=1..}] s.bait_effect matches 2 if score #random_type s.temp matches 60.. store result score #random_type s.temp run random value 1..59
 
 ##Poissons
 execute if score #random_type s.temp matches 1..59 store result score #random_2 s.temp run random value 1..70
