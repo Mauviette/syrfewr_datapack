@@ -35,3 +35,4 @@ data modify storage s.fast_dialog golem_messager_1 append value {text:"Hm Hm... 
 
 
 scoreboard objectives add s.golem_messager_1_step dummy
+scoreboard objectives add s.golem_messager_2_step dummy

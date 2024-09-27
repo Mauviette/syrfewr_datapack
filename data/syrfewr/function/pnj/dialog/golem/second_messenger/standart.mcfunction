@@ -1,0 +1,1 @@
+$tellraw @s ["<",{"color":"#991199","text":"Golem Messager"},"> ",$(text)]

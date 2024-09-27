@@ -20,8 +20,10 @@ execute unless data storage s.temp hats[0].desc run data modify storage s.temp h
 execute unless data storage s.temp hats[0].data run data modify storage s.temp hats[0].data set value ""
 execute unless data storage s.temp hats[0].item run data modify storage s.temp hats[0].item set value "barrier"
 
-execute unless data storage s.temp hats[0].not_buyable run function syrfewr:player/personal_gui/my_cosmetics/hats/item with storage s.temp hats[0]
-execute if data storage s.temp hats[0].not_buyable run function syrfewr:player/personal_gui/my_cosmetics/hats/item_not_buyable with storage s.temp hats[0]
+execute unless data storage s.temp hats[0].secret unless data storage s.temp hats[0].not_buyable run function syrfewr:player/personal_gui/my_cosmetics/hats/item with storage s.temp hats[0]
+execute unless data storage s.temp hats[0].secret if data storage s.temp hats[0].not_buyable run function syrfewr:player/personal_gui/my_cosmetics/hats/item_not_buyable with storage s.temp hats[0]
+
+execute if data storage s.temp hats[0].secret run function syrfewr:player/personal_gui/my_cosmetics/hats/item_secret with storage s.temp hats[0]
 
 
 data remove storage s.temp hats[0]
