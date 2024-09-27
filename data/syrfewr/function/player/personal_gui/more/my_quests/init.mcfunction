@@ -5,7 +5,7 @@ item replace entity @s inventory.8 with barrier[custom_model_data=3,custom_data=
 
 item replace entity @s inventory.18 with barrier[custom_model_data=3,custom_data={ui:1,item_from_mq:1,to_kill:1,back_to_more:1},item_name='{"color":"white","text":"Retour (plus)"}']
 
-item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=108,custom_data={ui:1,item_from_mq:1,to_kill:1,my_quests:1},item_name='{"text":""}']
+item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=108,custom_data={ui:1,item_from_mq:1,to_kill:1,box:1},item_name='{"text":""}']
 
 function syrfewr:player/personal_gui/my_cosmetics/main/gotten
 execute store result storage s.quests progres int 1 run scoreboard players get #completed s.temp

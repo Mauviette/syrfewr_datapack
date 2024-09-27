@@ -3,8 +3,8 @@ execute store result score #random_type s.temp run random value 1..100
 
 
 ##Poissons
-execute if score #random_type s.temp matches 1.. unless score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 2 store result score #random_2 s.temp run random value 1..90
-execute if score #random_type s.temp matches 1.. if score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 2 store result score #random_2 s.temp run random value 1..115
+execute if score #random_type s.temp matches 1.. unless score @p[scores={s.hasFished=1..}] s.fishingRodType matches 2 store result score #random_2 s.temp run random value 1..90
+execute if score #random_type s.temp matches 1.. if score @p[scores={s.hasFished=1..}] s.fishingRodType matches 2 store result score #random_2 s.temp run random value 1..115
 
 #---Lombric
 execute if score @p[scores={s.hasFished=1..}] s.bait_effect matches 1 if score #random_2 s.temp matches ..50 store result score #random_2 s.temp run random value 50..90
@@ -18,5 +18,5 @@ execute if score #random_2 s.temp matches 51..90 run data modify storage s.fishe
 execute if score #random_2 s.temp matches 51..90 run data modify storage s.fished fish set from storage s.fish category.coral[0].id
 
 #Poisson clown (rr2)
-execute if score #random_2 s.temp matches 91.. if score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 2 run data modify storage s.fished id set value 5
-execute if score #random_2 s.temp matches 91.. if score @p[scores={s.hasFished=1..}] s.SelectedFishingRodSkinID matches 2 run data modify storage s.fished fish set from storage s.fish category.coral[5].id
+execute if score #random_2 s.temp matches 91.. if score @p[scores={s.hasFished=1..}] s.fishingRodType matches 2 run data modify storage s.fished id set value 5
+execute if score #random_2 s.temp matches 91.. if score @p[scores={s.hasFished=1..}] s.fishingRodType matches 2 run data modify storage s.fished fish set from storage s.fish category.coral[5].id

@@ -10,6 +10,7 @@ execute if score @s s.jean_peche_step matches 4 run data modify storage s.temp_d
 
 execute if score @s s.jean_peche_step matches 5 run data modify storage s.temp_dialog text set value '[{"text":"Je ne sais pas si tu es assez valeureux pour connaitre cette histoire... Reviens me voir quand tu auras attrapé tous les poissons de la zone "},{"text":"Lobby 1","color":"dark_aqua"},"!"]'
 execute if score @s s.jean_peche_step matches 6 run data modify storage s.temp_dialog text set value '[{"text":"Moi et mes collègues avons trouvé un papier. Nous avons pû lire une inscription dessus, mais il semble manquer une partie... Voici ce qui est inscrit :\\n"},{"text":"Dans un palace de sable fondu,\\nUn pêcheur orné par les couleurs de la lumière\\nS\'aidera de la clarté crépusculaire...","italic":true,"color":"gray"}]'
+execute if score @s s.jean_peche_step matches 7 run data modify storage s.temp_dialog text set value '[{"text":"Tu sembles en savoir plus que moi sur cette histoire, je n\'ai rien à t\'apprendre..."}]'
 
 
 #Dialogue
