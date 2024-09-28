@@ -61,6 +61,7 @@ scoreboard objectives add s.opening_trouvaille_id dummy
 
 #Skins
 scoreboard objectives add s.SelectedFishingRodSkinID dummy
+scoreboard objectives add s.fishingRodType dummy
 scoreboard objectives add s.SelectedBowSkinID dummy
 scoreboard objectives add s.SelectedVictoryAnimationID dummy
 scoreboard objectives add s.SelectedHatID dummy
@@ -392,6 +393,7 @@ data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=1
 data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=8",name:'{"color":"#3adf63","text":"Troisième aile"}',rarity:5,id:"thirdwing",nb:8}
 data modify storage s.ui bows append value {item:"bow",data:"custom_model_data=4",name:'{"color":"#FF02FF","text":"Arc angélique"}',rarity:6,id:"angelbow",nb:4,not_buyable:1,desc:'\'{"text":"Obtenu en finissant le jump impossible du glasswar.","color":"dark_gray","italic":false}\','}
 
+scoreboard players set #bows s.total 11
 
 
 data remove storage s.ui hats
@@ -405,6 +407,12 @@ data modify storage s.ui hats append value {item:"purple_stained_glass",name:'{"
 data modify storage s.ui hats append value {item:"purple_shulker_box",name:'{"color":"#FF00FF","text":"Arc-en-ciel de lootboxes"}',rarity:5,id:"lootbox",nb:6,data:"custom_model_data=1,",not_buyable:1,desc:'\'{"text":"Donné par Jean-Gontran.","color":"dark_gray","italic":false}\','}
 data modify storage s.ui hats append value {item:"stick",name:'{"color":"#2ed48f","text":"Douglas"}',rarity:6,id:"douglas",nb:7,desc:'\'{"text":"Le grand Douglas.","color":"dark_gray","italic":false}\',',data:"custom_model_data=5,"}
 
+scoreboard players set #hats s.total 8
 
 schedule clear syrfewr:time/schelude
 function syrfewr:time/schelude
+
+
+#Stats
+scoreboard objectives add s.fishedTotal dummy
+scoreboard objectives add s.maxDailyStreak dummy

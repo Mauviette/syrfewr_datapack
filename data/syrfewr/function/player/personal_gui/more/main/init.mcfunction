@@ -5,7 +5,8 @@ item replace entity @s inventory.12 with fishing_rod[custom_data={ui:1,item_from
 
 item replace entity @s inventory.13 with name_tag[custom_data={ui:1,item_from_more:1,to_kill:1,settings:1},item_name='{"color":"white","text":"Paramètres"}']
 
-item replace entity @s inventory.14 with stick[custom_model_data=100,custom_data={ui:1,item_from_more:1,to_kill:1,bug_hunt:1},item_name='{"color":"white","text":"Chasse aux insectes"}',lore=['{"text":"???","color":"dark_gray","italic":false}']]
+item replace entity @s inventory.14 with paper[custom_data={ui:1,item_from_more:1,to_kill:1,bug_hunt:1},item_name='{"color":"white","text":"Notes de mise à jour"}',lore=['{"text":"- Pêche retravaillée","color":"gray","italic":false}','{"text":"- ???","color":"#FF00FF","italic":false}','{"text":"","color":"dark_gray","italic":false}','{"text":"À venir :","color":"dark_gray","italic":true}','{"text":"- Nouveaux cosmétiques","color":"dark_gray","italic":false}','{"text":"- Nouvelles quêtes","color":"dark_gray","italic":false}','{"text":"- Nouveau contenu de pêche","color":"dark_gray","italic":false}']]
+#item replace entity @s inventory.14 with stick[custom_model_data=100,custom_data={ui:1,item_from_more:1,to_kill:1,bug_hunt:1},item_name='{"color":"white","text":"Chasse aux insectes"}',lore=['{"text":"???","color":"dark_gray","italic":false}']]
 
 
 scoreboard players enable @s s.common_lootboxes
