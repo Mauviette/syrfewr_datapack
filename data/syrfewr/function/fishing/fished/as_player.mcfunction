@@ -5,7 +5,7 @@ execute store result score #reward_id s.temp run data get entity @s Inventory[].
 data modify storage s.fished id set from entity @s Inventory[].components."minecraft:custom_data".fish_id
 data modify storage s.fished name set from entity @s Inventory[].components."minecraft:custom_data".fish_name
 data modify storage s.fished suffix set from entity @s Inventory[].components."minecraft:custom_data".fish_suffix
-
+data modify storage s.fished fish set from entity @s Inventory[].components."minecraft:custom_data".fish
 
 scoreboard players operation @s s.creditsToAddBonus += #credits s.temp
 scoreboard players operation @s s.add_fishing_points += #credits s.temp
