@@ -45,3 +45,6 @@ advancement revoke @s only syrfewr:quests/la_peche/2
 advancement revoke @s only syrfewr:quests/la_peche/2_claim
 advancement revoke @s only syrfewr:quests/la_peche/3
 advancement revoke @s only syrfewr:quests/la_peche/3_claim
+
+scoreboard players set @s s.SelectedFishingRodSkinID 0
+scoreboard players set @s s.SelectedHook 0

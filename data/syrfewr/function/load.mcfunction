@@ -55,6 +55,7 @@ scoreboard objectives add s.opening_lootbox_time dummy
 scoreboard objectives add s.opening_lootbox_id dummy
 
 scoreboard objectives add s.opened_lootboxes dummy
+scoreboard objectives add s.opened_fishboxes dummy
 
 scoreboard objectives add s.opening_trouvaille_time dummy
 scoreboard objectives add s.opening_trouvaille_id dummy
@@ -192,7 +193,7 @@ data modify storage s.fish category.green append value {name:'{"text":"Sangsue",
 
 data modify storage s.fish category.trouble append value {name:'{"text":"Bois flottant","color":"#683f01"}',custom_model_data:1022,id:"driftwood",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:-1,suffix:"",rod_required:0}
 data modify storage s.fish category.trouble append value {name:'{"text":"Poisson mort","color":"#b48e55"}',custom_model_data:1023,id:"fish_bones",hint:'{"text":"Pêché avec une canne fragile, n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:1,credits:-3,suffix:"",rod_required:4}
-data modify storage s.fish category.trouble append value {name:'{"text":"Brochet","color":"#b5f07e"}',custom_model_data:1024,id:"gar",hint:'{"text":"Pêché le soir, avec une canne lourde","color":"gray","italic":false}',hour:5,type:0,credits:14,suffix:"",rod_required:3}
+data modify storage s.fish category.trouble append value {name:'{"text":"Brochet","color":"#b5f07e"}',custom_model_data:1024,id:"gar",hint:'{"text":"Pêché le soir, avec une canne lourde","color":"gray","italic":false}',hour:5,type:0,credits:14,suffix:"",rod_required:1}
 data modify storage s.fish category.trouble append value {name:'{"text":"Piranha","color":"#a2c4c7"}',custom_model_data:1025,id:"piranha",hint:'{"text":"Pêché n\\\'importe quand.","color":"gray","italic":false}',hour:0,type:0,credits:3,suffix:"",rod_required:0}
 data modify storage s.fish category.trouble append value {name:'{"text":"Lieu noir","color":"#1d2020"}',custom_model_data:1026,id:"saithe",hint:'{"text":"Pêché la nuit.","color":"gray","italic":false}',hour:2,type:0,credits:5,suffix:"",rod_required:0}
 
@@ -408,6 +409,10 @@ data modify storage s.ui hats append value {item:"purple_shulker_box",name:'{"co
 data modify storage s.ui hats append value {item:"stick",name:'{"color":"#2ed48f","text":"Douglas"}',rarity:6,id:"douglas",nb:7,desc:'\'{"text":"Le grand Douglas.","color":"dark_gray","italic":false}\',',data:"custom_model_data=5,"}
 
 scoreboard players set #hats s.total 8
+
+
+scoreboard players set #victory_animations s.total 6
+
 
 schedule clear syrfewr:time/schelude
 function syrfewr:time/schelude

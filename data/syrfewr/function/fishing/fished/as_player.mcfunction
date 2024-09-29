@@ -8,7 +8,8 @@ data modify storage s.fished suffix set from entity @s Inventory[].components."m
 data modify storage s.fished fish set from entity @s Inventory[].components."minecraft:custom_data".fish
 
 scoreboard players operation @s s.creditsToAddBonus += #credits s.temp
-scoreboard players operation @s s.add_fishing_points += #credits s.temp
+execute if score #credits s.temp matches 1.. run scoreboard players operation @s s.add_fishing_points += #credits s.temp
+execute if score #credits s.temp matches ..-1 run scoreboard players operation @s s.add_fishing_points -= #credits s.temp
 
 function syrfewr:fishing/fished/fish_message with storage s.fished
 
@@ -19,9 +20,10 @@ execute if score @s s.mission_id matches 4 run scoreboard players add @s s.missi
 execute if score @s s.bait_effect matches 1.. if score @s s.mission_id matches 5 run scoreboard players add @s s.mission_progression 1
 
 #Hameçons
-execute if score @s s.SelectedHook matches 1 if predicate syrfewr:random/0.25 run function syrfewr:fishing/stuff/effect/hooks/double
-execute if score @s s.SelectedHook matches 2 if predicate syrfewr:random/0.075 run function syrfewr:player/add/find_random_box
-execute if score @s s.SelectedHook matches 3 if predicate syrfewr:random/0.5 run scoreboard players operation @s s.add_fishing_points += #credits s.temp
+execute if score @s s.SelectedHook matches 1 if predicate syrfewr:random/0.3 run function syrfewr:fishing/stuff/effect/hooks/double
+execute if score @s s.SelectedHook matches 2 if predicate syrfewr:random/0.05 run function syrfewr:player/add/find_random_box
+execute if score @s s.SelectedHook matches 3 if predicate syrfewr:random/0.6 if score #credits s.temp matches 1.. run scoreboard players operation @s s.add_fishing_points += #credits s.temp
+execute if score @s s.SelectedHook matches 3 if predicate syrfewr:random/0.6 if score #credits s.temp matches ..-1 run scoreboard players operation @s s.add_fishing_points -= #credits s.temp
 
 
 execute if score #reward_id s.temp matches 1 run function syrfewr:fishing/fished/zone/reward/goldfish

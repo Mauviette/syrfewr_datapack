@@ -20,3 +20,10 @@ execute if entity @s[advancements={syrfewr:succes/lobby/hard_glass=true}] run sc
 execute store result storage s.quests progres int 1 run scoreboard players get @s s.temp
 function syrfewr:player/personal_gui/more/my_quests/init/pro_du_saut with storage s.quests
 
+execute unless score @s s.fishedTotal matches 0.. run scoreboard players set @s s.fishedTotal 0
+execute store result storage s.quests progres int 1 run scoreboard players get @s s.fishedTotal
+function syrfewr:player/personal_gui/more/my_quests/init/roi_de_la_peche with storage s.quests
+
+execute unless score @s s.maxDailyStreak matches 0.. run scoreboard players set @s s.maxDailyStreak 0
+execute store result storage s.quests progres int 1 run scoreboard players get @s s.maxDailyStreak
+function syrfewr:player/personal_gui/more/my_quests/init/super_serie with storage s.quests

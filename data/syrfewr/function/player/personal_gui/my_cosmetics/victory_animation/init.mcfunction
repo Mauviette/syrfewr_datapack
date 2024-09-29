@@ -7,6 +7,7 @@ execute store result storage syrfewr.temp credits int 1 run scoreboard players g
 scoreboard players set #completed s.temp 0
 function syrfewr:player/personal_gui/my_cosmetics/victory_animation/gotten
 execute store result storage syrfewr.temp completed int 1 run scoreboard players get #completed s.temp
+execute store result storage syrfewr.temp total int 1 run scoreboard players get #victory_animations s.total
 function syrfewr:player/personal_gui/my_cosmetics/victory_animation/finish_init with storage minecraft:syrfewr.temp
 
 

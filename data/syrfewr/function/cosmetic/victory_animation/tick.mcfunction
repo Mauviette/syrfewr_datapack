@@ -18,3 +18,5 @@ execute if score @s s.SelectedVictoryAnimationID matches 4 run particle smoke ~ 
 
 execute if score @s s.SelectedVictoryAnimationID matches 5 run particle minecraft:trial_spawner_detection_ominous ~ ~1.2 ~ .2 .6 .2 .1 3
 execute if score @s s.SelectedVictoryAnimationID matches 5 unless entity @s[gamemode=adventure] if score @s gw.PosY matches ..-1 run setblock ~ ~-1 ~ iron_block
+
+execute if score @s s.SelectedVictoryAnimationID matches 6 if predicate syrfewr:random/0.5 run function syrfewr:cosmetic/victory_animation/specific/cod_init

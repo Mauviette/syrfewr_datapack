@@ -10,3 +10,6 @@ scoreboard players set @s s.dialog_id 0
 
 execute unless score @s s.version >= #version s.version run function syrfewr:version/join
 execute unless score @s day >= $day day run function syrfewr:player/new_day
+
+scoreboard players add @s s.maxDailyStreak 0
+execute if score @s s.mission_streak > @s s.maxDailyStreak run scoreboard players operation @s s.maxDailyStreak = @s s.mission_streak

@@ -12,3 +12,5 @@ execute if score @s s.SelectedVictoryAnimationID matches 5 at @a[tag=s.playing,d
 #execute if score @s s.SelectedVictoryAnimationID matches 5 at @a[tag=s.playing,distance=.1..250] run setblock ~ ~-1 ~ glowstone
 execute if score @s s.SelectedVictoryAnimationID matches 5 run clear @a[tag=s.playing,distance=.1..250]
 execute if score @s s.SelectedVictoryAnimationID matches 5 run gamemode adventure @a[tag=s.playing,distance=.1..250]
+
+execute if score @s s.SelectedVictoryAnimationID matches 6 run function syrfewr:cosmetic/victory_animation/specific/cod_first
