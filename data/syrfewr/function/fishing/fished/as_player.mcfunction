@@ -32,7 +32,7 @@ execute if score #reward_id s.temp matches 3 run function syrfewr:fishing/fished
 execute if score #reward_id s.temp matches 4 run function syrfewr:fishing/fished/zone/reward/lockbox
 execute if score #reward_id s.temp matches 5 run function syrfewr:fishing/fished/zone/reward/algae
 execute if score #reward_id s.temp matches 6 run function syrfewr:fishing/fished/zone/reward/leech
-execute if score #reward_id s.temp matches 7 run function rpg:worlds/cloudland/first_challenge/player/join
+execute if score #reward_id s.temp matches 7 if entity @s[advancements={syrfewr:missions/rainbow_fish/1=true}] run function rpg:worlds/cloudland/first_challenge/player/join
 
 
 clear @s salmon[minecraft:custom_data~{fished:1}] 1

@@ -18,3 +18,4 @@ execute if score $hour time matches ..2 if score #day_passing time matches 1 run
 
 
 execute as @a[tag=!s.playing,tag=!s.block_ui] at @s run function syrfewr:player/personal_gui/more/fishing/refresh
+function syrfewr:time/cycle/start

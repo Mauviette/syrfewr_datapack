@@ -147,7 +147,7 @@ scoreboard players set #fishing_rods s.total 5
 scoreboard players set #findable_fishing_rods s.total 2
 
 scoreboard players set #hooks s.total 3
-scoreboard players set #baits s.total 2
+scoreboard players set #baits s.total 4
 scoreboard players operation #fishing_stuff s.total = #fishing_rods s.total
 scoreboard players operation #fishing_stuff s.total += #hooks s.total
 scoreboard players operation #fishing_stuff s.total += #baits s.total
@@ -160,6 +160,8 @@ scoreboard objectives add s.opened_fish_boxes dummy
 
 scoreboard objectives add s.baits_worm dummy
 scoreboard objectives add s.baits_algae dummy
+scoreboard objectives add s.baits_obscure dummy
+scoreboard objectives add s.baits_magnet dummy
 
 scoreboard objectives add s.mission_id dummy
 scoreboard objectives add s.mission_progression dummy

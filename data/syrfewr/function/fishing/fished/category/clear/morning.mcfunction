@@ -4,6 +4,8 @@ execute store result score #random_type s.temp run random value 1..100
 
 #---Algues
 execute if score @p[scores={s.hasFished=1..}] s.bait_effect matches 2 if score #random_type s.temp matches 71..87 store result score #random_type s.temp run random value 1..100
+#---Aimant
+execute if score @p[scores={s.hasFished=1..}] s.bait_effect matches 3 if score #random_type s.temp matches 1..87 store result score #random_type s.temp run random value 88..100
 
 ##Poissons
 execute if score #random_type s.temp matches 1..70 unless score @p[scores={s.hasFished=1..}] s.fishingRodType matches 1 store result score #random_2 s.temp run random value 1..70

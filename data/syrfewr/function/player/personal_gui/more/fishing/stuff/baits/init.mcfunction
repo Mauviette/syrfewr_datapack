@@ -6,6 +6,8 @@ item replace entity @s inventory.26 with barrier[minecraft:custom_model_data=103
 
 execute store result storage s.temp baits_algae int 1 run scoreboard players get @s s.baits_algae
 execute store result storage s.temp baits_worm int 1 run scoreboard players get @s s.baits_worm
+execute store result storage s.temp baits_magnet int 1 run scoreboard players get @s s.baits_magnet
+execute store result storage s.temp baits_obscure int 1 run scoreboard players get @s s.baits_obscure
 
 
 function syrfewr:player/personal_gui/more/fishing/stuff/baits/init_buyable with storage s.temp
