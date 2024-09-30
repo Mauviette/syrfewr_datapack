@@ -14,4 +14,5 @@ execute as @e[type=marker,tag=cp.color_zone,distance=..200] run function carlos_
 execute as @a[distance=..200] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 .6
 
 execute unless score @s cp.MiniGameAltTimer2 matches ..20 run scoreboard players remove @s cp.MiniGameAltTimer2 3
+execute unless score @s cp.MiniGameAltTimer2 matches ..20 if predicate syrfewr:random/0.5 run scoreboard players remove @s cp.MiniGameAltTimer2 1
 scoreboard players set @s cp.MiniGameTemp2 0

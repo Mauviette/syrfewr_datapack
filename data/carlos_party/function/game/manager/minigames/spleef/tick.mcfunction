@@ -1,6 +1,6 @@
-execute if score @s cp.MiniGameTimer matches 15 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/pre_spleef
+execute if score @s cp.MiniGameTimer matches 15 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/spleef/pre
 
-execute if score @s cp.MiniGameTimer matches 75 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/spleef
+execute if score @s cp.MiniGameTimer matches 75 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/spleef/announce
 
 execute if score @s cp.MiniGameTimer matches 125 run function carlos_party:game/manager/minigames/spleef/init
 execute if score @s cp.MiniGameTimer matches 127 run function carlos_party:game/manager/minigames/spleef/finish_init

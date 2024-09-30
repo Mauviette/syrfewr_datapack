@@ -1,6 +1,6 @@
-execute if score @s cp.MiniGameTimer matches 15 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/pre_colorswap
+execute if score @s cp.MiniGameTimer matches 15 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/colorswap/pre
 
-execute if score @s cp.MiniGameTimer matches 75 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/colorswap
+execute if score @s cp.MiniGameTimer matches 75 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/colorswap/announce
 
 execute if score @s cp.MiniGameTimer matches 125 run function carlos_party:game/manager/minigames/colorswap/init
 execute if score @s cp.MiniGameTimer matches 127 run function carlos_party:game/manager/minigames/colorswap/finish_init

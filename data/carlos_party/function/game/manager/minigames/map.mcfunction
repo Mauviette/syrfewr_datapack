@@ -4,6 +4,7 @@ execute if score @s cp.MiniGameID matches 2 run function carlos_party:game/manag
 execute if score @s cp.MiniGameID matches 3 run function carlos_party:game/manager/minigames/tntrun/tick
 execute if score @s cp.MiniGameID matches 4 run function carlos_party:game/manager/minigames/colorswap/tick
 execute if score @s cp.MiniGameID matches 5 run function carlos_party:game/manager/minigames/elytra/tick
+execute if score @s cp.MiniGameID matches 6 run function carlos_party:game/manager/minigames/anvil_drop/tick
 
 execute if score @s cp.MiniGameID matches -1 run function carlos_party:game/manager/minigames/results/tick
 execute if score @s cp.MiniGameID matches -2 run function carlos_party:game/manager/minigames/interlude/tick
