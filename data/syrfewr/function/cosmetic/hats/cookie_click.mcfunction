@@ -10,7 +10,14 @@ execute if score @s s.cookieHatClicks matches 5001 run scoreboard players add @s
 execute if score @s s.cookieHatClicks matches 7501 run scoreboard players add @s s.add_epic_lootboxes 1
 execute if score @s s.cookieHatClicks matches 10001 run scoreboard players add @s s.add_legendary_lootboxes 1
 #wave2
-execute if score @s s.cookieHatClicks matches 12501 run scoreboard players add @s s.creditsToAdd 10
-execute if score @s s.cookieHatClicks matches 15001 run scoreboard players add @s s.creditsToAdd 10
-execute if score @s s.cookieHatClicks matches 17501 run scoreboard players add @s s.creditsToAdd 10
-execute if score @s s.cookieHatClicks matches 20001 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 15000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 20000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 25000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 30000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 35000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 40000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 45000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 50000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 55000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 60000 run scoreboard players add @s s.creditsToAdd 10
+execute if score @s s.cookieHatClicks matches 65000 run scoreboard players add @s s.creditsToAdd 10

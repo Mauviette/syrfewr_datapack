@@ -5,7 +5,7 @@ scoreboard players remove @s s.mythic_lootboxes 1
 scoreboard players set @s s.opening_lootbox_time 100
 scoreboard players set @s s.opening_lootbox_id 6
 
-tellraw @s ["Ouverture d'une \uE007 ",{"text":"Lootbox mythique","color": "red"},"..."]
+tellraw @s ["Ouverture d'une \uE007 ",{"text":"Lootbox mythique","color": "#FF04FF"},"..."]
 
 scoreboard players add @s s.opened_lootboxes 1
 function syrfewr:player/quests/check_lootboxes
