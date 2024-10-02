@@ -30,8 +30,8 @@ execute if score #trouvaille s.temp matches 81..85 run scoreboard players set #t
 execute if score #trouvaille s.temp matches 86..94 run function syrfewr:lootbox/trouvaille/other/fishing_rods
 execute if score #trouvaille s.temp matches 86..94 run scoreboard players set #trouvaille_id s.temp 106
 
-execute if score #trouvaille s.temp matches 95.. run function syrfewr:player/add/find_random_box
-execute if score #trouvaille s.temp matches 95.. run scoreboard players set #trouvaille_id s.temp 107
+execute if score #trouvaille s.temp matches 95..101 run function syrfewr:player/add/find_random_box
+execute if score #trouvaille s.temp matches 95..101 run scoreboard players set #trouvaille_id s.temp 107
 
 execute if score #trouvaille s.temp matches 102..111 run scoreboard players add @s s.baits_obscure 1
 execute if score #trouvaille s.temp matches 102..111 run advancement grant @s only syrfewr:succes/fishing/stuff/baits/obscure_bait

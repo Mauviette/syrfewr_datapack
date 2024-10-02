@@ -402,6 +402,8 @@ scoreboard players set #bows s.total 11
 data remove storage s.ui hats
 data modify storage s.ui hats append value {item:"dead_bush",name:'{"color":"#994500","text":"Arbustre mort"}',rarity:2,id:"dead_bush",nb:1}
 data modify storage s.ui hats append value {item:"end_rod",name:'{"color":"#f28bff","text":"Corne magique"}',rarity:2,id:"unicorn",nb:8}
+data modify storage s.ui hats append value {item:"lead",name:'{"color":"#bf7414","text":"Monocle"}',rarity:2,id:"monocle",nb:11}
+data modify storage s.ui hats append value {item:"bone",name:'{"color":"white","text":"Nonos"}',rarity:2,id:"nonos",nb:12}
 data modify storage s.ui hats append value {item:"lightning_rod",name:'{"color":"#ff933b","text":"Antenne électrique"}',rarity:3,id:"antenna",nb:2}
 data modify storage s.ui hats append value {item:"glass",name:'{"color":"white","text":"Aquarium"}',rarity:4,id:"aquarium",nb:3}
 data modify storage s.ui hats append value {item:"grass_block",name:'{"color":"dark_green","text":"Jardin"}',rarity:4,id:"garden",nb:4}
@@ -409,16 +411,17 @@ data modify storage s.ui hats append value {item:"pink_banner",data:'banner_patt
 data modify storage s.ui hats append value {item:"purple_stained_glass",name:'{"color":"#FF00FF","text":"Arc-en-ciel"}',rarity:5,id:"rainbow",nb:5}
 data modify storage s.ui hats append value {item:"purple_shulker_box",name:'{"color":"#FF00FF","text":"Arc-en-ciel de lootboxes"}',rarity:5,id:"lootbox",nb:6,data:"custom_model_data=1,",not_buyable:1,desc:'\'{"text":"Donné par Jean-Gontran.","color":"dark_gray","italic":false}\','}
 data modify storage s.ui hats append value {item:"stick",name:'{"color":"#2ed48f","text":"Douglas"}',rarity:6,id:"douglas",nb:7,desc:'\'{"text":"Le grand Douglas.","color":"dark_gray","italic":false}\',',data:"custom_model_data=5,"}
+data modify storage s.ui hats append value {item:"cookie",name:'{"color":"#f39e31","text":"Cookie"}',rarity:6,id:"cookie",nb:10,desc:'\'{"text":"Compte vos clics.","color":"dark_gray","italic":false}\','}
+scoreboard objectives add s.cookieHatClicks dummy
+scoreboard players set #hats s.total 12
 
-scoreboard players set #hats s.total 8
 
 
 scoreboard players set #victory_animations s.total 6
 
 
 schedule clear syrfewr:time/schelude
-function syrfewr:time/schelude
-
+schedule function syrfewr:time/schelude 1
 
 #Stats
 scoreboard objectives add s.fishedTotal dummy

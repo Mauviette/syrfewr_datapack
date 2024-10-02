@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.24 with barrier[custom_model_data=4,item_name='{"color":"gray","text":"Modificateur aléatoire"}',lore=['{"color":"dark_gray","italic":false,"text":"Clic pour tirer un modificateur au hasard."}'],custom_data={gw_gui_item:1,gw_random_mod:1},hide_tooltip={}]
