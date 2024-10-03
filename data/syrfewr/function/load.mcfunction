@@ -413,12 +413,15 @@ data modify storage s.ui hats append value {item:"purple_shulker_box",name:'{"co
 data modify storage s.ui hats append value {item:"stick",name:'{"color":"#2ed48f","text":"Douglas"}',rarity:6,id:"douglas",nb:7,desc:'\'{"text":"Le grand Douglas.","color":"dark_gray","italic":false}\',',data:"custom_model_data=5,"}
 data modify storage s.ui hats append value {item:"cookie",name:'{"color":"#f39e31","text":"Cookie"}',rarity:6,id:"cookie",nb:10,desc:'\'{"text":"Compte vos clics.","color":"dark_gray","italic":false}\','}
 scoreboard objectives add s.cookieHatClicks dummy
-scoreboard players set #hats s.total 12
+scoreboard players set #hats s.total 11
 
 
 
 scoreboard players set #victory_animations s.total 6
 
+scoreboard players operation #cosmetics s.total = #bows s.total
+scoreboard players operation #cosmetics s.total += #hats s.total
+scoreboard players operation #cosmetics s.total += #victory_animations s.total
 
 schedule clear syrfewr:time/schelude
 schedule function syrfewr:time/schelude 1
@@ -426,3 +429,10 @@ schedule function syrfewr:time/schelude 1
 #Stats
 scoreboard objectives add s.fishedTotal dummy
 scoreboard objectives add s.maxDailyStreak dummy
+
+
+#Modes UI
+scoreboard objectives add s.ui_modes dummy
+scoreboard objectives add s.ui_id dummy
+
+setblock 0 -63 0 yellow_shulker_box

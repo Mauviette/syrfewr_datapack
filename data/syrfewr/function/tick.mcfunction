@@ -131,3 +131,7 @@ execute as @e[type=fishing_bobber] at @s run function syrfewr:fishing/bobber/tic
 
 
 execute as @a at @s store result score @s s.posY run data get entity @s Pos[1]
+
+
+execute as @a at @s run function syrfewr:player/modes_ui/player/tick
+execute as @e[type=chest_minecart,tag=ui_modes] run function syrfewr:player/modes_ui/minecart/tick
