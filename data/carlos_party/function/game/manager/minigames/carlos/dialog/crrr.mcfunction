@@ -11,4 +11,5 @@ execute if score $carlos.dialog s.temp matches 6.. run tellraw @s ["",{"text":"<
 
 
 
+scoreboard players set @n[tag=cp.game_manager] cp.lastDialog 0
 playsound minecraft:entity.strider.ambient neutral @s ~ ~ ~

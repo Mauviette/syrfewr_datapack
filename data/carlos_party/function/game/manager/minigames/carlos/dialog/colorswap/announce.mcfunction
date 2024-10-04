@@ -39,4 +39,5 @@ tellraw @s ["",{"text":"<"},{"text":"Carlos","color":"dark_red"},{"text":"> C'es
 #execute if score $carlos.dialog s.temp matches 23 run tellraw @s ["",{"text":"<"},{"text":"Carlos","color":"dark_red"},{"text":"> C'est l'heure du "},{"text":"Color-swap","bold":true,"color":"dark_purple"},{"text":" !"}]
 #execute if score $carlos.dialog s.temp matches 24 run tellraw @s ["",{"text":"<"},{"text":"Carlos","color":"dark_red"},{"text":"> Le "},{"text":"Color-swap","bold":true,"color":"dark_purple"},{"text":" démarre !"}]
 #
+scoreboard players set @n[tag=cp.game_manager] cp.lastDialog 0
 playsound minecraft:entity.strider.ambient neutral @s ~ ~ ~ 1 1

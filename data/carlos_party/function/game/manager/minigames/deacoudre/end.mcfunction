@@ -4,6 +4,7 @@ attribute @p[tag=cp.winner] generic.fall_damage_multiplier modifier remove cp.de
 tag @a[tag=cp.deacoudre,distance=..200] remove cp.deacoudre
 title @a[distance=..200] times 5t 40t 5t
 title @a[distance=..200] title {"selector": "@a[tag=cp.winner]","color":"green","bold":true}
+execute unless entity @a[tag=cp.winner] run title @a[distance=..200] title {"selector": "Personne","color":"green","bold":true}
 title @a[distance=..200] subtitle {"text":"a gagné!","color":"green","bold":true}
 execute if score @s cp.MiniGameTimer matches 1600.. as @a[distance=..200] run function carlos_party:game/manager/minigames/carlos/dialog/finally
 function carlos_party:game/manager/minigames/results/set

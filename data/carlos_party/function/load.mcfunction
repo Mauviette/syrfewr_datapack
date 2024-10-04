@@ -47,6 +47,9 @@ scoreboard objectives add cp.MiniGameTemp2 dummy
 scoreboard objectives add cp.MiniGameAltTimer dummy
 scoreboard objectives add cp.MiniGameAltTimer2 dummy
 
+#Carlos
+scoreboard objectives add cp.lastDialog dummy
+
 #Joueurs
 scoreboard objectives add cp.points dummy
 scoreboard objectives add cp.position dummy

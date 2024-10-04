@@ -39,9 +39,9 @@ execute if score #trouvaille s.temp matches 102..111 run tellraw @s ["+1 ",{"tex
 execute if score #trouvaille s.temp matches 102..111 run function syrfewr:player/personal_gui/refresh
 execute if score #trouvaille s.temp matches 102..111 run scoreboard players set #trouvaille_id s.temp 108
 
-execute if score #trouvaille s.temp matches 112..120 run scoreboard players add @s s.baits_obscure 2
+execute if score #trouvaille s.temp matches 112..120 run scoreboard players add @s s.baits_obscure 1
 execute if score #trouvaille s.temp matches 112..120 run advancement grant @s only syrfewr:succes/fishing/stuff/baits/obscure_bait
-execute if score #trouvaille s.temp matches 112..120 run tellraw @s ["+2 ",{"text":"Appâts obscurs","color":"#2b0064"},"!"]
+execute if score #trouvaille s.temp matches 112..120 run tellraw @s ["+1 ",{"text":"Appât obscur","color":"#2b0064"},"!"]
 execute if score #trouvaille s.temp matches 112..120 run function syrfewr:player/personal_gui/refresh
 execute if score #trouvaille s.temp matches 112..120 run scoreboard players set #trouvaille_id s.temp 109
 
@@ -62,3 +62,5 @@ execute if score #trouvaille s.temp matches 143..147 run scoreboard players set 
 
 execute if score #trouvaille s.temp matches 148..155 run function syrfewr:lootbox/trouvaille/other/hooks
 execute if score #trouvaille s.temp matches 148..155 run scoreboard players set #trouvaille_id s.temp 102
+
+scoreboard players set @s s.opening_trouvaille_id 100

@@ -5,4 +5,5 @@ execute if score $carlos.dialog s.temp matches 2 run tellraw @s ["",{"text":"<"}
 execute if score $carlos.dialog s.temp matches 3 run tellraw @s ["",{"text":"<"},{"text":"Carlos","color":"dark_red"},{"text":"> La fête est finie..."}]
 
 
+scoreboard players set @n[tag=cp.game_manager] cp.lastDialog 0
 playsound minecraft:entity.strider.ambient neutral @s ~ ~ ~

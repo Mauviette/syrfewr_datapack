@@ -31,12 +31,12 @@ execute if score #trouvaille_id s.temp matches 12 positioned ~ ~-.2 ~ run functi
 execute if score #trouvaille_id s.temp matches 13 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"50 crédits",typed:false,extra:'"color":"gold"'},events:[]}
 execute if score #trouvaille_id s.temp matches 14 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"\\\\uE001",typed:false,extra:'"color":"dark_purple"',transformation:{scale:[3f,3f,3f]}},events:[]}
 execute if score #trouvaille_id s.temp matches 15 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"\\\\uE006",typed:false,extra:'"color":"white"'},events:[]}
-execute if score #trouvaille_id s.temp matches 16 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"60 crédits",typed:false,extra:'"color":"gold"'},events:[]}
-execute if score #trouvaille_id s.temp matches 17 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"70 crédits",typed:false,extra:'"color":"gold"'},events:[]}
+execute if score #trouvaille_id s.temp matches 16 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"50 crédits",typed:false,extra:'"color":"gold"'},events:[]}
+execute if score #trouvaille_id s.temp matches 17 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"60 crédits",typed:false,extra:'"color":"gold"'},events:[]}
 execute if score #trouvaille_id s.temp matches 18 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"\\\\uE001",typed:false,extra:'"color":"yellow"',transformation:{scale:[3f,3f,3f]}},events:[]}
 execute if score #trouvaille_id s.temp matches 19 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"\\\\uE007",typed:false,extra:'"color":"white"'},events:[]}
-execute if score #trouvaille_id s.temp matches 20 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"100 crédits",typed:false,extra:'"color":"gold"'},events:[]}
-execute if score #trouvaille_id s.temp matches 21 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"200 crédits",typed:false,extra:'"color":"gold"'},events:[]}
+execute if score #trouvaille_id s.temp matches 20 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"80 crédits",typed:false,extra:'"color":"gold"'},events:[]}
+execute if score #trouvaille_id s.temp matches 21 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"150 crédits",typed:false,extra:'"color":"gold"'},events:[]}
 execute if score #trouvaille_id s.temp matches 22 positioned ~ ~-.2 ~ run function speechtools:create {args:{"text":"\\\\uE001",typed:false,extra:'"color":"#FF04FF"',transformation:{scale:[3f,3f,3f]}},events:[]}
 
 

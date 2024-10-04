@@ -1,11 +1,11 @@
 execute store result score #trouvaille s.temp run random value 1..100
 
-execute if score #trouvaille s.temp matches 1..33 run scoreboard players add @s s.creditsToAddBonus 60
-execute if score #trouvaille s.temp matches 1..33 run tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] [{"selector": "@s"},{"text":" a obtenu "},{"text":"60 crédits","color":"gold"},"!"]
+execute if score #trouvaille s.temp matches 1..33 run scoreboard players add @s s.creditsToAddBonus 50
+execute if score #trouvaille s.temp matches 1..33 run tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] [{"selector": "@s"},{"text":" a obtenu "},{"text":"50 crédits","color":"gold"},"!"]
 execute if score #trouvaille s.temp matches 1..33 run scoreboard players set #trouvaille_id s.temp 16
 
-execute if score #trouvaille s.temp matches 34..59 run scoreboard players add @s s.creditsToAddBonus 70
-execute if score #trouvaille s.temp matches 34..59 run tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] [{"selector": "@s"},{"text":" a obtenu "},{"text":"70 crédits","color":"gold"},"!"]
+execute if score #trouvaille s.temp matches 34..59 run scoreboard players add @s s.creditsToAddBonus 60
+execute if score #trouvaille s.temp matches 34..59 run tellraw @a[scores={s.seeSpecialOpening=1},distance=0.00001..] [{"selector": "@s"},{"text":" a obtenu "},{"text":"60 crédits","color":"gold"},"!"]
 execute if score #trouvaille s.temp matches 34..59 run scoreboard players set #trouvaille_id s.temp 17
 
 execute if score #trouvaille s.temp matches 60..79 run function syrfewr:lootbox/trouvaille/skin/epic

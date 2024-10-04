@@ -8,4 +8,5 @@ execute if score $carlos.dialog s.temp matches 5 run tellraw @s ["",{"text":"<"}
 execute if score $carlos.dialog s.temp matches 6.. run tellraw @s ["",{"text":"<"},{"text":"Carlos","color":"dark_red"},{"text":"> "},{"selector":"@p[tag=cp.just_dead]"},{"text":" a été éliminé!"}]
 
 
+scoreboard players set @n[tag=cp.game_manager] cp.lastDialog 0
 playsound minecraft:entity.strider.happy neutral @s ~ ~ ~
