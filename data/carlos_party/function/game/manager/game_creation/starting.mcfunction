@@ -15,16 +15,16 @@ execute if score @s cp.GameTimer matches 3 run tag @s add cp.gm_init_myself
 execute if score @s cp.GameTimer matches 3 run kill @e[type=!player,distance=..250,tag=!cp.gm_init_myself]
 execute if score @s cp.GameTimer matches 3 run tag @s remove cp.gm_init_myself
 
-
+execute if score @s cp.GameTimer matches 2 at @n[tag=cp.hub_center] run spawnpoint @a[distance=..200,tag=cp.starting] ~ ~ ~
+execute if score @s cp.GameTimer matches 2 run tp @a[distance=..200,tag=cp.starting] @n[tag=cp.hub_center]
 execute if score @s cp.GameTimer matches 2 run function carlos_party:game/manager/game_creation/init_area/init_area
 execute if score @s cp.GameTimer matches 2 run tp @a[tag=cp.starting] ~ ~5 ~
 
-execute if score @s cp.GameTimer matches 2 at @n[tag=cp.hub_center] run spawnpoint @a[distance=..200,tag=cp.starting] ~ ~ ~
-execute if score @s cp.GameTimer matches 2 run tp @a[distance=..200,tag=cp.starting] @n[tag=cp.hub_center]
 
 
 execute if score @s cp.GameTimer matches 2 store result storage cp game_id int 1 run scoreboard players get @s cp.GameID
 execute if score @s cp.GameTimer matches 2 as @a[tag=cp.starting] run function carlos_party:game/manager/game_creation/player_init with storage cp
+
 
 execute if score @s cp.GameTimer matches 1 run scoreboard players set @s cp.MiniGameID 0
 execute if score @s cp.GameTimer matches 1 run summon strider ~ ~ ~ {Invulnerable:1b,CustomNameVisible:1b,Tags:["cp.carlos"],CustomName:'{"color":"dark_red","italic":false,"text":"Carlos"}'}

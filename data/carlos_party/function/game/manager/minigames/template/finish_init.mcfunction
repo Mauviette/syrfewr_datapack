@@ -2,6 +2,7 @@ kill @e[distance=..200,type=!marker,type=!player,tag=!cp.carlos]
 
 #Init de la zone
 place template carlos_party:minigame/template ~ ~ ~
+tp @e[tag=cp.carlos,distance=..200] @n[tag=cp.carlos_tp]
 
 #TP, initialisation et spawnpoint des joueurs
 execute as @a[distance=..150,tag=cp.playing] at @s run function carlos_party:game/manager/minigames/template/init_player

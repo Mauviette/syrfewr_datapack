@@ -23,7 +23,7 @@ team modify cp.hub prefix ["",{"text":"[","color":"gray"},{"text":"\uE200","colo
 
 ## Lobby
 execute in syrfewr:carlos_party run forceload add -10 -10 10 10
-execute in syrfewr:carlos_party run place template syrfewr:lobby/1 -2 79 -2
+execute in syrfewr:carlos_party run place template syrfewr:old/1 -2 79 -2
 
 
 ## Scoreboards
@@ -58,4 +58,4 @@ scoreboard objectives add cp.isDead deathCount
 
 scoreboard objectives add cp.Wins dummy
 
-scoreboard players set $max cp.MiniGameCount 4
+scoreboard players set $max cp.MiniGameCount 5
