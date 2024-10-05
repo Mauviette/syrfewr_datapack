@@ -15,18 +15,18 @@ execute if score @s cp.MiniGameID matches 2 as @a[distance=..300] at @s run func
 
 
 #TNT-Run
-execute if score @s cp.MiniGameID matches 3 unless score @s cp.MiniGameTimer matches 1128.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/hard_rain
+execute if score @s cp.MiniGameID matches 3 unless score @s cp.MiniGameTimer matches 1128.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/run_faster
 execute if score @s cp.MiniGameID matches 3 if score @s cp.MiniGameTimer matches 1128.. store result score $carlos.random_reaction s.temp run random value 1..10
-execute if score @s cp.MiniGameID matches 3 if score $carlos.random_reaction s.temp matches 1..7 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/holes
-execute if score @s cp.MiniGameID matches 3 if score $carlos.random_reaction s.temp matches 8.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/hard_rain
+execute if score @s cp.MiniGameID matches 3 if score $carlos.random_reaction s.temp matches 1..7 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/cant_jump
+execute if score @s cp.MiniGameID matches 3 if score $carlos.random_reaction s.temp matches 8.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/run_faster
 
 #Color-Swap
 execute if score @s cp.MiniGameID matches 4 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/colorswap
 
 
 #Anvil-Drop
-execute if score @s cp.MiniGameID matches 5 unless score @s cp.MiniGameTimer matches 2028.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/run_faster
+execute if score @s cp.MiniGameID matches 5 unless score @s cp.MiniGameTimer matches 2028.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/hard_rain
 execute if score @s cp.MiniGameID matches 5 if score @s cp.MiniGameTimer matches 2028.. store result score $carlos.random_reaction s.temp run random value 1..10
 execute if score @s cp.MiniGameID matches 5 if score $carlos.random_reaction s.temp matches 1..7 as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/holes
-execute if score @s cp.MiniGameID matches 5 if score $carlos.random_reaction s.temp matches 8.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/run_faster
+execute if score @s cp.MiniGameID matches 5 if score $carlos.random_reaction s.temp matches 8.. as @a[distance=..300] at @s run function carlos_party:game/manager/minigames/carlos/dialog/reaction/hard_rain
 

@@ -1,4 +1,4 @@
-kill @e[distance=..200,type=!marker,type=!player]
+kill @e[distance=..200,type=!marker,type=!player,tag=!cp.carlos]
 
 execute store result score @s s.temp run random value 1..3
 execute if score @s s.temp matches 1 run place template carlos_party:minigame/spleef1 ~ ~ ~

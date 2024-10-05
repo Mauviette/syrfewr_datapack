@@ -12,3 +12,5 @@ function carlos_party:game/manager/minigames/results/show/by_position
 tag @a remove cp.winner
 stopsound @a[distance=..200] record
 execute as @a[distance=..200] at @s run playsound syrfewr:music_end_spleef record @s ~ ~ ~ 1 1
+
+function carlos_party:game/manager/minigames/team/disable_pvp

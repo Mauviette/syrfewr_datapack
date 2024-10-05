@@ -21,4 +21,3 @@ stopsound @a[distance=..200] record
 execute as @a[distance=..200] at @s run playsound syrfewr:music_end_anvil_drop record @s ~ ~ ~ 1 1
 
 #Tout ce qui est clear des traces que le mini-jeu aura laissé
-function carlos_party:game/manager/minigames/team/disable_pvp

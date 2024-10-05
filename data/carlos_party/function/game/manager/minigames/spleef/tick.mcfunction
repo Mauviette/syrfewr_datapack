@@ -40,6 +40,7 @@ execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..2
 
 
 execute if score @s cp.MiniGameTimer matches 228.. run function carlos_party:game/manager/minigames/spleef/tick_playing
+execute if score @s cp.MiniGameTimer matches 228 run function carlos_party:game/manager/minigames/team/enable_pvp
 
 execute if score @s cp.MiniGameTimer matches 1628 as @a[distance=..250] at @s run playsound syrfewr:music_spleef record @s ~ ~ ~ 1 1
 execute if score @s cp.MiniGameTimer matches 3029 as @a[distance=..250] at @s run playsound syrfewr:music_spleef record @s ~ ~ ~ 1 1

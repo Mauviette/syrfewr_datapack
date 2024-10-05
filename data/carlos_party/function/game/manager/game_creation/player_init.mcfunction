@@ -1,4 +1,5 @@
 $team join cp.playing$(game_id) @s
+tag @s add s.playing
 effect clear @s
 clear @s
 gamemode adventure
