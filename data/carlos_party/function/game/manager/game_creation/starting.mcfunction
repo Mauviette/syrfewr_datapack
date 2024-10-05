@@ -27,3 +27,5 @@ execute if score @s cp.GameTimer matches 2 store result storage cp game_id int 1
 execute if score @s cp.GameTimer matches 2 as @a[tag=cp.starting] run function carlos_party:game/manager/game_creation/player_init with storage cp
 
 execute if score @s cp.GameTimer matches 1 run scoreboard players set @s cp.MiniGameID 0
+execute if score @s cp.GameTimer matches 1 run summon strider ~ ~ ~ {Invulnerable:1b,CustomNameVisible:1b,Tags:["cp.carlos"],CustomName:'{"color":"dark_red","italic":false,"text":"Carlos"}'}
+execute if score @s cp.GameTimer matches 1 run tp @e[tag=cp.carlos,distance=..200] @n[tag=cp.carlos_tp]
