@@ -1,3 +1,4 @@
+scoreboard players add #nb_loops s.temp 1
 scoreboard players operation @s cp.position = #nb_loops s.temp
 execute if score @s cp.position matches 1 run tellraw @a[distance=..200] ["",{"score":{"name":"@s","objective":"cp.position"},"color":"gold"},{"text":"er ","color":"gold"},{"selector":"@s","color":"gold"},{"text":" | ","color":"#7a7a7a"},{"score":{"name":"@s","objective":"cp.points"},"color":"#7a7a7a"},{"text":" pts ","color":"#7a7a7a"}]
 execute if score @s cp.position matches 2 run tellraw @a[distance=..200] ["",{"score":{"name":"@s","objective":"cp.position"},"color":"#ececec"},{"text":"ème ","color":"#ececec"},{"selector":"@s","color":"#ececec"},{"text":" | ","color":"#7a7a7a"},{"score":{"name":"@s","objective":"cp.points"},"color":"#7a7a7a"},{"text":" pts ","color":"#7a7a7a"}]

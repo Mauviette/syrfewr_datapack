@@ -19,7 +19,7 @@ execute if score @s cp.MiniGameTimer matches 127 run effect give @a[distance=..2
 
 
 #Démmrrage de la partie
-execute if score @s cp.MiniGameTimer matches 128.. run function carlos_party:game/manager/minigames/anvil_drop/tick_playing
+execute if score @s cp.MiniGameTimer matches 160.. run function carlos_party:game/manager/minigames/anvil_drop/tick_playing
 
 #Loop musique au cas ou
 execute if score @s cp.MiniGameTimer matches 1568 as @a[distance=..250] at @s run playsound syrfewr:music_anvil_drop record @s ~ ~ ~ 1 1

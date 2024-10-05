@@ -1,4 +1,4 @@
-kill @e[distance=..200,type=!marker,type=!player]
+kill @e[distance=..200,type=!marker,type=!player,tag=!cp.carlos]
 
 execute store result score @s cp.MiniGameTemp2 run random value 1..2
 execute if score @s cp.MiniGameTemp2 matches 1 run place template carlos_party:minigame/tntrun1 ~ ~ ~

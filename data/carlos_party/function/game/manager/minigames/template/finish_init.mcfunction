@@ -1,4 +1,4 @@
-kill @e[distance=..200,type=!marker,type=!player]
+kill @e[distance=..200,type=!marker,type=!player,tag=!cp.carlos]
 
 #Init de la zone
 place template carlos_party:minigame/template ~ ~ ~
