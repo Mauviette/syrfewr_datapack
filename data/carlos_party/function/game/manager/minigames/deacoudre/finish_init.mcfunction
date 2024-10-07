@@ -1,6 +1,7 @@
 kill @e[distance=..200,type=!marker,type=!player,tag=!cp.carlos]
 
 place template carlos_party:minigame/deacoudre1 ~ ~ ~
+execute at @n[tag=cp.carlos_tp] run tp @e[tag=cp.carlos,distance=..200] ~ ~1 ~
 scoreboard players set @s cp.PlayingTurn 0
 
 execute at @n[tag=cp.top_jump] run tp @a[tag=cp.playing,distance=..250] ~ ~-8 ~
