@@ -103,7 +103,7 @@ execute as @e[tag=s.opening_lootbox] at @s run function syrfewr:lootbox/opening/
 execute as @a[scores={s.hasJumped=1..}] at @s run function syrfewr:check/jump
 
 
-execute as @a[scores={s.has.playactedAnvil=1..}] at @s run function syrfewr:check/interacted
+execute as @a[scores={s.hasInteractedAnvil=1..}] at @s run function syrfewr:check/interacted
 execute as @a[scores={s.hasInteractedBeacon=1..}] at @s run function syrfewr:check/interacted
 execute as @a[scores={s.hasInteractedBlastFurnace=1..}] at @s run function syrfewr:check/interacted
 execute as @a[scores={s.hasInteractedBrewingStand=1..}] at @s run function syrfewr:check/interacted

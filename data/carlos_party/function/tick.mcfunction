@@ -7,3 +7,4 @@ execute as @e[tag=cp.gm_starting] at @s run function carlos_party:game/manager/g
 execute as @e[tag=cp.gm_ending] at @s run function carlos_party:game/manager/game_end/ending
 execute as @e[tag=cp.game_manager,tag=!cp.gm_starting] at @s run function carlos_party:game/manager/game_during/tick
              
+say cp:tick
