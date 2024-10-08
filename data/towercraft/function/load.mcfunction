@@ -29,3 +29,6 @@ execute in syrfewr:towercraft run place template syrfewr:old/1 -2 79 -2
 ## Scoreboards
 # Game manager
 scoreboard objectives add tc.GameID dummy
+scoreboard objectives add tc.GamePos dummy
+scoreboard objectives add tc.GameTimer dummy
+scoreboard objectives add tc.TimeWithoutPlayers dummy

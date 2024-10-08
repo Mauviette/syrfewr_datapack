@@ -1,0 +1,1 @@
+fill ~-5 ~ ~-5 ~5 ~ ~5 white_stained_glass
