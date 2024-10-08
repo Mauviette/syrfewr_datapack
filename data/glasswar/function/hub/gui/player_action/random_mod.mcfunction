@@ -1,4 +1,4 @@
-execute store result score @n[tag=gw.game_gui] gw.ModificatorID run random value 0..6
+execute store result score @n[tag=gw.game_gui] gw.ModificatorID run random value 0..7
 scoreboard players set @e[tag=gw.game_gui,sort=nearest,limit=1] gw.LastInteraction 0
 playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1
 

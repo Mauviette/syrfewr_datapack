@@ -5,12 +5,12 @@ execute if score @s gw.NumberOfPlayers matches 0 unless entity @a[distance=..250
 
 scoreboard players add @s gw.TimerItemSpawn 1
 execute unless score @s gw.NbItemsSpawned matches 4.. if score @s gw.TimerItemSpawn matches 200.. run function glasswar:ffa/game_during/item_spawn_beginning
-execute if score @s gw.NbItemsSpawned matches 4..9 if score @s gw.TimerItemSpawn matches 260.. run function glasswar:ffa/game_during/item_spawn
-execute if score @s gw.NbItemsSpawned matches 10..25 if score @s gw.TimerItemSpawn matches 230.. run function glasswar:ffa/game_during/item_spawn
-execute if score @s gw.NbItemsSpawned matches 26..40 if score @s gw.TimerItemSpawn matches 200.. run function glasswar:ffa/game_during/item_spawn
-execute if score @s gw.NbItemsSpawned matches 41..55 if score @s gw.TimerItemSpawn matches 180.. run function glasswar:ffa/game_during/item_spawn
-execute if score @s gw.NbItemsSpawned matches 56..75 if score @s gw.TimerItemSpawn matches 160.. run function glasswar:ffa/game_during/item_spawn
-execute if score @s gw.NbItemsSpawned matches 76..100 if score @s gw.TimerItemSpawn matches 140.. run function glasswar:ffa/game_during/item_spawn
+execute if score @s gw.NbItemsSpawned matches 4..9 if score @s gw.TimerItemSpawn matches 200.. run function glasswar:ffa/game_during/item_spawn
+execute if score @s gw.NbItemsSpawned matches 10..25 if score @s gw.TimerItemSpawn matches 170.. run function glasswar:ffa/game_during/item_spawn
+execute if score @s gw.NbItemsSpawned matches 26..40 if score @s gw.TimerItemSpawn matches 160.. run function glasswar:ffa/game_during/item_spawn
+execute if score @s gw.NbItemsSpawned matches 41..55 if score @s gw.TimerItemSpawn matches 150.. run function glasswar:ffa/game_during/item_spawn
+execute if score @s gw.NbItemsSpawned matches 56..75 if score @s gw.TimerItemSpawn matches 140.. run function glasswar:ffa/game_during/item_spawn
+execute if score @s gw.NbItemsSpawned matches 76..100 if score @s gw.TimerItemSpawn matches 130.. run function glasswar:ffa/game_during/item_spawn
 execute if score @s gw.NbItemsSpawned matches 101..130 if score @s gw.TimerItemSpawn matches 120.. run function glasswar:ffa/game_during/item_spawn
 execute if score @s gw.NbItemsSpawned matches 102..120 if score @s gw.TimerItemSpawn matches 100.. run function glasswar:ffa/game_during/item_spawn
 execute if score @s gw.NbItemsSpawned matches 121.. if score @s gw.TimerItemSpawn matches 80.. run function glasswar:ffa/game_during/item_spawn

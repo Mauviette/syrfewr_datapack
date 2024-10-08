@@ -14,4 +14,6 @@ tp @s ~ ~ ~ facing entity @e[limit=1,sort=nearest,tag=cp.game_manager_init]
 scoreboard players enable @s leave
 scoreboard players reset @s cp.isDead
 scoreboard players set @s cp.points 0
+execute at @s run spawnpoint @s ~ ~ ~
+execute at @n[tag=cp.hub_center] run spawnpoint @s ~ ~ ~
 kill @s

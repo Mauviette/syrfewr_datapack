@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.15 with fire_charge[item_name='{"color":"red","text":"Chaos total"}',lore=['{"color":"gray","italic":false,"text":"Modificateur"}','{"color":"dark_gray","italic":false,"text":"Items OP pour des parties OP"}'],custom_data={gw_gui_item:1,gw_switch_mod:1}]
