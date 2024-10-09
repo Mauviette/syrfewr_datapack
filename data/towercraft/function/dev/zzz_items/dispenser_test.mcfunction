@@ -1,0 +1,1 @@
+give @p dispenser[custom_data={needs_display:1b,tower:{attack_type:1,range:50,damage:50,fire_rate:15,type:1}},food={nutrition:0,saturation:0,eat_seconds:4000000,can_always_eat:true},max_stack_size=1] 1

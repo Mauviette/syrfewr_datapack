@@ -7,6 +7,7 @@ function carlos_party:load
 function coliseum:load
 function syrfewr:pnj/load
 function speechtools:zzz/load
+function towercraft:load
 
 
 ## Numbers

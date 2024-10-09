@@ -1,0 +1,1 @@
+execute store result storage tc.temp id int 1 run scoreboard players get @s s.player_id

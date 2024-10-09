@@ -16,5 +16,6 @@ execute if score @s tc.GameTimer matches 3 run tp @a[tag=tc.starting_confirmed] 
 
 execute if score @s tc.GameTimer matches 2 run tag @a[tag=tc.starting_confirmed] add tc.starting_end
 execute if score @s tc.GameTimer matches 2 run tag @a[tag=tc.starting_confirmed] remove tc.starting_confirmed
+execute if score @s tc.GameTimer matches 2 as @a[tag=tc.starting_end,distance=..250] at @s run function towercraft:game/manage/game_creation/player_init
 
 execute if score @s tc.GameTimer matches 1 run function towercraft:game/manage/game_creation/init_area/init_area

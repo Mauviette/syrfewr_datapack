@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        {"id": "grass_block", "required": false},
+        {"id": "dirt", "required": false}
+    ]
+}

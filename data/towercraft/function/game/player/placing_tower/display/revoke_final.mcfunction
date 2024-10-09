@@ -1,0 +1,1 @@
+$data modify entity @n[tag=tc.placing_display,team=tc.id$(id)] Glowing set value 0b

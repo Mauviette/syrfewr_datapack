@@ -7,6 +7,7 @@ function coliseum:tick
 function syrfewr:pnj/tick
 function rpg:tick
 function syrfewr:below_name
+function towercraft:tick
 
 ## tick
 

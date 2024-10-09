@@ -1,0 +1,2 @@
+execute store result score #range s.temp run scoreboard players get @n[tag=tc.tower] tc.TowerRange
+execute if score @n[tag=tc.tower] tc.AttackType matches 1 at @n[tag=tc.tower] run function towercraft:game/player/placing_tower/type/range_display/line_loop

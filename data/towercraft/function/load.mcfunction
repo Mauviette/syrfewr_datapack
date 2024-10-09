@@ -32,3 +32,24 @@ scoreboard objectives add tc.GameID dummy
 scoreboard objectives add tc.GamePos dummy
 scoreboard objectives add tc.GameTimer dummy
 scoreboard objectives add tc.TimeWithoutPlayers dummy
+
+
+#Joueur
+scoreboard objectives add tc.Rotation dummy
+
+
+#Tourelles stats
+scoreboard objectives add tc.TowerID dummy
+#Type : 1 = dispenser, 2 = furnace
+scoreboard objectives add tc.TowerType dummy
+scoreboard objectives add tc.TowerLevel dummy
+
+scoreboard objectives add tc.TowerRange dummy
+scoreboard objectives add tc.TowerDamage dummy
+scoreboard objectives add tc.TowerFireRate dummy
+scoreboard objectives add tc.AttackType dummy
+
+
+
+#Joueurs
+scoreboard objectives add tc.Cooldown dummy
