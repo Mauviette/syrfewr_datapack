@@ -50,6 +50,16 @@ scoreboard objectives add tc.TowerFireRate dummy
 scoreboard objectives add tc.AttackType dummy
 
 
-
 #Joueurs
 scoreboard objectives add tc.Cooldown dummy
+
+
+#UI
+scoreboard objectives add tc.ui_id dummy
+scoreboard objectives add tc.ui_tower dummy
+
+
+
+
+execute in syrfewr:towercraft run setblock 0 -63 0 yellow_shulker_box
+execute in syrfewr:towercraft run forceload add 0 0
