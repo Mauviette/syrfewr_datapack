@@ -43,11 +43,17 @@ scoreboard objectives add tc.TowerID dummy
 #Type : 1 = dispenser, 2 = furnace
 scoreboard objectives add tc.TowerType dummy
 scoreboard objectives add tc.TowerLevel dummy
+scoreboard objectives add tc.TowerEvolution dummy
 
 scoreboard objectives add tc.TowerRange dummy
 scoreboard objectives add tc.TowerDamage dummy
 scoreboard objectives add tc.TowerFireRate dummy
 scoreboard objectives add tc.AttackType dummy
+
+scoreboard objectives add tc.TowerRangePerUpgrade dummy
+scoreboard objectives add tc.TowerDamagePerUpgrade dummy
+scoreboard objectives add tc.TowerFireRatePerUpgrade dummy
+
 
 
 #Joueurs
@@ -60,6 +66,25 @@ scoreboard objectives add tc.ui_tower dummy
 
 
 
-
 execute in syrfewr:towercraft run setblock 0 -63 0 yellow_shulker_box
 execute in syrfewr:towercraft run forceload add 0 0
+
+
+
+
+
+
+
+##Constantes
+
+scoreboard players set #dispenser tc.TowerRangePerUpgrade 7
+scoreboard players set #dispenser tc.TowerDamagePerUpgrade 10
+scoreboard players set #dispenser tc.TowerFireRatePerUpgrade -3
+
+scoreboard players set #furnace tc.TowerRangePerUpgrade 4
+scoreboard players set #furnace tc.TowerDamagePerUpgrade 10
+scoreboard players set #furnace tc.TowerFireRatePerUpgrade -2
+
+
+scoreboard players set #evolution1 tc.TowerLevel 3
+scoreboard players set #evolution2 tc.TowerLevel 7

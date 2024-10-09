@@ -4,6 +4,9 @@ execute if score @n[tag=tc.init_tower] tc.TowerType matches 1 if score @s tc.Rot
 execute if score @n[tag=tc.init_tower] tc.TowerType matches 1 if score @s tc.Rotation matches 2 run setblock ~ ~ ~ dispenser[facing=north]
 execute if score @n[tag=tc.init_tower] tc.TowerType matches 1 if score @s tc.Rotation matches 3 run setblock ~ ~ ~ dispenser[facing=east]
 
+execute if score @n[tag=tc.init_tower] tc.TowerType matches 1 run scoreboard players operation @n[tag=tc.init_tower] tc.TowerRangePerUpgrade = #dispenser tc.TowerRangePerUpgrade
+execute if score @n[tag=tc.init_tower] tc.TowerType matches 1 run scoreboard players operation @n[tag=tc.init_tower] tc.TowerDamagePerUpgrade = #dispenser tc.TowerDamagePerUpgrade
+execute if score @n[tag=tc.init_tower] tc.TowerType matches 1 run scoreboard players operation @n[tag=tc.init_tower] tc.TowerFireRatePerUpgrade = #dispenser tc.TowerFireRatePerUpgrade
 
 execute if score @s tc.Rotation matches 0 as @n[tag=tc.init_tower] run tp @s ~ ~ ~ 0 ~
 execute if score @s tc.Rotation matches 1 as @n[tag=tc.init_tower] run tp @s ~ ~ ~ 90 ~
