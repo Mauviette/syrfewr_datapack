@@ -10,8 +10,7 @@ execute store result score #range_per_upgrade s.temp run data get storage tc.tem
 
 execute store result score #fire_rate s.temp run data get storage tc.temp tower.fire_rate
 execute store result score #fire_rate_per_upgrade s.temp run data get storage tc.temp tower.fire_rate_per_upgrade
-scoreboard players operation #fire_rate_per_upgrade s.temp *= -1 s.number
-execute store result score #fire_rate_after_upgrade s.temp run scoreboard players operation #fire_rate s.temp -= #fire_rate_per_upgrade s.temp
+execute store result score #fire_rate_after_upgrade s.temp run scoreboard players operation #fire_rate s.temp += #fire_rate_per_upgrade s.temp
 
 execute store result score #fire_rate s.temp run data get storage tc.temp tower.fire_rate
 scoreboard players operation #20 s.temp = 20 s.number
@@ -32,13 +31,13 @@ execute store result storage tc.temp tower.range_after_upgrade double .1 run sco
 
 
 
-scoreboard players operation #20 s.temp = 200 s.number
-execute store result storage tc.temp tower.fire_rate_per_upgrade double -.1 run scoreboard players operation #20 s.temp /= #fire_rate_per_upgrade s.temp
-tellraw @a [{"score" : {"name": "#20", "objective": "s.temp"}}]
-tellraw @a [{"score" : {"name": "#fire_rate_per_upgrade", "objective": "s.temp"}}]
 
 scoreboard players operation #20 s.temp = 200 s.number
 execute store result storage tc.temp tower.fire_rate_after_upgrade double .1 run scoreboard players operation #20 s.temp /= #fire_rate_after_upgrade s.temp
+
+
+execute store result storage tc.temp tower.fire_rate_per_upgrade double .1 run scoreboard players operation #fire_rate s.temp -= #fire_rate_after_upgrade s.temp
+
 
 execute store result score #level s.temp run data get storage tc.temp tower.level
 
