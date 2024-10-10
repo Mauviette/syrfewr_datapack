@@ -50,6 +50,9 @@ scoreboard objectives add tc.TowerDamage dummy
 scoreboard objectives add tc.TowerFireRate dummy
 scoreboard objectives add tc.AttackType dummy
 
+scoreboard objectives add tc.UpgradeCost dummy
+scoreboard objectives add tc.UpgradeCostType dummy
+
 scoreboard objectives add tc.TowerRangePerUpgrade dummy
 scoreboard objectives add tc.TowerDamagePerUpgrade dummy
 scoreboard objectives add tc.TowerFireRatePerUpgrade dummy
@@ -88,3 +91,12 @@ scoreboard players set #furnace tc.TowerFireRatePerUpgrade -2
 
 scoreboard players set #evolution1 tc.TowerLevel 3
 scoreboard players set #evolution2 tc.TowerLevel 7
+
+#Diviser par 100 le nombre escompté
+scoreboard players set #multiplier tc.UpgradeCost 125
+
+
+
+##Evolutions
+
+data modify storage tc.evolution1 dispenser[0] set value {id:"dropper","components":{item_name:'{"text":"Augmenter les dégats","color":"red"}',lore:['[{"text":"+$(damage_per_upgrade)","color":"red","italic":false},{"text":"($(damage_after_upgrade) dégats)","color":"green"},]','[{"text":"Coût: ","color":"red","italic":false},$(cost)]']}}

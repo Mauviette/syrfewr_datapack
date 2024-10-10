@@ -34,12 +34,21 @@ execute store result storage tc.temp tower.range_after_upgrade double .1 run sco
 
 scoreboard players operation #20 s.temp = 200 s.number
 execute store result storage tc.temp tower.fire_rate_after_upgrade double .1 run scoreboard players operation #20 s.temp /= #fire_rate_after_upgrade s.temp
-
+execute if score #fire_rate_after_upgrade s.temp matches ..0 run data modify storage tc.temp tower.fire_rate_after_upgrade set value 20
 
 execute store result storage tc.temp tower.fire_rate_per_upgrade double .1 run scoreboard players operation #fire_rate s.temp -= #fire_rate_after_upgrade s.temp
 
 
+execute store result storage tc.temp material.nb int 1 run data get storage tc.temp tower.upgrade_cost
+execute store result score #type s.temp run data get storage tc.temp tower.upgrade_cost_type
+data modify storage tc.temp material.namespace set value "tower.cost"
+function towercraft:game/tower/to_string_material with storage tc.temp material
+
+execute if score #fire_rate_after_upgrade s.temp matches ..0 run data modify storage tc.temp tower.fire_rate_per_upgrade set value 0
+execute if score #fire_rate_after_upgrade s.temp matches ..0 run data modify storage tc.temp tower.fire_rate_after_upgrade set value 20
+
 execute store result score #level s.temp run data get storage tc.temp tower.level
+
 
 function towercraft:game/player/wrench/ui/menu/tower/root/mask_tower_data_final with storage tc.temp tower
 

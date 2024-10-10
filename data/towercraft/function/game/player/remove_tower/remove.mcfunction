@@ -1,4 +1,3 @@
-particle flash ~ ~1 ~
 playsound block.anvil.break block @a ~ ~ ~ 0.6 1.2
 kill @s
 setblock ~ ~ ~ air
