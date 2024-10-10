@@ -40,7 +40,8 @@ scoreboard objectives add tc.Rotation dummy
 
 #Tourelles stats
 scoreboard objectives add tc.TowerID dummy
-#Type : 1 = dispenser, 2 = furnace
+#Type : 1 = straight line (does not pass through blocks), 2 = 4 straight lines (does not pass through blocks)
+
 scoreboard objectives add tc.TowerType dummy
 scoreboard objectives add tc.TowerLevel dummy
 scoreboard objectives add tc.TowerEvolution dummy
@@ -57,7 +58,7 @@ scoreboard objectives add tc.TowerRangePerUpgrade dummy
 scoreboard objectives add tc.TowerDamagePerUpgrade dummy
 scoreboard objectives add tc.TowerFireRatePerUpgrade dummy
 
-
+scoreboard objectives add tc.SelectedTowerID dummy
 
 #Joueurs
 scoreboard objectives add tc.Cooldown dummy
@@ -98,5 +99,6 @@ scoreboard players set #multiplier tc.UpgradeCost 125
 
 
 ##Evolutions
+data modify storage tc.evolution1 dispenser set value [{Slot:21b,id:"waxed_copper_bulb","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/first"}},item_name:'{"text":"Quadro","color":"white"}',lore:['[{"text":"Permet au distributeur de tirer dans les 4 directions cardinales, simultanément.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}]
+data modify storage tc.evolution1 dispenser append value {Slot:23b,id:"repeater","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/second"}},item_name:'{"text":"Tir perçant","color":"white"}',lore:['[{"text":"Les tirs sont instantanés et traversent jusqu\'à 3 unités ennemis.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}
 
-data modify storage tc.evolution1 dispenser[0] set value {id:"dropper","components":{item_name:'{"text":"Augmenter les dégats","color":"red"}',lore:['[{"text":"+$(damage_per_upgrade)","color":"red","italic":false},{"text":"($(damage_after_upgrade) dégats)","color":"green"},]','[{"text":"Coût: ","color":"red","italic":false},$(cost)]']}}

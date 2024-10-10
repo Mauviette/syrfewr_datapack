@@ -11,5 +11,8 @@ scoreboard players set @n[tag=tc.init_tower] tc.UpgradeCostType 1
 
 function towercraft:game/player/placing_tower/place/block_type
 
+scoreboard players add #max tc.TowerID 1
+scoreboard players operation @n[tag=tc.init_tower] tc.TowerID = #max tc.TowerID
+
 tag @e remove tc.init_tower
 item replace entity @s weapon.mainhand with minecraft:air

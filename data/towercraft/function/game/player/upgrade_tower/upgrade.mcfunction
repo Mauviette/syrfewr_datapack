@@ -6,3 +6,4 @@ scoreboard players add @s tc.TowerLevel 1
 scoreboard players operation @s tc.UpgradeCost *= #multiplier tc.UpgradeCost
 scoreboard players operation @s tc.UpgradeCost /= 100 s.number
 execute if score @s tc.TowerFireRate matches ..0 run scoreboard players set @s tc.TowerFireRate 1
+function towercraft:game/tower/upgrade/map

@@ -1,0 +1,9 @@
+#Quadro
+execute if score @s tc.TowerEvolution matches 1 run setblock ~ ~ ~ waxed_copper_bulb
+execute if score @s tc.TowerEvolution matches 1 run scoreboard players set @s tc.AttackType 2
+
+#Tir perçant
+execute if score @s tc.TowerEvolution matches 2 if block ~ ~ ~ dispenser[facing=north] run setblock ~ ~1 ~ repeater[facing=south]
+execute if score @s tc.TowerEvolution matches 2 if block ~ ~ ~ dispenser[facing=east] run setblock ~ ~1 ~ repeater[facing=west]
+execute if score @s tc.TowerEvolution matches 2 if block ~ ~ ~ dispenser[facing=south] run setblock ~ ~1 ~ repeater[facing=north]
+execute if score @s tc.TowerEvolution matches 2 if block ~ ~ ~ dispenser[facing=west] run setblock ~ ~1 ~ repeater[facing=west]
