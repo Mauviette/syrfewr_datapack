@@ -1,0 +1,2 @@
+$execute at @n[tag=tc.placing_display_tp,distance=..200,tag=tc.id_tp$(id)] run function towercraft:game/player/placing_device/display/check_placing
+$execute at @n[tag=tc.placing_display_tp,distance=..200,tag=tc.id_tp$(id)] if data storage tc.temp display_ok run function towercraft:game/player/placing_device/place/place

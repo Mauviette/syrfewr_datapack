@@ -1,0 +1,1 @@
+$data modify entity @n[tag=tc.display_resources] text set value '"$(copper) \\uE402\\n$(coal) \\uE401\\n$(iron) \\uE403"'

@@ -13,6 +13,13 @@ scoreboard players enable @s leave
 tag @s remove tc.starting_end
 clear @s
 spawnpoint @s ~ ~ ~
-
+function towercraft:dev/zzz_items/wrench
+effect give @s night_vision infinite 0 true
 function towercraft:game/player/placing_tower/display/get_id
 function towercraft:game/manage/game_creation/player_init_final with storage tc.temp
+
+scoreboard players set @s tc.ResourceCoal 0
+scoreboard players set @s tc.ResourceIron 0
+scoreboard players set @s tc.ResourceCopper 30
+scoreboard players set @s tc.Rotation 0
+function towercraft:dev/zzz_items/device/basic_drill

@@ -51,18 +51,32 @@ scoreboard objectives add tc.TowerDamage dummy
 scoreboard objectives add tc.TowerFireRate dummy
 scoreboard objectives add tc.AttackType dummy
 
+scoreboard objectives add tc.MiningPower dummy
+
 scoreboard objectives add tc.UpgradeCost dummy
 scoreboard objectives add tc.UpgradeCostType dummy
+#1 : copper, 2 : coal, 3 : iron
+
+scoreboard objectives add tc.ResourceCopper dummy
+scoreboard objectives add tc.ResourceCoal dummy
+scoreboard objectives add tc.ResourceIron dummy
+scoreboard objectives add tc.ResourceGold dummy
 
 scoreboard objectives add tc.TowerRangePerUpgrade dummy
 scoreboard objectives add tc.TowerDamagePerUpgrade dummy
 scoreboard objectives add tc.TowerFireRatePerUpgrade dummy
 
 scoreboard objectives add tc.SelectedTowerID dummy
+scoreboard objectives add tc.PlayerOrientation dummy
 
+#Device
+scoreboard objectives add tc.MiningOre dummy
+scoreboard objectives add tc.MiningOreAmount dummy
+scoreboard objectives add tc.DeviceType dummy
 #Joueurs
 scoreboard objectives add tc.Cooldown dummy
-
+scoreboard objectives add tc.CoreHealth dummy
+scoreboard objectives add tc.Round dummy
 
 #UI
 scoreboard objectives add tc.ui_id dummy
@@ -91,7 +105,15 @@ scoreboard players set #furnace tc.TowerFireRatePerUpgrade -2
 
 
 scoreboard players set #evolution1 tc.TowerLevel 3
-scoreboard players set #evolution2 tc.TowerLevel 7
+scoreboard players set #evolution2 tc.TowerLevel 10
+
+scoreboard players set #visual_upgrade1 tc.TowerLevel 1
+scoreboard players set #visual_upgrade2 tc.TowerLevel 2
+scoreboard players set #visual_upgrade3 tc.TowerLevel 3
+
+scoreboard players set #visual_upgrade_e1 tc.TowerLevel 5
+scoreboard players set #visual_upgrade_e2 tc.TowerLevel 6
+scoreboard players set #visual_upgrade_e3 tc.TowerLevel 7
 
 #Diviser par 100 le nombre escompté
 scoreboard players set #multiplier tc.UpgradeCost 125

@@ -12,3 +12,5 @@ execute if score @s tc.Rotation matches 0 as @n[tag=tc.init_tower] run tp @s ~ ~
 execute if score @s tc.Rotation matches 1 as @n[tag=tc.init_tower] run tp @s ~ ~ ~ 90 ~
 execute if score @s tc.Rotation matches 2 as @n[tag=tc.init_tower] run tp @s ~ ~ ~ 180 ~
 execute if score @s tc.Rotation matches 3 as @n[tag=tc.init_tower] run tp @s ~ ~ ~ 270 ~
+
+playsound block.stone.place block

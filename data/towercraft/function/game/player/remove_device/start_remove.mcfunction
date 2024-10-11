@@ -1,0 +1,1 @@
+$execute at @n[tag=tc.id_tp$(id)] as @n[tag=tc.device,distance=..250] at @s run function towercraft:game/player/remove_device/remove with storage tc.temp

@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        {"id": "#towercraft:mineable_2", "required": false},
+        {"id": "gold_ore", "required": false}
+    ]
+}

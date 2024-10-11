@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        {"id": "copper_ore", "required": false},
+        {"id": "coal_ore", "required": false}
+    ]
+}

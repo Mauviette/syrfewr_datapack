@@ -1,0 +1,2 @@
+execute store result storage tc.temp device.mining_power int 1 run scoreboard players get @n[tag=tc.device,distance=..250] tc.MiningPower
+execute store result storage tc.temp device.level int 1 run scoreboard players get @n[tag=tc.device,distance=..250] tc.TowerLevel

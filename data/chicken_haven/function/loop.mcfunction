@@ -9,5 +9,3 @@ execute as @e[tag=ch.gui] at @s run function chicken_haven:gui/loop
 
 
 #Kill items
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{to_get:1}}}}] run data modify entity @s PickupDelay set value 0
-kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{to_kill:1}}}}]
