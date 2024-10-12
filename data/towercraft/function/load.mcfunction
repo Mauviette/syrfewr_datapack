@@ -44,6 +44,7 @@ scoreboard objectives add tc.TowerID dummy
 
 scoreboard objectives add tc.TowerType dummy
 scoreboard objectives add tc.TowerLevel dummy
+scoreboard objectives add tc.TowerMaxLevel dummy
 scoreboard objectives add tc.TowerEvolution dummy
 
 scoreboard objectives add tc.TowerRange dummy
