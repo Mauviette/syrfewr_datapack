@@ -78,7 +78,9 @@ execute as @a[team=s.lobby] at @s run function syrfewr:player/in_lobby
 
 #Rotaters
 execute positioned 0 0 0 unless entity @e[tag=s.rotater] run summon marker ~ ~ ~ {Tags:["s.rotater"]}
+execute positioned 0 0 0 unless entity @e[tag=s.rotater_slow] run summon marker ~ ~ ~ {Tags:["s.rotater_slow"]}
 execute as @e[tag=s.rotater] at @s run tp @s ~ ~ ~ ~12 ~
+execute as @e[tag=s.rotater_slow] at @s run tp @s ~ ~ ~ ~6 ~
 
 
 execute as @e[tag=s.jump_reward] at @s run function syrfewr:player/hubs/jump_rewards

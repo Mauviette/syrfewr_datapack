@@ -15,3 +15,4 @@ summon marker ~-8 ~ ~-1 {Tags:["tc.shop","tc.shop_devices"]}
 
 setblock ~-8 ~ ~ chest[facing=east]{CustomName:'{"text":"Achat de tourelles"}'}
 summon marker ~-8 ~ ~ {Tags:["tc.shop","tc.shop_towers"]}
+
