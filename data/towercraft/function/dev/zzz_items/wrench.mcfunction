@@ -1,1 +1,1 @@
-give @p stick[custom_model_data=6,custom_data={needs_display:1b,wrench:1b},food={nutrition:0,saturation:0,eat_seconds:4000001,can_always_eat:true},max_stack_size=1,item_name='{"text":"Clé"}',lore=['{"text":"Sert à inspecter des tourelles.","color":"dark_gray","italic":false}']] 1
+give @p stick[custom_model_data=6,custom_data={needs_display:1b,wrench:1b},max_stack_size=1,item_name='{"text":"Clé"}',lore=['{"text":"Sert à inspecter des tourelles.","color":"dark_gray","italic":false}']] 1

@@ -6,6 +6,11 @@ execute store result score #item s.temp run clear @s *[custom_data~{tower_type:1
 execute if score #item s.temp matches 1.. if score @s tc.ResourceCopper matches 10.. run function towercraft:dev/zzz_items/tower/dispenser
 execute if score #item s.temp matches 1.. if score @s tc.ResourceCopper matches 10.. run scoreboard players remove @s tc.ResourceCopper 10
 
+execute store result score #item s.temp run clear @s *[custom_data~{tower_type:2}] 0
+execute if score #item s.temp matches 1.. if score @s tc.ResourceCopper matches 10.. run function towercraft:dev/zzz_items/tower/furnace
+execute if score #item s.temp matches 1.. if score @s tc.ResourceCopper matches 10.. run scoreboard players remove @s tc.ResourceCopper 10
+
+
 execute store result score #item s.temp run clear @s *[custom_data~{device_type:1}] 0
 execute if score #item s.temp matches 1.. if score @s tc.ResourceCopper matches 20.. run function towercraft:dev/zzz_items/device/basic_drill
 execute if score #item s.temp matches 1.. if score @s tc.ResourceCopper matches 20.. run scoreboard players remove @s tc.ResourceCopper 20
