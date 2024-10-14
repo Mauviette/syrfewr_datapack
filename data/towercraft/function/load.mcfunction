@@ -40,7 +40,7 @@ scoreboard objectives add tc.Rotation dummy
 
 #Tourelles stats
 scoreboard objectives add tc.TowerID dummy
-#Type : 1 = straight line (does not pass through blocks), 2 = 4 straight lines (does not pass through blocks)
+#Type : 1 = straight line (does not pass through blocks), 2 = 4 straight lines (does not pass through blocks), 3 = circle
 
 scoreboard objectives add tc.TowerType dummy
 scoreboard objectives add tc.TowerLevel dummy
@@ -51,12 +51,15 @@ scoreboard objectives add tc.TowerRange dummy
 scoreboard objectives add tc.TowerDamage dummy
 scoreboard objectives add tc.TowerFireRate dummy
 scoreboard objectives add tc.AttackType dummy
+#0 : True Damage, 1 : Physical Damage, 2 : Fire Damage, 3 : Piercing Damage
+scoreboard objectives add tc.TowerDamageType dummy
+scoreboard objectives add tc.TowerAttackTick dummy
 
 scoreboard objectives add tc.MiningPower dummy
 
 scoreboard objectives add tc.UpgradeCost dummy
 scoreboard objectives add tc.UpgradeCostType dummy
-#1 : copper, 2 : coal, 3 : iron
+#1 : copper, 2 : coal, 3 : iron, 4 : gold
 
 scoreboard objectives add tc.ResourceCopper dummy
 scoreboard objectives add tc.ResourceCoal dummy
@@ -69,6 +72,9 @@ scoreboard objectives add tc.TowerFireRatePerUpgrade dummy
 
 scoreboard objectives add tc.SelectedTowerID dummy
 scoreboard objectives add tc.PlayerOrientation dummy
+
+scoreboard objectives add tc.ProjectileDistance dummy
+scoreboard objectives add tc.ProjectileCanPass dummy
 
 #Device
 scoreboard objectives add tc.MiningOre dummy
@@ -83,7 +89,18 @@ scoreboard objectives add tc.Round dummy
 scoreboard objectives add tc.ui_id dummy
 scoreboard objectives add tc.ui_tower dummy
 
+#Unités
+scoreboard objectives add tc.UnitHealth dummy
+scoreboard objectives add tc.UnitMaxHealth dummy
+scoreboard objectives add tc.UnitSpeed dummy
+scoreboard objectives add tc.UnitDamage dummy
 
+scoreboard objectives add tc.ResProjectile dummy
+scoreboard objectives add tc.ResFire dummy
+scoreboard objectives add tc.ResPiercing dummy
+
+#Effets
+scoreboard objectives add tc.EffectSlow dummy
 
 execute in syrfewr:towercraft run setblock 0 -63 0 yellow_shulker_box
 execute in syrfewr:towercraft run forceload add 0 0
@@ -98,11 +115,11 @@ execute in syrfewr:towercraft run forceload add 0 0
 
 scoreboard players set #dispenser tc.TowerRangePerUpgrade 6
 scoreboard players set #dispenser tc.TowerDamagePerUpgrade 10
-scoreboard players set #dispenser tc.TowerFireRatePerUpgrade -3
+scoreboard players set #dispenser tc.TowerFireRatePerUpgrade -2
 
 scoreboard players set #furnace tc.TowerRangePerUpgrade 3
 scoreboard players set #furnace tc.TowerDamagePerUpgrade 10
-scoreboard players set #furnace tc.TowerFireRatePerUpgrade -2
+scoreboard players set #furnace tc.TowerFireRatePerUpgrade -1
 
 
 scoreboard players set #evolution1 tc.TowerLevel 3

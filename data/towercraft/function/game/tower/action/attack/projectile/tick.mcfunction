@@ -1,0 +1,1 @@
+execute if entity @s[tag=tc.dispenser_projectile] run function towercraft:game/tower/action/attack/projectile/dispenser/tick

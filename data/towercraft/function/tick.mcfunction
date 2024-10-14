@@ -8,3 +8,9 @@ execute as @a[tag=tc.playing] at @s run function towercraft:game/player/tick
 execute as @e[type=chest_minecart,tag=tc.ui_tower] at @s run function towercraft:game/player/wrench/ui/minecart/tick
 
 execute as @e[tag=tc.shop] at @s unless items block ~ ~ ~ container.* *[custom_data~{tc_buy:1b}] run function towercraft:game/shop/refresh
+
+execute as @e[tag=tc.unit] at @s run function towercraft:game/units/tick
+
+execute as @e[tag=tc.tower] at @s run function towercraft:game/tower/tick
+
+execute as @e[tag=tc.projectile] at @s run function towercraft:game/tower/action/attack/projectile/tick

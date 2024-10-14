@@ -1,0 +1,1 @@
+$execute if entity @e[tag=tc.unit,distance=..$(range)] run scoreboard players set #can_attack s.temp 1
