@@ -1,0 +1,2 @@
+execute at @n[tag=tc.start] run summon creeper ~ ~ ~ {Tags:["tc.unit","tc.unit_creeper","tc.unit_death_effect"]}
+execute as @n[tag=tc.unit,tag=!tc.unit_inited] at @s run function towercraft:game/units/init

@@ -1,11 +1,16 @@
 #0 : true, 1 : projectile, 2 : feu, 3 : percant
 $scoreboard players set #damage_type s.temp $(type)
 $scoreboard players set #damage s.temp $(damage)
+scoreboard players operation #temp s.temp = #damage s.temp
+scoreboard players set #resistance s.temp 0
+execute if score #damage_type s.temp matches 1 run scoreboard players operation #resistance s.temp = @s tc.ResProjectile
+execute if score #damage_type s.temp matches 2 run scoreboard players operation #resistance s.temp = @s tc.ResFire
+execute if score #damage_type s.temp matches 3 run scoreboard players operation #resistance s.temp = @s tc.ResPiercing
 
-execute if score #damage_type s.temp matches 1 run scoreboard players operation #damage s.temp /= @s tc.ResProjectile
-execute if score #damage_type s.temp matches 2 run scoreboard players operation #damage s.temp /= @s tc.ResFire
-execute if score #damage_type s.temp matches 3 run scoreboard players operation #damage s.temp /= @s tc.ResPiercing
+scoreboard players operation #temp s.temp *= #resistance s.temp
+scoreboard players operation #temp s.temp /= 100 s.number
 
+scoreboard players operation #damage s.temp -= #temp s.temp
 
 
 

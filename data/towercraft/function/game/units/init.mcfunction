@@ -37,6 +37,10 @@ execute if entity @s[tag=tc.unit_blaze] run scoreboard players set @s tc.UnitSpe
 execute if entity @s[tag=tc.unit_blaze] run scoreboard players set @s tc.UnitDamage 10
 execute if entity @s[tag=tc.unit_blaze] run scoreboard players set @s tc.ResFire 75
 
+execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitHealth 280
+execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitSpeed 9
+execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitDamage 10
+
 
 scoreboard players operation @s tc.UnitMaxHealth = @s tc.UnitHealth
 function towercraft:game/units/health_display/refresh

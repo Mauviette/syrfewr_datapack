@@ -123,7 +123,7 @@ scoreboard players set #furnace tc.TowerFireRatePerUpgrade -1
 
 
 scoreboard players set #evolution1 tc.TowerLevel 3
-scoreboard players set #evolution2 tc.TowerLevel 10
+scoreboard players set #evolution2 tc.TowerLevel 7
 
 scoreboard players set #visual_upgrade1 tc.TowerLevel 1
 scoreboard players set #visual_upgrade2 tc.TowerLevel 2
