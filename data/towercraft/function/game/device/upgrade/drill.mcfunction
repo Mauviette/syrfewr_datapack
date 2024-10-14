@@ -4,3 +4,5 @@ execute if score @s tc.TowerLevel matches 3 run setblock ~ ~-1 ~ spruce_button[f
 execute if score @s tc.TowerLevel matches 4 run setblock ~ ~-1 ~ jungle_button[face=ceiling]
 execute if score @s tc.TowerLevel matches 5 run setblock ~ ~-1 ~ acacia_button[face=ceiling]
 execute if score @s tc.TowerLevel matches 6 run setblock ~ ~-1 ~ dark_oak_button[face=ceiling]
+execute if score @s tc.TowerLevel matches 7 run setblock ~ ~-1 ~ stone_button[face=ceiling]
+execute if score @s tc.TowerLevel matches 8 run setblock ~ ~-1 ~ polished_blackstone_button[face=ceiling]
