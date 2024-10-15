@@ -6,5 +6,5 @@ $execute if score #tower_type s.temp matches 1 if score #evolution s.temp matche
 
 
 #Fourneau
-$execute if score #tower_type s.temp matches 2 if score #evolution s.temp matches 1 run data modify storage tc.temp $(namespace) set value '{"text":"Fumoir : ","color":"gray","italic":false},{"text":"Ralentit les ennemis touchés.","color":"dark_gray","italic":false}'
-$execute if score #tower_type s.temp matches 2 if score #evolution s.temp matches 2 run data modify storage tc.temp $(namespace) set value '{"text":"Haut Fourneau : ","color":"gray","italic":false},{"text":"Portée réduite, dégâts augmentés.","color":"dark_gray","italic":false}'
+$execute if score #tower_type s.temp matches 2 if score #evolution s.temp matches 1 run data modify storage tc.temp $(namespace) set value '{"text":"Fumoir : ","color":"gray","italic":false},{"text":"Ralentit les ennemis touchés. (-50% vitesse pendant 2s)","color":"dark_gray","italic":false}'
+$execute if score #tower_type s.temp matches 2 if score #evolution s.temp matches 2 run data modify storage tc.temp $(namespace) set value '{"text":"Haut Fourneau : ","color":"gray","italic":false},{"text":"Inflige de la brulure aux ennemis touchés. (2 dgt/s pendant 6s)","color":"dark_gray","italic":false}'

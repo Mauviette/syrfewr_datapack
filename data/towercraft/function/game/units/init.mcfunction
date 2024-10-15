@@ -1,4 +1,4 @@
-data merge entity @s {Silent:1b,NoAI:1b,DeathLootTable:""}
+data merge entity @s {Silent:0b,NoAI:1b,DeathLootTable:""}
 effect give @s resistance infinite 255 true
 tag @s add tc.unit_inited
 execute rotated as @n[tag=tc.start] run tp @s ~ ~ ~ ~ ~
