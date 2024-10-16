@@ -5,6 +5,6 @@ scoreboard players operation @s tc.TowerDamageType = @n[tag=tc.tower] tc.TowerDa
 scoreboard players set @s tc.ProjectileDistance 0
 scoreboard players set @s tc.ProjectileCanPass 0
 scoreboard players set #hits s.temp 0
-scoreboard players set #max_hits s.temp 3
+scoreboard players set #max_hits s.temp 2
 execute at @s run function towercraft:game/tower/action/attack/projectile/laser/loop
 tag @e remove tc.hit_by_laser

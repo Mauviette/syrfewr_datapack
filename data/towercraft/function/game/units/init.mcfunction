@@ -28,8 +28,8 @@ execute if entity @s[tag=tc.unit_bogged] run scoreboard players set @s tc.UnitDa
 
 execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.UnitHealth 340
 execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.UnitSpeed 8
-execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.UnitDamage 7
-execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.ResProjectile 50
+execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.UnitDamage 15
+execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.ResProjectile 60
 execute if entity @s[tag=tc.unit_protected_zombie] run scoreboard players set @s tc.ResFire 25
 
 execute if entity @s[tag=tc.unit_blaze] run scoreboard players set @s tc.UnitHealth 300
@@ -41,6 +41,20 @@ execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitH
 execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitSpeed 9
 execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitDamage 10
 
+execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitHealth 200
+execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitSpeed 10
+execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitDamage 8
+
+execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitHealth 80
+execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitSpeed 10
+execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitDamage 3
+
+execute if entity @s[tag=tc.unit_shielded_zombie] run scoreboard players set @s tc.UnitHealth 300
+execute if entity @s[tag=tc.unit_shielded_zombie] run scoreboard players set @s tc.UnitSpeed 8
+execute if entity @s[tag=tc.unit_shielded_zombie] run scoreboard players set @s tc.UnitDamage 12
+execute if entity @s[tag=tc.unit_shielded_zombie] run scoreboard players set @s tc.ResProjectile 25
+execute if entity @s[tag=tc.unit_shielded_zombie] run scoreboard players set @s tc.ResFire 50
+execute if entity @s[tag=tc.unit_shielded_zombie] run scoreboard players set @s tc.ResPiercing 75
 
 scoreboard players operation @s tc.UnitMaxHealth = @s tc.UnitHealth
 function towercraft:game/units/health_display/refresh

@@ -21,6 +21,7 @@ execute if score @s tc.GameTimer matches 2 as @a[tag=tc.starting_end,distance=..
 execute if score @s tc.GameTimer matches 1 run function towercraft:game/manage/game_creation/init_area/init_area
 execute if score @s tc.GameTimer matches 1 as @e[tag=tc.shop,distance=..250] at @s run function towercraft:game/shop/refresh
 execute if score @s tc.GameTimer matches 1 as @p[tag=tc.playing] run function towercraft:game/player/resources/update_display
+execute if score @s tc.GameTimer matches 1 as @p[tag=tc.playing] run function towercraft:game/player/health/update_display
 
 execute if score @s tc.GameTimer matches 0 run function towercraft:game/floor/init
 

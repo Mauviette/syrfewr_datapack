@@ -23,3 +23,5 @@ scoreboard players set @s tc.ResourceIron 0
 scoreboard players set @s tc.ResourceCopper 30
 scoreboard players set @s tc.Rotation 0
 function towercraft:dev/zzz_items/device/basic_drill
+
+scoreboard players set @s tc.CoreHealth 100

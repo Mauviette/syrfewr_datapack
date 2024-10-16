@@ -95,6 +95,7 @@ scoreboard objectives add tc.SpawnerID dummy
 scoreboard objectives add tc.SpawnerTick dummy
 scoreboard objectives add tc.RoundSpawnerTimer dummy
 
+scoreboard objectives add tc.MaxRound dummy
 #UI
 scoreboard objectives add tc.ui_id dummy
 scoreboard objectives add tc.ui_tower dummy
@@ -125,12 +126,12 @@ execute in syrfewr:towercraft run forceload add 0 0
 
 ##Constantes
 
-scoreboard players set #dispenser tc.TowerRangePerUpgrade 6
+scoreboard players set #dispenser tc.TowerRangePerUpgrade 7
 scoreboard players set #dispenser tc.TowerDamagePerUpgrade 10
 scoreboard players set #dispenser tc.TowerFireRatePerUpgrade -2
 
 scoreboard players set #furnace tc.TowerRangePerUpgrade 3
-scoreboard players set #furnace tc.TowerDamagePerUpgrade 10
+scoreboard players set #furnace tc.TowerDamagePerUpgrade 5
 scoreboard players set #furnace tc.TowerFireRatePerUpgrade -1
 
 
@@ -152,9 +153,9 @@ scoreboard players set #multiplier tc.UpgradeCost 125
 
 ##Evolutions
 data modify storage tc.evolution1 dispenser set value [{Slot:21b,id:"waxed_copper_bulb","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/first"}},item_name:'{"text":"Quadro","color":"white"}',lore:['[{"text":"Permet au distributeur de tirer dans les 4 directions cardinales, simultanément.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}]
-data modify storage tc.evolution1 dispenser append value {Slot:23b,id:"repeater","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/second"}},item_name:'{"text":"Tir perçant","color":"white"}',lore:['[{"text":"Les tirs sont instantanés et traversent jusqu\'à 3 unités ennemis.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}
+data modify storage tc.evolution1 dispenser append value {Slot:23b,id:"repeater","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/second"}},item_name:'{"text":"Tir perçant","color":"white"}',lore:['[{"text":"Les tirs sont instantanés et traversent jusqu\'à 2 unités ennemis.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}
 
 ##Evolutions
-data modify storage tc.evolution1 furnace set value [{Slot:21b,id:"smoker","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/first"}},item_name:'{"text":"Fumoir","color":"white"}',lore:['[{"text":"Ralentit les ennemis touchés. (-50% vitesse pendant 2s)","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}]
-data modify storage tc.evolution1 furnace append value {Slot:23b,id:"blast_furnace","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/second"}},item_name:'{"text":"Haut fourneau","color":"white"}',lore:['[{"text":"Inflige de la brulure aux ennemis touchés. (2 dgt/s pendant 6s)","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}
+data modify storage tc.evolution1 furnace set value [{Slot:21b,id:"smoker","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/first"}},item_name:'{"text":"Fumoir","color":"white"}',lore:['[{"text":"Ralentit les ennemis touchés. (-40% vitesse pendant 2s)","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}]
+data modify storage tc.evolution1 furnace append value {Slot:23b,id:"blast_furnace","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/second"}},item_name:'{"text":"Haut fourneau","color":"white"}',lore:['[{"text":"Inflige de la brulure aux ennemis touchés. (2 dgt/s pendant 5s)","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"5 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}
 

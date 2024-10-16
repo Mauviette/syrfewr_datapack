@@ -5,5 +5,4 @@ execute if score @s tc.SpawnerTick matches 35 run function towercraft:dev/zzz_un
 execute if score @s tc.SpawnerTick matches 45 run function towercraft:dev/zzz_units/creeper
 execute if score @s tc.SpawnerTick matches 55 run function towercraft:dev/zzz_units/creeper
 execute if score @s tc.SpawnerTick matches 65 run function towercraft:dev/zzz_units/creeper
-execute if score @s tc.SpawnerTick matches 75 run function towercraft:dev/zzz_units/creeper
-execute if score @s tc.SpawnerTick matches 75.. run kill @s
+execute if score @s tc.SpawnerTick matches 65.. run kill @s

@@ -25,6 +25,7 @@ scoreboard players set 9 s.number 9
 scoreboard players set 10 s.number 10
 scoreboard players set 20 s.number 20
 scoreboard players set 50 s.number 50
+scoreboard players set 60 s.number 60
 scoreboard players set 100 s.number 100
 scoreboard players set 200 s.number 200
 scoreboard players set 500 s.number 500

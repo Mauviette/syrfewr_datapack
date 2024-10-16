@@ -1,0 +1,2 @@
+execute at @n[tag=tc.start] run summon zombie ~ ~ ~ {Tags:["tc.unit","tc.unit_shielded_zombie"],ArmorItems:[{},{},{},{id:"iron_helmet",count:1b}],ArmorDropChances:[0F,0F,0F,0F],HandItems:[{},{id:"shield",count:1b}],HandDropChances:[0F,0F]}
+execute as @n[tag=tc.unit,tag=!tc.unit_inited] at @s run function towercraft:game/units/init
