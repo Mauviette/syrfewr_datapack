@@ -9,10 +9,16 @@ fill ~-6 ~8 ~-6 ~5 ~8 ~5 air outline
 
 fill ~-9 ~-11 ~-9 ~8 ~-1 ~8 light_blue_concrete outline
 fill ~-8 ~-1 ~-8 ~7 ~-1 ~7 barrier
-summon text_display ~7 ~1 ~-.5 {billboard:"center",Tags:["tc.display_resources"],text:'""'}
+summon text_display ~7.5 ~1 ~-.5 {background:0,billboard:"fixed",Tags:["tc.display_resources"],text:'""',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]}}
+execute as @n[tag=tc.display_resources] at @s run tp @s ~ ~ ~ 90 ~
 setblock ~-8 ~ ~-1 chest[facing=east]{CustomName:'{"text":"Achat de dispositifs"}'}
 summon marker ~-8 ~ ~-1 {Tags:["tc.shop","tc.shop_devices"]}
 
 setblock ~-8 ~ ~ chest[facing=east]{CustomName:'{"text":"Achat de tourelles"}'}
 summon marker ~-8 ~ ~ {Tags:["tc.shop","tc.shop_towers"]}
 
+summon marker ~ ~1 ~7 {Tags:["tc.start_button"]}
+execute at @n[tag=tc.start_button,distance=..200] run summon text_display ~ ~ ~ {background:0,billboard:"fixed",Tags:["tc.display_start"],text:'{"text":"Manche suivante","color":"white"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]}}
+execute as @n[tag=tc.display_start] at @s run tp @s ~ ~ ~ 180 ~
+execute at @n[tag=tc.start_button,distance=..200] run setblock ~ ~ ~ stone_button[facing=south]
+setblock ~ ~1 ~9 command_block{Command:"execute as @p[tag=tc.playing] at @s run function towercraft:game/round/fighting/start"}

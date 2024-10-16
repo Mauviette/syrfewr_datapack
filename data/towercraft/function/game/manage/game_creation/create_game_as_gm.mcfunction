@@ -21,3 +21,5 @@ scoreboard players set @s tc.Difficulty 10
 #execute store result score @s tc.temp run data get entity @s Pos[2]
 #tellraw @a [{"score":{"objective": "tc.temp","name": "@s"}}]
 tag @s remove tc.game_manager_init
+
+data merge entity @s {CustomName:'{"text":"Gérant de partie"}'}

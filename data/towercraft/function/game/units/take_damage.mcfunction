@@ -17,6 +17,6 @@ scoreboard players operation #damage s.temp -= #temp s.temp
 execute if score #damage s.temp matches 1.. run scoreboard players operation @s tc.UnitHealth -= #damage s.temp
 execute if score #damage s.temp matches 1.. run damage @s 1 syrfewr:no_cd
 
-execute if score @s tc.UnitHealth matches ..0 run function towercraft:game/units/end
-
 function towercraft:game/units/health_display/refresh
+
+execute if score @s tc.UnitHealth matches ..0 run function towercraft:game/units/end

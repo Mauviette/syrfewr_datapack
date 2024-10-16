@@ -14,3 +14,5 @@ execute as @e[tag=tc.unit] at @s run function towercraft:game/units/tick
 execute as @e[tag=tc.tower] at @s run function towercraft:game/tower/tick
 
 execute as @e[tag=tc.projectile] at @s run function towercraft:game/tower/action/attack/projectile/tick
+
+execute as @a[team=tc.hub] at @s run function syrfewr:player/in_hub

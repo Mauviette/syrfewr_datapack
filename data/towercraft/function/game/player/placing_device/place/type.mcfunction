@@ -17,4 +17,4 @@ execute if score @s tc.MiningOre matches 2 run data modify entity @n[type=glow_i
 execute if score @s tc.MiningOre matches 3 run data modify entity @n[type=glow_item_frame] Item set value {id:"minecraft:raw_iron",count:1}
 execute if score @s tc.MiningOre matches 4 run data modify entity @n[type=glow_item_frame] Item set value {id:"minecraft:raw_gold",count:1}
 
-scoreboard players set @s tc.MiningOreAmount 1
+scoreboard players set @s tc.MiningOreAmount 2

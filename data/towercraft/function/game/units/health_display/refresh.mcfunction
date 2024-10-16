@@ -12,6 +12,6 @@ execute if score #fraction s.temp matches 40..49 run data merge entity @s {Custo
 execute if score #fraction s.temp matches 30..39 run data merge entity @s {CustomName:'[{"text":"∎∎∎","color":"green"},{"text":"∎∎∎∎∎∎∎","color":"red"}]'}
 execute if score #fraction s.temp matches 20..29 run data merge entity @s {CustomName:'[{"text":"∎∎","color":"green"},{"text":"∎∎∎∎∎∎∎∎","color":"red"}]'}
 execute if score #fraction s.temp matches 10..19 run data merge entity @s {CustomName:'[{"text":"∎","color":"green"},{"text":"∎∎∎∎∎∎∎∎∎","color":"red"}]'}
-execute if score #fraction s.temp matches 0..9 run data merge entity @s {CustomName:'[{"text":"∎∎∎∎∎∎∎∎∎∎","color":"red"}]'}
+execute if score #fraction s.temp matches ..9 run data merge entity @s {CustomName:'[{"text":"∎∎∎∎∎∎∎∎∎∎","color":"red"}]'}
 
 data merge entity @s {CustomNameVisible:1b}
