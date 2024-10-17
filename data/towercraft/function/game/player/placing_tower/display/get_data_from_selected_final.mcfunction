@@ -6,6 +6,7 @@ execute store result storage tc.temp tower.evolution int 1 run scoreboard player
 execute store result storage tc.temp tower.type int 1 run scoreboard players get @n[tag=tc.tower,distance=..250] tc.TowerType
 execute store result storage tc.temp tower.upgrade_cost int 1 run scoreboard players get @n[tag=tc.tower,distance=..250] tc.UpgradeCost
 execute store result storage tc.temp tower.upgrade_cost_type int 1 run scoreboard players get @n[tag=tc.tower,distance=..250] tc.UpgradeCostType
+execute store result storage tc.temp tower.damage_type int 1 run scoreboard players get @n[tag=tc.tower,distance=..250] tc.TowerDamageType
 
 execute store result storage tc.temp tower.range_per_upgrade int 1 run scoreboard players get @n[tag=tc.tower,distance=..250] tc.TowerRangePerUpgrade
 execute store result storage tc.temp tower.damage_per_upgrade int 1 run scoreboard players get @n[tag=tc.tower,distance=..250] tc.TowerDamagePerUpgrade

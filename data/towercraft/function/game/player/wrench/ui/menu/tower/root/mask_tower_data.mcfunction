@@ -54,6 +54,9 @@ execute store result score #tower_type s.temp run data get storage tc.temp tower
 execute store result score #evolution s.temp run data get storage tc.temp tower.evolution
 function towercraft:game/tower/to_string_evolution_effect with storage tc.temp evolution
 
+data modify storage tc.temp tower.namespace set value "tower.dmg_type"
+execute store result score #dmg_type s.temp run data get storage tc.temp tower.damage_type
+function towercraft:game/tower/to_string_damage_type with storage tc.temp tower
 
 
 
