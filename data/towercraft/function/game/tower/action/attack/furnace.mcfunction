@@ -3,3 +3,4 @@ $execute if score @s tc.TowerEvolution matches 1 as @e[tag=tc.unit,distance=..$(
 $execute if score @s tc.TowerEvolution matches 2 as @e[tag=tc.unit,distance=..$(range)] at @s unless score @s tc.EffectBurning matches 120.. run scoreboard players set @s tc.EffectBurning 100
 $particle flame ~ ~.25 ~ $(delta) .1 $(delta) 0 $(particles)
 #particle flame ~ ~.25 ~ .1 .1 .1 1 3
+playsound block.fire.extinguish block @a[distance=..100] ~ ~ ~ 0.1 1

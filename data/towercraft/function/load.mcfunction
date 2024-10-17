@@ -33,7 +33,7 @@ scoreboard objectives add tc.GamePos dummy
 scoreboard objectives add tc.GameTimer dummy
 scoreboard objectives add tc.TimeWithoutPlayers dummy
 
-
+scoreboard objectives add tc.Accelerates dummy
 #Joueur
 scoreboard objectives add tc.Rotation dummy
 
@@ -110,6 +110,8 @@ scoreboard objectives add tc.ResProjectile dummy
 scoreboard objectives add tc.ResFire dummy
 scoreboard objectives add tc.ResPiercing dummy
 
+scoreboard objectives add tc.ResRound dummy
+
 #Effets
 scoreboard objectives add tc.EffectSlow dummy
 scoreboard objectives add tc.EffectBurning dummy
@@ -123,10 +125,9 @@ execute in syrfewr:towercraft run forceload add 0 0
 
 
 
-
 ##Constantes
 
-scoreboard players set #dispenser tc.TowerRangePerUpgrade 7
+scoreboard players set #dispenser tc.TowerRangePerUpgrade 10
 scoreboard players set #dispenser tc.TowerDamagePerUpgrade 10
 scoreboard players set #dispenser tc.TowerFireRatePerUpgrade -2
 

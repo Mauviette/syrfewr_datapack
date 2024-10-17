@@ -16,6 +16,7 @@ scoreboard players add #max tc.TowerID 1
 scoreboard players operation @n[tag=tc.init_device] tc.TowerID = #max tc.TowerID
 
 particle block{block_state:"stone"} ~ ~ ~ 0.1 0.1 0.1 0.1 20
+playsound block.stone.place block @a[distance=..100] ~ ~ ~ 1 1.2
 
 tag @e remove tc.init_device
 item replace entity @s weapon.mainhand with minecraft:air
