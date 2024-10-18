@@ -5,7 +5,8 @@ function towercraft:game/manage/game_creation/determine_pos_loop
 
 function towercraft:game/manage/game_creation/determine_pos
 
-
+scoreboard players set @s tc.Accelerates 0
+scoreboard players set @s tc.RoundState 0
 
 scoreboard players add $max_reference tc.GameID 1
 scoreboard players operation @s tc.GameID = $max_reference tc.GameID

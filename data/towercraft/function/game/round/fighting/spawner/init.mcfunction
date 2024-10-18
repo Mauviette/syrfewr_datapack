@@ -10,4 +10,5 @@ execute if score #temp s.temp matches 26..40 run function towercraft:game/round/
 execute if score #temp s.temp matches 41..55 run function towercraft:game/round/fighting/spawner/pattern/determine/very_hard
 execute if score #temp s.temp matches 56..70 run function towercraft:game/round/fighting/spawner/pattern/determine/insane
 
+
 tag @s add tc.game_spawner_inited

@@ -1,0 +1,1 @@
+execute as @e[tag=tc.unit,distance=..1.1] run function towercraft:game/units/take_damage with storage tc.temp thing

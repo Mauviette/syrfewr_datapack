@@ -9,9 +9,13 @@ execute if score #type s.temp matches 1 if score #evo s.temp matches 1 run data 
 execute if score #type s.temp matches 2 run data modify storage tc.ui_tower mask[{Slot:4b}].id set value "minecraft:furnace"
 execute if score #type s.temp matches 2 if score #evo s.temp matches 1 run data modify storage tc.ui_tower mask[{Slot:4b}].id set value "minecraft:smoker"
 execute if score #type s.temp matches 2 if score #evo s.temp matches 2 run data modify storage tc.ui_tower mask[{Slot:4b}].id set value "minecraft:blast_furnace"
+execute if score #type s.temp matches 3 run data modify storage tc.ui_tower mask[{Slot:4b}].id set value "minecraft:dispenser"
+execute if score #type s.temp matches 3 run data modify storage tc.ui_tower mask[{Slot:4b}].components."minecraft:custom_model_data" set value 1
+execute if score #type s.temp matches 3 run data modify storage tc.ui_tower mask[{Slot:4b}].components."minecraft:item_name" set value '{"text":"Lance-cailloux"}'
 
 execute if score #type s.temp matches 1 run data modify storage tc.temp type_name set value "dispenser"
 execute if score #type s.temp matches 2 run data modify storage tc.temp type_name set value "furnace"
+execute if score #type s.temp matches 3 run data modify storage tc.temp type_name set value "mortar"
 #Desc
 $data modify storage tc.ui_tower mask[1].components.lore set value ['{"text":"Niveau $(level)","color":"green","italic":false}','[$(evo_desc)]','[{"text":"Type de dégat: ","color":"dark_gray","italic":false},$(dmg_type)]','{"text":"$(damage) dégats par tir","color":"red","italic":false}','{"text":"$(range) blocs de portée","color":"dark_green","italic":false}','{"text":"$(fire_rate) tirs par seconde","color":"aqua","italic":false}']
 

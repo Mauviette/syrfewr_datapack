@@ -48,3 +48,6 @@ execute if score #walk_speed s.temp matches 47 run tp @s ^ ^ ^.47
 execute if score #walk_speed s.temp matches 48 run tp @s ^ ^ ^.48
 execute if score #walk_speed s.temp matches 49 run tp @s ^ ^ ^.49
 execute if score #walk_speed s.temp matches 50.. run tp @s ^ ^ ^.5
+
+
+scoreboard players operation @s tc.UnitPriority += #walk_speed s.temp

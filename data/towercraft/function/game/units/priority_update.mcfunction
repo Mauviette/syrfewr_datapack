@@ -1,0 +1,2 @@
+#execute if score @s tc.UnitPriority >= $max tc.UnitPriority run tellraw @a ["",{"selector":"@s"},{"text":" has the highest priority of "},{"score":{"name":"@s","objective":"tc.UnitPriority"}},{"text":". Max was "},{"score":{"name":"$max","objective":"tc.UnitPriority"}}]
+execute if score @s tc.UnitPriority >= $max tc.UnitPriority run scoreboard players operation $max tc.UnitPriority = @s tc.UnitPriority

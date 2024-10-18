@@ -23,5 +23,10 @@ execute if score @s tc.TowerType matches 1 if score #can_attack s.temp matches 1
 execute if score @s tc.TowerType matches 2 if score #can_attack s.temp matches 1.. run function towercraft:game/tower/action/attack/furnace with storage tc.temp action
 
 
+
+#Lance cailloux
+execute if score @s tc.TowerType matches 3 if score #can_attack s.temp matches 1.. run function towercraft:game/tower/action/attack/mortar with storage tc.temp action
+
+
 scoreboard players set @s tc.TowerAttackTick 0
 scoreboard players set #can_attack s.temp 0
