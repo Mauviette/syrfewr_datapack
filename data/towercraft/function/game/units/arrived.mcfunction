@@ -3,3 +3,4 @@ execute as @p[tag=tc.playing] at @s run function towercraft:game/player/health/t
 
 tp @s ~ -120 ~
 kill @s
+playsound block.beacon.deactivate hostile @a[distance=..200] ~ ~ ~ 1 1.4

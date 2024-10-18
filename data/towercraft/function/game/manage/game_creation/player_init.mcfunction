@@ -21,7 +21,7 @@ function towercraft:game/manage/game_creation/player_init_final with storage tc.
 scoreboard players set @s tc.ResourceCoal 0
 scoreboard players set @s tc.ResourceIron 0
 scoreboard players set @s tc.ResourceGold 0
-scoreboard players set @s tc.ResourceCopper 30
+scoreboard players set @s tc.ResourceCopper 40
 scoreboard players set @s tc.Rotation 0
 function towercraft:dev/zzz_items/device/basic_drill
 function towercraft:dev/zzz_items/device/basic_drill

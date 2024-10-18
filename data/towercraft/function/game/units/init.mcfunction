@@ -41,11 +41,11 @@ execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitH
 execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitSpeed 9
 execute if entity @s[tag=tc.unit_creeper] run scoreboard players set @s tc.UnitDamage 10
 
-execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitHealth 200
+execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitHealth 180
 execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitSpeed 10
 execute if entity @s[tag=tc.unit_spider] run scoreboard players set @s tc.UnitDamage 8
 
-execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitHealth 80
+execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitHealth 60
 execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitSpeed 10
 execute if entity @s[tag=tc.unit_silverfish] run scoreboard players set @s tc.UnitDamage 3
 

@@ -12,6 +12,13 @@ scoreboard players operation #temp s.temp /= 100 s.number
 
 scoreboard players operation #damage s.temp -= #temp s.temp
 
+#Résistance de Round
+scoreboard players operation #temp s.temp = #damage s.temp
+scoreboard players operation #temp s.temp *= @s tc.ResRound
+scoreboard players operation #temp s.temp /= 100 s.number
+
+
+scoreboard players operation #damage s.temp -= #temp s.temp
 
 
 execute if score #damage s.temp matches 1.. run scoreboard players operation @s tc.UnitHealth -= #damage s.temp

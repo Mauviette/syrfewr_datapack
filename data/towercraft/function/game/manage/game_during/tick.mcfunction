@@ -4,3 +4,6 @@ execute if score @s tc.TimeWithoutPlayers matches 1.. if score #nb_players s.tem
 execute if score @s tc.TimeWithoutPlayers matches 600.. run function towercraft:game/manage/game_end/end_game
 
 execute if score @s tc.RoundState matches 1 run function towercraft:game/round/fighting/tick
+
+execute if score @s tc.Accelerates matches 1.. run function towercraft:game/manage/game_during/acc
+execute if score @s tc.Accelerates matches 2.. run function towercraft:game/manage/game_during/acc
