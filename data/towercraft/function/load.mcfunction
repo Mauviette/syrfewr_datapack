@@ -126,6 +126,12 @@ scoreboard objectives add tc.TimerThings dummy
 scoreboard objectives add tc.TimerThingsAction dummy
 
 
+#Shop
+scoreboard objectives add tc.TowerPrice1 dummy
+scoreboard objectives add tc.TowerPrice2 dummy
+scoreboard objectives add tc.TowerPrice3a dummy
+scoreboard objectives add tc.TowerPrice3b dummy
+
 execute in syrfewr:towercraft run setblock 0 -63 0 yellow_shulker_box
 execute in syrfewr:towercraft run forceload add 0 0
 
@@ -162,6 +168,7 @@ scoreboard players set #visual_upgrade_e3 tc.TowerLevel 7
 
 #EN %
 scoreboard players set #multiplier tc.UpgradeCost 125
+scoreboard players set #drill_buy_multiplier tc.UpgradeCost 150
 
 
 
