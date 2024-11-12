@@ -11,3 +11,4 @@ $execute if score #tower_type s.temp matches 2 if score #evolution s.temp matche
 
 #Lance-cailloux
 $execute if score #tower_type s.temp matches 3 if score #evolution s.temp matches 1 run data modify storage tc.temp $(namespace) set value '{"text":"Flaque de magma : ","color":"gray","italic":false},{"text":"Les tirs laissent une zone de feu pendant 5s qui infligent 20% des dégats par seconde.","color":"dark_gray","italic":false}'
+$execute if score #tower_type s.temp matches 3 if score #evolution s.temp matches 2 run data modify storage tc.temp $(namespace) set value '{"text":"Explosion : ","color":"gray","italic":false},{"text":"x2 sur les dégâts d\\\'impact.","color":"dark_gray","italic":false}'
