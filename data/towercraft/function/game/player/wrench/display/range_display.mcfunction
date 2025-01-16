@@ -8,3 +8,5 @@ execute if score @n[tag=tc.tower,distance=..250] tc.AttackType matches 2 as @n[t
 execute if score @n[tag=tc.tower,distance=..250] tc.AttackType matches 3 as @n[tag=tc.tower,distance=..250] at @s run function towercraft:game/player/placing_tower/type/range_display/3
 
 execute if score @n[tag=tc.tower,distance=..250] tc.AttackType matches 4 as @n[tag=tc.tower,distance=..250] at @s run function towercraft:game/player/placing_tower/type/range_display/4
+
+execute if score @n[tag=tc.tower,distance=..250] tc.AttackType matches 5 as @n[tag=tc.tower,distance=..250] at @s run function towercraft:game/player/placing_tower/type/range_display/5

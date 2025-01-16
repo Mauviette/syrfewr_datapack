@@ -13,6 +13,7 @@ execute if data storage tc.temp {tower:{attack_type:1}} run function towercraft:
 execute if data storage tc.temp {tower:{attack_type:2}} run function towercraft:game/player/placing_tower/type/quad_line with storage tc.temp
 execute if data storage tc.temp {tower:{attack_type:3}} run function towercraft:game/player/placing_tower/type/round with storage tc.temp
 execute if data storage tc.temp {tower:{attack_type:4}} run function towercraft:game/player/placing_tower/type/square with storage tc.temp
+execute if data storage tc.temp {tower:{attack_type:5}} run function towercraft:game/player/placing_tower/type/octo_line with storage tc.temp
 
 
 

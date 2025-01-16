@@ -183,3 +183,12 @@ data modify storage tc.evolution1 furnace append value {Slot:23b,id:"blast_furna
 
 #Lance-cailloux
 data modify storage tc.evolution1 mortar set value [{Slot:21b,id:"magma_block","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/first"}},item_name:'{"text":"Flaque de magma","color":"white"}',lore:['[{"text":"Les tirs laissent une zone de feu pendant 5s qui infligent 20% des dégats par seconde.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"8 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}]
+data modify storage tc.evolution1 mortar append value {Slot:23b,id:"tnt","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/1/second"}},item_name:'{"text":"Explosion","color":"white"}',lore:['[{"text":"x2 sur les dégâts d\'impact.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"8 ","color":"gray"},{"text":"\\uE403","color":"white"}]']}}
+
+
+##Tiers 2
+#Dispenser
+#Quadro
+data modify storage tc.evolution2 dispenser.first set value [{Slot:21b,id:"waxed_oxidized_copper_bulb","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/evolve/2/first"}},item_name:'{"text":"Quadro","color":"white"}',lore:['[{"text":"Permet au distributeur de tirer dans 8 directions simultanément.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},{"text":"10 ","color":"gray"},{"text":"\\uE404","color":"white"}]']}}]
+
+#Tir perçant
