@@ -1,4 +1,4 @@
-execute store result score @s s.temp run attribute @s generic.scale get 10
+execute store result score @s s.temp run attribute @s scale get 10
 scoreboard players operation @s s.temp -= 10 s.number
 
 execute store result score @s s.temp2 run random value -100..100

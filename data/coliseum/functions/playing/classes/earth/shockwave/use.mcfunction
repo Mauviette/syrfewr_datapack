@@ -9,10 +9,10 @@ execute if score @s ce.holdingAttackFor matches 1.. rotated ~ 0 positioned ^ ^ ^
 execute if score @s ce.holdingAttackFor matches 1.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~ 1 .2 1 1 10 normal
 execute if score @s ce.holdingAttackFor matches 20.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~ 1 .2 1 1 10 normal
 execute if score @s ce.holdingAttackFor matches 20.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~ 1 .2 1 1 10 normal
-execute if score @s ce.holdingAttackFor matches 40.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~  .2  1 10 normal
-execute if score @s ce.holdingAttackFor matches 40.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~  .2  1 10 normal
-execute if score @s ce.holdingAttackFor matches 60.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~  .2  1 10 normal
-execute if score @s ce.holdingAttackFor matches 60.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~  .2  1 10 normal
+execute if score @s ce.holdingAttackFor matches 40.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
+execute if score @s ce.holdingAttackFor matches 40.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
+execute if score @s ce.holdingAttackFor matches 60.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
+execute if score @s ce.holdingAttackFor matches 60.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
 execute if score @s ce.holdingAttackFor matches 40.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
 execute if score @s ce.holdingAttackFor matches 40.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:dirt"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
 execute if score @s ce.holdingAttackFor matches 60.. rotated ~ 0 positioned ^ ^ ^2 run particle block{block_state:"minecraft:stone"} ~ ~.4 ~ 1.5 .2 1.5 1 10 normal
@@ -39,7 +39,7 @@ execute if score @s ce.holdingAttackFor matches 41.. rotated ~ 0 positioned ^ ^ 
 execute if score @s ce.holdingAttackFor matches 61.. rotated ~ 0 positioned ^ ^ ^2 as @e[distance=..3,tag=ce.earth_wall] at @s run function coliseum:playing/classes/earth/wall/break
 
 
-attribute @s generic.attack_speed modifier add eb5d3472-00a3-4170-907f-0a7eff10bbf4 "cd" -100 add_value
+attribute @s attack_speed modifier add cd -100 add_value
 scoreboard players set @s ce.AnimationTime 5
 
 tag @s remove ce.attacker

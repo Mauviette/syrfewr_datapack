@@ -1,3 +1,3 @@
 $data modify storage tc.ui_tower mask append value {Slot:22b, id:"yellow_concrete","components":{"minecraft:custom_data":{ui_item:{cmd:"function towercraft:game/player/wrench/ui/menu/tower/root/action/device/upgrade/mining"}},item_name:'{"text":"Augmenter l\'efficacité de minage.","color":"yellow"}',lore:['[{"text":"+1 minerai par tour.","color":"dark_gray","italic":false}]','[{"text":"Coût: ","color":"red","italic":false},$(cost)]']}}
 
-data modify storage tc.ui_tower mask[{Slot:26b}].components.minecraft:custom_model_data set value 403
+data modify storage tc.ui_tower mask[{Slot:26b}].components.minecraft:custom_model_data set value {strings:['no_upgrades']}

@@ -33,7 +33,7 @@ execute if score @s ce.PersonalVar matches 1 positioned ^-1 ^ ^ run fill ~ ~ ~ ~
 
 execute if score @s ce.PersonalVar matches 1 run particle block{block_state:"minecraft:stone"} ~ ~1 ~ 1 .5 1 1 20 normal
 
-playsound entity.generic.explode block @a[distance=..3] ~ ~1 ~ 1 1 1
+playsound entity.explode block @a[distance=..3] ~ ~1 ~ 1 1 1
 particle explosion_emitter ~ ~1 ~
 execute positioned ~ ~.5 ~ as @a[distance=..3] at @s unless score @s ce.TeamID = @e[tag=ce.attacker,sort=nearest,limit=1] ce.TeamID run damage @s 4 generic by @e[tag=ce.attacker,sort=nearest,limit=1]
 execute positioned ~ ~.5 ~ as @a[distance=..3] at @s unless score @s ce.TeamID = @e[tag=ce.attacker,sort=nearest,limit=1] ce.TeamID run effect give @s slowness 3 1 false

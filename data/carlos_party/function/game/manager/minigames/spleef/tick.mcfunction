@@ -12,7 +12,7 @@ execute if score @s cp.MiniGameTimer matches 127 run item replace entity @a[dist
 #execute if score @s cp.MiniGameTimer matches 127 run item replace entity @a[distance=..250,tag=cp.playing] weapon.offhand with wind_charge[max_stack_size=99] 99
 execute if score @s cp.MiniGameTimer matches 127 run effect give @a[distance=..250,tag=cp.playing] slowness 5 15 true
 execute if score @s cp.MiniGameTimer matches 127 run effect give @a[distance=..250,tag=cp.playing] mining_fatigue 5 15 true
-execute if score @s cp.MiniGameTimer matches 127 as @a[distance=..250,tag=cp.playing] run attribute @s minecraft:generic.jump_strength modifier add mode_init -50 add_value
+execute if score @s cp.MiniGameTimer matches 127 as @a[distance=..250,tag=cp.playing] run attribute @s minecraft:jump_strength modifier add mode_init -50 add_value
 
 execute if score @s cp.MiniGameTimer matches 167 run title @a[distance=..250,tag=cp.playing] times 0 20 0
 execute if score @s cp.MiniGameTimer matches 167 run title @a[distance=..250,tag=cp.playing] title [{"text":"3","color":"red"}]
@@ -31,7 +31,7 @@ execute if score @s cp.MiniGameTimer matches 227 run title @a[distance=..250,tag
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250,tag=cp.playing] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ .7 1
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] saturation infinite 0 true
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] mining_fatigue 1 5 true
-execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250,tag=cp.playing] run attribute @s minecraft:generic.jump_strength modifier remove mode_init
+execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250,tag=cp.playing] run attribute @s minecraft:jump_strength modifier remove mode_init
 execute if score @s cp.MiniGameTimer matches 227 as @a[distance=..250] at @s run playsound syrfewr:music_spleef record @s ~ ~ ~ 1 1
 execute if score @s cp.MiniGameTimer matches 227 run effect give @a[distance=..250,tag=cp.playing] fire_resistance infinite 0 true
 

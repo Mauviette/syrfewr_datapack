@@ -1,2 +1,2 @@
-execute at @n[tag=tc.start] run summon zombie ~ ~ ~ {Tags:["tc.unit","tc.unit_giant"],attributes:[{base:2,id:"generic.scale"}]}
+execute at @n[tag=tc.start] run summon zombie ~ ~ ~ {Tags:["tc.unit","tc.unit_giant"],attributes:[{base:2,id:"scale"}]}
 execute as @n[tag=tc.unit,tag=!tc.unit_inited] at @s run function towercraft:game/units/init

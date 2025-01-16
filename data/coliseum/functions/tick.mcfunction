@@ -11,4 +11,4 @@ execute as @e[tag=ce.object] at @s run function coliseum:playing/object/tick
 
 
 execute as @e[scores={ce.EarthDrain=0..}] at @s run scoreboard players remove @s ce.EarthDrain 1
-execute as @e[scores={ce.EarthDrain=0}] at @s run attribute @s generic.gravity modifier remove 70991078-4a89-4a57-a625-19ecb982b0d0
+execute as @e[scores={ce.EarthDrain=0}] at @s run attribute @s gravity modifier remove 70991078-4a89-4a57-a625-19ecb982b0d0

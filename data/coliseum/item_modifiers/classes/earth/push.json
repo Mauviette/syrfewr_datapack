@@ -3,7 +3,7 @@
       "function": "minecraft:set_attributes",
       "modifiers": [
         {
-          "attribute": "minecraft:generic.attack_speed",
+          "attribute": "minecraft:attack_speed",
           "name": "push cd",
           "amount": -2,
           "operation": "add_value",
@@ -11,7 +11,7 @@
           "slot": "mainhand"
         },
         {
-          "attribute": "minecraft:generic.attack_knockback",
+          "attribute": "minecraft:attack_knockback",
           "name": "push kb",
           "amount": 12,
           "operation": "add_value",

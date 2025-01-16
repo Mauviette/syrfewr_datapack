@@ -8,7 +8,7 @@ scoreboard players set @s ce.mana_to_remove 6
 scoreboard players set @s ce.currentAttackID 2
 tag @s add ce.attacking_player
 
-attribute @s generic.attack_speed modifier add eb5d3472-00a3-4170-907f-0a7eff10bbf4 "cd" -100 add_value
+attribute @s attack_speed modifier add cd -100 add_value
 scoreboard players set @s ce.AnimationTime 2
 
 execute if score @s ce.holdingAttackFor matches 20.. if predicate syrfewr:random/0.1 run particle angry_villager ~ ~2.2 ~ 0.3 0.3 0.3 0 1 force

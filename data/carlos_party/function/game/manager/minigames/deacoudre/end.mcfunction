@@ -1,6 +1,6 @@
 scoreboard players add @s cp.MiniGameCount 1
 tag @a[tag=cp.deacoudre,distance=..200] add cp.winner
-attribute @p[tag=cp.winner] generic.fall_damage_multiplier modifier remove cp.deacoudre
+attribute @p[tag=cp.winner] fall_damage_multiplier modifier remove cp.deacoudre
 tag @a[tag=cp.deacoudre,distance=..200] remove cp.deacoudre
 title @a[distance=..200] times 5t 40t 5t
 title @a[distance=..200] title {"selector": "@a[tag=cp.winner]","color":"green","bold":true}

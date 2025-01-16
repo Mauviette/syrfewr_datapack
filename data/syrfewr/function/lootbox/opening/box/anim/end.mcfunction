@@ -54,5 +54,5 @@ execute if score #trouvaille_id s.temp matches 110 positioned ~ ~-.2 ~ run funct
 execute if score #trouvaille_id s.temp matches 111 positioned ~ ~-.2 ~ run function speechtools:create {duration:100,args:{"text":"2 Aimants",typed:false,extra:'"color":"yellow"'},events:[]}
 
 #tellraw @a[tag=debug] {"score": {"name": "#trouvaille_id", "objective": "s.temp"}}
-playsound entity.generic.explode player @a[distance=..20] ~ ~ ~ .7 1.3
+playsound entity.explode player @a[distance=..20] ~ ~ ~ .7 1.3
 kill @s

@@ -1,8 +1,8 @@
 execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~ ~ ~ {Tags:["dragon_flex"],DeathLootTable:"minecraft:empty"}
-execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~10 ~ ~10 {attributes:[{id:"minecraft:generic.scale",base:.2}]}
-execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~10 ~ ~-10 {attributes:[{id:"minecraft:generic.scale",base:.1}]}
-execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~-10 ~ ~10 {attributes:[{id:"minecraft:generic.scale",base:5}]}
-execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~-10 ~ ~-10 {attributes:[{id:"minecraft:generic.scale",base:.4}]}
+execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~10 ~ ~10 {attributes:[{id:"minecraft:scale",base:.2}]}
+execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~10 ~ ~-10 {attributes:[{id:"minecraft:scale",base:.1}]}
+execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~-10 ~ ~10 {attributes:[{id:"minecraft:scale",base:5}]}
+execute if score @s s.SelectedVictoryAnimationID matches 3 run summon ender_dragon ~-10 ~ ~-10 {attributes:[{id:"minecraft:scale",base:.4}]}
 
 execute if score @s s.SelectedVictoryAnimationID matches 5 as @a[tag=s.playing,distance=.1..250] at @s run tp @s ~ 1 ~
 execute if score @s s.SelectedVictoryAnimationID matches 5 as @a[tag=s.playing,distance=.1..250] at @s run scoreboard players add @s gw.timeSinceDeath 500

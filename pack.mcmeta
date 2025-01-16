@@ -1,7 +1,7 @@
 {
 	"pack": {
-		"pack_format": 48,
-		"description": "WIP, 1.21. Par Mauviette"
+		"pack_format": 61,
+		"description": "WIP, 1.21.4 Par Mauviette"
 	},
     "filter": {
         "block": [

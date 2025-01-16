@@ -11,4 +11,4 @@ execute if score @s tc.TowerEvolution matches 1 as @n[tag=tc.magma_trail,tag=!tc
 
 kill @s
 particle explosion ~ ~ ~
-playsound entity.generic.explode block @a[distance=..200] ~ ~ ~ .5 1.3
+playsound entity.explode block @a[distance=..200] ~ ~ ~ .5 1.3

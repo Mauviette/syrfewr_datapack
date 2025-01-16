@@ -12,6 +12,8 @@
         {"id":"rose_bush", "required": false},
         {"id":"peony", "required": false},
         {"id":"sunflower", "required": false},
-        {"id":"lilac", "required": false}
+        {"id":"lilac", "required": false},
+        {"id":"water", "required": false},
+        {"id":"moss_carpet", "required": false}
     ]
 }
